@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "category_definition": {
+    "small": "Dense models with at most 8B parameters",
+    "mid_size": "Dense models above 8B and at most 32B parameters",
+    "large": "Dense models above 32B parameters",
+    "efficient_architecture": "Models whose advertised effective/active and total parameter counts differ"
+  },
+  "models": [
+    {"id": "Qwen/Qwen3-0.6B", "family": "qwen3", "category": "small", "total_parameters_b": 0.6, "active_parameters_b": 0.6, "pmbench_anchor": false, "dtype": "bfloat16", "tensor_parallel_size": 1},
+    {"id": "Qwen/Qwen3-1.7B", "family": "qwen3", "category": "small", "total_parameters_b": 1.7, "active_parameters_b": 1.7, "pmbench_anchor": false, "dtype": "bfloat16", "tensor_parallel_size": 1},
+    {"id": "Qwen/Qwen3-4B", "family": "qwen3", "category": "small", "total_parameters_b": 4.0, "active_parameters_b": 4.0, "pmbench_anchor": false, "dtype": "bfloat16", "tensor_parallel_size": 1},
+    {"id": "Qwen/Qwen3-8B", "family": "qwen3", "category": "small", "total_parameters_b": 8.0, "active_parameters_b": 8.0, "pmbench_anchor": true, "dtype": "bfloat16", "tensor_parallel_size": 1},
+    {"id": "Qwen/Qwen3-14B", "family": "qwen3", "category": "mid_size", "total_parameters_b": 14.0, "active_parameters_b": 14.0, "pmbench_anchor": true, "dtype": "bfloat16", "tensor_parallel_size": 1},
+    {"id": "Qwen/Qwen3-32B", "family": "qwen3", "category": "mid_size", "total_parameters_b": 32.0, "active_parameters_b": 32.0, "pmbench_anchor": true, "dtype": "bfloat16", "tensor_parallel_size": 2},
+    {"id": "meta-llama/Llama-3.2-1B-Instruct", "family": "llama", "category": "small", "total_parameters_b": 1.0, "active_parameters_b": 1.0, "pmbench_anchor": false, "dtype": "bfloat16", "tensor_parallel_size": 1},
+    {"id": "meta-llama/Llama-3.2-3B-Instruct", "family": "llama", "category": "small", "total_parameters_b": 3.0, "active_parameters_b": 3.0, "pmbench_anchor": false, "dtype": "bfloat16", "tensor_parallel_size": 1},
+    {"id": "meta-llama/Llama-3.3-70B-Instruct", "family": "llama", "category": "large", "total_parameters_b": 70.0, "active_parameters_b": 70.0, "pmbench_anchor": true, "dtype": "bfloat16", "tensor_parallel_size": 2, "load_format": "bitsandbytes", "quantization": "bitsandbytes", "max_model_len": 32768, "gpu_memory_utilization": 0.8, "enforce_eager": true},
+    {"id": "mistralai/Ministral-3-3B-Instruct-2512", "family": "ministral3", "category": "small", "total_parameters_b": 3.0, "active_parameters_b": 3.0, "pmbench_anchor": false, "dtype": "bfloat16", "tensor_parallel_size": 1, "max_model_len": 32768},
+    {"id": "mistralai/Ministral-3-8B-Instruct-2512", "family": "ministral3", "category": "small", "total_parameters_b": 8.0, "active_parameters_b": 8.0, "pmbench_anchor": false, "dtype": "bfloat16", "tensor_parallel_size": 1, "max_model_len": 32768},
+    {"id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506", "family": "mistral", "category": "mid_size", "total_parameters_b": 24.0, "active_parameters_b": 24.0, "pmbench_anchor": true, "dtype": "bfloat16", "tensor_parallel_size": 2, "max_model_len": 32768},
+    {"id": "microsoft/Phi-4-mini-instruct", "family": "phi4", "category": "small", "total_parameters_b": 3.8, "active_parameters_b": 3.8, "pmbench_anchor": false, "dtype": "bfloat16", "tensor_parallel_size": 1, "trust_remote_code": true},
+    {"id": "google/gemma-4-E2B-it", "family": "gemma4", "category": "efficient_architecture", "total_parameters_b": 5.1, "active_parameters_b": 2.3, "pmbench_anchor": false, "dtype": "bfloat16", "tensor_parallel_size": 1, "max_model_len": 32768, "limit_mm_per_prompt": {"audio": 0, "image": 0}},
+    {"id": "google/gemma-4-E4B-it", "family": "gemma4", "category": "efficient_architecture", "total_parameters_b": 8.0, "active_parameters_b": 4.5, "pmbench_anchor": false, "dtype": "bfloat16", "tensor_parallel_size": 1, "max_model_len": 32768, "limit_mm_per_prompt": {"audio": 0, "image": 0}}
+  ]
+}

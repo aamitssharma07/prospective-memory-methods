@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "scenario": "PMBench/data/synthetic_week_v9.json",
+  "backend": "sglang",
+  "base_url": "http://127.0.0.1:30002/v1",
+  "server_port": 30002,
+  "server_start_timeout_seconds": 900,
+  "output_dir": "pmbench_fallback_audit/results",
+  "generation": {"max_tokens": 768, "temperature": 0.0, "max_invalid_retries": 2},
+  "setups": [
+    {"name": "single_baseline", "fallback_affected": true},
+    {"name": "single_heartbeat", "heartbeat_mode": "optional", "label": "heartbeat_proactive", "fallback_affected": true},
+    {"name": "single_heartbeat", "heartbeat_mode": "auto30", "label": "heartbeat_auto30", "fallback_affected": true},
+    {"name": "single_heartbeat", "heartbeat_mode": "auto60", "label": "heartbeat_auto60", "fallback_affected": true}
+  ]
+}

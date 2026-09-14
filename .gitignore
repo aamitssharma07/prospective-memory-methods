@@ -1,0 +1,26 @@
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+.venv/
+.venv-modern/
+__pycache__/
+*.pyc
+
+# Generated experiment outputs and logs
+pmbench_fallback_audit/results/*/
+pmbench_fallback_audit/memory_results/*/
+pmbench_fallback_audit/model_smoke/
+pmbench_fallback_audit/run_logs/
+pmbench_fallback_audit/smoke_artifacts/
+prospective_memory/results/
+
+# Papers can be downloaded separately; keep notes and plans in git.
+papers/*.pdf
+
+# Local runtime leftovers
+*.log
+.DS_Store
+PMBench/runs/

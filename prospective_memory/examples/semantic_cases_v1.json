@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "description": "Ten hand-authored, independent prospective-memory notification cases, frozen before the first live-model evaluation. Expected labels are evaluator-only. Each case starts with a fresh engine. No benchmark data or task menus are used.",
+  "cases": [
+    {
+      "id": "delayed_paraphrase",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [
+        {"id": "i_shipping_receipt", "text": "When the courier confirms that my ceramic bowl has reached its destination, remind me to send the buyer the care instructions."}
+      ],
+      "ticks": [
+        {"id": "t1", "observations": [{"id": "e1", "source": "events", "text": "You finish reviewing tomorrow's workshop agenda. There is no shipping update."}], "expected_act_instruction_ids": []},
+        {"id": "t2", "observations": [{"id": "e2", "source": "events", "text": "The courier reports that the parcel containing the ceramic bowl is still at the regional sorting center."}], "expected_act_instruction_ids": []},
+        {"id": "t3", "observations": [{"id": "e3", "source": "events", "text": "A new courier notification says the package containing your ceramic bowl was handed to the recipient at their address just now."}], "expected_act_instruction_ids": ["i_shipping_receipt"]}
+      ],
+      "notes": "The final event paraphrases arrival; an in-transit message is not sufficient. Two unrelated or premature events separate registration from fulfillment."
+    },
+    {
+      "id": "negated_and_hypothetical_trigger",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [
+        {"id": "i_book_room", "text": "When Rina explicitly approves the workshop budget, remind me to reserve the training room."}
+      ],
+      "ticks": [
+        {"id": "t1", "observations": [{"id": "e1", "source": "events", "text": "Rina writes: I have not approved the workshop budget. Please wait for my decision."}], "expected_act_instruction_ids": []},
+        {"id": "t2", "observations": [{"id": "e2", "source": "events", "text": "A colleague says: If Rina approves the workshop budget tomorrow, we can start planning. Rina has made no new decision."}], "expected_act_instruction_ids": []},
+        {"id": "t3", "observations": [{"id": "e3", "source": "events", "text": "A new message from Rina says: I approve the workshop budget. You have my authorization to proceed."}], "expected_act_instruction_ids": ["i_book_room"]}
+      ],
+      "notes": "Lexical mentions of approval in a negated or hypothetical statement must not count as approval."
+    },
+    {
+      "id": "conjunctive_condition",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [
+        {"id": "i_poster_export", "text": "Remind me to export the exhibition poster only when both conditions hold: the curator has approved the caption and the photographer has granted permission to use the image."}
+      ],
+      "ticks": [
+        {"id": "t1", "observations": [{"id": "e1", "source": "events", "text": "Current poster status: the curator has approved the caption, but permission from the photographer is still pending."}], "expected_act_instruction_ids": []},
+        {"id": "t2", "observations": [{"id": "e2", "source": "events", "text": "Current poster status: the photographer has now granted image permission, but the curator withdrew caption approval after spotting an error. The caption is awaiting a new review."}], "expected_act_instruction_ids": []},
+        {"id": "t3", "observations": [{"id": "e3", "source": "events", "text": "Current poster status: the curator has approved the corrected caption and the photographer's image permission remains valid. Both approvals are now in place."}], "expected_act_instruction_ids": ["i_poster_export"]}
+      ],
+      "notes": "Each observation states the complete current conjunction. This tests logical gating without depending on unimplemented accumulation of separate historical facts."
+    },
+    {
+      "id": "explicit_cancellation",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [
+        {"id": "i_trip_list", "text": "When Mira confirms that she can join the hiking trip, remind me to share the equipment checklist with her."}
+      ],
+      "ticks": [
+        {"id": "t1", "observations": [{"id": "e1", "source": "events", "text": "Mira has not decided whether she can join the hiking trip."}], "expected_act_instruction_ids": []},
+        {"id": "t2", "instructions": [{"id": "i_cancel_trip_list", "text": "Cancel my reminder to share the hiking equipment checklist with Mira when she confirms. I no longer want that reminder."}], "observations": [{"id": "e2", "source": "events", "text": "There are no new messages from Mira."}], "expected_act_instruction_ids": []},
+        {"id": "t3", "observations": [{"id": "e3", "source": "events", "text": "Mira sends a new message: I can definitely join the hiking trip."}], "expected_act_instruction_ids": []}
+      ],
+      "notes": "A matching event after explicit cancellation must not revive the cancelled intention."
+    },
+    {
+      "id": "trigger_revision",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [
+        {"id": "i_collect_print", "text": "When the print shop emails that my framed print is ready, remind me to go and collect the framed print."}
+      ],
+      "ticks": [
+        {"id": "t1", "observations": [{"id": "e1", "source": "events", "text": "The print shop says the frame is still being assembled."}], "expected_act_instruction_ids": []},
+        {"id": "t2", "instructions": [{"id": "i_revise_collect_print", "text": "Change my reminder to collect the framed print: do not trigger it on the shop's ready email anymore. Instead, remind me only when my neighbor explicitly confirms they can drive me to the print shop. Keep the action of collecting the framed print unchanged."}], "observations": [{"id": "e2", "source": "events", "text": "The print shop sends its ready email: your framed print is ready for collection. Your neighbor has not yet confirmed a ride."}], "expected_act_instruction_ids": []},
+        {"id": "t3", "observations": [{"id": "e3", "source": "events", "text": "Your neighbor sends a new message: I can drive you to the print shop now so you can collect your framed print."}], "expected_act_instruction_ids": ["i_collect_print"]}
+      ],
+      "notes": "The replacement trigger belongs to the original intention. Expected labels use its original registration instruction, not the revision message."
+    },
+    {
+      "id": "simultaneous_unrelated_intentions",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [
+        {"id": "i_freezer", "text": "When the laboratory freezer alarm reports a temperature above minus 10 degrees Celsius, remind me to notify the lab manager."},
+        {"id": "i_reading_note", "text": "When the book club announces its next novel, remind me to add the title to my reading notebook."}
+      ],
+      "ticks": [
+        {"id": "t1", "observations": [{"id": "e1", "source": "events", "text": "The freezer is at minus 20 degrees Celsius. The book club has not selected its next novel."}], "expected_act_instruction_ids": []},
+        {"id": "t2", "observations": [{"id": "e2", "source": "events", "text": "The freezer is at minus 15 degrees Celsius. The book club discusses several possible novels but makes no announcement."}], "expected_act_instruction_ids": []},
+        {"id": "t3", "observations": [{"id": "e3", "source": "events", "text": "A new laboratory alarm reports that the freezer temperature is minus 6 degrees Celsius."}, {"id": "e4", "source": "events", "text": "The book club announces that its next novel is The Glass Orchard."}], "expected_act_instruction_ids": ["i_freezer", "i_reading_note"]}
+      ],
+      "notes": "The two intentions do not share a goal or sequence. Both are due in the same assessment and neither should displace the other."
+    },
+    {
+      "id": "never_triggering_intention",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [
+        {"id": "i_waitlist", "text": "If the pottery studio explicitly offers me a place in the Saturday class, remind me to ask about the materials fee."}
+      ],
+      "ticks": [
+        {"id": "t1", "observations": [{"id": "e1", "source": "events", "text": "The pottery studio says the Saturday class is full and you remain on its waiting list."}], "expected_act_instruction_ids": []},
+        {"id": "t2", "observations": [{"id": "e2", "source": "events", "text": "The pottery studio advertises available places in its Wednesday class. It says there are still no places for you in the Saturday class."}], "expected_act_instruction_ids": []},
+        {"id": "t3", "observations": [{"id": "e3", "source": "events", "text": "The Saturday pottery class has begun with its existing students. You have not been offered a place."}], "expected_act_instruction_ids": []}
+      ],
+      "notes": "An intention may remain unfulfilled for the entire stream. Related offers and passage of time are not the requested event."
+    },
+    {
+      "id": "observed_clock_window",
+      "sources": ["events", "clock"],
+      "queryable_sources": [],
+      "instructions": [
+        {"id": "i_backup_window", "text": "Today, Tuesday, remind me to start the archive backup when the observed local clock is between 16:00 and 16:15 inclusive. Do not remind me before or after that window.", "scope": "Tuesday"}
+      ],
+      "ticks": [
+        {"id": "t1", "scope": "Tuesday", "observations": [{"id": "e1", "source": "clock", "text": "Current local clock: Tuesday 15:59."}], "expected_act_instruction_ids": []},
+        {"id": "t2", "scope": "Tuesday", "observations": [{"id": "e2", "source": "clock", "text": "Current local clock: Tuesday 16:05."}], "expected_act_instruction_ids": ["i_backup_window"]},
+        {"id": "t3", "scope": "Tuesday", "observations": [{"id": "e3", "source": "clock", "text": "Current local clock: Tuesday 16:20."}], "expected_act_instruction_ids": []}
+      ],
+      "notes": "Only explicit clock observations establish time; tick number is not a clock. No completion acknowledgement is assumed, so the last non-trigger is justified by the closed time window."
+    },
+    {
+      "id": "buffered_event_timing",
+      "sources": ["events", "inbox"],
+      "queryable_sources": [],
+      "instructions": [
+        {"id": "i_dispatch", "text": "Today is Tuesday. Remind me to open the dispatch checklist only if Nora sends a dispatch authorization today, Tuesday. A message sent on an earlier day does not qualify, and if its send time is unknown, wait until we know it was sent today.", "scope": "Tuesday"}
+      ],
+      "ticks": [
+        {"id": "t1", "scope": "Tuesday", "observations": [{"id": "e1", "source": "inbox", "current": true, "text": "Inbox synchronization has just returned a cached message from Nora: Dispatch is authorized. The message has no available send timestamp. It may have been sent on an earlier day; receiving this synchronization result now does not establish when Nora sent it."}], "expected_act_instruction_ids": []},
+        {"id": "t2", "scope": "Tuesday", "observations": [{"id": "e2", "source": "inbox", "current": true, "text": "The inbox now exposes the cached authorization message's original send time: Monday 11:30. It was not sent today, Tuesday."}], "expected_act_instruction_ids": []},
+        {"id": "t3", "scope": "Tuesday", "observations": [{"id": "e3", "source": "inbox", "current": true, "text": "A separate new message from Nora says: Dispatch is authorized for today. Its verified original send time is Tuesday 10:12, today."}], "expected_act_instruction_ids": ["i_dispatch"]}
+      ],
+      "notes": "All observations are currently available. That does not make their underlying events current. This distinguishes observation freshness from the authorization's actual send time without reading hidden timestamps."
+    },
+    {
+      "id": "pull_only_status",
+      "sources": ["events", "deployment_status"],
+      "queryable_sources": ["deployment_status"],
+      "instructions": [
+        {"id": "i_accessibility", "text": "When the deployment_status source reports that the staging release has finished deployment and is healthy, remind me to run the accessibility smoke test. That source does not push updates, so its current state has to be checked."}
+      ],
+      "ticks": [
+        {"id": "t1", "observations": [{"id": "e1", "source": "events", "text": "A routine workspace update arrives. It contains no deployment information."}], "pull_responses": {"deployment_status": [{"id": "d1", "source": "deployment_status", "text": "Current staging release status: deployment in progress; health has not been verified."}]}, "expected_act_instruction_ids": []},
+        {"id": "t2", "observations": [{"id": "e2", "source": "events", "text": "A second routine workspace update arrives. It contains no deployment information."}], "pull_responses": {"deployment_status": [{"id": "d2", "source": "deployment_status", "text": "Current staging release status: deployment finished, but the health check is failing. The release is not healthy."}]}, "expected_act_instruction_ids": []},
+        {"id": "t3", "observations": [{"id": "e3", "source": "events", "text": "A third routine workspace update arrives. It contains no deployment information."}], "pull_responses": {"deployment_status": [{"id": "d3", "source": "deployment_status", "text": "Current staging release status: deployment finished and all health checks now pass. The staging release is healthy."}]}, "expected_act_instruction_ids": ["i_accessibility"]}
+      ],
+      "notes": "The host reveals a pull response only after a CHECK for deployment_status. The last tick is due according to the available pull evidence; failing to request it is an end-to-end monitoring miss, not a matcher-only miss. At most one additional query round is allowed per tick."
+    }
+  ]
+}
