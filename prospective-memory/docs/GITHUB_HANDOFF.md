@@ -1,5 +1,13 @@
 # GitHub Handoff
 
+**Publication completed:** [repository](https://github.com/aamitssharma07/prospective-memory-methods)
+and [full raw results](https://github.com/aamitssharma07/prospective-memory-methods/releases/tag/research-snapshot-2026-10-25).
+See [Publication Status](PUBLICATION_STATUS.md). The clean export vendors child
+source, excludes credentials and old research Git history, and preserves the
+destination's existing public history. The checklist below records the original
+research checkout's risks and remains relevant to future exports; it does not
+mean the published repository contains `.env` or broken submodules.
+
 Updated: **2026-10-25**. [Team Context](../TEAM_CONTEXT.md) is the teammate-facing
 entry point. This checklist is preparation guidance, not a claim that the
 current working tree is safe to push. No commit, staging or push was performed

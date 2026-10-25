@@ -10,12 +10,14 @@ Reproduce the research release's existing memory methods. This supplies our
 **base + PIS** comparator and the additional Mem0/A-Mem/PIS-RAG controls. It is
 not our independently implemented historical `pis` arm, and it is not RGPM.
 
-The canonical execution workspace is the **sibling repository**
-`../prospective-memory-reaearch/` (spelling intentional). A fresh clone of this
-repository does not contain that sibling or its results. The committed table
-and CSV above are sufficient to inspect all 44 completed scores without it.
-Reference author source is also registered at `third_party/author_pis`, but its
-gitlink alone does not include our sibling execution patches and saved runs.
+The original execution workspace is the **sibling repository**
+`../prospective-memory-reaearch/` (spelling intentional). The GitHub publication
+vendors both workspaces' source as siblings; complete raw results are supplied
+through its verified Release rather than normal Git files. The committed table
+and CSV above are sufficient to inspect all 44 completed scores without raw
+downloads. The original `third_party/author_pis` gitlink is vendored as reference
+source in the publication; it must not be confused with the sibling's patched
+execution code and retained results.
 
 Eleven models x four methods completed **44 full-week runs**, including the
 two large-model extensions. The roster matches Experiment 1.

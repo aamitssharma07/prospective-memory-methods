@@ -1,0 +1,2536 @@
+{
+  "schema_version": 1,
+  "status": "available",
+  "repository": "aamitssharma07/prospective-memory-methods",
+  "tag": "research-snapshot-2026-10-25",
+  "release_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/tag/research-snapshot-2026-10-25",
+  "source_commit": "ddc5050636c6ceb360e67cfcc335f46e15cb2282",
+  "raw_files": 84259,
+  "raw_bytes": 277808207965,
+  "compressed_bytes": 11251162816,
+  "inventory_sha256": "10560a32dde4fc92cd5ce2db95dd9fe4cc92c39cb23f775da0731b9f88d6b9ca",
+  "scanner_review": {
+    "reason": "Generic sk-prefix matched inside generated task labels; not actual credentials",
+    "revised_scanner_sha256": "29a8ca59ff6a5e827824ecd352541f71e192d6235866457beeeaadcc1dcd54c3",
+    "original_scanner_sha256": "b62d05dff5703e183b1bd61505c9263e8542d7ca889fb41ba08be2dd8c23daa6",
+    "known_credential_matching": "unchanged exact matching; generic prefixes now require a token boundary",
+    "redacted_files": 0,
+    "original_files_modified": 0,
+    "other_groups": "156 passed the stricter superset pattern and remain byte-verified"
+  },
+  "redacted_files": 0,
+  "groups": [
+    {
+      "group": "PMBench-runs--DS-Store-09003f688abf",
+      "parts": [
+        {
+          "name": "PMBench-runs--DS-Store-09003f688abf.tar.zst.part-0001",
+          "bytes": 377,
+          "sha256": "6ce398f5ea8823356f10a3da02dd03c343453f1b5c3552f2dd5df37f45d64c26",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs--DS-Store-09003f688abf.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 6148,
+      "manifest_name": "PMBench-runs--DS-Store-09003f688abf.manifest.json",
+      "manifest_sha256": "6a8507d8ad00707424536f2ae5e0bdfedb02892c200c42c2382c3cc3a651d7e8",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs--DS-Store-09003f688abf.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-all-results-v9-2f82421ab2ee",
+      "parts": [
+        {
+          "name": "PMBench-runs-all-results-v9-2f82421ab2ee.tar.zst.part-0001",
+          "bytes": 137925,
+          "sha256": "9c48f76142f340da9d6eb4ec53626341a030f77aa4a3cf2c5ff0263ded1a7d2d",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-all-results-v9-2f82421ab2ee.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 139,
+      "raw_bytes": 2281219,
+      "manifest_name": "PMBench-runs-all-results-v9-2f82421ab2ee.manifest.json",
+      "manifest_sha256": "d5284bb8a6e5a5366e85665cb3d694cf8d57fd9255b1b0b97dc65a99e90cc05a",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-all-results-v9-2f82421ab2ee.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-RESULTS-md-69a793cde36f",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-RESULTS-md-69a793cde36f.tar.zst.part-0001",
+          "bytes": 1421,
+          "sha256": "5aec998034823307f9e678f9cc015d0642cc038557cc46b1120bcab1eefde63b",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-RESULTS-md-69a793cde36f.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 4053,
+      "manifest_name": "PMBench-runs-core-four-RESULTS-md-69a793cde36f.manifest.json",
+      "manifest_sha256": "8f2108a6f56484f37497ea78df35807c0c8c72a55204b3e12b2ebbdf59aaf6e4",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-RESULTS-md-69a793cde36f.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-google--gemma-4-e2b-it-86f2ad2ddacc",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-google--gemma-4-e2b-it-86f2ad2ddacc.tar.zst.part-0001",
+          "bytes": 153534,
+          "sha256": "2b8bdd087bea65d8bfbbc14134a7b8d0fbac74ae398efd263a6c65f6cbd303da",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-google--gemma-4-e2b-it-86f2ad2ddacc.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 33,
+      "raw_bytes": 15884908,
+      "manifest_name": "PMBench-runs-core-four-google--gemma-4-e2b-it-86f2ad2ddacc.manifest.json",
+      "manifest_sha256": "325ccd0574bbee8eb04e74fc42e31f0bf737d4c286e2664df608ab230d39fe94",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-google--gemma-4-e2b-it-86f2ad2ddacc.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-meta-llama--llama-3-3-70b-instruct-4117fd9c2e04",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-meta-llama--llama-3-3-70b-instruct-4117fd9c2e04.tar.zst.part-0001",
+          "bytes": 171967,
+          "sha256": "5dc65c2d6fcfce3752bea3fc124c6ceff6a0cc4e8f0f65787fdd6be3258a54bb",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-meta-llama--llama-3-3-70b-instruct-4117fd9c2e04.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 33,
+      "raw_bytes": 16727905,
+      "manifest_name": "PMBench-runs-core-four-meta-llama--llama-3-3-70b-instruct-4117fd9c2e04.manifest.json",
+      "manifest_sha256": "bc8aafe9277eb538da02b83b40597ce04ce989203d4e2781649604a1c65c59d0",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-meta-llama--llama-3-3-70b-instruct-4117fd9c2e04.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-mistralai--ministral-3-3b-instruct-2512-bf16-92229af80f2b",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-mistralai--ministral-3-3b-instruct-2512-bf16-92229af80f2b.tar.zst.part-0001",
+          "bytes": 173864,
+          "sha256": "1e53904c1ad22d6ba491f7f085f64325479430f1748983e841c7b0049e8d4bb8",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-mistralai--ministral-3-3b-instruct-2512-bf16-92229af80f2b.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 33,
+      "raw_bytes": 22764111,
+      "manifest_name": "PMBench-runs-core-four-mistralai--ministral-3-3b-instruct-2512-bf16-92229af80f2b.manifest.json",
+      "manifest_sha256": "e3d764fa30e04523be924bd5214bb8a0abd2e83dac0a36187de2ec4bf6cd2d26",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-mistralai--ministral-3-3b-instruct-2512-bf16-92229af80f2b.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-mistralai--ministral-3-8b-instruct-2512-bf16-2bcde7fe5ec8",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-mistralai--ministral-3-8b-instruct-2512-bf16-2bcde7fe5ec8.tar.zst.part-0001",
+          "bytes": 186909,
+          "sha256": "0d3b1ea11ddaba2c845ad2b9c53f64da81f950205ecb47d736f4b6ec5d792af1",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-mistralai--ministral-3-8b-instruct-2512-bf16-2bcde7fe5ec8.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 33,
+      "raw_bytes": 20660460,
+      "manifest_name": "PMBench-runs-core-four-mistralai--ministral-3-8b-instruct-2512-bf16-2bcde7fe5ec8.manifest.json",
+      "manifest_sha256": "0d2bea406e0401dd659bed013ab0c2d95321db6412c4e0dbc0dbf83c2f2b2539",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-mistralai--ministral-3-8b-instruct-2512-bf16-2bcde7fe5ec8.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-openai--gpt-5-4-9ddc94ae0442",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-openai--gpt-5-4-9ddc94ae0442.tar.zst.part-0001",
+          "bytes": 157356,
+          "sha256": "485f5034cff466a02e0bb5fa3bb7f4d56728eb07b7c63579897ce921fb6148b8",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-openai--gpt-5-4-9ddc94ae0442.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 33,
+      "raw_bytes": 18737146,
+      "manifest_name": "PMBench-runs-core-four-openai--gpt-5-4-9ddc94ae0442.manifest.json",
+      "manifest_sha256": "314914f60dc3cb19b1d4d0b35fca6eb0f3ede3c5272aa7568765c727c75c239b",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-openai--gpt-5-4-9ddc94ae0442.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-qwen--qwen2-5-72b-instruct-bfe09cff8db9",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-qwen--qwen2-5-72b-instruct-bfe09cff8db9.tar.zst.part-0001",
+          "bytes": 154883,
+          "sha256": "3e2d7f826d72fe9bd3a5ffa0d0449fe59300ae53d5aafc2365aab34a3b5bb9d0",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-qwen--qwen2-5-72b-instruct-bfe09cff8db9.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 33,
+      "raw_bytes": 16366024,
+      "manifest_name": "PMBench-runs-core-four-qwen--qwen2-5-72b-instruct-bfe09cff8db9.manifest.json",
+      "manifest_sha256": "32deab4a9ccc778617e86aa5993498cddbbf41a41cc9e5292394860a3ec1d1e2",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-qwen--qwen2-5-72b-instruct-bfe09cff8db9.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-qwen--qwen3-0-6b-f44a5ad67d37",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-qwen--qwen3-0-6b-f44a5ad67d37.tar.zst.part-0001",
+          "bytes": 133796,
+          "sha256": "93a3c966eeff9031665711dabfc4f07bdfec4c6f433a6243f1a440a2f54e83d5",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-qwen--qwen3-0-6b-f44a5ad67d37.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 33,
+      "raw_bytes": 14835019,
+      "manifest_name": "PMBench-runs-core-four-qwen--qwen3-0-6b-f44a5ad67d37.manifest.json",
+      "manifest_sha256": "7dbfd7cbe7805857ef759253f797ac317e6af458ced69840d60958c9a4316742",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-qwen--qwen3-0-6b-f44a5ad67d37.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-qwen--qwen3-1-7b-95089a3b7c80",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-qwen--qwen3-1-7b-95089a3b7c80.tar.zst.part-0001",
+          "bytes": 178362,
+          "sha256": "25c60c81e45f4b31aba298034f6b31698380ba6943d6db93815a15f1e2145364",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-qwen--qwen3-1-7b-95089a3b7c80.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 33,
+      "raw_bytes": 31094872,
+      "manifest_name": "PMBench-runs-core-four-qwen--qwen3-1-7b-95089a3b7c80.manifest.json",
+      "manifest_sha256": "adc6a7e32abdaf953775065af0739db5cf2c4f1f060245e22dd21c029ffbc57d",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-qwen--qwen3-1-7b-95089a3b7c80.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-qwen--qwen3-32b-473c38ffff58",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-qwen--qwen3-32b-473c38ffff58.tar.zst.part-0001",
+          "bytes": 147066,
+          "sha256": "00e628f36983e3a68469d9d9740999ebde8b58827d2d618a5e1a5902d79bceef",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-qwen--qwen3-32b-473c38ffff58.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 33,
+      "raw_bytes": 18955649,
+      "manifest_name": "PMBench-runs-core-four-qwen--qwen3-32b-473c38ffff58.manifest.json",
+      "manifest_sha256": "791e05bcfaebc69d5c4769f228be76469de65cf4ffa89bef6d6795791467573b",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-qwen--qwen3-32b-473c38ffff58.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-qwen--qwen3-4b-b9b5f926c684",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-qwen--qwen3-4b-b9b5f926c684.tar.zst.part-0001",
+          "bytes": 124052,
+          "sha256": "03224ce9858d96d29a0c0fe4ba7c4eb802b50109fe4736ed8ebb382d3682ed29",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-qwen--qwen3-4b-b9b5f926c684.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 33,
+      "raw_bytes": 14725133,
+      "manifest_name": "PMBench-runs-core-four-qwen--qwen3-4b-b9b5f926c684.manifest.json",
+      "manifest_sha256": "1f60bd08792f29468cee330fd605cea24846ce37b2d27c8cf75616507ad34fe9",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-qwen--qwen3-4b-b9b5f926c684.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-qwen--qwen3-8b-efe90eabe8a2",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-qwen--qwen3-8b-efe90eabe8a2.tar.zst.part-0001",
+          "bytes": 175471,
+          "sha256": "f1712468e8dc2bc235cef27bdd0c82f649d83a5f4f3e78f799e8c1b96555009c",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-qwen--qwen3-8b-efe90eabe8a2.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 33,
+      "raw_bytes": 17955282,
+      "manifest_name": "PMBench-runs-core-four-qwen--qwen3-8b-efe90eabe8a2.manifest.json",
+      "manifest_sha256": "f4b811260da750d7b57c2cb6e9cab21486088b73d6c5c336995808add5a962bd",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-qwen--qwen3-8b-efe90eabe8a2.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-results-csv-f9e8f50cb38f",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-results-csv-f9e8f50cb38f.tar.zst.part-0001",
+          "bytes": 1889,
+          "sha256": "b7f4429e81d33ad74194163b624f81abcad3190ad5275ebd85ed2ca6ea8fb5e3",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-results-csv-f9e8f50cb38f.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 5189,
+      "manifest_name": "PMBench-runs-core-four-results-csv-f9e8f50cb38f.manifest.json",
+      "manifest_sha256": "1e4052eba9527f96fa878745736e2a75c74b654ac2992a23996a9e5d0abdede8",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-results-csv-f9e8f50cb38f.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-core-four-results-json-96ce31415866",
+      "parts": [
+        {
+          "name": "PMBench-runs-core-four-results-json-96ce31415866.tar.zst.part-0001",
+          "bytes": 2767,
+          "sha256": "472d4ca4a290443335a54aceef5d99895cc9af89fa1321bd417d05be833ee9c0",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-results-json-96ce31415866.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 17431,
+      "manifest_name": "PMBench-runs-core-four-results-json-96ce31415866.manifest.json",
+      "manifest_sha256": "601a44e818d94ae8767f7729a285ba59d8a9e36a44b282ab2443c74ca5d2ff76",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-core-four-results-json-96ce31415866.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-jobs-b0d6614c71a7",
+      "parts": [
+        {
+          "name": "PMBench-runs-jobs-b0d6614c71a7.tar.zst.part-0001",
+          "bytes": 342913,
+          "sha256": "d8151b9056af58e5a16551d0e16df50438231a262fdc04e158c0bca1a44432f9",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-jobs-b0d6614c71a7.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 28,
+      "raw_bytes": 6549177,
+      "manifest_name": "PMBench-runs-jobs-b0d6614c71a7.manifest.json",
+      "manifest_sha256": "efef6340af522dc10df7140d3ec52f5f6b87fce51ad96cfeaf53699f9452e9d3",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-jobs-b0d6614c71a7.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-servers-86b89590458d",
+      "parts": [
+        {
+          "name": "PMBench-runs-servers-86b89590458d.tar.zst.part-0001",
+          "bytes": 41661,
+          "sha256": "5f81fe6373ce42f4d5578e6f7592d6b5b837a153b6fa2d00af1d7e92eb7a9f1e",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-servers-86b89590458d.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 22,
+      "raw_bytes": 1228401,
+      "manifest_name": "PMBench-runs-servers-86b89590458d.manifest.json",
+      "manifest_sha256": "b23f7b50da0039f150202b6db35c81fc6f64b94b9cf5e20d4a0d49544677b695",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-servers-86b89590458d.manifest.json"
+    },
+    {
+      "group": "PMBench-runs-setup-902ec834f3d3",
+      "parts": [
+        {
+          "name": "PMBench-runs-setup-902ec834f3d3.tar.zst.part-0001",
+          "bytes": 17311,
+          "sha256": "5bd89edb519cb063207a0b080370a758ccc4cb30f8aa465ddca80a656e9f2aae",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-setup-902ec834f3d3.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 17,
+      "raw_bytes": 89824,
+      "manifest_name": "PMBench-runs-setup-902ec834f3d3.manifest.json",
+      "manifest_sha256": "b49e84be79cd7f89329f14059a556201d6355b2d14fa1005cb620e9dda7633bb",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/PMBench-runs-setup-902ec834f3d3.manifest.json"
+    },
+    {
+      "group": "benchmark-runs-all-results-v9-3ce6ef4cb07c",
+      "parts": [
+        {
+          "name": "benchmark-runs-all-results-v9-3ce6ef4cb07c.tar.zst.part-0001",
+          "bytes": 137368,
+          "sha256": "816054b7300f19bcc7d06173004c20bfbd4bd6933c2b0be0753faf364077e8c5",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/benchmark-runs-all-results-v9-3ce6ef4cb07c.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 138,
+      "raw_bytes": 2273023,
+      "manifest_name": "benchmark-runs-all-results-v9-3ce6ef4cb07c.manifest.json",
+      "manifest_sha256": "e639ebe59c8672295c7b6e94a095d928588857fa83547da1befb3e8dbeb05927",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/benchmark-runs-all-results-v9-3ce6ef4cb07c.manifest.json"
+    },
+    {
+      "group": "data-PMBench-runs-9b9b108aea83",
+      "parts": [
+        {
+          "name": "data-PMBench-runs-9b9b108aea83.tar.zst.part-0001",
+          "bytes": 27162670,
+          "sha256": "f1b41a0922b320572b10c4011d932677f33a789e80ea212c6014ba9772572e3f",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/data-PMBench-runs-9b9b108aea83.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 753,
+      "raw_bytes": 1116705433,
+      "manifest_name": "data-PMBench-runs-9b9b108aea83.manifest.json",
+      "manifest_sha256": "e312e33d65300270c52860c97473a64df07d1f5dbeaeac65bb943418670a2c6b",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/data-PMBench-runs-9b9b108aea83.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-jobs-41bc7ecf9042",
+      "parts": [
+        {
+          "name": "experiments-rgpm-jobs-41bc7ecf9042.tar.zst.part-0001",
+          "bytes": 92643508,
+          "sha256": "9d46fc682b342f19825e967c1523209130f9808087dd3dc4dbc820672b155818",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-jobs-41bc7ecf9042.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 23932,
+      "raw_bytes": 1114122605,
+      "manifest_name": "experiments-rgpm-jobs-41bc7ecf9042.manifest.json",
+      "manifest_sha256": "5b85a3f6ec1602688a6f5880f94dde52a8c7feec23ffa4d9eef356f8443e30e0",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-jobs-41bc7ecf9042.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-jobs-archived-20261007-18d2772aff0e",
+      "parts": [
+        {
+          "name": "experiments-rgpm-jobs-archived-20261007-18d2772aff0e.tar.zst.part-0001",
+          "bytes": 7914897,
+          "sha256": "b9210318f729e4794e67ef4ba7ee118662c293f17f9aac5972632c24ae55c2c9",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-jobs-archived-20261007-18d2772aff0e.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 2058,
+      "raw_bytes": 97706544,
+      "manifest_name": "experiments-rgpm-jobs-archived-20261007-18d2772aff0e.manifest.json",
+      "manifest_sha256": "8851e18ae0c0cc8c8ed4642c26f6034e28c6f4a667deb71e248ea2b9e5830c9a",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-jobs-archived-20261007-18d2772aff0e.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-legacy-outputs-archived-20261001-4acf40c953ee",
+      "parts": [
+        {
+          "name": "experiments-rgpm-legacy-outputs-archived-20261001-4acf40c953ee.tar.zst.part-0001",
+          "bytes": 1502464,
+          "sha256": "eb094ac277f0e9402b85d457de3146e8c0b107a8de6eb679acf9cf23372fb3ce",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-legacy-outputs-archived-20261001-4acf40c953ee.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 272,
+      "raw_bytes": 212464393,
+      "manifest_name": "experiments-rgpm-legacy-outputs-archived-20261001-4acf40c953ee.manifest.json",
+      "manifest_sha256": "e14dbc78f2caef62158a75786df6b096241fd0510548b6eda171badb6a7f7a73",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-legacy-outputs-archived-20261001-4acf40c953ee.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-balanced-20261002-25a58473ba1c",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-balanced-20261002-25a58473ba1c.tar.zst.part-0001",
+          "bytes": 235652,
+          "sha256": "a901949d7ca48cabd9a72f48cf405dac229eb3f98390ff7383efca6f14ac246f",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-balanced-20261002-25a58473ba1c.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 76,
+      "raw_bytes": 2545698,
+      "manifest_name": "experiments-rgpm-preflight-balanced-20261002-25a58473ba1c.manifest.json",
+      "manifest_sha256": "183509bb4af925d51cd5d1f23cdd61f2418b72f8fdef24dfd55b5b6b0036d6c3",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-balanced-20261002-25a58473ba1c.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-consolidated-20261014-v1-0a9d04fc0dd6",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-consolidated-20261014-v1-0a9d04fc0dd6.tar.zst.part-0001",
+          "bytes": 273239,
+          "sha256": "5868871e63c0d811645efc1675a7ee98dc8c33e9b9c4820e1e8f4999967155b4",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v1-0a9d04fc0dd6.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 91,
+      "raw_bytes": 2935848,
+      "manifest_name": "experiments-rgpm-preflight-consolidated-20261014-v1-0a9d04fc0dd6.manifest.json",
+      "manifest_sha256": "1edc0bb389d0e66cf10aa84cae071304fdc7b9eb1683e2972a3fa11ea825dcb9",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v1-0a9d04fc0dd6.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-consolidated-20261014-v10-3f0182be7275",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-consolidated-20261014-v10-3f0182be7275.tar.zst.part-0001",
+          "bytes": 280791,
+          "sha256": "d1ab36e901b08e14d48029bc20370bbacace96e11608d8044d33a8268fc9b2b0",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v10-3f0182be7275.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 91,
+      "raw_bytes": 3184511,
+      "manifest_name": "experiments-rgpm-preflight-consolidated-20261014-v10-3f0182be7275.manifest.json",
+      "manifest_sha256": "01ea851944b45c2d08c0806669a7bdedc0809cf79a55e71b93cf2014cf986dd2",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v10-3f0182be7275.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-consolidated-20261014-v11-78ac1cf29601",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-consolidated-20261014-v11-78ac1cf29601.tar.zst.part-0001",
+          "bytes": 288218,
+          "sha256": "b59effb78e88f7445f9ed341479026f4acea1a2ff2e9dc0cfb55f3b25a9ad0bf",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v11-78ac1cf29601.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 91,
+      "raw_bytes": 3190852,
+      "manifest_name": "experiments-rgpm-preflight-consolidated-20261014-v11-78ac1cf29601.manifest.json",
+      "manifest_sha256": "0f57547f16c2ba43a771968460c831cfe848bd6c7f7ec30768b8c8fa8a04cb42",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v11-78ac1cf29601.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-consolidated-20261014-v12-98a2e14657c5",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-consolidated-20261014-v12-98a2e14657c5.tar.zst.part-0001",
+          "bytes": 288117,
+          "sha256": "b7143e588dee52a42aca83ddb44a2537e63c8e99dc8e16043dc785f3d2bc46fa",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v12-98a2e14657c5.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 91,
+      "raw_bytes": 3191505,
+      "manifest_name": "experiments-rgpm-preflight-consolidated-20261014-v12-98a2e14657c5.manifest.json",
+      "manifest_sha256": "db7b7eea5f3503c422064de61e1d6e915a7f36c9f3de9e10d9cc2d28be866be1",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v12-98a2e14657c5.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-consolidated-20261014-v2-7dc0f7549d8d",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-consolidated-20261014-v2-7dc0f7549d8d.tar.zst.part-0001",
+          "bytes": 273403,
+          "sha256": "de08f27129905fa2e076e66430bc1fdacae74c6bafc4381dd94ee5cf9056dbfe",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v2-7dc0f7549d8d.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 91,
+      "raw_bytes": 2938602,
+      "manifest_name": "experiments-rgpm-preflight-consolidated-20261014-v2-7dc0f7549d8d.manifest.json",
+      "manifest_sha256": "318d536c855a82b8837c3ac741a1449c2c1d5017e29b1a298e929aaea78c1bfb",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v2-7dc0f7549d8d.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-consolidated-20261014-v3-b44ae8f2ed1c",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-consolidated-20261014-v3-b44ae8f2ed1c.tar.zst.part-0001",
+          "bytes": 271869,
+          "sha256": "50585d3ace3d746bcf76045d46e67ea10150cd2ecf6167e55091f1d4bcaf391d",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v3-b44ae8f2ed1c.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 91,
+      "raw_bytes": 2937697,
+      "manifest_name": "experiments-rgpm-preflight-consolidated-20261014-v3-b44ae8f2ed1c.manifest.json",
+      "manifest_sha256": "b6f958f4972d31e46108ace431ae92204d3ad4d68fb1c70e0b8603935b5bcbbe",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v3-b44ae8f2ed1c.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-consolidated-20261014-v4-a73a6c4637e1",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-consolidated-20261014-v4-a73a6c4637e1.tar.zst.part-0001",
+          "bytes": 275350,
+          "sha256": "25ef29842486449dba6cad37edbbb60e305d7678f70fca4cfacbf651be5fd0cd",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v4-a73a6c4637e1.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 91,
+      "raw_bytes": 2951416,
+      "manifest_name": "experiments-rgpm-preflight-consolidated-20261014-v4-a73a6c4637e1.manifest.json",
+      "manifest_sha256": "628e36906f94481c2865594c5de59baf888c9f5204083bcea73ea780f3aa54cd",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v4-a73a6c4637e1.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-consolidated-20261014-v5-76f72588e6be",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-consolidated-20261014-v5-76f72588e6be.tar.zst.part-0001",
+          "bytes": 280106,
+          "sha256": "8e0ad49f5f37c8e9056f7fadb4e8c1dad9b7f9d5acebe61724d4c118db41b10a",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v5-76f72588e6be.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 91,
+      "raw_bytes": 3100996,
+      "manifest_name": "experiments-rgpm-preflight-consolidated-20261014-v5-76f72588e6be.manifest.json",
+      "manifest_sha256": "f80be9011aecfbb70d4893ee2b312bc76e0443e7d8560911bad313c4a6fa2efb",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v5-76f72588e6be.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-consolidated-20261014-v6-d71dc598615b",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-consolidated-20261014-v6-d71dc598615b.tar.zst.part-0001",
+          "bytes": 281631,
+          "sha256": "7d0d905a091480a58fd507a57d23dc5690b3539acae65ab239d7491fec0679d0",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v6-d71dc598615b.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 91,
+      "raw_bytes": 3114619,
+      "manifest_name": "experiments-rgpm-preflight-consolidated-20261014-v6-d71dc598615b.manifest.json",
+      "manifest_sha256": "757f205d9d787329b73001af250de5acf1df56e5d5984814df8cc9e59994d9d7",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v6-d71dc598615b.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-consolidated-20261014-v7-2fe3cd32f67b",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-consolidated-20261014-v7-2fe3cd32f67b.tar.zst.part-0001",
+          "bytes": 281567,
+          "sha256": "3a576d5349764553f4d5a6897db983a53f59dc974c1e5389ac8fdc2d86684d1d",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v7-2fe3cd32f67b.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 91,
+      "raw_bytes": 3112881,
+      "manifest_name": "experiments-rgpm-preflight-consolidated-20261014-v7-2fe3cd32f67b.manifest.json",
+      "manifest_sha256": "6bca5bf4f7a440118bd14d84ec7e28005c5b168913e97e2c45ddfb7ef46bea49",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v7-2fe3cd32f67b.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-consolidated-20261014-v8-0095381032fe",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-consolidated-20261014-v8-0095381032fe.tar.zst.part-0001",
+          "bytes": 281386,
+          "sha256": "444d993596a0a97300e438546f40fa3ef1bd6eddb53698d94728a4ab510a7200",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v8-0095381032fe.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 91,
+      "raw_bytes": 3123824,
+      "manifest_name": "experiments-rgpm-preflight-consolidated-20261014-v8-0095381032fe.manifest.json",
+      "manifest_sha256": "1647327b61390969516ca78cf5ca5a6e7bbc86b0efc306337676341390d4bde7",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v8-0095381032fe.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-consolidated-20261014-v9-aeca59b3a3b1",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-consolidated-20261014-v9-aeca59b3a3b1.tar.zst.part-0001",
+          "bytes": 282403,
+          "sha256": "9759f7ef8f2602b0cbdb6154028dc4213fa1c18fc389e953739c9b482deb732f",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v9-aeca59b3a3b1.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 91,
+      "raw_bytes": 3125007,
+      "manifest_name": "experiments-rgpm-preflight-consolidated-20261014-v9-aeca59b3a3b1.manifest.json",
+      "manifest_sha256": "e0cbc9c9e20c81593c36e15b90be3037b42f283566ec23ca707ab3363c34682b",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-consolidated-20261014-v9-aeca59b3a3b1.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-gpt-launch-20261015-v1-861c3f081dff",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-gpt-launch-20261015-v1-861c3f081dff.tar.zst.part-0001",
+          "bytes": 286351,
+          "sha256": "80b9b8f5d11aea639829378967a642edc17b3b559dcbeb245f229f8b1a05a323",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-gpt-launch-20261015-v1-861c3f081dff.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 93,
+      "raw_bytes": 3195170,
+      "manifest_name": "experiments-rgpm-preflight-gpt-launch-20261015-v1-861c3f081dff.manifest.json",
+      "manifest_sha256": "af7ad30ec9323829bd6ef14ab2b021ad5616cf7953eb97aa48982cce8c2c5a3f",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-gpt-launch-20261015-v1-861c3f081dff.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-local-updated-20261001-c8cded319adc",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-local-updated-20261001-c8cded319adc.tar.zst.part-0001",
+          "bytes": 231001,
+          "sha256": "8bf933fc64ea6244bdba7d05b54ace2bb75451e9492df4219ec7fb9ba480a493",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-local-updated-20261001-c8cded319adc.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 74,
+      "raw_bytes": 2520210,
+      "manifest_name": "experiments-rgpm-preflight-local-updated-20261001-c8cded319adc.manifest.json",
+      "manifest_sha256": "2b80ac30fe7e4359632befab4fe33fadf2c7b30781b951faa1fd80d75e5a8fcd",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-local-updated-20261001-c8cded319adc.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-precision-20261002-12b82ca22d80",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-precision-20261002-12b82ca22d80.tar.zst.part-0001",
+          "bytes": 233292,
+          "sha256": "8785a810b8091c23703b4100f8b5ce902f4eec3dac79bcfaf9c28cca924df87b",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-precision-20261002-12b82ca22d80.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 76,
+      "raw_bytes": 2554122,
+      "manifest_name": "experiments-rgpm-preflight-precision-20261002-12b82ca22d80.manifest.json",
+      "manifest_sha256": "41a78089845a71103a9dd7f4ba3dfed1203b2226d3bc6fb8312af78dbdfd4105",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-precision-20261002-12b82ca22d80.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-query-first-20261015-v1-88953f6818fc",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-query-first-20261015-v1-88953f6818fc.tar.zst.part-0001",
+          "bytes": 291377,
+          "sha256": "ca321a98b931877fc8369f8a5c2adeb50c5d78acf9fdbdc1e08d296ece84e3e6",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-query-first-20261015-v1-88953f6818fc.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 95,
+      "raw_bytes": 3219258,
+      "manifest_name": "experiments-rgpm-preflight-query-first-20261015-v1-88953f6818fc.manifest.json",
+      "manifest_sha256": "058b4fe44280677a7bdcf3fdac77e08f97219d68b332e684923cffe5d7fe913c",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-query-first-20261015-v1-88953f6818fc.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-query-first-20261015-v2-722ae7f29f44",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-query-first-20261015-v2-722ae7f29f44.tar.zst.part-0001",
+          "bytes": 290905,
+          "sha256": "14fabffec8191da4092a0991feb24b0ea6092013f7c1bf738338079f51c8b972",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-query-first-20261015-v2-722ae7f29f44.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 95,
+      "raw_bytes": 3217483,
+      "manifest_name": "experiments-rgpm-preflight-query-first-20261015-v2-722ae7f29f44.manifest.json",
+      "manifest_sha256": "199cd683cd3cfa4b6e62d7ba73d0bbefbc501065d85b3edef6861e9f0dd2f12f",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-query-first-20261015-v2-722ae7f29f44.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-query-first-20261015-v3-4934b7ab45e0",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-query-first-20261015-v3-4934b7ab45e0.tar.zst.part-0001",
+          "bytes": 290645,
+          "sha256": "e1ac6e815d9a25dab535e5988c6e3785b6ea42a635ed40b2335ad309d8251624",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-query-first-20261015-v3-4934b7ab45e0.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 95,
+      "raw_bytes": 3218006,
+      "manifest_name": "experiments-rgpm-preflight-query-first-20261015-v3-4934b7ab45e0.manifest.json",
+      "manifest_sha256": "eda5348a45964b9e67d9ebdf4e8d9a18b42b3ceadbe6e5d9ee1363c93dfc6fb7",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-query-first-20261015-v3-4934b7ab45e0.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-query-first-20261015-v4-0d8364147382",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-query-first-20261015-v4-0d8364147382.tar.zst.part-0001",
+          "bytes": 294945,
+          "sha256": "cdc97d92ce0b3019dce8060b0b0c9c0e0c134515b76cdece9b25e3106d551a80",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-query-first-20261015-v4-0d8364147382.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 95,
+      "raw_bytes": 3218391,
+      "manifest_name": "experiments-rgpm-preflight-query-first-20261015-v4-0d8364147382.manifest.json",
+      "manifest_sha256": "69a276b99c84fad7104a99680518a47ea948b53f164ae0ffb8b52cd5366669ae",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-query-first-20261015-v4-0d8364147382.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-query-recovery-20261002-90eaece3e146",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-query-recovery-20261002-90eaece3e146.tar.zst.part-0001",
+          "bytes": 235015,
+          "sha256": "ef46ab6c09f7344ba8fa4618142746386905833d50f3c7f4f3f48893e61582c2",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-query-recovery-20261002-90eaece3e146.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 76,
+      "raw_bytes": 2548132,
+      "manifest_name": "experiments-rgpm-preflight-query-recovery-20261002-90eaece3e146.manifest.json",
+      "manifest_sha256": "2a11a04adb6374b50be3512ab8f9d9c4b7aa2e91b0d1a0e90dcedf229c8bfb4f",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-query-recovery-20261002-90eaece3e146.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-registration-repair-20261015-v1-c865391f97c4",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-registration-repair-20261015-v1-c865391f97c4.tar.zst.part-0001",
+          "bytes": 308169,
+          "sha256": "fc2098d2c1b37fade4bb470f5b2ec459665fd830450579cae6b9bf79bd3e01b5",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-registration-repair-20261015-v1-c865391f97c4.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 100,
+      "raw_bytes": 3371685,
+      "manifest_name": "experiments-rgpm-preflight-registration-repair-20261015-v1-c865391f97c4.manifest.json",
+      "manifest_sha256": "c4c04d95515a9a5fb84e91ef534fd459105653439db06920a174ed8e7a7f8bc5",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-registration-repair-20261015-v1-c865391f97c4.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-preflight-source-routing-20261014-d5e08f7a47af",
+      "parts": [
+        {
+          "name": "experiments-rgpm-preflight-source-routing-20261014-d5e08f7a47af.tar.zst.part-0001",
+          "bytes": 242820,
+          "sha256": "697825f88e08e4e35a81cc9d2778bf7c65f4e426dc56ef1f9404fc6b0d259e31",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-source-routing-20261014-d5e08f7a47af.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 79,
+      "raw_bytes": 2494763,
+      "manifest_name": "experiments-rgpm-preflight-source-routing-20261014-d5e08f7a47af.manifest.json",
+      "manifest_sha256": "843f6bba09ace806fd6de70c9be8ca1b13a09280ef1ed63fd908526db75ee97b",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-preflight-source-routing-20261014-d5e08f7a47af.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-archived-20261007-06db89d5557e",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-archived-20261007-06db89d5557e.tar.zst.part-0001",
+          "bytes": 374623177,
+          "sha256": "6d0dae22aa446f6b263ca919e74a40acec7d7870f7a792402318b9de78798520",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-archived-20261007-06db89d5557e.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 4562,
+      "raw_bytes": 8767844736,
+      "manifest_name": "experiments-rgpm-runs-archived-20261007-06db89d5557e.manifest.json",
+      "manifest_sha256": "d63acf7c04093c39e4c9e2af1dfda304dbc3157c6a7b77eebbcca87ad9fffe71",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-archived-20261007-06db89d5557e.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-gpt-actor-anchor-helpers-RESULTS-md-da850f9558dd",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-gpt-actor-anchor-helpers-RESULTS-md-da850f9558dd.tar.zst.part-0001",
+          "bytes": 2091,
+          "sha256": "29df449d76955a7b281759844ede49ba1ee7852c0a1687880f71a5b370e732e1",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-gpt-actor-anchor-helpers-RESULTS-md-da850f9558dd.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 3529,
+      "manifest_name": "experiments-rgpm-runs-gpt-actor-anchor-helpers-RESULTS-md-da850f9558dd.manifest.json",
+      "manifest_sha256": "9907e46b7445e4ff1313962cad5677f0e0819cb3dc9aeacd8c1a8f469435fc65",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-gpt-actor-anchor-helpers-RESULTS-md-da850f9558dd.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-32b-11e6735a2766",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-32b-11e6735a2766.tar.zst.part-0001",
+          "bytes": 9050700,
+          "sha256": "273e3d05c7288cb6e76ccc175dc282209e5b01efa8458e5e3aa04fa45026270f",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-32b-11e6735a2766.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 259631230,
+      "manifest_name": "experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-32b-11e6735a2766.manifest.json",
+      "manifest_sha256": "535e709fb21c67c9c102e37e8be1b4795648e7de00bf78e62b459809405c2013",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-32b-11e6735a2766.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-4b-aff6f6ef99e6",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-4b-aff6f6ef99e6.tar.zst.part-0001",
+          "bytes": 11474548,
+          "sha256": "c2549aa12cdf4334ed4e9c5deb26b2692e00e3ea00dc451b6e4126ae4ed3d8a2",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-4b-aff6f6ef99e6.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 252150155,
+      "manifest_name": "experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-4b-aff6f6ef99e6.manifest.json",
+      "manifest_sha256": "a240a29ff5ba33324033ce46718d503b9d928304039fbab7628089aede15bd68",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-4b-aff6f6ef99e6.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-8b-d3b212f9690b",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-8b-d3b212f9690b.tar.zst.part-0001",
+          "bytes": 11906060,
+          "sha256": "fcd75ce3336eac66b5a9b7fe98d8cebb78df825fa3a6c5f803050bb78a261ce4",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-8b-d3b212f9690b.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 293824051,
+      "manifest_name": "experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-8b-d3b212f9690b.manifest.json",
+      "manifest_sha256": "ddfdff0f03be445fe985aac30855fc115dae29c5b006c08d45674872e04b0e38",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-gpt-actor-anchor-helpers-gpt-5-4-helper-qwen3-8b-d3b212f9690b.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-query-first-v1-gpt-5-4-helper-qwen3-8b-ba39abad5a70",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-query-first-v1-gpt-5-4-helper-qwen3-8b-ba39abad5a70.tar.zst.part-0001",
+          "bytes": 46105653,
+          "sha256": "3e62f71009a91aa34bbe83de9cfb4fb82b8eb00384c4722e35a643f26fbaba26",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-query-first-v1-gpt-5-4-helper-qwen3-8b-ba39abad5a70.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 179,
+      "raw_bytes": 1263976101,
+      "manifest_name": "experiments-rgpm-runs-query-first-v1-gpt-5-4-helper-qwen3-8b-ba39abad5a70.manifest.json",
+      "manifest_sha256": "a119ab3d7fef2d2e11f21c8d83e4aa501fc6872b69af70ced58bedc01d94c171",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-query-first-v1-gpt-5-4-helper-qwen3-8b-ba39abad5a70.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-0de30c74c2b9",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-0de30c74c2b9.tar.zst.part-0001",
+          "bytes": 198325325,
+          "sha256": "b205f30e356fb5cdf8dcc44ab67fdc0f7e47d21de355c1be5d64d1de37a8887b",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-0de30c74c2b9.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 249,
+      "raw_bytes": 3351194975,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-0de30c74c2b9.manifest.json",
+      "manifest_sha256": "2a80a36dc3fea18cc9c0ae7eda1273593551f382b55429c5743048bc6e88d23e",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-0de30c74c2b9.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-21907f639f3a",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-21907f639f3a.tar.zst.part-0001",
+          "bytes": 168092429,
+          "sha256": "73b846300f54e3f8fd6d259df592569ebc7deb3df837921a6faa000897785203",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-21907f639f3a.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 249,
+      "raw_bytes": 3720490537,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-21907f639f3a.manifest.json",
+      "manifest_sha256": "aba8e0b13600394f3ebdfb325a4216fb603b1beb1e0865bf40b54d3a5489e60a",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-21907f639f3a.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-2ceacc14309a",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-2ceacc14309a.tar.zst.part-0001",
+          "bytes": 165315395,
+          "sha256": "41dd28abe3e2ce6dc11f5a5b2cbabbe2982844de2cf035721db3cd2091cce792",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-2ceacc14309a.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 249,
+      "raw_bytes": 3877837011,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-2ceacc14309a.manifest.json",
+      "manifest_sha256": "3181870135bef9f7e5eb8c7a8b5cd8ff14276b16e40c845e31fb8162f14e16fa",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-3b-instruct-2512-bf16-helper-2ceacc14309a.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-0650d2b1b7f7",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-0650d2b1b7f7.tar.zst.part-0001",
+          "bytes": 157121885,
+          "sha256": "690e66f243c0816529310bc20384a3879b75736e8e0405e2d8f3433a754ad53f",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-0650d2b1b7f7.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 249,
+      "raw_bytes": 3853239208,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-0650d2b1b7f7.manifest.json",
+      "manifest_sha256": "89956cc8d911dea714672d5293c9e7b5681003e0beef18ca1f8248783ba21f83",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-0650d2b1b7f7.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-400e59e4d67f",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-400e59e4d67f.tar.zst.part-0001",
+          "bytes": 212797855,
+          "sha256": "4b1f6c76aeed506214b772d91ce6ad934532c6495578806f41aa9a57c24dd42e",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-400e59e4d67f.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 249,
+      "raw_bytes": 3664676261,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-400e59e4d67f.manifest.json",
+      "manifest_sha256": "bb145b8f446b7069aa0273c939183cb0a540696d868ddc819bb8a2352215beea",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-400e59e4d67f.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-a149e62bf4d4",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-a149e62bf4d4.tar.zst.part-0001",
+          "bytes": 168960921,
+          "sha256": "c122a8767e3d2c23f430231b65f955b6cf68d0374292fc37e4f51589d8dc5ab3",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-a149e62bf4d4.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 249,
+      "raw_bytes": 3973141355,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-a149e62bf4d4.manifest.json",
+      "manifest_sha256": "5bb630e28b4c9cf9b54103b23609a5ec36044d097e6ad7c924ea1da00c59fc00",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-ministral-3-8b-instruct-2512-bf16-helper-a149e62bf4d4.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-1-7b-61c2fd9362e4",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-1-7b-61c2fd9362e4.tar.zst.part-0001",
+          "bytes": 227724725,
+          "sha256": "683ee2f4756206a94b0b47260b7495af8f90c1503a9bd6567e5ff93803823867",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-1-7b-61c2fd9362e4.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 249,
+      "raw_bytes": 4091814727,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-1-7b-61c2fd9362e4.manifest.json",
+      "manifest_sha256": "225345349993245c6948712f85db7586ec54823617d9800cd42c3753ff11cf9b",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-1-7b-61c2fd9362e4.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-4b-e778d0c850b7",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-4b-e778d0c850b7.tar.zst.part-0001",
+          "bytes": 182028015,
+          "sha256": "159a647d9d254672655aba1689b5ed7437e1676dd0a80d19ce5abba32b5f0982",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-4b-e778d0c850b7.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 249,
+      "raw_bytes": 4616981566,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-4b-e778d0c850b7.manifest.json",
+      "manifest_sha256": "b6b3283e3435db3b55ebf9d86fa0e0159e5f840b8f507ae9a7a2cb0bdd253c3b",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-4b-e778d0c850b7.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-8b-546bd3b3c288",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-8b-546bd3b3c288.tar.zst.part-0001",
+          "bytes": 166188224,
+          "sha256": "7c3d60beceb0f20ec92fa284201ee8036c6a8e4e7c9ae4de404038187878f01d",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-8b-546bd3b3c288.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 249,
+      "raw_bytes": 4316362624,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-8b-546bd3b3c288.manifest.json",
+      "manifest_sha256": "0f4a598c1ceb66ebb725ada6af69098fdaf44c6a25cde84b4907e3b5c3127d0c",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-consistency-20261023-qwen3-32b-helper-qwen3-8b-546bd3b3c288.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-gpt-remaining-helpers-gpt-5-4-helper-qwen3-1-7b-1a2670108805",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-gpt-remaining-helpers-gpt-5-4-helper-qwen3-1-7b-1a2670108805.tar.zst.part-0001",
+          "bytes": 193574501,
+          "sha256": "61ce0b53f8c24d314f16316c8e3498815184bf862342439eeb96a58d5a2a0a6b",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-gpt-remaining-helpers-gpt-5-4-helper-qwen3-1-7b-1a2670108805.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 246,
+      "raw_bytes": 3339917384,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-gpt-remaining-helpers-gpt-5-4-helper-qwen3-1-7b-1a2670108805.manifest.json",
+      "manifest_sha256": "2206823910772d61005d21d912b2266e8b2efd2d7a88fc8bc178da3604c7c532",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-gpt-remaining-helpers-gpt-5-4-helper-qwen3-1-7b-1a2670108805.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-gpt-remaining-helpers-gpt-5-4-helper-qwen3-4b-0fa081fda2f5",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-gpt-remaining-helpers-gpt-5-4-helper-qwen3-4b-0fa081fda2f5.tar.zst.part-0001",
+          "bytes": 134812858,
+          "sha256": "c5f597b80f1e31cb62000e0e6c94c980221486923b7370ad0511c56a7cd82d34",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-gpt-remaining-helpers-gpt-5-4-helper-qwen3-4b-0fa081fda2f5.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 224,
+      "raw_bytes": 3160493709,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-gpt-remaining-helpers-gpt-5-4-helper-qwen3-4b-0fa081fda2f5.manifest.json",
+      "manifest_sha256": "47387e65ee56103687e0090b77943e3c23bafc5e843109ba8a8f7658c251925d",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-gpt-remaining-helpers-gpt-5-4-helper-qwen3-4b-0fa081fda2f5.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-openai-full-gpt-5-4-helper-qwen3-32b-9ffa32cee8c3",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-openai-full-gpt-5-4-helper-qwen3-32b-9ffa32cee8c3.tar.zst.part-0001",
+          "bytes": 163269550,
+          "sha256": "97b59f02fcd380ce230eb1cd47f0453df5a6c401d6560a88869d949c62ceb3c8",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-openai-full-gpt-5-4-helper-qwen3-32b-9ffa32cee8c3.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 242,
+      "raw_bytes": 3709434677,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-openai-full-gpt-5-4-helper-qwen3-32b-9ffa32cee8c3.manifest.json",
+      "manifest_sha256": "c977e125d8bf053badf4ad3112ab3177226152d188d32fc3032089f95093c87e",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-openai-full-gpt-5-4-helper-qwen3-32b-9ffa32cee8c3.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-20261020-qwen3-0-6b-helper-qwen3-32b-73bf331e3c61",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-20261020-qwen3-0-6b-helper-qwen3-32b-73bf331e3c61.tar.zst.part-0001",
+          "bytes": 383543762,
+          "sha256": "b7351bdbf831014bbdaeaee76c3efcfa71be9ccffd8d245bb582867f729255d6",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-20261020-qwen3-0-6b-helper-qwen3-32b-73bf331e3c61.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 15079635461,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-20261020-qwen3-0-6b-helper-qwen3-32b-73bf331e3c61.manifest.json",
+      "manifest_sha256": "c46c36077c3e9dc8158ffe6736ea060df8aec99a2317598432e2d1dbec3e55a4",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-20261020-qwen3-0-6b-helper-qwen3-32b-73bf331e3c61.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-20261020-qwen3-1-7b-helper-qwen3-32b-f65d52ff738c",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-20261020-qwen3-1-7b-helper-qwen3-32b-f65d52ff738c.tar.zst.part-0001",
+          "bytes": 166689546,
+          "sha256": "6d823e142ee175c604bf719fe218c63d1aaea023e36eee512498bc50c6b83a07",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-20261020-qwen3-1-7b-helper-qwen3-32b-f65d52ff738c.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3779656038,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-20261020-qwen3-1-7b-helper-qwen3-32b-f65d52ff738c.manifest.json",
+      "manifest_sha256": "1a45cf3c5bad05923b25ee86085a0f0dc0bd5e0ba535ad28b22e2427536a9782",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-20261020-qwen3-1-7b-helper-qwen3-32b-f65d52ff738c.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--0b3a70d7c595",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--0b3a70d7c595.tar.zst.part-0001",
+          "bytes": 190050575,
+          "sha256": "ba3bc6d7983bc87a430f529c42779b7f960828e1150fa42863187aef560a0838",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--0b3a70d7c595.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3133370162,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--0b3a70d7c595.manifest.json",
+      "manifest_sha256": "1526b07e52b6ec0d2d8888c1e4c260001d02185110b54d3aa1b9b7dbe56817f9",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--0b3a70d7c595.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--74828dc83b6f",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--74828dc83b6f.tar.zst.part-0001",
+          "bytes": 141001157,
+          "sha256": "8149679f0cd4f19cb89984a7a46c63880f79817f27f1941bfb70a22585bb80ad",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--74828dc83b6f.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3215024277,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--74828dc83b6f.manifest.json",
+      "manifest_sha256": "4a3817fb36557157dd1859a4d595f8c14ea862e5006504e75efe5e8a478c6cc4",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--74828dc83b6f.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--7b97a5a685cf",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--7b97a5a685cf.tar.zst.part-0001",
+          "bytes": 150542248,
+          "sha256": "49f883967a00c32e24446dfef574e3944f45e373ae9d07506f0db6a3ca493a83",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--7b97a5a685cf.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3205761927,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--7b97a5a685cf.manifest.json",
+      "manifest_sha256": "687ae038f6c8288c9fce6ba856259abda1b467fcf18e2f1dffabc1ebb8beda8a",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--7b97a5a685cf.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--ac609d9a1c09",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--ac609d9a1c09.tar.zst.part-0001",
+          "bytes": 149377277,
+          "sha256": "b68d41cb18b85efa882ede7b13eea0b05ebac595c80c5c1a77220b963540c241",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--ac609d9a1c09.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3187816737,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--ac609d9a1c09.manifest.json",
+      "manifest_sha256": "4836e9db8e4a49a11eccece6130ce01852a3a3bfe9da4f1183c8fe90e59ca5d2",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-gemma-4-e2b-it-helper--ac609d9a1c09.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-502b00a4e2cf",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-502b00a4e2cf.tar.zst.part-0001",
+          "bytes": 162672985,
+          "sha256": "4c866f02d96ca290dda6cc675212ef206d4a131381e9f12465caabbd9583076e",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-502b00a4e2cf.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3867773165,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-502b00a4e2cf.manifest.json",
+      "manifest_sha256": "86356233bc2982ffd59356d71afb96a7edcde0daff83d7d3c699227e9b5ddaec",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-502b00a4e2cf.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-8b80af414e93",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-8b80af414e93.tar.zst.part-0001",
+          "bytes": 159591917,
+          "sha256": "28334851b3554a7cfda6e49727d1278975994e817073a9150eb144058e4f28fd",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-8b80af414e93.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3712087262,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-8b80af414e93.manifest.json",
+      "manifest_sha256": "b5e2f0039f1e4e4824a8bacc98aa17c0433af905365cdc2c0f5931403f720d32",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-8b80af414e93.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-9c9e7779822a",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-9c9e7779822a.tar.zst.part-0001",
+          "bytes": 227620293,
+          "sha256": "61381fec6291c41a6b4f300cebcca5d30fa87882092d2829e3e0fdbbd2eaff34",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-9c9e7779822a.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 4279698970,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-9c9e7779822a.manifest.json",
+      "manifest_sha256": "bb605df1958ba3f588a54a317bc59fb07abca8f272866d8eca95d52023f1edec",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-9c9e7779822a.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-c80787974963",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-c80787974963.tar.zst.part-0001",
+          "bytes": 162544825,
+          "sha256": "751547fbb2143d5f1855999776e2af28508f0711301a2573d5c53b4ab57dbb49",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-c80787974963.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3922204167,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-c80787974963.manifest.json",
+      "manifest_sha256": "518af9449a8523c12c65315a0709140f5681d2843b9d7710647d668dcfbaa087",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-3b-instruc-c80787974963.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-0c63dfee600e",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-0c63dfee600e.tar.zst.part-0001",
+          "bytes": 156968593,
+          "sha256": "f17e3f9fd489283d7b76ab5577bb17f43507431f435e87dc948fae8a5a7d7b70",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-0c63dfee600e.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3853698641,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-0c63dfee600e.manifest.json",
+      "manifest_sha256": "3d82a0bc86953a439019d0f378666f7bd16fbab11662d75f6ab349018b930ead",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-0c63dfee600e.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-3ca056fc9a89",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-3ca056fc9a89.tar.zst.part-0001",
+          "bytes": 214716472,
+          "sha256": "ee4f2287cb218a51cd270b854b3617febd8647f3e6907b6f9d5845ca00b54a22",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-3ca056fc9a89.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3750560718,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-3ca056fc9a89.manifest.json",
+      "manifest_sha256": "5f03aaa106160c165d1d933021c7a7e61cdabe28fc32225b1aa50a198ccf6429",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-3ca056fc9a89.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-4ac571adf14b",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-4ac571adf14b.tar.zst.part-0001",
+          "bytes": 170859527,
+          "sha256": "9563acbcae330d84d7bdd1dbc6554b34e480de0dbb12094938682d42eda590d6",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-4ac571adf14b.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3980319416,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-4ac571adf14b.manifest.json",
+      "manifest_sha256": "77da931bea88bc4a33c56bf0535bf3623374bfb3f263332ed98079231b294470",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-4ac571adf14b.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-ee3eb0597949",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-ee3eb0597949.tar.zst.part-0001",
+          "bytes": 165033682,
+          "sha256": "ae056f49256795c75b832a49f7798810dd8824e373e3bcd0e65077aea7d14b5e",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-ee3eb0597949.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 246,
+      "raw_bytes": 3742581964,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-ee3eb0597949.manifest.json",
+      "manifest_sha256": "f2d61408ba3f7db952fb34074ef7bc9cc8933d592bf50db5fb654635989ce6c4",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-ministral-3-8b-instruc-ee3eb0597949.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-5e94b002320f",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-5e94b002320f.tar.zst.part-0001",
+          "bytes": 487015325,
+          "sha256": "890fd335b4eb31bf2264d0edca96244da2a39f93300a5c794ff5734db2aa6f2c",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-5e94b002320f.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 18432321063,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-5e94b002320f.manifest.json",
+      "manifest_sha256": "49bd76db6bf34c37b8bfc8b950409ad8c49545ae7590aebd31130c18bc4ee16c",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-5e94b002320f.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-5ec91ac716c2",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-5ec91ac716c2.tar.zst.part-0001",
+          "bytes": 319164427,
+          "sha256": "437dbd39e50df0466df5dd1fde7d9cc3e91d3779892bdfcb3bda99e45fb929e3",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-5ec91ac716c2.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 10650060274,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-5ec91ac716c2.manifest.json",
+      "manifest_sha256": "5eba0d8d4fe660af2d66d9325d8f436c0a0666cbae078cd7927a95e431c5df1c",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-5ec91ac716c2.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-b49e4a25157d",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-b49e4a25157d.tar.zst.part-0001",
+          "bytes": 537071994,
+          "sha256": "fddce5b5b88043b7965402d476c90ee10d9994435d339cc95320b42dbf5db2d4",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-b49e4a25157d.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 25092844503,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-b49e4a25157d.manifest.json",
+      "manifest_sha256": "01cf2e24550eab9a4806a42e8658dc2e27b841a08a06d9372ad8baa101ffb746",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-0-6b-helper-qwen-b49e4a25157d.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-33698c66bd3c",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-33698c66bd3c.tar.zst.part-0001",
+          "bytes": 256563869,
+          "sha256": "c25c23e3edb7cb0fc7f4d9bd38f59892d53c6a2f287d1172a637c6e0217ad95c",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-33698c66bd3c.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 4964805418,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-33698c66bd3c.manifest.json",
+      "manifest_sha256": "1b3936b6737b20bfa9e8ed809ea2edeb0b0260267f984642f2d3c2f5b5ac4f00",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-33698c66bd3c.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-helper-qwen-1bca2bdc13b4",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-helper-qwen-1bca2bdc13b4.tar.zst.part-0001",
+          "bytes": 157111412,
+          "sha256": "88360564fe2e942ecb83da716ab26932d772f2420cc8660929aa20fcd4a1e021",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-helper-qwen-1bca2bdc13b4.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3856671087,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-helper-qwen-1bca2bdc13b4.manifest.json",
+      "manifest_sha256": "1ee0b32a83c725b97eacdd466c0809b0c4796433f540f7d4ff35d1876f6e0c51",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-helper-qwen-1bca2bdc13b4.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-helper-qwen-47454e044774",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-helper-qwen-47454e044774.tar.zst.part-0001",
+          "bytes": 172328170,
+          "sha256": "bfeabdc81e3865a39326c82e2714754185677a1255a26fbf98bbd96b93e60d41",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-helper-qwen-47454e044774.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 4045971108,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-helper-qwen-47454e044774.manifest.json",
+      "manifest_sha256": "894051f7c46c76aa99a833433919ed0f8dc03de3e2fe8df5892b2aa4c07eff93",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-1-7b-helper-qwen-47454e044774.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-1b01de8968b8",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-1b01de8968b8.tar.zst.part-0001",
+          "bytes": 181895726,
+          "sha256": "8f9231019703483dbddbcdd972fc9deda68c46243e92f03aba1329a7755f0a20",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-1b01de8968b8.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 4449525966,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-1b01de8968b8.manifest.json",
+      "manifest_sha256": "dbe6f0d7530b2035a8deae037d997e6b558c5b4d044f7334ebbea8d4e1f0abb0",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-1b01de8968b8.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-40c7a599ddeb",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-40c7a599ddeb.tar.zst.part-0001",
+          "bytes": 92154809,
+          "sha256": "2045c0f016c5e2e5f6d2ac4fa95854b9f2a60158e365cf37c357b7a9595087b9",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-40c7a599ddeb.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 2301645490,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-40c7a599ddeb.manifest.json",
+      "manifest_sha256": "19921f386646601296ca6065521739d76b00f9da9f63359cf66f4f4d08f6c25f",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-40c7a599ddeb.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-4aa4c2ff389f",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-4aa4c2ff389f.tar.zst.part-0001",
+          "bytes": 108229055,
+          "sha256": "ace7a2f075bbda3715c573c2b7ebe65ede8cf2a87d2525d54ff70a5c30876ea2",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-4aa4c2ff389f.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 1969802892,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-4aa4c2ff389f.manifest.json",
+      "manifest_sha256": "224cab12c0dec40a525297e39394cfa606f848f83092330a8c9abef5a55d583d",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-4aa4c2ff389f.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-6119454ec0e6",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-6119454ec0e6.tar.zst.part-0001",
+          "bytes": 89293919,
+          "sha256": "bff6ec234e14488833980c561e706790c3b5ff0d62babaedc287c849eaa4ad7b",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-6119454ec0e6.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 2293424894,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-6119454ec0e6.manifest.json",
+      "manifest_sha256": "221255294d7ba922b61565a9a59c83c419947be05074c8ca24d9b11c764dfbf7",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-32b-helper-qwen3-6119454ec0e6.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-bf53a048ed19",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-bf53a048ed19.tar.zst.part-0001",
+          "bytes": 167807334,
+          "sha256": "59695bde3a1e0e71619c48cad27743a7a47b31381d315080f46d168923ec46f1",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-bf53a048ed19.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3945591276,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-bf53a048ed19.manifest.json",
+      "manifest_sha256": "b07d156a2751924c4d40d506356b456eef1cb21bd7950696d4874e9be27fad23",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-bf53a048ed19.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--1ce05eb595ab",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--1ce05eb595ab.tar.zst.part-0001",
+          "bytes": 202216460,
+          "sha256": "9f8d6602853303012d74bfcd770fa7a62783f524ed783bbb440906cb487f46dd",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--1ce05eb595ab.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3586813585,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--1ce05eb595ab.manifest.json",
+      "manifest_sha256": "953f3dbd47bcbd85c7f3011bef1e6398602cc014d7c0b774d58c5d911b6b6f37",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--1ce05eb595ab.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--557090f4c16d",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--557090f4c16d.tar.zst.part-0001",
+          "bytes": 165012802,
+          "sha256": "9b242ce14bd34a30387fc9226ad483640729b3c46a1824d7b7ecc1e942c6ddd9",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--557090f4c16d.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3742256539,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--557090f4c16d.manifest.json",
+      "manifest_sha256": "cbd754d28038264250e2a5822f29e51e59e9539151fe1b2f7a4e004680959936",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--557090f4c16d.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--a38147440066",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--a38147440066.tar.zst.part-0001",
+          "bytes": 160540526,
+          "sha256": "8e04bb0a65672549d5f4d97aea3e507e2628a4d252b9cfbf6104fdd9f656a9d7",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--a38147440066.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3875512243,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--a38147440066.manifest.json",
+      "manifest_sha256": "2f7eedac95b85d87efc8e7f73b664dbb7254914299bf1971b86dbfc86bed5f1e",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-4b-helper-qwen3--a38147440066.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-9bba8401be7e",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-9bba8401be7e.tar.zst.part-0001",
+          "bytes": 156969933,
+          "sha256": "d63b1cf219c8c22e01e67466b7ffa514c9d342e711cdf05dac474fb33143f9dd",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-9bba8401be7e.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3854526997,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-9bba8401be7e.manifest.json",
+      "manifest_sha256": "d5013d30fd35c9917904b7e313a1bfe2cf040253b4623343ca85c55afa47b88f",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-9bba8401be7e.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--276862282893",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--276862282893.tar.zst.part-0001",
+          "bytes": 169509492,
+          "sha256": "9ee85809ffdb4fe4d5cbb1710e455e0977a6b676fab4b684d7f54998ecf7cab9",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--276862282893.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3974010745,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--276862282893.manifest.json",
+      "manifest_sha256": "273817d95c137eefebb414a719d1a4c2140b2a35705cb17dd360b755fd3c679e",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--276862282893.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--288771c0adcc",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--288771c0adcc.tar.zst.part-0001",
+          "bytes": 164971682,
+          "sha256": "d7400e411988dba69a6a198925c22ae55c058b0da13a981e506a58033c917391",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--288771c0adcc.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3743069288,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--288771c0adcc.manifest.json",
+      "manifest_sha256": "bd78423ee98434f02531463047727484f21e9b3d31dfbc6f6d333d5dedafa401",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--288771c0adcc.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--fa59742e6ebc",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--fa59742e6ebc.tar.zst.part-0001",
+          "bytes": 205177378,
+          "sha256": "ca61b9ebe89b20b9368a1ddefdb6a581cff447ceba4d87785be8560425413a87",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--fa59742e6ebc.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 244,
+      "raw_bytes": 3619748804,
+      "manifest_name": "experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--fa59742e6ebc.manifest.json",
+      "manifest_sha256": "4836cedff11b83eb676dcf1185eb18a51bddd9a4c9bad6b514f646a798010040",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-registration-v15-qwen-four-helpers-report-only-20261021-qwen3-8b-helper-qwen3--fa59742e6ebc.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-ministral-3-3b-instruct-2512-bf16-9f627523ca7c",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-ministral-3-3b-instruct-2512-bf16-9f627523ca7c.tar.zst.part-0001",
+          "bytes": 15228235,
+          "sha256": "855b39ee5c19df8ec56a5c7f881f16bd0bfcfd40cbe2914fe2f9303fd0ae28db",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-ministral-3-3b-instruct-2512-bf16-9f627523ca7c.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 312319018,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-ministral-3-3b-instruct-2512-bf16-9f627523ca7c.manifest.json",
+      "manifest_sha256": "4543129ae052fcdbb05210941dec7e53c47a766e8818218fde7bd4c3fd81cebe",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-ministral-3-3b-instruct-2512-bf16-9f627523ca7c.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-ministral-3-8b-instruct-2512-bf16-d15dde43a97c",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-ministral-3-8b-instruct-2512-bf16-d15dde43a97c.tar.zst.part-0001",
+          "bytes": 13606714,
+          "sha256": "f154628bc1405eb1c51608d1bb1051654a4132e208c2959d8edff10f0d60d966",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-ministral-3-8b-instruct-2512-bf16-d15dde43a97c.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 315213402,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-ministral-3-8b-instruct-2512-bf16-d15dde43a97c.manifest.json",
+      "manifest_sha256": "41d1c337daeb0db8a4e36ae03607f9efef25c2968b175df0d357f1979a485846",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-ministral-3-8b-instruct-2512-bf16-d15dde43a97c.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-32b-e883fa5bcb86",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-32b-e883fa5bcb86.tar.zst.part-0001",
+          "bytes": 19346160,
+          "sha256": "9d9d10a43aaf8dd3fdd70c87b3f28b2bf015ed689b78d9be68563ed04c3dab3c",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-32b-e883fa5bcb86.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 629942234,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-32b-e883fa5bcb86.manifest.json",
+      "manifest_sha256": "80c2a36d1240647387c586320a1f7de0c3129d1bfa7ff2e56b2ef86148aea5bd",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-32b-e883fa5bcb86.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-4b-c9355d5c5310",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-4b-c9355d5c5310.tar.zst.part-0001",
+          "bytes": 34998838,
+          "sha256": "a8d3712e12c2243442ae239f58993e4201df8f22697b9ae307edca51e4c95397",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-4b-c9355d5c5310.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 745931505,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-4b-c9355d5c5310.manifest.json",
+      "manifest_sha256": "096bf53b92d6bef1cf5818bcf2a5ad3c777a16f9cf2a0fe090489ef46494fc15",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-4b-c9355d5c5310.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-8b-6a392ab22934",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-8b-6a392ab22934.tar.zst.part-0001",
+          "bytes": 31618393,
+          "sha256": "f0ffa77c873b2f0f8a8e88f3e720e5b0b49e3454328431e465f56bac04e7c965",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-8b-6a392ab22934.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 792026330,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-8b-6a392ab22934.manifest.json",
+      "manifest_sha256": "4b7e4d6ea2db22d4ed73c8861d465603764f551a3f17e39908570c909a187627",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-gemma-4-e2b-it-helper-qwen3-8b-6a392ab22934.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-llama-3-3-70b-instruct-052e1447d419",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-llama-3-3-70b-instruct-052e1447d419.tar.zst.part-0001",
+          "bytes": 12813208,
+          "sha256": "66784b3ced248270250b6b6d85a26ee678b0341fba173696b8cbc101b7ac642e",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-llama-3-3-70b-instruct-052e1447d419.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 272,
+      "raw_bytes": 400260027,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-llama-3-3-70b-instruct-052e1447d419.manifest.json",
+      "manifest_sha256": "ac895ab4c01c7de683b6f34e093f50570505e5674d047c3a1852cce5a28232f1",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-llama-3-3-70b-instruct-052e1447d419.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-75de839e153e",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-75de839e153e.tar.zst.part-0001",
+          "bytes": 20739129,
+          "sha256": "cbd52ab1b0a5a797b2568b2a20fd26a3247efece0f478f69b6a302e36a0d017f",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-75de839e153e.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 399833254,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-75de839e153e.manifest.json",
+      "manifest_sha256": "c7efa33037ae566bc5868983356f5a4c1c79452af8f40efb303c5aa36521108c",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-75de839e153e.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-ministral-3-8b-inst-4ef2cf5c15c2",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-ministral-3-8b-inst-4ef2cf5c15c2.tar.zst.part-0001",
+          "bytes": 12552130,
+          "sha256": "9e5125c2d05e2deffe2227a51eac6fa66c061ac743e46f096e2523796acb96a4",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-ministral-3-8b-inst-4ef2cf5c15c2.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 303402841,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-ministral-3-8b-inst-4ef2cf5c15c2.manifest.json",
+      "manifest_sha256": "ad06cefd4bd1b0373530d55790ca8d9834cfe75547578d34f08d9e9c9e80c706",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-ministral-3-8b-inst-4ef2cf5c15c2.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-32b-4e9c1a0e51d5",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-32b-4e9c1a0e51d5.tar.zst.part-0001",
+          "bytes": 35762202,
+          "sha256": "4f2b366bcb74b326ba3b93e0507b3a9762e7a3513a5e92ce580159e0859f6035",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-32b-4e9c1a0e51d5.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 1005454144,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-32b-4e9c1a0e51d5.manifest.json",
+      "manifest_sha256": "d0db88e1013874d39b14fb177debdbe4eedacdefb4d4e3ca642005828e948143",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-32b-4e9c1a0e51d5.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-4b-0cb7e348131e",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-4b-0cb7e348131e.tar.zst.part-0001",
+          "bytes": 57050795,
+          "sha256": "01fd1b2ea198206035efb160534abef73d3bbbcfa30a086f6ba45a85f3e5e9b1",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-4b-0cb7e348131e.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 1089082689,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-4b-0cb7e348131e.manifest.json",
+      "manifest_sha256": "aac8c7a384c4cf4c665c7b816b8d5782d23f24fbab8e9c5e3b81aa7e7d09d23a",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-4b-0cb7e348131e.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-8b-1d9c899f4896",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-8b-1d9c899f4896.tar.zst.part-0001",
+          "bytes": 55468706,
+          "sha256": "99b4b46bb590abd40643da7bc04be1d2e90abe2588d109deb803d08a86c0345a",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-8b-1d9c899f4896.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 1277057388,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-8b-1d9c899f4896.manifest.json",
+      "manifest_sha256": "11a2cf0bbab2e90d070eb002b093d0694dc395abbf791f64e6e1223571cc0274",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-3b-instruct-2512-bf16-helper-qwen3-8b-1d9c899f4896.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-1019cebc164a",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-1019cebc164a.tar.zst.part-0001",
+          "bytes": 21485003,
+          "sha256": "d8e15b572402665d04170b34a2419b78e622555f0b111b1db2ae0f70f42fe610",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-1019cebc164a.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 449214784,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-1019cebc164a.manifest.json",
+      "manifest_sha256": "0e2ea7a21815bd4720a3c8736c7cdb36c8e72ed087c61b8a92e5a2d8a9088ea5",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-1019cebc164a.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-ministral-3-3b-inst-15a34e6bcc55",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-ministral-3-3b-inst-15a34e6bcc55.tar.zst.part-0001",
+          "bytes": 37461569,
+          "sha256": "3c7ec096995f47eb264ebc1bf69dc1f040cc42cd7bca06a28edad35adbaee27f",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-ministral-3-3b-inst-15a34e6bcc55.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 614542738,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-ministral-3-3b-inst-15a34e6bcc55.manifest.json",
+      "manifest_sha256": "6f2707f2dde45e15baf6e67f42d1297dad292312c6d9a47f10b4e3e06ce2f4e4",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-ministral-3-3b-inst-15a34e6bcc55.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-32b-8558d2e5aad1",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-32b-8558d2e5aad1.tar.zst.part-0001",
+          "bytes": 32620008,
+          "sha256": "4f3b7caea246e3e7c4f7b3d03a81dc6013107178a4d6630cf5b5601bf8946f12",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-32b-8558d2e5aad1.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 902123140,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-32b-8558d2e5aad1.manifest.json",
+      "manifest_sha256": "60c09c9d5f5edc3dbe764a7f9c55c104def2061e81ca440b1fec400893f1174e",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-32b-8558d2e5aad1.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-4b-c14af7abf275",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-4b-c14af7abf275.tar.zst.part-0001",
+          "bytes": 58897053,
+          "sha256": "65f7a68d667dd49f4e891152c6a97865c4ffa71f5dd9a54d07424ac4cf83e776",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-4b-c14af7abf275.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 1125201047,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-4b-c14af7abf275.manifest.json",
+      "manifest_sha256": "b4f9106fa7597ec7f96f394f5a13d9ac120803493686df45e826ee99f31835a5",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-4b-c14af7abf275.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-8b-73923ba574e5",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-8b-73923ba574e5.tar.zst.part-0001",
+          "bytes": 70343209,
+          "sha256": "9361ed5d970fa402a8dff8e92496dec02d0a5f66212e95ba8933bfeb6ac0cbfb",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-8b-73923ba574e5.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1100,
+      "raw_bytes": 1691158312,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-8b-73923ba574e5.manifest.json",
+      "manifest_sha256": "990706b8f61ac6c37ba6c2b76ce1f4aaeea562dc60494f2ac753313fee478553",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-ministral-3-8b-instruct-2512-bf16-helper-qwen3-8b-73923ba574e5.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen2-5-72b-instruct-e93acff05cda",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen2-5-72b-instruct-e93acff05cda.tar.zst.part-0001",
+          "bytes": 27325774,
+          "sha256": "e24000788f485aee20c96c9e30795a4f540269e4a914defb565f067448acd2cc",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen2-5-72b-instruct-e93acff05cda.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 913011036,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen2-5-72b-instruct-e93acff05cda.manifest.json",
+      "manifest_sha256": "9eac7799b22dd3a8c84115d9e72bed6b86978e21646f1c05cdf43919d16e438a",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen2-5-72b-instruct-e93acff05cda.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-ministral-3-3b-instruct-2512-bf16-102dcb4e4bde",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-ministral-3-3b-instruct-2512-bf16-102dcb4e4bde.tar.zst.part-0001",
+          "bytes": 84062616,
+          "sha256": "0aaf3b0003446b491b02b539804cc10a238540e2556c1f314bb1d634416e526b",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-ministral-3-3b-instruct-2512-bf16-102dcb4e4bde.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 1670784174,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-ministral-3-3b-instruct-2512-bf16-102dcb4e4bde.manifest.json",
+      "manifest_sha256": "a5e774b90f18cda2af5ee239bd11d37160e1668d6ade73b7a5707810e9241c1d",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-ministral-3-3b-instruct-2512-bf16-102dcb4e4bde.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-ministral-3-8b-instruct-2512-bf16-e46a417c72f9",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-ministral-3-8b-instruct-2512-bf16-e46a417c72f9.tar.zst.part-0001",
+          "bytes": 51873215,
+          "sha256": "7fb276123192cd99220b14c487c7a747cba917fd6a170ad6e3669e5ab0121116",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-ministral-3-8b-instruct-2512-bf16-e46a417c72f9.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 1238149313,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-ministral-3-8b-instruct-2512-bf16-e46a417c72f9.manifest.json",
+      "manifest_sha256": "c4e6a449d680d97f1390f4b390b51a6ea8c806f3469e8d30f262cf64415c9646",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-ministral-3-8b-instruct-2512-bf16-e46a417c72f9.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-qwen3-32b-0c8e46b03f36",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-qwen3-32b-0c8e46b03f36.tar.zst.part-0001",
+          "bytes": 59469350,
+          "sha256": "65e9e3add40b5b64d5ca7bb30a4aad03bb8a435cf476746783b2ba8ae2a1d266",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-qwen3-32b-0c8e46b03f36.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 440,
+      "raw_bytes": 2014015203,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-qwen3-32b-0c8e46b03f36.manifest.json",
+      "manifest_sha256": "8b77818a4ccb39e15e10733978ddb969940c1771db2e97a2c37c670bd050c626",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-qwen3-32b-0c8e46b03f36.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-qwen3-8b-55bcde7ce066",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-qwen3-8b-55bcde7ce066.tar.zst.part-0001",
+          "bytes": 143447619,
+          "sha256": "f251c8b40455cd8b71fc3efe9c1d901c594030dfec57f8a62a514534309c71ec",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-qwen3-8b-55bcde7ce066.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 440,
+      "raw_bytes": 3475651438,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-qwen3-8b-55bcde7ce066.manifest.json",
+      "manifest_sha256": "a69e9a38859228e5ed6f983e657563afdebce1ad54e0db6437826d0c7bce57bc",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-0-6b-helper-qwen3-8b-55bcde7ce066.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-ministral-3-3b-instruct-2512-bf16-e94781e5200f",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-ministral-3-3b-instruct-2512-bf16-e94781e5200f.tar.zst.part-0001",
+          "bytes": 36629531,
+          "sha256": "e39d1778fb3767a8efb56160086c0b8a833ac5eca8d6c563fe6909f0f8f9e6f5",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-ministral-3-3b-instruct-2512-bf16-e94781e5200f.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 637585196,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-ministral-3-3b-instruct-2512-bf16-e94781e5200f.manifest.json",
+      "manifest_sha256": "03eca645c1d9c9d9ce6537573c414fc04d257053b56d01e10961b35d8449d7a3",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-ministral-3-3b-instruct-2512-bf16-e94781e5200f.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-ministral-3-8b-instruct-2512-bf16-cad05d65ac79",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-ministral-3-8b-instruct-2512-bf16-cad05d65ac79.tar.zst.part-0001",
+          "bytes": 23313862,
+          "sha256": "33acb58e2902e53a01fd22b7e669f27976a038a86983ac20041018884d8ed539",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-ministral-3-8b-instruct-2512-bf16-cad05d65ac79.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 489598940,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-ministral-3-8b-instruct-2512-bf16-cad05d65ac79.manifest.json",
+      "manifest_sha256": "a27b8a6106b3c076d5492ad73a97c7ccf9c47afa2252288387188bb9c681ee59",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-ministral-3-8b-instruct-2512-bf16-cad05d65ac79.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-32b-1c636849cff8",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-32b-1c636849cff8.tar.zst.part-0001",
+          "bytes": 36171681,
+          "sha256": "d519f7f4a563c361ebface5387cb2d49c68508ad851c5b6518a76dd0674991e8",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-32b-1c636849cff8.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 1251763112,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-32b-1c636849cff8.manifest.json",
+      "manifest_sha256": "f4883feb77365bc5988ab51b21243c529154fb0ea141782b72a40d2b982f5880",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-32b-1c636849cff8.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-4b-816970e74fa2",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-4b-816970e74fa2.tar.zst.part-0001",
+          "bytes": 110149326,
+          "sha256": "0a785da2143f1b488c18ff10b77d2aaceef6b1ee5b183732939be19f32d303e8",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-4b-816970e74fa2.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 1947101877,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-4b-816970e74fa2.manifest.json",
+      "manifest_sha256": "9df9c4ab7ba8feae7e67cfb6994a62b331742a5e050cd7493a2ce0b0ac4f7972",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-4b-816970e74fa2.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-8b-361b4d689db9",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-8b-361b4d689db9.tar.zst.part-0001",
+          "bytes": 80720711,
+          "sha256": "09e44afdbe4fea160d492f4d504703ebdb578af2ee1d483102d0a495b018284c",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-8b-361b4d689db9.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 1787957131,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-8b-361b4d689db9.manifest.json",
+      "manifest_sha256": "200c63841b8f424d0f8518f8c23466181eea781453afe0c9b5065f4f5f688823",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-1-7b-helper-qwen3-8b-361b4d689db9.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-14b-helper-qwen3-8b-c66c75fcea5f",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-14b-helper-qwen3-8b-c66c75fcea5f.tar.zst.part-0001",
+          "bytes": 64627287,
+          "sha256": "ad591d01622af80a6d4cf43bd6c4dba37b1db8e723153da3fa47c63561abc176",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-14b-helper-qwen3-8b-c66c75fcea5f.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 1419235215,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-14b-helper-qwen3-8b-c66c75fcea5f.manifest.json",
+      "manifest_sha256": "b0b54cfa1df60012e6c8a0ec37ffe7de3a1485ece2dbb75ad929e4078efe13bd",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-14b-helper-qwen3-8b-c66c75fcea5f.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-896dc250e57f",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-896dc250e57f.tar.zst.part-0001",
+          "bytes": 52459878,
+          "sha256": "55244176359ca6c196b17a594ce1c9a104df67378750278526db68298fd078bd",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-896dc250e57f.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 1351924791,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-896dc250e57f.manifest.json",
+      "manifest_sha256": "415260d460d6017dc255399f6379a03f726d6cb98282b5152f458f43017a79ab",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-896dc250e57f.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-ministral-3-8b-instruct-2512-bf16-2d8b475cceaf",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-ministral-3-8b-instruct-2512-bf16-2d8b475cceaf.tar.zst.part-0001",
+          "bytes": 13454627,
+          "sha256": "3dd9a70eea73c74d13b0ea63f29bee88fe686b67ae8d850306006153fcb019a6",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-ministral-3-8b-instruct-2512-bf16-2d8b475cceaf.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 335474854,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-ministral-3-8b-instruct-2512-bf16-2d8b475cceaf.manifest.json",
+      "manifest_sha256": "676ca7792fccbacad362a1e0b7e4759135227e276d2eaaebb098061bbd2f0b44",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-ministral-3-8b-instruct-2512-bf16-2d8b475cceaf.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-qwen3-4b-b3e75965fc90",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-qwen3-4b-b3e75965fc90.tar.zst.part-0001",
+          "bytes": 111431844,
+          "sha256": "35ac526c1ad9e52ab442a99656cd2db0034044a5adcffd909ec100395841187a",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-qwen3-4b-b3e75965fc90.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1100,
+      "raw_bytes": 2176745924,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-qwen3-4b-b3e75965fc90.manifest.json",
+      "manifest_sha256": "3d36a43a4a47757ee881a7738e1a3d6cc14bf4a9087d65e0905c0e20f2f04046",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-qwen3-4b-b3e75965fc90.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-qwen3-8b-f05a7d07414b",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-qwen3-8b-f05a7d07414b.tar.zst.part-0001",
+          "bytes": 83928019,
+          "sha256": "832ae808170a00ee7018bd593cb45eb38257cf94217580ea80c4c4b89ee5ddc6",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-qwen3-8b-f05a7d07414b.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 876,
+      "raw_bytes": 1903089752,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-qwen3-8b-f05a7d07414b.manifest.json",
+      "manifest_sha256": "069786a5af4fe0eedb43aa54467aae14336ef6f443b50cd11a0fd637add324c4",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-32b-helper-qwen3-8b-f05a7d07414b.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-d3a4b0283644",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-d3a4b0283644.tar.zst.part-0001",
+          "bytes": 85413660,
+          "sha256": "b3702073c2807c35ee88d72195ddd3d9431e53269a9c9e2e10ce9e12ec8b0916",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-d3a4b0283644.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 1513956992,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-d3a4b0283644.manifest.json",
+      "manifest_sha256": "e57206cf6692c82d3df7eb35bd61eda46843255a9df4fc8b038a8517d06f44d5",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-d3a4b0283644.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-ministral-3-3b-instruct-2512-bf16-f8f848ed7aa4",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-ministral-3-3b-instruct-2512-bf16-f8f848ed7aa4.tar.zst.part-0001",
+          "bytes": 31390791,
+          "sha256": "4efe73851c04685350d2dc64c9009b961c20bcc074620277a9f31d7ae656ab71",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-ministral-3-3b-instruct-2512-bf16-f8f848ed7aa4.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 571771753,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-ministral-3-3b-instruct-2512-bf16-f8f848ed7aa4.manifest.json",
+      "manifest_sha256": "d3ea5c8607d4d3e74800053db488f6d058232f6e3276954a1cbcc5f3f75b21ec",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-ministral-3-3b-instruct-2512-bf16-f8f848ed7aa4.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-ministral-3-8b-instruct-2512-bf16-d011fee2270d",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-ministral-3-8b-instruct-2512-bf16-d011fee2270d.tar.zst.part-0001",
+          "bytes": 27148874,
+          "sha256": "84dd7556830129360f705ae928e6a0c7cfb05e701feba1669dff8a3cbc1fe51a",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-ministral-3-8b-instruct-2512-bf16-d011fee2270d.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 532424901,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-ministral-3-8b-instruct-2512-bf16-d011fee2270d.manifest.json",
+      "manifest_sha256": "324f31a552ef83525f6ab1f3a3b36e757559ec1753c3e48e665d22fdbc3355e2",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-ministral-3-8b-instruct-2512-bf16-d011fee2270d.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-qwen3-32b-8616c0424f48",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-qwen3-32b-8616c0424f48.tar.zst.part-0001",
+          "bytes": 27268009,
+          "sha256": "bc0a6171b0fa074abda487c4e9a03c3ee888dc665ec88e4c22a6a5235dba6c92",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-qwen3-32b-8616c0424f48.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 928314210,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-qwen3-32b-8616c0424f48.manifest.json",
+      "manifest_sha256": "3c6781604a97db065c96f84188975e9d6d30e27fac443b7d408ffc0dc5059bf9",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-qwen3-32b-8616c0424f48.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-qwen3-8b-70226eebbc54",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-qwen3-8b-70226eebbc54.tar.zst.part-0001",
+          "bytes": 84052302,
+          "sha256": "59060d21c9d7217639500a57e7515e221f135a7237790c37f0ea8ec65c53d496",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-qwen3-8b-70226eebbc54.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 1760424762,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-qwen3-8b-70226eebbc54.manifest.json",
+      "manifest_sha256": "90324c76364acc2b3eb6ee684a61c46c4ea767b20afc5ac5412f2af80e165417",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-4b-helper-qwen3-8b-70226eebbc54.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-b228cc10cb11",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-b228cc10cb11.tar.zst.part-0001",
+          "bytes": 75164081,
+          "sha256": "f03dd9ad7d22cf2c669044b9537678244f9a916b3688bd94ad76c71c449ab8bd",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-b228cc10cb11.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 1623059495,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-b228cc10cb11.manifest.json",
+      "manifest_sha256": "88b95af2cf1b6d51d2c6a8f9e849739990b1efd9fa493c60b378bec9cd99a4ab",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-b228cc10cb11.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-ministral-3-3b-instruct-2512-bf16-b363ad146d40",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-ministral-3-3b-instruct-2512-bf16-b363ad146d40.tar.zst.part-0001",
+          "bytes": 35871503,
+          "sha256": "74dca9a533056f6b5219c2cda2bc812b172f9febea1687d610caf719a915b0ff",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-ministral-3-3b-instruct-2512-bf16-b363ad146d40.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 611007550,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-ministral-3-3b-instruct-2512-bf16-b363ad146d40.manifest.json",
+      "manifest_sha256": "c4bc7b1f3a932f6354a89cf6b475cc3043250fc42f5a9acae5b0400f59ccaf5c",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-ministral-3-3b-instruct-2512-bf16-b363ad146d40.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-ministral-3-8b-instruct-2512-bf16-ef23887dcdf8",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-ministral-3-8b-instruct-2512-bf16-ef23887dcdf8.tar.zst.part-0001",
+          "bytes": 22871777,
+          "sha256": "11fb5fd676de8df323930ae814357041f0bdcf884e95d040ed825937eff86812",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-ministral-3-8b-instruct-2512-bf16-ef23887dcdf8.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 470991716,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-ministral-3-8b-instruct-2512-bf16-ef23887dcdf8.manifest.json",
+      "manifest_sha256": "9dcb3abae66caa464342499719d216c70822ec6d763b484fd9ac048e35abb50b",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-ministral-3-8b-instruct-2512-bf16-ef23887dcdf8.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-qwen3-32b-707e6fcbf89d",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-qwen3-32b-707e6fcbf89d.tar.zst.part-0001",
+          "bytes": 27991173,
+          "sha256": "f3a8a561b3c555b549a348b284ea602194329e49e88d3f1e4ee8a465b7a6baec",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-qwen3-32b-707e6fcbf89d.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 964754199,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-qwen3-32b-707e6fcbf89d.manifest.json",
+      "manifest_sha256": "f292026c1cdc48635d32ee7a186d2a233d402bb63a8e46c91ddd9931c9965f01",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-qwen3-32b-707e6fcbf89d.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-qwen3-4b-996b64449fff",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-qwen3-4b-996b64449fff.tar.zst.part-0001",
+          "bytes": 84279564,
+          "sha256": "a79234a1f6944ac7e3cc9443bef473318ac6508bb2f52eb3a106058a202b4518",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-qwen3-4b-996b64449fff.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 660,
+      "raw_bytes": 1511079072,
+      "manifest_name": "experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-qwen3-4b-996b64449fff.manifest.json",
+      "manifest_sha256": "dd959b0d0480678203406cdd0e1d0afa92b574712015f499e121635f94f7b274",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-synthetic-week-v9-qwen3-8b-helper-qwen3-4b-996b64449fff.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-verify-actions-test-gpt-5-4-helper-qwen3-8b-2fd9eafc2834",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-verify-actions-test-gpt-5-4-helper-qwen3-8b-2fd9eafc2834.tar.zst.part-0001",
+          "bytes": 13316772,
+          "sha256": "a67781ce7358c7e1bf9003f4389a69c61016cf381d499600bda788a6f31b7c6a",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-verify-actions-test-gpt-5-4-helper-qwen3-8b-2fd9eafc2834.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 302859223,
+      "manifest_name": "experiments-rgpm-runs-verify-actions-test-gpt-5-4-helper-qwen3-8b-2fd9eafc2834.manifest.json",
+      "manifest_sha256": "f1b4b19b725d62bbdae61557f0494e4994c351d1acaa7d8276528395afe6813e",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-verify-actions-test-gpt-5-4-helper-qwen3-8b-2fd9eafc2834.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-runs-verify-actions-test-qwen3-4b-helper-qwen3-8b-592cbcda03e8",
+      "parts": [
+        {
+          "name": "experiments-rgpm-runs-verify-actions-test-qwen3-4b-helper-qwen3-8b-592cbcda03e8.tar.zst.part-0001",
+          "bytes": 27895831,
+          "sha256": "8f9202c3849cd355501295a4a7d868dd8cf807b1224972d307e3e1c9894c25d1",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-verify-actions-test-qwen3-4b-helper-qwen3-8b-592cbcda03e8.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 220,
+      "raw_bytes": 557171998,
+      "manifest_name": "experiments-rgpm-runs-verify-actions-test-qwen3-4b-helper-qwen3-8b-592cbcda03e8.manifest.json",
+      "manifest_sha256": "2a89c6aba87a1e7990ee34f82b983f32beb0032aac48d1b9c23390869a3614a2",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-runs-verify-actions-test-qwen3-4b-helper-qwen3-8b-592cbcda03e8.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-smoke-artifacts-archived-20261007-48aa423628ff",
+      "parts": [
+        {
+          "name": "experiments-rgpm-smoke-artifacts-archived-20261007-48aa423628ff.tar.zst.part-0001",
+          "bytes": 6620759,
+          "sha256": "03c9511a86ed3e32ccc8373610cc3c2c293d2c27ba45f10b7bb0b9f84b4cb4fa",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-smoke-artifacts-archived-20261007-48aa423628ff.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1608,
+      "raw_bytes": 103903501,
+      "manifest_name": "experiments-rgpm-smoke-artifacts-archived-20261007-48aa423628ff.manifest.json",
+      "manifest_sha256": "4f99682875785434f4f9cee749faa5d8433908fb69cdbe0d8c9286a5a99b0268",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-smoke-artifacts-archived-20261007-48aa423628ff.manifest.json"
+    },
+    {
+      "group": "experiments-rgpm-smoke-artifacts-fd5c8538973b",
+      "parts": [
+        {
+          "name": "experiments-rgpm-smoke-artifacts-fd5c8538973b.tar.zst.part-0001",
+          "bytes": 68647579,
+          "sha256": "46b1d3129ec353031f3738d79f7f3de28793c6434cb1f334187b71c66a8bc116",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-smoke-artifacts-fd5c8538973b.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 15500,
+      "raw_bytes": 1204247357,
+      "manifest_name": "experiments-rgpm-smoke-artifacts-fd5c8538973b.manifest.json",
+      "manifest_sha256": "7f70cfc74c9e10f2910e3a19f48dbb809921a0e9243ef5a3226d276e7a7d4039",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/experiments-rgpm-smoke-artifacts-fd5c8538973b.manifest.json"
+    },
+    {
+      "group": "harness-run-logs-full-13-out-260f8de6a071",
+      "parts": [
+        {
+          "name": "harness-run-logs-full-13-out-260f8de6a071.tar.zst.part-0001",
+          "bytes": 354,
+          "sha256": "5fd14a8e46581e813655648a3492750e86926372c55fbf6073e611ab0be74170",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-full-13-out-260f8de6a071.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 577,
+      "manifest_name": "harness-run-logs-full-13-out-260f8de6a071.manifest.json",
+      "manifest_sha256": "ea24b69cbf8641389146c84a9d05f1d92b68ee8e09c9f84f7e14ee8cb59e1dbe",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-full-13-out-260f8de6a071.manifest.json"
+    },
+    {
+      "group": "harness-run-logs-full-13-pid-fed91b6f85e7",
+      "parts": [
+        {
+          "name": "harness-run-logs-full-13-pid-fed91b6f85e7.tar.zst.part-0001",
+          "bytes": 126,
+          "sha256": "7f5da689aae3908f4be4238cf21d23b170899e45ff16fb24ad214272f60a59e8",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-full-13-pid-fed91b6f85e7.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 6,
+      "manifest_name": "harness-run-logs-full-13-pid-fed91b6f85e7.manifest.json",
+      "manifest_sha256": "87de359a09ed861b5154a18d8063ca091878e3fbd061c725aeb2922ec944e81e",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-full-13-pid-fed91b6f85e7.manifest.json"
+    },
+    {
+      "group": "harness-run-logs-gpu0-log-bbe3c8849b78",
+      "parts": [
+        {
+          "name": "harness-run-logs-gpu0-log-bbe3c8849b78.tar.zst.part-0001",
+          "bytes": 117908,
+          "sha256": "d03ed4751ad5b22eb0afe882f1f495eaef67b49c0a07e313daeb766e77d949a9",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-gpu0-log-bbe3c8849b78.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 4155364,
+      "manifest_name": "harness-run-logs-gpu0-log-bbe3c8849b78.manifest.json",
+      "manifest_sha256": "5c0031d60408bd114e149d2f1c1b21819a0dc262a9d584beb72bbc3e04e6e35c",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-gpu0-log-bbe3c8849b78.manifest.json"
+    },
+    {
+      "group": "harness-run-logs-gpu1-log-f255f643713b",
+      "parts": [
+        {
+          "name": "harness-run-logs-gpu1-log-f255f643713b.tar.zst.part-0001",
+          "bytes": 277419,
+          "sha256": "ecbb521330e52ef066c4148f19f95c63c02eb97958d9895b8cd88004c92aef77",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-gpu1-log-f255f643713b.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 13858401,
+      "manifest_name": "harness-run-logs-gpu1-log-f255f643713b.manifest.json",
+      "manifest_sha256": "1bf116b5496c09bda32ec86b37388fd32f658e9adb3602fee43bd40ebc200e81",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-gpu1-log-f255f643713b.manifest.json"
+    },
+    {
+      "group": "harness-run-logs-modern-gpu0-log-a39bff1bf930",
+      "parts": [
+        {
+          "name": "harness-run-logs-modern-gpu0-log-a39bff1bf930.tar.zst.part-0001",
+          "bytes": 29136,
+          "sha256": "f3a26536b08e218a1154a54f99ebf8cc9ceed14ce63fa6de2ffd896fa788db56",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-modern-gpu0-log-a39bff1bf930.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 384569,
+      "manifest_name": "harness-run-logs-modern-gpu0-log-a39bff1bf930.manifest.json",
+      "manifest_sha256": "839500d0bceade4175b47f019fe7953836c5cc28a96379032c9016bb423a0362",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-modern-gpu0-log-a39bff1bf930.manifest.json"
+    },
+    {
+      "group": "harness-run-logs-modern-gpu1-log-df334de2a996",
+      "parts": [
+        {
+          "name": "harness-run-logs-modern-gpu1-log-df334de2a996.tar.zst.part-0001",
+          "bytes": 26219,
+          "sha256": "bef987e31e8f0507f17d5f16c2e4aeb121568c875aa729ab5785b1cf75a75548",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-modern-gpu1-log-df334de2a996.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 370724,
+      "manifest_name": "harness-run-logs-modern-gpu1-log-df334de2a996.manifest.json",
+      "manifest_sha256": "75f553861346848ea194c71c66a37ccd49a22046f75a0da060db62a222a43ad6",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-modern-gpu1-log-df334de2a996.manifest.json"
+    },
+    {
+      "group": "harness-run-logs-modern-two-gpu-log-03aeea55b87a",
+      "parts": [
+        {
+          "name": "harness-run-logs-modern-two-gpu-log-03aeea55b87a.tar.zst.part-0001",
+          "bytes": 23275,
+          "sha256": "f567cbe27c12b333c972c57d4ea56b6f48bc6bef81a99f983c199940655ebecc",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-modern-two-gpu-log-03aeea55b87a.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 344442,
+      "manifest_name": "harness-run-logs-modern-two-gpu-log-03aeea55b87a.manifest.json",
+      "manifest_sha256": "057e2fed7df3d0c18bebf2ddc1cc0a78ce77453a9e66ae3429755881616347b2",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-modern-two-gpu-log-03aeea55b87a.manifest.json"
+    },
+    {
+      "group": "harness-run-logs-two-gpu-log-053c01cbe070",
+      "parts": [
+        {
+          "name": "harness-run-logs-two-gpu-log-053c01cbe070.tar.zst.part-0001",
+          "bytes": 44417,
+          "sha256": "daa7302bf28768050f9f320a1c5d47dadd86555430c6bfdcc8e07f61418cb524",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-two-gpu-log-053c01cbe070.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 965914,
+      "manifest_name": "harness-run-logs-two-gpu-log-053c01cbe070.manifest.json",
+      "manifest_sha256": "22e4fb2e746db76c040e32c3dbc53da3a570d12e29844c5da16940194a8d8845",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/harness-run-logs-two-gpu-log-053c01cbe070.manifest.json"
+    },
+    {
+      "group": "smoke-artifacts-results-Qwen-Qwen3-0-6B-424cc314ea21",
+      "parts": [
+        {
+          "name": "smoke-artifacts-results-Qwen-Qwen3-0-6B-424cc314ea21.tar.zst.part-0001",
+          "bytes": 34620,
+          "sha256": "9b211b94d887c40b6d3af648cb0fd847c519b354f636a64e9b2fbc3f8c3bc582",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-results-Qwen-Qwen3-0-6B-424cc314ea21.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 25,
+      "raw_bytes": 13945944,
+      "manifest_name": "smoke-artifacts-results-Qwen-Qwen3-0-6B-424cc314ea21.manifest.json",
+      "manifest_sha256": "ddcd7678b48e056b04199f149c9ed3986d982543f7e209205e27a6adf7360865",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-results-Qwen-Qwen3-0-6B-424cc314ea21.manifest.json"
+    },
+    {
+      "group": "smoke-artifacts-results-mem0-local-20260930-155113-66fa482f7558",
+      "parts": [
+        {
+          "name": "smoke-artifacts-results-mem0-local-20260930-155113-66fa482f7558.tar.zst.part-0001",
+          "bytes": 1103,
+          "sha256": "2695f34f4588a8ede5dd110c950ceb7f2abbf0fcc1fe28bf9cc606cc01bc2c32",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-results-mem0-local-20260930-155113-66fa482f7558.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 4,
+      "raw_bytes": 33373,
+      "manifest_name": "smoke-artifacts-results-mem0-local-20260930-155113-66fa482f7558.manifest.json",
+      "manifest_sha256": "b37a4f2713792f59ef28c3228ff53ca92603ed17dff4236b8c15e4f4fe1a8298",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-results-mem0-local-20260930-155113-66fa482f7558.manifest.json"
+    },
+    {
+      "group": "smoke-artifacts-results-mem0-local-20260930-155620-acb700f610ca",
+      "parts": [
+        {
+          "name": "smoke-artifacts-results-mem0-local-20260930-155620-acb700f610ca.tar.zst.part-0001",
+          "bytes": 1162,
+          "sha256": "2f386ab660858535f42af348a956804e8c0ec22725cbddd44947bb64a93e4b59",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-results-mem0-local-20260930-155620-acb700f610ca.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 5,
+      "raw_bytes": 46230,
+      "manifest_name": "smoke-artifacts-results-mem0-local-20260930-155620-acb700f610ca.manifest.json",
+      "manifest_sha256": "2a3605196a80d51c7e53ebd60e3685aa47ee4848de4e7a21e9ff84042d1f29f2",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-results-mem0-local-20260930-155620-acb700f610ca.manifest.json"
+    },
+    {
+      "group": "smoke-artifacts-sglang-1502574-log-c99263ce3da0",
+      "parts": [
+        {
+          "name": "smoke-artifacts-sglang-1502574-log-c99263ce3da0.tar.zst.part-0001",
+          "bytes": 16515,
+          "sha256": "02f3a3be1e87915dd4118fded6fcca6c2db541183ee56c2b98588b61c5d30ec2",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-sglang-1502574-log-c99263ce3da0.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 165800,
+      "manifest_name": "smoke-artifacts-sglang-1502574-log-c99263ce3da0.manifest.json",
+      "manifest_sha256": "04d2a742e8006fa75d4753390a000dd49a533fb9413ca5c9cc0e4258e659eb29",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-sglang-1502574-log-c99263ce3da0.manifest.json"
+    },
+    {
+      "group": "smoke-artifacts-sglang-1502578-log-14e66a2ef1e4",
+      "parts": [
+        {
+          "name": "smoke-artifacts-sglang-1502578-log-14e66a2ef1e4.tar.zst.part-0001",
+          "bytes": 11375,
+          "sha256": "152e91a4cb47bf3606fe61a6981ae60b06d6e935e40c951198749435a126d566",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-sglang-1502578-log-14e66a2ef1e4.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 68004,
+      "manifest_name": "smoke-artifacts-sglang-1502578-log-14e66a2ef1e4.manifest.json",
+      "manifest_sha256": "53c5f1226561f6596aa8123fa7b7108f3d77de10c10c0f08d3f5c74e40f95af7",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-sglang-1502578-log-14e66a2ef1e4.manifest.json"
+    },
+    {
+      "group": "smoke-artifacts-slurm-1502574-log-30a2b4bd3f8e",
+      "parts": [
+        {
+          "name": "smoke-artifacts-slurm-1502574-log-30a2b4bd3f8e.tar.zst.part-0001",
+          "bytes": 1706,
+          "sha256": "e284ea7aaf88f21ead98c50fed1351461a63ce9540301b295bf770262de1afb6",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-slurm-1502574-log-30a2b4bd3f8e.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 33917,
+      "manifest_name": "smoke-artifacts-slurm-1502574-log-30a2b4bd3f8e.manifest.json",
+      "manifest_sha256": "75d14e8945be21cba7ff14dfdc110a879c57fc2abf17ab1fe9daa7472ab97d5b",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-slurm-1502574-log-30a2b4bd3f8e.manifest.json"
+    },
+    {
+      "group": "smoke-artifacts-slurm-1502578-log-a6990cec0a1b",
+      "parts": [
+        {
+          "name": "smoke-artifacts-slurm-1502578-log-a6990cec0a1b.tar.zst.part-0001",
+          "bytes": 4347,
+          "sha256": "4c6b6fda56b7bf5d5df8d83d895254b2d32bf7f4163ba39c0e3b25fe38ddb2e0",
+          "url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-slurm-1502578-log-a6990cec0a1b.tar.zst.part-0001"
+        }
+      ],
+      "files_verified": 1,
+      "raw_bytes": 41624,
+      "manifest_name": "smoke-artifacts-slurm-1502578-log-a6990cec0a1b.manifest.json",
+      "manifest_sha256": "c751e83620c1d3770ec5e3fc28a3933f564624e284ae5449eeb70f552703aa04",
+      "manifest_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/download/research-snapshot-2026-10-25/smoke-artifacts-slurm-1502578-log-a6990cec0a1b.manifest.json"
+    }
+  ]
+}

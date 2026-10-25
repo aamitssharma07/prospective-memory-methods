@@ -61,7 +61,7 @@ prompt logs, score report, `steps.csv`, `failures.csv` and `ANALYSIS.md`.
 The team exporter reads the individual bundles, not the stale nine-model
 aggregate that predates the large-model extension.
 
-Read-only command preview, requiring the separately published/local PMBench checkout:
+Read-only command preview, using the included/local PMBench source:
 
 ```bash
 cd PMBench

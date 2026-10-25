@@ -1,9 +1,11 @@
 # Full Project and Results on GitHub
 
-Requested scope, October 25, 2026: publish the project and its results, not
-only the compact context tables. Keys and credentials must be excluded.
-Nothing has been uploaded yet. This is the current packaging plan; it extends
-the earlier [GitHub handoff](GITHUB_HANDOFF.md).
+Completed October 25, 2026: the project source, result tables and full raw
+results are published, with environment/credential files excluded. See
+[Publication Status](PUBLICATION_STATUS.md) for verified links and restore
+instructions. The plan and initial blockers below are preserved to explain the
+packaging decisions; they are historical, not current authentication or upload
+status. This extends the earlier [GitHub handoff](GITHUB_HANDOFF.md).
 
 ## What Will Be Included
 
@@ -58,7 +60,7 @@ occur in a separate export, be recorded, and leave originals untouched.
 Compressed/nested archives and symlinks require explicit review too. Inventory
 alone is not a secret scan or proof that an upload is safe.
 
-## Current Preparation and Blockers
+## Initial Preparation and Blockers (Historical)
 
 - File-size and result-location audit completed; no research artifacts deleted.
 - Metadata inventory helper: `harness/prepare_github_publication.py`.

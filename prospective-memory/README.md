@@ -5,9 +5,13 @@ current results, code locations and remaining work. The
 [results snapshot](docs/experiments/results/RESULTS.md) includes base vs PIS vs
 RGPM and all three matrices without requiring the raw cluster data.
 
-Before publishing, read [the GitHub handoff checks](docs/GITHUB_HANDOFF.md).
-The root `.env` is currently tracked, and nested-repository packaging needs
-review. Nothing has been committed or pushed as part of this documentation work.
+The [GitHub publication](https://github.com/aamitssharma07/prospective-memory-methods)
+includes both experiment workspaces, readable result tables, and the full raw
+results as Release archives. See [Publication Status](docs/PUBLICATION_STATUS.md).
+The original research checkout still has a tracked `.env`; its private history
+was not pushed. The separate publication copy excludes credentials and vendors
+the child source trees. Read [the handoff checks](docs/GITHUB_HANDOFF.md) before
+publishing future changes from the original checkout.
 
 Research code for a source-bound prospective-memory module: an agent that holds a
 deferred intention and acts when its future cue arrives, while occupied with

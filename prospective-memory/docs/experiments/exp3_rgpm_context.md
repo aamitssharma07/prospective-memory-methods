@@ -132,8 +132,11 @@ failure stages are evidence, not proof that one stage alone caused the miss.
 
 See the [output contract](../../experiments/rgpm/OUTPUT_CONTRACT.md) and
 [offline comparison tool](../../experiments/rgpm/analysis_tools/compare_runs.py).
-Raw data needs a separately supplied archive; it is not included in this GitHub
-context package. Do not launch inference merely because that archive is absent.
+The complete raw data is available in the
+[verified GitHub Release](https://github.com/aamitssharma07/prospective-memory-methods/releases/tag/research-snapshot-2026-10-25).
+Use the published repository's `results/restore_results.py` for selected-group
+or full downloads. Do not launch inference merely because raw archives have not
+yet been downloaded to a local clone.
 
 ## Limitations and Next Work
 

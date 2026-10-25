@@ -22,8 +22,8 @@ ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_DIRECTORIES = {".git", ".cache", ".runtime", "__pycache__", "node_modules",
                         ".aws", ".codex", ".agents", ".pytest_cache", ".mypy_cache"}
 MODEL_EXTENSIONS = {".safetensors", ".gguf", ".pt", ".pth", ".onnx"}
-SECRET_PATTERN = (rb"sk-[A-Za-z0-9_-]{20,}|hf_[A-Za-z0-9]{24,}|gh[pousr]_[A-Za-z0-9]{30,}|"
-                  rb"github_pat_[A-Za-z0-9_]{30,}|AKIA[A-Z0-9]{16}|"
+SECRET_PATTERN = (rb"(?<![A-Za-z0-9_])(?:sk-[A-Za-z0-9_-]{20,}|hf_[A-Za-z0-9]{24,}|gh[pousr]_[A-Za-z0-9]{30,}|"
+                  rb"github_pat_[A-Za-z0-9_]{30,}|AKIA[A-Z0-9]{16})|"
                   rb"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----")
 
 

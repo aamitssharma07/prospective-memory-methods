@@ -4,6 +4,11 @@ Updated: **2026-10-25**, America/Chicago. Start here when joining the project.
 This page and the linked experiment summaries supersede older status prose.
 They do not authorize new inference or change any experiment configuration.
 
+GitHub publication: [repository](https://github.com/aamitssharma07/prospective-memory-methods).
+Read [Publication Status](docs/PUBLICATION_STATUS.md) for the source upload,
+full raw-result archive, restore workflow and the distinction between the
+original research checkout and the credential-free publication copy.
+
 ## The Research Question
 
 Can a plug-and-play prospective-memory helper improve an existing agent's
@@ -63,11 +68,14 @@ are not full-dataset results or zero-F1 observations.
 | Shared memory implementation | [prospective_memory/](prospective_memory/) |
 | Historical development narrative | [docs/project_context.md](docs/project_context.md), [docs/results_ledger.md](docs/results_ledger.md) |
 
-Raw bundles are intentionally not embedded in the team snapshot. Their paths
-identify the original evidence on the research storage, not downloads available
-in a fresh clone. Obtain a backed-up artifact archive from the experiment owner
-for prompt-level or failure-level analysis. Its remote location is not yet
-recorded in this repository; that is a publishing gap, not a reason to rerun.
+Raw bundles are not embedded in the small team snapshot or ordinary Git tree.
+All 84,259 retained raw files are available in the
+[full-results Release](https://github.com/aamitssharma07/prospective-memory-methods/releases/tag/research-snapshot-2026-10-25).
+The published repository's `results/README.md` and `results/restore_results.py`
+provide checksum-verified group downloads and restoration to the original
+sibling-workspace layout. No model calls are needed for failure-level analysis.
+The publication vendors both workspaces' source; the original research setup
+used separate repositories. See [Publication Status](docs/PUBLICATION_STATUS.md).
 
 ## Reading Results Correctly
 

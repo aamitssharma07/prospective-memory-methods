@@ -31,18 +31,18 @@
     },
     {
       "path": "prospective-memory/README.md",
-      "bytes": 4311,
-      "sha256": "30819e832509346c5159412b975796591fe6b72a386bdc79ddadadfccdc67f69"
+      "bytes": 4618,
+      "sha256": "760446c753840f4af034222913c75995b46c071adfd8e18fe43446c9d314b4ab"
     },
     {
       "path": "prospective-memory/STATUS.md",
-      "bytes": 9904,
-      "sha256": "c6c878ecc3f88b4ba3f1fc291bb804146d39e6e1af7cc76068bd2b5247b2a77b"
+      "bytes": 10204,
+      "sha256": "b46da94184208c8d362e86aee16cb69880e93a11fdba0f91f64dd8b581941f9f"
     },
     {
       "path": "prospective-memory/TEAM_CONTEXT.md",
-      "bytes": 5874,
-      "sha256": "be389d76de591842d879117a43198de5399f38e733c33643e86868eb34aa2305"
+      "bytes": 6451,
+      "sha256": "4467b039c6a8081649eb46d1903c53b9561c8157303a8a7556e815e7bb4f9c77"
     },
     {
       "path": "prospective-memory/claude-history.md",
@@ -491,13 +491,13 @@
     },
     {
       "path": "prospective-memory/docs/FULL_PROJECT_PUBLICATION.md",
-      "bytes": 4516,
-      "sha256": "61b0c7a9e183a86d3afdfa107421c6f682a4a736e7b569cc3bfcaf7c4e3e0638"
+      "bytes": 4703,
+      "sha256": "de12f3aa50db791ca1d05340596085ebd1fe3f94d6a84008428dafc5e906449c"
     },
     {
       "path": "prospective-memory/docs/GITHUB_HANDOFF.md",
-      "bytes": 5087,
-      "sha256": "83a841d51eb9136c938d8f9416cf6ce3ce02d7d9eea0fd6c5784735f591519aa"
+      "bytes": 5701,
+      "sha256": "163690f5faa1faf7ff5deece4334cc3f7971a808dbd88171e893e73f7765734a"
     },
     {
       "path": "prospective-memory/docs/PROPOSED_METHODOLOGY.md",
@@ -591,8 +591,8 @@
     },
     {
       "path": "prospective-memory/docs/experiments/exp1_context.md",
-      "bytes": 3401,
-      "sha256": "7d6672add4685056b3b81ba1b5bf8a648e07a26fc35f2346b3c98f7a8b3a0ffd"
+      "bytes": 3383,
+      "sha256": "efeee63230c089fbd77af27488c5d41ec1bf8102ec9d48ab875c3e30bb97b862"
     },
     {
       "path": "prospective-memory/docs/experiments/exp1_task_taxonomy.md",
@@ -601,13 +601,13 @@
     },
     {
       "path": "prospective-memory/docs/experiments/exp2_context.md",
-      "bytes": 4645,
-      "sha256": "1098152b86bea961c3560cabe1391259504fbb78f9027d74966f4d6127e61fd4"
+      "bytes": 4766,
+      "sha256": "bb9b9bb17a929eda9f535747b91474c165cb3747190e937223e1930c97761b42"
     },
     {
       "path": "prospective-memory/docs/experiments/exp3_rgpm_context.md",
-      "bytes": 8095,
-      "sha256": "1c7609032fbab47a7b99be3b755bbe0bcae0ebe207b5ca1e2329c8b548c03975"
+      "bytes": 8305,
+      "sha256": "8b27e9be8181a6c0e50173c84dab89fe66ff000355de5c41ae5d77dc1313ebd5"
     },
     {
       "path": "prospective-memory/docs/experiments/results/RESULTS.md",
@@ -1546,8 +1546,8 @@
     },
     {
       "path": "prospective-memory/harness/prepare_github_publication.py",
-      "bytes": 14057,
-      "sha256": "b62d05dff5703e183b1bd61505c9263e8542d7ca889fb41ba08be2dd8c23daa6"
+      "bytes": 14078,
+      "sha256": "29a8ca59ff6a5e827824ecd352541f71e192d6235866457beeeaadcc1dcd54c3"
     },
     {
       "path": "prospective-memory/harness/report_query_flow.py",
@@ -1626,8 +1626,8 @@
     },
     {
       "path": "prospective-memory/harness/test_github_publication.py",
-      "bytes": 5132,
-      "sha256": "bc7f641d3cac97fa080f99d084380b33534603e39b94672931081c60875a7a02"
+      "bytes": 5579,
+      "sha256": "79b91a92775473ab5b941703128275ebd2a2f2a0d30e2162a42024e071ff4146"
     },
     {
       "path": "prospective-memory/harness/test_github_result_archives.py",
@@ -2708,6 +2708,140 @@
       "path": "prospective-memory-reaearch/third_party/amem-paper/memory_layer.py",
       "bytes": 46116,
       "sha256": "7350425a62861830e6171311b1005a2061c5808d88dabfb4e352b816a0f56f0d"
+    },
+    {
+      "path": "prospective-memory/docs/PUBLICATION_STATUS.md",
+      "bytes": 2796,
+      "sha256": "9110c6fb8a9f41a05143671dcc7e998a98c0632c7b2fc43a571a85be6f8808e7"
+    }
+  ],
+  "publication_updates": [
+    {
+      "path": "prospective-memory/harness/prepare_github_publication.py",
+      "previous_sha256": "b62d05dff5703e183b1bd61505c9263e8542d7ca889fb41ba08be2dd8c23daa6",
+      "new_sha256": "29a8ca59ff6a5e827824ecd352541f71e192d6235866457beeeaadcc1dcd54c3",
+      "reason": "Generic credential detector boundary correction; research data and inference code unchanged"
+    },
+    {
+      "path": "prospective-memory/harness/test_github_publication.py",
+      "previous_sha256": "bc7f641d3cac97fa080f99d084380b33534603e39b94672931081c60875a7a02",
+      "new_sha256": "79b91a92775473ab5b941703128275ebd2a2f2a0d30e2162a42024e071ff4146",
+      "reason": "Generic credential detector boundary correction; research data and inference code unchanged"
+    },
+    {
+      "path": "prospective-memory/README.md",
+      "previous_sha256": "30819e832509346c5159412b975796591fe6b72a386bdc79ddadadfccdc67f69",
+      "new_sha256": "760446c753840f4af034222913c75995b46c071adfd8e18fe43446c9d314b4ab",
+      "reason": "Publication availability and archive access metadata; inference and scientific results unchanged"
+    },
+    {
+      "path": "prospective-memory/STATUS.md",
+      "previous_sha256": "c6c878ecc3f88b4ba3f1fc291bb804146d39e6e1af7cc76068bd2b5247b2a77b",
+      "new_sha256": "b46da94184208c8d362e86aee16cb69880e93a11fdba0f91f64dd8b581941f9f",
+      "reason": "Publication availability and archive access metadata; inference and scientific results unchanged"
+    },
+    {
+      "path": "prospective-memory/TEAM_CONTEXT.md",
+      "previous_sha256": "be389d76de591842d879117a43198de5399f38e733c33643e86868eb34aa2305",
+      "new_sha256": "4467b039c6a8081649eb46d1903c53b9561c8157303a8a7556e815e7bb4f9c77",
+      "reason": "Publication availability and archive access metadata; inference and scientific results unchanged"
+    },
+    {
+      "path": "prospective-memory/docs/FULL_PROJECT_PUBLICATION.md",
+      "previous_sha256": "61b0c7a9e183a86d3afdfa107421c6f682a4a736e7b569cc3bfcaf7c4e3e0638",
+      "new_sha256": "de12f3aa50db791ca1d05340596085ebd1fe3f94d6a84008428dafc5e906449c",
+      "reason": "Publication availability and archive access metadata; inference and scientific results unchanged"
+    },
+    {
+      "path": "prospective-memory/docs/GITHUB_HANDOFF.md",
+      "previous_sha256": "83a841d51eb9136c938d8f9416cf6ce3ce02d7d9eea0fd6c5784735f591519aa",
+      "new_sha256": "163690f5faa1faf7ff5deece4334cc3f7971a808dbd88171e893e73f7765734a",
+      "reason": "Publication availability and archive access metadata; inference and scientific results unchanged"
+    },
+    {
+      "path": "prospective-memory/docs/experiments/exp1_context.md",
+      "previous_sha256": "7d6672add4685056b3b81ba1b5bf8a648e07a26fc35f2346b3c98f7a8b3a0ffd",
+      "new_sha256": "efeee63230c089fbd77af27488c5d41ec1bf8102ec9d48ab875c3e30bb97b862",
+      "reason": "Publication availability and archive access metadata; inference and scientific results unchanged"
+    },
+    {
+      "path": "prospective-memory/docs/experiments/exp2_context.md",
+      "previous_sha256": "1098152b86bea961c3560cabe1391259504fbb78f9027d74966f4d6127e61fd4",
+      "new_sha256": "bb9b9bb17a929eda9f535747b91474c165cb3747190e937223e1930c97761b42",
+      "reason": "Publication availability and archive access metadata; inference and scientific results unchanged"
+    },
+    {
+      "path": "prospective-memory/docs/experiments/exp3_rgpm_context.md",
+      "previous_sha256": "1c7609032fbab47a7b99be3b755bbe0bcae0ebe207b5ca1e2329c8b548c03975",
+      "new_sha256": "8b27e9be8181a6c0e50173c84dab89fe66ff000355de5c41ae5d77dc1313ebd5",
+      "reason": "Publication availability and archive access metadata; inference and scientific results unchanged"
+    }
+  ],
+  "publication_generated_files": [
+    {
+      "path": "README.md",
+      "bytes": 2920,
+      "sha256": "6507071822236da0b3d621a6611865c062beacdc17b409edd1b20edf63ca418a"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 112,
+      "sha256": "7b81fed7eb0f8107693104585616adf57188af54d065c69bfaa43974d7c839eb"
+    },
+    {
+      "path": "results/finish_reviewed_archives.py",
+      "bytes": 4284,
+      "sha256": "978d9ebd1e14356d88de3ee479c51f1b6fbdf2cc3e858996f9c423814dccfb1c"
+    },
+    {
+      "path": "results/restore_results.py",
+      "bytes": 7890,
+      "sha256": "a2d72642018cb7b0cf942f67278b344872a2055399fcc25335bea1872f36361e"
+    },
+    {
+      "path": "results/test_restore_results.py",
+      "bytes": 2283,
+      "sha256": "6a8d8753cc49d7d241550e1fb9027ca2f1fbc357de3bc4a82863c816b589ed7c"
+    },
+    {
+      "path": "results/test_upload_release.py",
+      "bytes": 5514,
+      "sha256": "4ffb369cebc54b9160b0a8c8dd74ee107adee27b555be3acd1152b146f23a144"
+    },
+    {
+      "path": "results/upload_release.py",
+      "bytes": 9521,
+      "sha256": "6e6efff0204a41fb273ce6efaa3b39e3e2eeca8034d8311879396aee3375fd3f"
+    },
+    {
+      "path": "results/README.md",
+      "bytes": 3208,
+      "sha256": "5cb12c3f5877bc65c807ea9c5afbc17066f6b392a7ce82c48897238b2fd7e42d"
+    },
+    {
+      "path": "results/SECRET_SCAN_REVIEW.md",
+      "bytes": 1204,
+      "sha256": "3eb867c82cdda33ff40a5c0237f6763d906053e5ca3a44addb27851b8d8e3661"
+    },
+    {
+      "path": "results/release_notes.md",
+      "bytes": 1830,
+      "sha256": "4c0731edb3aceb948fba7227d800d553ddbafe39503b1381a1591f0a7025773f"
+    },
+    {
+      "path": "results/archive_manifest.json",
+      "bytes": 176783,
+      "sha256": "3e136e39c494adb5306d58fe140d8ab6d8f8a20ac26e52ebdd5a8a8063b1b644"
+    },
+    {
+      "path": "results/publication_status.json",
+      "bytes": 920,
+      "sha256": "696a97953150cfe0c11c605f608de96e278d06b3ec54f7e8cf9101775ee85a49"
+    },
+    {
+      "path": "results/upload_verification.json",
+      "bytes": 81305,
+      "sha256": "f5ec505161f18c5407102f43ded6a816726ed7df59044b58f2fd34741a161b89"
     }
   ]
 }

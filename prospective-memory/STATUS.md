@@ -4,6 +4,11 @@
 [TEAM_CONTEXT.md](TEAM_CONTEXT.md) and the artifact-derived
 [results snapshot](docs/experiments/results/RESULTS.md).
 
+Code and the complete raw-result collection are now on GitHub. See
+[Publication Status](docs/PUBLICATION_STATUS.md) for the verified Release and
+restore workflow. The security warnings below refer to the original research
+checkout; the published export excludes credentials and private Git history.
+
 | Experiment | Verified State |
 | --- | --- |
 | 1: PMBench controls | 11 models x 4 controls, 44 complete runs |

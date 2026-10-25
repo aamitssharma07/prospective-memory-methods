@@ -55,6 +55,14 @@ class PublicationTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "Nested credential"):
                 check_source(archive, archive.read_bytes(), secret_scanner(set()))
 
+    def test_task_labels_are_not_generic_api_keys_but_known_keys_still_block(self):
+        scanner = secret_scanner(set())
+        label = b"digital_procedural_" + b"task-" + b"generated_identifier_with_underscores"
+        self.assertIsNone(scanner.search(label))
+        key = b"sk-" + b"a" * 40
+        self.assertIsNotNone(scanner.search(b"Bearer " + key))
+        self.assertIsNotNone(secret_scanner({key}).search(b"attachedprefix" + key))
+
     def test_clean_source_stage_keeps_raw_results_pending_and_leaves_originals(self):
         with tempfile.TemporaryDirectory() as directory:
             parent = Path(directory)

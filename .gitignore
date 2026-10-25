@@ -7,3 +7,4 @@
 .runtime/
 __pycache__/
 results/assets/
+results/.download-cache/

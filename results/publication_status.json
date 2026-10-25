@@ -1,10 +1,24 @@
 {
-  "status": "source_staged_raw_archives_pending",
+  "status": "published_verified",
   "repository_url": "https://github.com/aamitssharma07/prospective-memory-methods.git",
-  "source_files_scanned": 537,
+  "source_files_scanned": 538,
   "known_credential_values_checked": 5,
   "scanner_scope": "known local credentials and recognizable token/private-key formats; source ZIP members included",
-  "raw_result_payloads_scanned": false,
-  "raw_results_uploaded": false,
-  "original_workspaces_unchanged": true
+  "raw_result_payloads_scanned": true,
+  "raw_results_uploaded": true,
+  "original_workspaces_unchanged": true,
+  "release_url": "https://github.com/aamitssharma07/prospective-memory-methods/releases/tag/research-snapshot-2026-10-25",
+  "release_tag": "research-snapshot-2026-10-25",
+  "release_assets": 317,
+  "raw_files": 84259,
+  "raw_bytes": 277808207965,
+  "compressed_bytes": 11251162816,
+  "archive_groups": 157,
+  "redacted_files": 0,
+  "research_file_contents_modified": 0,
+  "source_commit": "ddc5050636c6ceb360e67cfcc335f46e15cb2282",
+  "packaging_cpu_jobs": [
+    "1553130",
+    "1553131"
+  ]
 }
