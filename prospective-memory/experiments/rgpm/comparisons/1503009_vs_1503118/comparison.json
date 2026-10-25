@@ -1,0 +1,4061 @@
+{
+  "before": "/home/akumar3/ResearchProjects/prospective-memory/prospective-memory/experiments/rgpm/runs/synthetic_week_v9/qwen3-8b/sbpm/qwen3-8b-1503009",
+  "after": "/home/akumar3/ResearchProjects/prospective-memory/prospective-memory/experiments/rgpm/runs/synthetic_week_v9/qwen3-8b/sbpm/qwen3-8b-1503118",
+  "metrics": {
+    "before": {
+      "set_precision": 0.5116279069767442,
+      "set_recall": 0.5432098765432098,
+      "set_f1": 0.5269461077844311,
+      "set_tp": 44,
+      "set_fp": 42,
+      "set_fn": 37,
+      "hit": 44,
+      "late": 2,
+      "miss": 35,
+      "false_alarm": 40,
+      "check_time_calls": 84,
+      "state_query_calls": 104
+    },
+    "after": {
+      "set_precision": 0.45,
+      "set_recall": 0.4444444444444444,
+      "set_f1": 0.4472049689440994,
+      "set_tp": 36,
+      "set_fp": 44,
+      "set_fn": 45,
+      "hit": 36,
+      "late": 5,
+      "miss": 40,
+      "false_alarm": 39,
+      "check_time_calls": 26,
+      "state_query_calls": 26
+    }
+  },
+  "cost": {
+    "before": {
+      "actor": {
+        "calls": 185,
+        "failed_calls": 0,
+        "usage_known_calls": 185,
+        "usage_unknown_calls": 0,
+        "summed_call_seconds": 44.92574546858668,
+        "median_call_seconds": 0.2426617108285427,
+        "tokens": {
+          "prompt_tokens": 2361336,
+          "completion_tokens": 4961,
+          "total_tokens": 2366297
+        }
+      },
+      "helper": {
+        "calls": 2189,
+        "failed_calls": 0,
+        "usage_known_calls": 2189,
+        "usage_unknown_calls": 0,
+        "summed_call_seconds": 1030.1051790174097,
+        "median_call_seconds": 0.4643223825842142,
+        "tokens": {
+          "prompt_tokens": 3125149,
+          "completion_tokens": 166109,
+          "total_tokens": 3291258
+        }
+      }
+    },
+    "after": {
+      "actor": {
+        "calls": 107,
+        "failed_calls": 0,
+        "usage_known_calls": 107,
+        "usage_unknown_calls": 0,
+        "summed_call_seconds": 38.314807906746864,
+        "median_call_seconds": 0.33696279861032963,
+        "tokens": {
+          "prompt_tokens": 1378293,
+          "completion_tokens": 2969,
+          "total_tokens": 1381262
+        }
+      },
+      "helper": {
+        "calls": 1498,
+        "failed_calls": 0,
+        "usage_known_calls": 1498,
+        "usage_unknown_calls": 0,
+        "summed_call_seconds": 676.1446659881622,
+        "median_call_seconds": 0.4293217407539487,
+        "tokens": {
+          "prompt_tokens": 2323954,
+          "completion_tokens": 107805,
+          "total_tokens": 2431759
+        }
+      }
+    }
+  },
+  "task_changes": [
+    {
+      "day": "Monday",
+      "task_id": "antibiotic_breakfast",
+      "before": "hit",
+      "after": "miss",
+      "type": "event",
+      "regular": "True",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Monday",
+      "task_id": "antibiotic_dinner",
+      "before": "hit",
+      "after": "late",
+      "type": "event",
+      "regular": "True",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Monday",
+      "task_id": "asthma_2100",
+      "before": "hit",
+      "after": "late",
+      "type": "time",
+      "regular": "True",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Monday",
+      "task_id": "library_hold_ready_d1",
+      "before": "late",
+      "after": "miss",
+      "type": "event",
+      "regular": "False",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Tuesday",
+      "task_id": "asthma_1100",
+      "before": "hit",
+      "after": "miss",
+      "type": "time",
+      "regular": "True",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Tuesday",
+      "task_id": "check_in_manager_1_d2",
+      "before": "hit",
+      "after": "miss",
+      "type": "time",
+      "regular": "False",
+      "updated": "True",
+      "cross_day": "False"
+    },
+    {
+      "day": "Wednesday",
+      "task_id": "antibiotic_dinner",
+      "before": "miss",
+      "after": "hit",
+      "type": "event",
+      "regular": "True",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Wednesday",
+      "task_id": "lab_dropbox_d3",
+      "before": "miss",
+      "after": "hit",
+      "type": "event",
+      "regular": "False",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Thursday",
+      "task_id": "antibiotic_dinner",
+      "before": "hit",
+      "after": "late",
+      "type": "event",
+      "regular": "True",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Thursday",
+      "task_id": "asthma_1100",
+      "before": "hit",
+      "after": "miss",
+      "type": "time",
+      "regular": "True",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Thursday",
+      "task_id": "asthma_2100",
+      "before": "hit",
+      "after": "miss",
+      "type": "time",
+      "regular": "True",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Thursday",
+      "task_id": "clinic_window_d4",
+      "before": "miss",
+      "after": "late",
+      "type": "event",
+      "regular": "False",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Thursday",
+      "task_id": "front_desk_clipboard_d4",
+      "before": "hit",
+      "after": "miss",
+      "type": "event",
+      "regular": "False",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Thursday",
+      "task_id": "confirm_pickup_window_1_d4",
+      "before": "miss",
+      "after": "hit",
+      "type": "time",
+      "regular": "False",
+      "updated": "True",
+      "cross_day": "False"
+    },
+    {
+      "day": "Thursday",
+      "task_id": "shipment_out_for_delivery_d4",
+      "before": "miss",
+      "after": "late",
+      "type": "event",
+      "regular": "False",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Friday",
+      "task_id": "crossday_7",
+      "before": "miss",
+      "after": "hit",
+      "type": "event",
+      "regular": "False",
+      "updated": "False",
+      "cross_day": "True"
+    },
+    {
+      "day": "Saturday",
+      "task_id": "antibiotic_dinner",
+      "before": "hit",
+      "after": "miss",
+      "type": "event",
+      "regular": "True",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Saturday",
+      "task_id": "mailroom_shelf_d6",
+      "before": "miss",
+      "after": "hit",
+      "type": "event",
+      "regular": "False",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Saturday",
+      "task_id": "loading_dock_sign_d6",
+      "before": "miss",
+      "after": "hit",
+      "type": "event",
+      "regular": "False",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Saturday",
+      "task_id": "doorbell_camera_flash_d6",
+      "before": "hit",
+      "after": "miss",
+      "type": "event",
+      "regular": "False",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Saturday",
+      "task_id": "calendar_new_block_d6",
+      "before": "late",
+      "after": "miss",
+      "type": "event",
+      "regular": "False",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Saturday",
+      "task_id": "crossday_2",
+      "before": "hit",
+      "after": "miss",
+      "type": "event",
+      "regular": "False",
+      "updated": "False",
+      "cross_day": "True"
+    },
+    {
+      "day": "Sunday",
+      "task_id": "antibiotic_dinner",
+      "before": "hit",
+      "after": "miss",
+      "type": "event",
+      "regular": "True",
+      "updated": "False",
+      "cross_day": "False"
+    },
+    {
+      "day": "Sunday",
+      "task_id": "check_lab_portal_2_d7",
+      "before": "hit",
+      "after": "miss",
+      "type": "time",
+      "regular": "False",
+      "updated": "False",
+      "cross_day": "False"
+    }
+  ],
+  "step_changes": [
+    {
+      "day": "Monday",
+      "step_id": "d1_s1",
+      "delta_tp": -1,
+      "delta_fp": 1,
+      "delta_fn": 1,
+      "before_selected": [
+        "antibiotic_breakfast"
+      ],
+      "after_selected": [
+        "asthma_1100"
+      ],
+      "expected": [
+        "antibiotic_breakfast"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "ca3915ba2b9741ec9124712de53d873a",
+        "610ccb2cac6d477e87b0cb6f262f03b9",
+        "67868b31e37b49439afe46a799336346",
+        "f35125d946af4c74b912636ba04401f0",
+        "ff66e22f0b5844c1952eb8e35a02030d",
+        "811b1f5baba94fcdaabcd2fea1cbbcab",
+        "742357af18264bbc94e69cae0700a0b2",
+        "1b2524b7745d4fc68cfa808e97cab97e",
+        "593332915cbc4da2ad9a474763855d94",
+        "1a51edbd3bff4c09bf3368376e5c5a01",
+        "c46ce061493f423da8cc27cf18ca3517",
+        "7caf9bdb41ac43308addcef5603c2905",
+        "3a88f18fd19f4e2fad022a8ce120f885",
+        "2d7ff7f0898a4dc4ac2e79d81cceb3cb",
+        "e410bacef61d43d2b57ad14d608696dd",
+        "4105b76ce6784eb684bca688ff36544c",
+        "b986439f2cfd47ad8d5e7aba31a3f7b0",
+        "f475c7cd915e495db63df12d3b429a87",
+        "fa4ebc60c8f84c3eaf8cd379b8ec8913",
+        "33e67159b509465fa66e96a427fd388e",
+        "5e9f490634e64c0eb2ff37a71df314d5",
+        "c2c9eea9afbc43d6bba2ce23f71b021d",
+        "4d9773db621546c7a16f5f0aa74edc88",
+        "29c689a66c4e480ba098772c836dcae2",
+        "a93f9f10666d4228b8d3424a1c01e992",
+        "c48561d808a14493b75ab8c16e68f2ad",
+        "2751a6e7f64c499a9a5d9c27947b34f2",
+        "604350b031264737bfcec287d845a151",
+        "f1d9ccd077654d968f9b47b75755731b",
+        "31ef254ced7543719856587d8273bc6c",
+        "df351ffd0bd945bcb81ced130055d084",
+        "d24cbbf30d8b4740bbb6e990342f839d",
+        "add7069f5c94417b8652307c3e63fd87",
+        "ec8125acc6e84243ae4ce7d749c20d7c",
+        "cb81ba66ba324b4492a264c8b90355d9",
+        "6cfc76c1462840fc8d61a906ad901dea",
+        "41716a2533274ffa92672464af36cd5b",
+        "dd66cdd08f0c48e9a52c5676e9ea0234",
+        "6a6d6050ddd340318df7795546cda325",
+        "55786dba386644f18ce569beb365c5a1",
+        "ecb6c97b174f4a13b88446f2de9f389f",
+        "d58ab8040a454656b2e9a2db9e7ae865",
+        "5ce0489c99e74be0b197cc62e13fda5e"
+      ],
+      "after_memory_rows": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "after_snapshot": "snapshots/000001.json"
+    },
+    {
+      "day": "Monday",
+      "step_id": "d1_s2",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_1100"
+      ],
+      "after_selected": [
+        "asthma_1100"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "3a706c61a8a8479988b58108aa5166ba",
+        "98c7a176873d496b95f8b69fb9e7a0d4",
+        "82399c06aee84442b4e6a41674e54c11",
+        "c30bf0dd20134290a15d6f39599f27d5",
+        "274a2eeaccc44422bfdf59294a745778",
+        "24138a6e1f4443b0a9b66250f7686462",
+        "4ed457d4fab64a0fb5a0882900be69de",
+        "417a539206514134aaa242dd3c4fae5f",
+        "384f11a26b9b4448a0f3d346c98ace17",
+        "8be001bd77ff49bf9ee48b57c79d53f4",
+        "6b8ce0a4428241c9acc47b2daa6b1349",
+        "bd893b2fb6044a2e99ec72ec59d687c7",
+        "07a5cf1aa3cc477fbfa6da38cd13aee4"
+      ],
+      "after_memory_rows": [
+        5,
+        6
+      ],
+      "after_snapshot": "snapshots/000002.json"
+    },
+    {
+      "day": "Monday",
+      "step_id": "d1_s3",
+      "delta_tp": 0,
+      "delta_fp": -1,
+      "delta_fn": 0,
+      "before_selected": [
+        "appointment_reschedule_open_d1",
+        "asthma_1100"
+      ],
+      "after_selected": [
+        "asthma_1100"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "b413e7f7e918414a9b996b156cad5dcb",
+        "a299c3df9e6740529be4048667749f9d",
+        "8b50d6610bdf45d988cced4269e44855",
+        "504d5c6a8efb4e4cb86cddf77f3b806d",
+        "cc994c6bab00494aad5e5fc986fcef6e",
+        "d0c6834916444ba18d7a5b9c470e6f22",
+        "fb28c8886da9483e839ce04f657c1917",
+        "45131a61be054c3faa506e4a15f612bf",
+        "a5295959534449d7a4ac02766a41bbe1",
+        "ce5573c80e1547248fbec697974fe0d2",
+        "4ce13cca189b4c468987231cc7231ed7",
+        "7e4d22cb85c6495fba2f3226668015c3"
+      ],
+      "after_memory_rows": [
+        7,
+        8
+      ],
+      "after_snapshot": "snapshots/000003.json"
+    },
+    {
+      "day": "Monday",
+      "step_id": "d1_s4",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_1100"
+      ],
+      "after_selected": [
+        "asthma_1100"
+      ],
+      "expected": [
+        "asthma_1100"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "b2ced50e0d014d49aaad1df71d057fe8",
+        "be53676bbf944c8abecb6227ea3d4611",
+        "8d7b66cbadee4e2eb2ba497851a8aab9",
+        "8290c04581f74f4190c3dcb66ed59a8a",
+        "1a7897dd447548f3acf7085dc4dd62b8",
+        "99e2ca003c534375ba3eabe3c2c65a79",
+        "69022b6b5d0146b7ab7348b0399dfa8e",
+        "a219b38b88e540b9963f5f3cbf18fe72",
+        "e468045e84f045689424764585040a92",
+        "72f60888919f46ccbf25e2fb0450a21a",
+        "d29735ae72804345bb100abee7ccbdb1",
+        "ef0570acd0c8401cb0998506980faf76",
+        "d1ab241c146d4f26b0f3f50d49114ea2",
+        "749035b33e8843688178a98946cba32a",
+        "d0033dbbfba041a0a93a5b4b38dcb777",
+        "f973b459a13b466789211104209bce59",
+        "251d37eae12c438899f5423efe4e0361",
+        "8e7f1f004cdb4382bdbcab08886cdbe3",
+        "2e0b191154a449e4a78d2fb3f6eb2c72",
+        "2cbaad536ba94c1688a655500aae7dfd"
+      ],
+      "after_memory_rows": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "after_snapshot": "snapshots/000004.json"
+    },
+    {
+      "day": "Monday",
+      "step_id": "d1_s5",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "send_library_email_1_d1"
+      ],
+      "after_selected": [
+        "send_library_email_1_d1"
+      ],
+      "expected": [
+        "appointment_form_ready_d1",
+        "send_library_email_1_d1"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "29ef17155e5b4d4b8ed842dc9e37b5d3",
+        "29f2322955a04554bbddd2e680066271",
+        "785d4ce5f2e6489aa257afd5c734e306",
+        "79fffe53246e4486b8525ecdaa3df2e1",
+        "27549749e4ed4c91921e40c791437da7",
+        "66af5b1ef2dc4c73965750b6520154dc",
+        "394821bc19584891824ad43ea67dc699",
+        "a735376647504940909d82c7f2c80b30",
+        "0905fbd608e248619bdc1a1ba3bc07b7",
+        "bef962dcd0e143ff824c4a5b7479afeb"
+      ],
+      "after_memory_rows": [
+        13,
+        14
+      ],
+      "after_snapshot": "snapshots/000005.json"
+    },
+    {
+      "day": "Monday",
+      "step_id": "d1_s6",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_dinner"
+      ],
+      "after_selected": [
+        "hardware_counter_d1"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "86ca889c87134bfe97b4c6b127cabdf2",
+        "51ad0656e0224e96aa2fbfa94578c528",
+        "8b06ef4ec861442f84ac7386e7259157",
+        "d16a1c22b09a4487bcb12e148ae3bd21",
+        "0aaa3c2181984004a5051154f4cbb16e",
+        "3f6f24cff87f4299b5d1b485f23001a5",
+        "6ac361ceae8a44d699a482d62d68eb6b",
+        "ba693ed473ec4fd4abb61abab9604530",
+        "4ba8e72dc2db4a6abbf4e7ac9685e725",
+        "6cc39d4c5c0a478e83d8c7bc271ad72e"
+      ],
+      "after_memory_rows": [
+        15,
+        16
+      ],
+      "after_snapshot": "snapshots/000006.json"
+    },
+    {
+      "day": "Monday",
+      "step_id": "d1_s7",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "parking_receipt_kiosk_d1"
+      ],
+      "after_selected": [
+        "parking_receipt_kiosk_d1"
+      ],
+      "expected": [
+        "appointment_reschedule_open_d1",
+        "hardware_counter_d1",
+        "parking_receipt_kiosk_d1"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "576e8a604bdf4c6abd7171d924bd57bf",
+        "a608f7a324a44fcf9904e3662d6bfc40",
+        "26ecfa576a724429b1cf46becb0196e7",
+        "197eab46a5ed4b919059d4c912df6aae",
+        "daf4d6c4b22b4c9ab83238e8ac4605ad",
+        "c638657c785c43819c2744bef700e962",
+        "27a19c6f72b142c981abb0c8c4eb67a2",
+        "afb9589746a043e88ecec235a30eb345",
+        "7fc89efae8d14ecb92b2601751fa4f45",
+        "35073998290a48d48f926a9abcdb2976"
+      ],
+      "after_memory_rows": [
+        17,
+        18
+      ],
+      "after_snapshot": "snapshots/000007.json"
+    },
+    {
+      "day": "Monday",
+      "step_id": "d1_s8",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "library_return_slot_d1"
+      ],
+      "after_selected": [
+        "library_return_slot_d1"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "eba55a5baa2842509a9387bfecc9e582",
+        "e63a17b3755543119d610e9bc7b737fe",
+        "3c54341f99254f17a4721b8847db33ea",
+        "bfaa0c6bbccf420cb5f6f32846fc7855",
+        "239ad990daa447b99691070981e7ec73",
+        "8d8085ec23324705a7ba18da210ab01c",
+        "8b5cc0acf780463b9ad084d86775f77b",
+        "49b4e3078be146ea90696d4f548a8d96",
+        "2b9cc6f5066445c0a0b2254cb0978399",
+        "b4eff3b52fe2428abfa30d961be01fd4",
+        "18a7ffd8c4b748aebe4adac7d9633da8",
+        "baafb1e15504491b8dca107b986e865d",
+        "c8d09b56cc034f8a85e39cc45d02ea5d"
+      ],
+      "after_memory_rows": [
+        19,
+        20
+      ],
+      "after_snapshot": "snapshots/000008.json"
+    },
+    {
+      "day": "Monday",
+      "step_id": "d1_s9",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "grocery_pickup_shelf_d1"
+      ],
+      "after_selected": [
+        "grocery_pickup_shelf_d1"
+      ],
+      "expected": [
+        "grocery_pickup_shelf_d1"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "4cd3688809564b45933076f402a8e4f3",
+        "00e8064e42014cb491bee984e6a3dfb2",
+        "0d9348a80e5a40e3b10792ed8f6b79cc",
+        "5eaf5761334643d791f8ddda924aa008",
+        "a88ab1d8db93464db445a6651ae82309",
+        "abdcf2abfb354fea81e4a9443e698699",
+        "650235aba9a64611a418fa827a12f4cc",
+        "fdaadde1a88346e7a4bcba6684d651ba",
+        "44d270a1756d4f6cbf9d02a29824150e",
+        "09a066d37d5a40c59e33096f7d130199"
+      ],
+      "after_memory_rows": [
+        21,
+        22
+      ],
+      "after_snapshot": "snapshots/000009.json"
+    },
+    {
+      "day": "Monday",
+      "step_id": "d1_s10",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_dinner"
+      ],
+      "after_selected": [
+        "library_return_slot_d1"
+      ],
+      "expected": [
+        "library_hold_ready_d1"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "bb5a6c7a7ded450f8e990c4cdb5f4116",
+        "34f141d6b6074fd2a902885eef3abdaf",
+        "b809367d91ed47b4ad313eadefd0f288",
+        "02c61c3ea0d84092aa4aa8424de2daf7",
+        "22167bebbf404b7a951df2b42a7403f9",
+        "00e5dd7991ec426d8dc78ec05c94205b",
+        "bf3741a145394ec8988b5eb60a1bee5c",
+        "267e4b44eccb4716a85fd0df3cf71629",
+        "7790e9463fa24ded91dbbedeb6e880d5",
+        "1bc1dbdbd41b4bc8b385b17ac6824327"
+      ],
+      "after_memory_rows": [
+        23,
+        24
+      ],
+      "after_snapshot": "snapshots/000010.json"
+    },
+    {
+      "day": "Monday",
+      "step_id": "d1_s11",
+      "delta_tp": -1,
+      "delta_fp": 0,
+      "delta_fn": 1,
+      "before_selected": [
+        "antibiotic_dinner",
+        "library_hold_ready_d1"
+      ],
+      "after_selected": [
+        "asthma_2100"
+      ],
+      "expected": [
+        "antibiotic_dinner"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "5068100993db4273b7bceb05c9d4a066",
+        "a59fa444aea4498b884fd8486ac99a3e",
+        "1a54298309c149f1b4b8f662ab634770",
+        "4c314fea9dbd4547912308f454a99e9a",
+        "d6a1ced0ff3344c0bc8491bc1b9e3ab4",
+        "20cb329d0a4643eb9e39b34cc22fb921",
+        "c36c1d649b3949a9b993e64d89ca0c2e",
+        "4a5596fc70d74c0cb355e11078e68fab",
+        "e49984fc0a294f8ba1922b7567c6ec2f",
+        "6bf1af1b30dc40938e99231f5d10d0bb"
+      ],
+      "after_memory_rows": [
+        25,
+        26
+      ],
+      "after_snapshot": "snapshots/000011.json"
+    },
+    {
+      "day": "Monday",
+      "step_id": "d1_s12",
+      "delta_tp": -1,
+      "delta_fp": 1,
+      "delta_fn": 1,
+      "before_selected": [
+        "asthma_2100"
+      ],
+      "after_selected": [
+        "antibiotic_dinner"
+      ],
+      "expected": [
+        "asthma_2100"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "8a3d8b27a9884d8a9fd422322dfdbfe2",
+        "12c799aeb7584c7e8c895752de41f4db",
+        "4d6904c1adf2498a8159831854bca261",
+        "5a33452c72074d37bbf8318fc1abc457",
+        "1251300d4d47431e907236295e568fa9",
+        "67f89ded148a4e66aea0dc34177eab2b",
+        "89096b1fa31842639d57a19d2ddeda4a",
+        "92a9dc45438744f7850ac2520ac54a3f",
+        "89e9ba7066f24373a9453a520056c97e",
+        "72ba69b56fd64d889741732a02c65de6"
+      ],
+      "after_memory_rows": [
+        27,
+        28
+      ],
+      "after_snapshot": "snapshots/000012.json"
+    },
+    {
+      "day": "Monday",
+      "step_id": "d1_s13",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "hardware_counter_d1"
+      ],
+      "after_selected": [
+        "asthma_2100"
+      ],
+      "expected": [
+        "library_return_slot_d1"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "f3f7d27bc8a9433b84cb7beaf26a12a9",
+        "ac09fb2af1d24488b61fbd35627e4050",
+        "f0712407e9a04568b7edc5eaa3241b93",
+        "cb9f26cc8a364458840bf52b985984dc",
+        "9165b7aae0a74aa394ea19ba81735346",
+        "3bab5985865b4c0689a4ba129287dceb",
+        "666c6028307b4eee84f8f35e21f00b82",
+        "0c43b5b6e8bb41379969a5879d2c11e7",
+        "f46a0c3d989644b9903dea4e3b54d4b3",
+        "7ed15f57b42f4324ab9a29d842223ab3",
+        "e57c77d32dfe453f95dcc7f30d2f5d35",
+        "9c8868f67cca488c8325fe6e3512b1ce",
+        "2ccdfd85c50044fe8892ba700e21d705",
+        "54f9e18e08f54602b5e6e8a0e36673e9",
+        "88a71d60044642db93025a487526b700",
+        "5bcd77e21c1c415eae2a82dcfb66d45d",
+        "b9fdfe814c2948c38c068d2d94efce8d",
+        "f21f215a35084e42a638485fe82b5e50",
+        "3ee060a54aaf47dbbb823bd9a48a5bf4",
+        "c6430074eb764081bed5454aa3c47494",
+        "ae442b9be3514ea18b5a66e458929743"
+      ],
+      "after_memory_rows": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "after_snapshot": "snapshots/000013.json"
+    },
+    {
+      "day": "Tuesday",
+      "step_id": "d2_s1",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_breakfast"
+      ],
+      "after_selected": [
+        "antibiotic_breakfast"
+      ],
+      "expected": [
+        "antibiotic_breakfast"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "042aec7182c64f608ffc46f22f5bfc89",
+        "d7822efdfd1242a4ab9e501baa9499fd",
+        "bf6367927609491387272ea6a9fbdf12",
+        "00cd757a4ae340eda5a025d032bc9e38",
+        "40a090dd5229439583ff014a91c5ed34",
+        "dfd29885e7354122989ba925c1facf27",
+        "2d84e4d491874e939e6bf735d90b793b",
+        "e3211e46a59e4c1a994ee9cf6e216cb8",
+        "deb4c6de96e247d988ab549d364a352d",
+        "cf16f2f18f204d65acb370120ce4af53",
+        "23e68e02200147b5b9b32065424b8b6e",
+        "410fba0df2564e088299d1afbafb2e35",
+        "63f9e3db01384c9d865dd96c3f2c9888",
+        "99843bc4645d487cbdd9de4be2c7d65d",
+        "6c9b7f4f22304ab985418af47e63412f",
+        "251e5cd31a3b4604b63c316febeb7019",
+        "e73c41f6228a441d9159fdb2082eb781",
+        "68fc2b2f0b6c4a5da6cf9f200b93ab07",
+        "5828301cc0474bf2954bf07eb51f8dd4",
+        "f1921159b2a840aab12974842ca9feb7",
+        "3e82c958775b4c82915c35aed3baaadc",
+        "79182d52ec304dbb880deaf630193f48",
+        "63d0801a9a6142f78e964b2c22090c34",
+        "3ed2a39ace7743f18958c74ed4b83f96",
+        "aea3768f5ffa4ffeb05867d60d22b325",
+        "55d58fc6bc4a420abe884f33c6fe8e46",
+        "7419ead8183b47a88e3ab22ba8aa245d",
+        "c0cea79ec323493fb4cf675ead886ee5",
+        "297e4b521c4c4628b5c8c6f9beed5767",
+        "a814745954dc42f6b37822150a8bfea9",
+        "fbb01a054f6c4c1c88fbee1242874d26",
+        "c04ef11c0ca14e59a337129fdfdb9d4e",
+        "1806f864b33543eda60f370a6d770983",
+        "5f56395228c74b449f723ffc1be2c02f",
+        "8b359247eb704030826758b349209e24",
+        "f6279ee3c6ff4ec4aa18468dcfc8021c",
+        "fa5a23ce17b54103a89f56ca2cc5584b",
+        "a4f88a93e80b4609b9fbc51136b0911e",
+        "98e5bf14bb8a41e88fa6bb6c0904b190",
+        "ed17b239d776479c92d00e6cfbb8169a",
+        "218570c26c644da0ab09ce47773c9cb6"
+      ],
+      "after_memory_rows": [
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "after_snapshot": "snapshots/000014.json"
+    },
+    {
+      "day": "Tuesday",
+      "step_id": "d2_s2",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_1100"
+      ],
+      "after_selected": [
+        "check_in_manager_1_d2"
+      ],
+      "expected": [
+        "calendar_room_shift_d2"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "04fb90026032486787663e9df047b08c",
+        "5db90a4f906247baaffd9efb178d9b8d",
+        "6fd36d20189a45a9b64220b0b34e4e54",
+        "bf789841c614405aae60dffab1c4b9b9",
+        "b664f94e0fee43608e55a896716fde42",
+        "2854d4a2453e488d861aecfe42f3faeb",
+        "cc02a7fc8efa479eb609e32fbd30c9be",
+        "f8a9d595044d46599c16e37f35ab4136",
+        "a9f056a78dff40ed8a0a3c327dd52073",
+        "9c2a9cc4717a488abd70d48a824a4425",
+        "08f5c4f55a1744989edd4d64cbbe0d94",
+        "6e5bf9e87e0c4ff0879484d6bf9494a3"
+      ],
+      "after_memory_rows": [
+        38,
+        39
+      ],
+      "after_snapshot": "snapshots/000015.json"
+    },
+    {
+      "day": "Tuesday",
+      "step_id": "d2_s3",
+      "delta_tp": 0,
+      "delta_fp": -1,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_1100",
+        "calendar_call_move_d2"
+      ],
+      "after_selected": [
+        "asthma_1100"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "1b59ef34da3f4b9e974af641a4751629",
+        "52a3690916514c009e17d5129c670972",
+        "12ce1f08ba544ba5a40b937ef23cb080",
+        "7be65b5ebb2840789453753795d4bbc2",
+        "e970c5887ca44b3487bd237f479ca697",
+        "4662f5439e1146c2b4a116c309997555",
+        "36fe459db35048f3bfa13b0db12a830b",
+        "4babea10169e4385b5df07658a0c47a1",
+        "61506e5ed92943a0b0792cd9ac30aec5",
+        "2f95de13e3724a459448c7ab0e6f7b82",
+        "83e707ba203649a1b7d30b860e8c1cf5",
+        "cd1ea56166d549c2be19dcc2b9f2c972",
+        "09c1daf0c9da418581eee3feb6b2fd72",
+        "562bf896c3c54b8cb9305ef5cba31ec3",
+        "abdecaf158134070a0ddb8c20024e107",
+        "dab2d8406cbc494ba39f613e6406e030",
+        "e5d794fd7f964e12970389a6e180600a",
+        "770a978dd854432090f1f631f30c34f9",
+        "c89c43afb3954ae19b8c1bb5d47e4143",
+        "9268c98bf94a4d5cbc2783e8f4293b8d",
+        "1de6d6fe22274d60b0f4ff0172a4e611",
+        "9c3cde58e76d4c2483f678e2c53d09d9"
+      ],
+      "after_memory_rows": [
+        40,
+        41,
+        42,
+        43
+      ],
+      "after_snapshot": "snapshots/000016.json"
+    },
+    {
+      "day": "Tuesday",
+      "step_id": "d2_s4",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_1100"
+      ],
+      "after_selected": [
+        "asthma_1100"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "47a09e5ded6d4db3a9fa456737f0b046",
+        "5d8846cf048240039cbf1278a94667b2",
+        "b57cb520cd074ce2853c1b604aba0e39",
+        "ca8812b0a743413e8c132206162cf46f",
+        "0984378b7178424fb09e9cf7f75df4b0",
+        "208e6dbbcae74ab9841bf5dedf642cf2",
+        "4c9a65cfc9b640ddafbd5d04ba860f65",
+        "04d6fd4e785b4e09be1867086a9d7a1f",
+        "9ba23037df6347028f7f89bbfcd3eed4",
+        "c8623347de6d4dc09cee99611a12685f",
+        "ca816df820754cf9aff021a027f63150",
+        "30c2cc28cf87468f8e3061f26b4778bc",
+        "d8264c0a1ac9458d92f63e2bfceee646",
+        "6f97522817e44b44b8a3b5801c1a0d02",
+        "25e6133370d84c358f9f0e71e569fdce",
+        "f6bf40a13a1540c58349b4fdc6bbb92e",
+        "96e5910c1c46457ba3ca3c92a76a858c",
+        "425668ae54a84c688cccdead9cbdce7f",
+        "09ca70672c1c4c11beb5a77b13a74d8b",
+        "8fd5de7f3cda4077b795c7abee20afb9",
+        "9efbbcf5b4f44c48afd7138a7b5b8c8a",
+        "66d356011c0d4de4acc2af03ac160cb6",
+        "4889a9418744427c9440369e0ac2b05d",
+        "56e1b66184a94cd3ad8bd4c0ddb12e04"
+      ],
+      "after_memory_rows": [
+        44,
+        45,
+        46,
+        47
+      ],
+      "after_snapshot": "snapshots/000017.json"
+    },
+    {
+      "day": "Tuesday",
+      "step_id": "d2_s5",
+      "delta_tp": -1,
+      "delta_fp": 0,
+      "delta_fn": 1,
+      "before_selected": [
+        "asthma_1100",
+        "conference_screen_d2"
+      ],
+      "after_selected": [
+        "conference_screen_d2"
+      ],
+      "expected": [
+        "asthma_1100",
+        "conference_screen_d2"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "098acb26ac2e42b39174862577d08b20",
+        "9935fd11ab0c4a67a3350409177aa327",
+        "be8b1537b12c46029b6fc876bcc075ba",
+        "52767e7bf11840e0ba9ced34e605d898",
+        "913c3a38f2bb442bbae5d356a95e69f3",
+        "002aafdb1da941cb82510cccb43625f9",
+        "cd930f3159e04dd4881748e49f9f45f3",
+        "166308dd2bfa45c9a1dbb5234f2035b7",
+        "d89edf636a1141b0b61e449033e94baf",
+        "3f56b69e725f4864ae92c8af493833e1",
+        "d06e7ad7a40a4aed8aa8ff8cef0c8e52"
+      ],
+      "after_memory_rows": [
+        48,
+        49
+      ],
+      "after_snapshot": "snapshots/000018.json"
+    },
+    {
+      "day": "Tuesday",
+      "step_id": "d2_s6",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "check_in_manager_1_d2"
+      ],
+      "after_selected": [
+        "check_in_manager_1_d2"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "67ed6b51494d40cea4325e36c33ef616",
+        "4560f8a0f6b4457a8861f7b02c51ac48",
+        "fcb4a0eb5b044ccd940c014d337e971a",
+        "3b40c953da444ca498ddbb61974b286c",
+        "99970b3bcf4945a19d644265c392fd69",
+        "39fab711cdeb4b0aa23e6960dab978a0",
+        "18aac90374cd45b98b29bd0c5a6c8b38",
+        "adfcbb2d763c4ac297ce18600bc03ae4",
+        "f36fe01b7e12459da1f2c71097ff6f4b",
+        "791e4e0de96f42778016d01383e836a1",
+        "4c330c43367f49de8b5b0a3910ea8886",
+        "07840fdc1ec74e5582589505c11ed869",
+        "8763c8073bbb4548a07ed2b7cec0b3b9",
+        "25c8cd364c60413ea74eeed8e4a634b9",
+        "a5123ef15864442384fe94a8bd3bdbd7",
+        "3eb44dc1f73e49dbb2b19c841014c499",
+        "58ac767c660741d8b279f4fa7a30f1df",
+        "4d556136d8394de58e283e53cbdff867",
+        "00804498f1d1435cb2e234a5c9133bca",
+        "19de255722cb4c59bbc1ce7044b2c7a6",
+        "11f2cddd1441454a8307c5ae01f8bea0",
+        "2167d308acd0425ea6534f180bfd3ce4",
+        "a25263f5dd434500a8a0fd6b78b175b6",
+        "0bf8a528306e4ae9a98cc01f8d3e12f3",
+        "a9a6065b0e63440eaa5426fcb924d20d"
+      ],
+      "after_memory_rows": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "after_snapshot": "snapshots/000019.json"
+    },
+    {
+      "day": "Tuesday",
+      "step_id": "d2_s7",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "calendar_call_move_d2"
+      ],
+      "after_selected": [
+        "check_in_manager_1_d2"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "d544baf1c25e4324bdc0d8419f7ad567",
+        "240683830d39482bb70d4f8f8f47ebd2",
+        "10950ccdd08c47a7a83ea0050685bb04",
+        "8e266b7e7f8f40d99c3ab67db371be8d",
+        "280fb0245c924cb89b08c8eedd8f9764",
+        "c2ac379d22134baab33243a77428a4dd",
+        "f2ef251e723b48c2b2fbfee43965e36c",
+        "c39ab1f5e73e416fa95d6edf72a23dba",
+        "2a57a47fd4074060b876fe426844eebd",
+        "c76da2185e3f49feacd0595cfb50ec1d",
+        "e8041cf2155d44129bfc97045db99815",
+        "a105a63426ef47b49a73ca4cbe6dcfbb",
+        "b2788e59981b43b8a2f2b981460745c3",
+        "555d1fdc88bb4ef496b8190179322987",
+        "37411c173f744b609833ec72ffe94cd4",
+        "484daed4e50c45498cb5bc4fa8f15425",
+        "b8cbc073384e40c2b7199c7825d1f4c5",
+        "fd1d72d7b3a44d7b9099c3fee1ad34a3",
+        "7246b26df50f46be9f707483a545fffd",
+        "cd3f82b928a744c185c211e37e5e464e",
+        "0ffd915548834d23b84ce79b94d1f110",
+        "10661e1789b241be8e8f7423296640c6",
+        "a525da2f694548ec9c92ddc6abf29de3",
+        "de562e2eb0eb4899a9e19ce60a834dab",
+        "12cf965347294a5ebb7428538a3da76d"
+      ],
+      "after_memory_rows": [
+        54,
+        55,
+        56,
+        57
+      ],
+      "after_snapshot": "snapshots/000020.json"
+    },
+    {
+      "day": "Tuesday",
+      "step_id": "d2_s8",
+      "delta_tp": -1,
+      "delta_fp": 0,
+      "delta_fn": 1,
+      "before_selected": [
+        "check_in_manager_1_d2",
+        "send_budget_note_2_d2"
+      ],
+      "after_selected": [
+        "send_budget_note_2_d2"
+      ],
+      "expected": [
+        "calendar_call_move_d2",
+        "check_in_manager_1_d2",
+        "send_budget_note_2_d2"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "c33fae79d7d24a279b222529640668f9",
+        "2384da2346114150b7fffa5e32c3b94b",
+        "54cbea86e2444090a0e8073aa52a6c17",
+        "a6eb997b501e4046a9a4bb6255890069",
+        "fb952ed45e7c455fadd8a2e9871d4b34",
+        "e66f37f0479449e08d69995692e933b2",
+        "1c15ebb77c6745b08691671a359690e9",
+        "7aace787fe8f49f2a24fbc95d5199d1d",
+        "0199309273514f9588a69da227392356",
+        "4aa50de6309844629debdacf2dcf5d62",
+        "2522103ec7ae465aa71b852b3f7840ce"
+      ],
+      "after_memory_rows": [
+        58,
+        59
+      ],
+      "after_snapshot": "snapshots/000021.json"
+    },
+    {
+      "day": "Tuesday",
+      "step_id": "d2_s9",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "manager_door_d2"
+      ],
+      "after_selected": [
+        "manager_door_d2"
+      ],
+      "expected": [
+        "email_vendor_reply_d2",
+        "manager_door_d2"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "0c94dc6e1f5c4ac09548f895dc374bff",
+        "dffa4cee524a4923af097c538d6252cd",
+        "16d5dc8b05d74392b1f469ce2fb904c9",
+        "0c35c1be273e45eea01c3ceb6f2b3e1a",
+        "b488ac1d89664e80952bc7499ab84d10",
+        "73975464655546feb67620571e82cad3",
+        "cf9c09085f9b41698ea3c8b959513bb8",
+        "e46103aeee604aa4a03baff41d989ffa",
+        "35764ab2cf24410fa2ab537dc1325266",
+        "8876bf12a72e4059a99be4f96a322747",
+        "a9338dd8b35a4fd29343490f147227a8"
+      ],
+      "after_memory_rows": [
+        60,
+        61
+      ],
+      "after_snapshot": "snapshots/000022.json"
+    },
+    {
+      "day": "Tuesday",
+      "step_id": "d2_s10",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "calendar_call_move_d2"
+      ],
+      "after_selected": [
+        "calendar_room_shift_d2"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "1a8e6aebdc474448897d4953d5fb3391",
+        "9e25e952d3f548d2b95a4b5b9a2f0bcc",
+        "a3a1a063b9444ab693f28d6e7bb1f464",
+        "b892b48ec95a4a28b91bc08ffe378ae5",
+        "8f5a9ea76e1b44259484d7ae60e8b419",
+        "e6cec26a833c45db8ceff95285482f0d",
+        "950fad729e42411fbcc71bdb2336e2b1",
+        "6bd9df5253d6414fa6a140eeb2b31a64",
+        "b16b10360f2d4503a359a352987e1700",
+        "d218eae2d4db484f9cbcd4df38bb3e9c",
+        "a99a5b997b934b6dab8f2d216fe97c58",
+        "5f7820772b7b4c9dac39b26bb53a45cd",
+        "c5a097f3fe544aff874b07e498c2f18a",
+        "d122bafabe3140e396c4e81cd12f6844",
+        "6d4866640a204b70aef5dc7f47190836",
+        "e671fb64229f49ecbdf53f3c5b489bbd",
+        "98e945f5961648b18d47a66ba2b2e765",
+        "5417872b990f455cb2871c4111a5fee3",
+        "510ed2ae15cd4ebe8366b431934d64e0",
+        "d085414f72f2470d8657a7ff742b0466",
+        "300c3e0c9625407792edf5627a51e166",
+        "36e26aa8335246fdac72ca8e0a97b70f"
+      ],
+      "after_memory_rows": [
+        62,
+        63,
+        64,
+        65
+      ],
+      "after_snapshot": "snapshots/000023.json"
+    },
+    {
+      "day": "Tuesday",
+      "step_id": "d2_s11",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_dinner"
+      ],
+      "after_selected": [
+        "antibiotic_dinner"
+      ],
+      "expected": [
+        "antibiotic_dinner"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "07508e43a69d4dbf9db3ca5f5f66235d",
+        "b8400be98ce146d18df3402c51c80013",
+        "163d93cd1d9e492faffb0386ddd209b6",
+        "8496ead32f5d4154a98cd61b2b01b5ba",
+        "a8ba4681a83047aabf239184c0e033d1",
+        "7372f52dcf5840ff8ac3ed3293e97cf2",
+        "61671e4163de4276b28f8e53580f8d36",
+        "108e2610e0d247f8a729830dd4333e30",
+        "be59851ad3454783941fc7a7039e6138",
+        "30972a03e03f4473b6c0deb72f5f4dd4",
+        "90a91fa0cfb6468aa8cb05796bd96a36",
+        "926218ba04d74b04b71541fe4abd6f4d",
+        "9953717e25984eb19b6c29db2eea0cf2",
+        "63f32ea870e9476f815393490b21dccf",
+        "c15046806c824d8cb2737ae2e635cd32",
+        "49960c5e8f334ccea06b3a260619a5ce",
+        "9eca3dd2cce1420abb3589a750624f98",
+        "d98f318411224ad18f936a41970a45f7",
+        "ba652d199d274d4e8230466e2f18f838",
+        "1ee8b3dabd804242883ccec80b7cf947",
+        "742bf877de404865a7215dbdb8cbd06e",
+        "c5501f8f7fcb4926a281043b07d2f65d"
+      ],
+      "after_memory_rows": [
+        66,
+        67,
+        68,
+        69
+      ],
+      "after_snapshot": "snapshots/000024.json"
+    },
+    {
+      "day": "Tuesday",
+      "step_id": "d2_s12",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_2100"
+      ],
+      "after_selected": [
+        "asthma_2100"
+      ],
+      "expected": [
+        "asthma_2100"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "58bc1baff3614c5c9d9e00ced2143aba",
+        "8e16f1885c27463da743d5e1c0784eb5",
+        "731c136eecbf4b80aa385b3bb62bb6d4",
+        "b81a01e3e52c4651a22fb13c01ede553",
+        "98ab67cd7363473a90229b1e7f47f61f",
+        "d47e46f910514c8e8a2a8bd7782c278f",
+        "a152b61a9932429dbbb2a69fe4b567c8",
+        "5dcd88fd59824c0e93a598dad4fb24c2",
+        "20dbbd77d76546c6a41cf4496d2a77e6",
+        "2efac2fa77984b82991f6e25e5d5b41b",
+        "09d6ec68cea040fa9208a8352c1eaf31"
+      ],
+      "after_memory_rows": [
+        70,
+        71
+      ],
+      "after_snapshot": "snapshots/000025.json"
+    },
+    {
+      "day": "Tuesday",
+      "step_id": "d2_s13",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "calendar_call_move_d2"
+      ],
+      "after_selected": [
+        "asthma_1100"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "66cd2d2d91a5496aa9850d8a2f0c1d15",
+        "e7896c073b534131a5d583f82c9b4ae0",
+        "06566996027948c5831588346d3f35c6",
+        "22aef5c6ab6743419e337f26e4cfcab8",
+        "d3832c94439347e98c6d5b09ee4c57cf",
+        "a9213ca7c93d49eb85e1509d02fdf672",
+        "28724e5f4fb0426f8ece76f6af91cb29",
+        "c57260d72a6440978e7fe7c3efff4738",
+        "a23f09e8323a4f2688e32f322b094597",
+        "e27fbab20b63464c8da99783b4b5b6e6",
+        "4c954849aa9048768cbff727b8ed1dca"
+      ],
+      "after_memory_rows": [
+        72,
+        73
+      ],
+      "after_snapshot": "snapshots/000026.json"
+    },
+    {
+      "day": "Wednesday",
+      "step_id": "d3_s1",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_breakfast"
+      ],
+      "after_selected": [
+        "antibiotic_breakfast"
+      ],
+      "expected": [
+        "antibiotic_breakfast"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "2eaf7942bb9a495ca86edc1cf49aa9e6",
+        "0f3217c4734243169ebe6e10c17349e2",
+        "615370cd782c433aadd718992731f152",
+        "0c0f2e2a88f54da181febb3ce9f4a3ea",
+        "9b9a718f0d0a46f2aab1b57149444a97",
+        "79ad2e5292d0411ab0893762dfead9d3",
+        "8a1b30bf876a4333a725739ab8ff2767",
+        "5c2f4d5c5fcd4b80901331f7db6ed265",
+        "d0b5a713d6604ef08737720b22971266",
+        "8db45b4cd66f49d38400f703b31b590c",
+        "31f3312028ac4395a1eaafa72d7a451e",
+        "eb7b7ab383cd4fda92beece45102d192",
+        "bd67500a9395435da47fd4614ed44201",
+        "4359949aef6841f6a3c247f26e323ad7",
+        "319e2c8d6ae541488f2a763d7d5a008f",
+        "e178a6932e2142a38e3a44c41e1afe4a",
+        "110778a1d16f4b72bbc7d25d2b8c6b23",
+        "13ff78d2094747198968575dd3d9ab76",
+        "4085c53e96f84ccbbc1b77d6ed5799b2",
+        "724cb4ef81af4f7783cd9e2a1755b018",
+        "7c7961ee027148229d9ca663e588e7df",
+        "9a7fce15f22e46669d970a00d31b0f3b",
+        "8eb567153f74430eb0cce3ba4f277c35",
+        "8c3ef7ea7ef84471b16bac0b6a185b8d",
+        "1a52d9440b9341088ad838833cbcd939",
+        "1fcc01842bc648a19b658f65cbb46d17",
+        "47c7b345893d4059976d8e237c8f70b5",
+        "888a91a5c1a64ffdb2f01d36d723c6a4",
+        "0c09defb6bec48739c7ff11750739a62",
+        "db728a73144346dbbe70c4b9d652cc62",
+        "98f466d4578e4665beb699909fb31696",
+        "f779e99f0037402e8ed1885cdda27d61",
+        "04f652af138a4e6ab4cd842512716851",
+        "750672adb11942b08b577effcb97154f",
+        "c8ee36a7b6b54202863009620849a90d",
+        "ca3217d51b644d9fa89b2c3740fbffb5",
+        "95f92b66b2f4479ea78b9fa68602e435",
+        "f628e7fe6cbc47c7afd67436dfb53687",
+        "303e6535a1f24264959f4b2a3e1d59d9",
+        "f4705cf9e3674ccbaa5e0814d23569d9",
+        "f2318ff560114ea98902c0d28dfe60df",
+        "348380a693354e04ae1143154d8ff8db",
+        "428e7f3e92f3414d94a624abaa34510f",
+        "35f2381d4bcc4beebf13b227af79d452",
+        "899d200d87be4a6e93916c08d393f592"
+      ],
+      "after_memory_rows": [
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "after_snapshot": "snapshots/000027.json"
+    },
+    {
+      "day": "Wednesday",
+      "step_id": "d3_s2",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_1100"
+      ],
+      "after_selected": [
+        "call_insurance_1_d3"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "42bd45d25725445fa7d1e450d23ab31d",
+        "1cf53e32a75d4415ae91a1b5b0c5d840",
+        "0014c6d1d7784087a2517542bd16e77c",
+        "c22e8249408f488aa289d7b05459165a",
+        "7dcfb06668894acc89a18ac6a6b2b94a",
+        "24cafa25f7ba429d881ccd831addb74b",
+        "d436c5bcd6fb44b695002ed92db02250",
+        "2d0658beb31041869cb30de109139c6c",
+        "323f25e2137d4b4496ebd232585ca8b8",
+        "8ff560bcdc1f4118b8dbc8b43b927bb5",
+        "7f3c34d852e040c99c0b073ac06cafc6",
+        "1b0f8899dd2547a8997d7cfb3be665df",
+        "f8de1663e8e04ff793c3ee1fe663d8d6",
+        "88d58537fefe4013a2e517fc43d0dbab",
+        "3b85b7849d4d45be91db74fbd8ac2bc3",
+        "4bb6d22ed6e34b2aafaa0a1a9e77dfb5",
+        "160c201be2914d8996a569882bcf4cf5",
+        "65fe29e9bf604bbcbd5d9bb6391e590f",
+        "b985d6be775e4bc3ae6a88424e09d1d5",
+        "343ee16913cd4d3e86226cb8a0a4301d",
+        "3b9e93cb85c2451b9ca4b14a0ed3f191",
+        "2f0cd9e89c474a1ca0e9c9093c7343cf"
+      ],
+      "after_memory_rows": [
+        79,
+        80,
+        81,
+        82
+      ],
+      "after_snapshot": "snapshots/000028.json"
+    },
+    {
+      "day": "Wednesday",
+      "step_id": "d3_s3",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_1100"
+      ],
+      "after_selected": [
+        "asthma_1100"
+      ],
+      "expected": [
+        "asthma_1100"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "dbad72bb7e314808ab978f6480e26bbb",
+        "c0ea406ea4b247de967d9df1a213d637",
+        "692c20700fcb4309af82151e859c4963",
+        "f5412b8b2c014960ad0a0c1abd0e77dc",
+        "c2a580de24b548ae8e0baf7da6fbb60b",
+        "ae1718986a3849cb95f4ffb55509dc98",
+        "3476245fcf244db38a0c88ccaa1e8144",
+        "2c8c04117b914e0183ef154ee7012915",
+        "fdb53ebf42a7473883a4b6ebe0d4831b",
+        "582dd2dc3cc24441af56bfdc1f5a010b",
+        "c8416d93c444406a87ca096b6c731c46",
+        "44b552057550472f9b8cfdfda5195815",
+        "27ebb4046aba417aa6558ab0870ddcd4",
+        "b86ebc55b8af4191bc49612f0be33763",
+        "a0528f03d7d64df8993ceb3a91735345",
+        "876ac68bd79d467c8c49a216bc95808a",
+        "5bd0578494594b34b99abe54f838d50b",
+        "005b845422404a26875c18ab525392f7",
+        "912d972c0e61464c8451e17ccc21aaf7",
+        "78ec689409ca4108b52750e48d43c896",
+        "e0be97d86f64429b8e4d14a741925b65",
+        "06ced55c3f1444ce80f02ba131cf5d84",
+        "3f79dcbc616746f18a91fc0d42634bdf",
+        "08e4393efe294ff7a148f4e26bbe6f80"
+      ],
+      "after_memory_rows": [
+        83,
+        84,
+        85,
+        86
+      ],
+      "after_snapshot": "snapshots/000029.json"
+    },
+    {
+      "day": "Wednesday",
+      "step_id": "d3_s4",
+      "delta_tp": 1,
+      "delta_fp": -1,
+      "delta_fn": -1,
+      "before_selected": [
+        "pay_coop_dues_2_d3"
+      ],
+      "after_selected": [
+        "lab_dropbox_d3"
+      ],
+      "expected": [
+        "course_grade_released_d3",
+        "crossday_1",
+        "lab_dropbox_d3"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "b919d66c8d0e4be98c45dbd79b72680c",
+        "9a4ad50b3b0047959b5592a6591f067b",
+        "5822b8d33803472c9ece88b563b87363",
+        "c9d7ba0f6c9c45848a1f064f97a395b3",
+        "723dc330ba0e48358784e48a4d5e7af0",
+        "0a5da22adc32492fb4f6ebc5bea65b60",
+        "e51b73e385254c7f869b1d9c99755087",
+        "91c706ea7aae4fbeb68243c07d3f3733",
+        "e525ab5e4a87461cb108dc610acf4c6a",
+        "9b4b3342536f444cb66ae263a5746e19",
+        "b124413eee174f42a20937a9e309ae3f"
+      ],
+      "after_memory_rows": [
+        87,
+        88
+      ],
+      "after_snapshot": "snapshots/000030.json"
+    },
+    {
+      "day": "Wednesday",
+      "step_id": "d3_s5",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "balance_low_95_d3"
+      ],
+      "after_selected": [
+        "lab_cubby_d3"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "cadd335721774a5f90d09a260b460dea",
+        "4ea382eb881a475ea438340b0647bbb1",
+        "df198e92318a4e91abff839d63969984",
+        "d4628f0fb0b44bb58466a39868080e3c",
+        "17e240f6d8a14374bc065f96f7aefc39",
+        "ef1f618052764a6c8d57cae1b64aba12",
+        "4b3628a1335c4211a0489e9e139862f0",
+        "1d20ad95a36f4aeb8acca78fc69f3663",
+        "3c95fdcf47bb4b77b99cb902b717f4af",
+        "cbab8efab2a849fcb17289c6eaf73446",
+        "253ac5fcbcf44d62b5515598ff98452f",
+        "b20b50917127413d92941aa217a7665f",
+        "82dff2268bf84d45b147ed683235f122",
+        "b3d0c8c921834427aee82d0ed0856d1a",
+        "8e457d4b842f42cdb6bd0b03b810bbc6",
+        "ad4e957ba61c48aa9755a61cc31bf4ce",
+        "460915dbf18547839e6acc5d204d1910",
+        "89805af415d04f86a10eddf6ee3e006c",
+        "5126cc1796de48ecbce4ff208a8e73e9",
+        "2e0330ba632343dc85361e17a2cd677d",
+        "0d6d6471ae774ae8bb62060194d0f952",
+        "850b906395ee4fa180714465a191ca44",
+        "d471ff4af5d843e3ac6734ad7978a347"
+      ],
+      "after_memory_rows": [
+        89,
+        90,
+        91,
+        92
+      ],
+      "after_snapshot": "snapshots/000031.json"
+    },
+    {
+      "day": "Wednesday",
+      "step_id": "d3_s6",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "lab_cubby_d3"
+      ],
+      "after_selected": [
+        "lab_cubby_d3"
+      ],
+      "expected": [
+        "crossday_4",
+        "lab_cubby_d3"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "ffd38dd991564594999f9417ec361a5d",
+        "37337ddc99ef450ca389653a70a92265",
+        "e6731b390a854fd3a61a3e3bb3310739",
+        "65345de5468847e5881a7c02519adb9a",
+        "94e39a7515f94f4c83b518da873f52c4",
+        "4dd794a660754502bb51fd6926962ba5",
+        "8464bad2ee1740bda6ac45dbb56ea9a3",
+        "95c952e64337479c9f6d9206cab2696a",
+        "2b9c2ddb8106482bb3495346489a6fa4",
+        "7eccfc5fc14c4ff58f16d144a2aebd76",
+        "3016c05b5e7942d7879a0c46849e34fe"
+      ],
+      "after_memory_rows": [
+        93,
+        94
+      ],
+      "after_snapshot": "snapshots/000032.json"
+    },
+    {
+      "day": "Wednesday",
+      "step_id": "d3_s7",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "course_grade_released_d3"
+      ],
+      "after_selected": [
+        "asthma_2100"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "ae9dcc5bfaec4a0cb1a411327b86901c",
+        "d41f8e8d19b94d24b74796c37815ca94",
+        "3fef76f5b9bf43e0a41ef0d3aa20eba3",
+        "0f24df92e2974a37b292b041eefe3155",
+        "f0f832aab90e466bb439c8ae010ea866",
+        "a88d47004c474680b6ffbd7e21d70f3b",
+        "01ad1119a2e74e84bea4f859f0a33b9a",
+        "fc92ca6637dc435fbf2005f528b4b357",
+        "3db41869353440918b693173483cd725",
+        "3d82f282725b478c8f8b267f7c203ccf",
+        "62a0d7c9d3bb48659343bf8559e9a870",
+        "8d9c6f8b3de1409eb182a90926e87dbf",
+        "f4e50f0cb7df44e4b8cef1321bdec75b",
+        "d2e862921266440d9ec71504fe32dfef",
+        "417323729c1a47688ba5cdd896944e3e",
+        "aae5f311cf674a43bd62d1350f02f480",
+        "91a77d9d0a3c4873986461a256cdaa7e",
+        "2eba9b3c76814cadbcf2bc1b44030c8d",
+        "c488930c19c246e58d8bcf9c1a26d60a",
+        "f2f54f36ea8a4b06a7fac9cca811224c",
+        "cb5b4e5722894d62afc5efed635898ab",
+        "08296d614a9047dc9add3b71b0c103c8"
+      ],
+      "after_memory_rows": [
+        95,
+        96,
+        97,
+        98
+      ],
+      "after_snapshot": "snapshots/000033.json"
+    },
+    {
+      "day": "Wednesday",
+      "step_id": "d3_s8",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_dinner"
+      ],
+      "after_selected": [
+        "balance_low_95_d3"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "144d7d7724b14f3698aa2f469409d2b2",
+        "a7797d0c21c5470296022b5f739ab725",
+        "4e8999abb7e446c9b056eefb4e12d7b9",
+        "86ef9a93e09c473ab9fe6d2c05f2b052",
+        "0f3b75d8976d404bbad2254c1ef4c75a",
+        "dc75a0b0542246c882f62023917595f0",
+        "50f8712f453f45d38ec7bab141161656",
+        "09bff504242d45f390f8d6347ecda0ff",
+        "14f9e30eaa7d4a6ab439c79b021d2d48",
+        "839ace5c507648fdbfa002beb7de2faf",
+        "9c5b774c68fa4e9ea34da644461b3ca6",
+        "94167c9c68cc43cba1e8b5ba7ddffb7f",
+        "1e771edc39ff404497f5646fc458ce64",
+        "6b130013c6f64f7ba1bc9760d81f42f7",
+        "d5cdde0f33ca460d80197907135aae27",
+        "9a005d1521814e1880f5c28a5902b0d7",
+        "4fabee1cea5243beb887a04f9c07a731",
+        "6d6365da8fdc4cb3beff397285a5d8d7",
+        "dfd61899a0694e9da1f7a60734d457b6",
+        "be451911546149998742837becaa8731",
+        "2a0376b92bd6434d8c839b0042a20bf9",
+        "d47252bc205243a1bb4cd849a4362560"
+      ],
+      "after_memory_rows": [
+        99,
+        100,
+        101,
+        102
+      ],
+      "after_snapshot": "snapshots/000034.json"
+    },
+    {
+      "day": "Wednesday",
+      "step_id": "d3_s9",
+      "delta_tp": 1,
+      "delta_fp": -1,
+      "delta_fn": -1,
+      "before_selected": [
+        "asthma_2100"
+      ],
+      "after_selected": [
+        "antibiotic_dinner"
+      ],
+      "expected": [
+        "antibiotic_dinner",
+        "balance_low_95_d3",
+        "library_hold_second_ready_d3"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "21fa48121c16468aa8f9693d24372b0a",
+        "5b61aaaac3a34367a870ac9dfc6d259a",
+        "ef0622f9507645beb838e4a812350fda",
+        "ffdfc0e7423249b6b1a277f2b1754b80",
+        "3b874f4e075840fe815baeaeac611c4b",
+        "31b9a4f6cda4485fbc0889dc4f484655",
+        "91d54be1b1ca43779df302cf58cc6cc0",
+        "2bd7b8c629b445f29d6dcf34a2e9209a",
+        "739651d48d2247da998c72bd0a2098a0",
+        "48bc80c0dc3d49b79fad4108b0bbf5b3",
+        "0a32fa22b8ae4c83adff7adffef01194",
+        "ad3a9a4dd4ce4838912067ba0e275b50",
+        "fac1aa97400c4f44bc81c00f11b1473e",
+        "61b32bcb701e430eb7888ea54096701b",
+        "d2074d085bdb41e7914e065984a4eaa9",
+        "84d870a5401144fb9909682beea5f78a",
+        "9247d90449184fa5974adbaab00983ea",
+        "1ab0b3674f2a4b9eabe6aced7a0a5dda",
+        "232efd933f1f49c7ba3bf94867280c4a",
+        "ae94562adf8a4ae1ba596132e5203c4a",
+        "da15020487a74b838b3cb65a58a50e19",
+        "ea5a104dc1664931bb8d8d75f8b2ffb4"
+      ],
+      "after_memory_rows": [
+        103,
+        104,
+        105,
+        106
+      ],
+      "after_snapshot": "snapshots/000035.json"
+    },
+    {
+      "day": "Wednesday",
+      "step_id": "d3_s10",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_2100"
+      ],
+      "after_selected": [
+        "asthma_2100"
+      ],
+      "expected": [
+        "asthma_2100"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "b6678e72e982496d86186fabf29c35b6",
+        "99b5341e7f2e4560ae14411c478f97d2",
+        "b39af46b58bf4ae58e7dd3a3e23a429f",
+        "f57a78129a8049de8b0ecb28a7f408a5",
+        "cb872833b78142d18b28dcf07c229e8e",
+        "e5bf81469c6941a5993d90984c6e469c",
+        "79d702d76e434781a750c6ca2e9eee96",
+        "e0ce9fc43d9f412e9680c8dfc6f8611b",
+        "49590c699df143e599a9e24ec29358c2",
+        "c4c828d4eb3a4c72a593381882c3b038",
+        "f72ca69bf77c4302ba1149d2e64bfc4b",
+        "6191add7f1644afea2caa990290dfc25",
+        "aef8bbbcc4f64eb9aa30c889b0c7dea3",
+        "dcadb3c6bd164b63a2c2231a19978445",
+        "c2e11c43705e48e98eb6c0556a538318",
+        "771917c25e114c129e5b99997506ab28",
+        "e0717d85c1fa48498e2efbd13d742c33",
+        "56c70d13e53440c9aa7a337bbd421ead",
+        "1d988438b3824d52be499aed05f440dc",
+        "a7f6727bd8224dcea06d77c7c033c5cb",
+        "cc5d313f2ce148b487926cb132cc4d77",
+        "94e0a4bf57f04fb4b181b077981c6b3e"
+      ],
+      "after_memory_rows": [
+        107,
+        108,
+        109,
+        110
+      ],
+      "after_snapshot": "snapshots/000036.json"
+    },
+    {
+      "day": "Thursday",
+      "step_id": "d4_s1",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_breakfast"
+      ],
+      "after_selected": [
+        "antibiotic_breakfast"
+      ],
+      "expected": [
+        "antibiotic_breakfast"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "0211885d6e9349ce93bd39063c5b6be5",
+        "e552fbea300b48b4afbea719704cb720",
+        "767e499e7b204511a8cdb32c6a0be385",
+        "52557f2d07b4401fa132dc249f1aba48",
+        "3b939c2d875e4abe8ba3b5d02704ef64",
+        "073dbd2627c549d09bd7dab75d6ad5b3",
+        "7390a165ee5347c8829a8346e5f92212",
+        "21d701e65a4e4ea695ab4399934f99a7",
+        "489274ba2eb14442b9f9edb5b21880ac",
+        "f9d1d859bcee4abdb7d05bf88ada1611",
+        "5b1ee82aa56b41bf830295500f6397f0",
+        "a1ea1751ef1d460eadadfa314c6bdc80",
+        "0ce88bfc84d741c49f2c1febfb4e99f9",
+        "56c6c509e2c341ae9b374213769f9892",
+        "52884e4fe7974b9eae09b64b30457bcc",
+        "26e9db772e3d4fbaa219f8a0f4f6ce96",
+        "b21789a503c942a6882e9e871d2f4268",
+        "d58f92a455ed41308b128cc9caf14bab",
+        "082d101b43594795a70070b2098ff69f",
+        "5e424aa6ae074cdfbfe13974c7845542",
+        "df600afc67f14c4eb99c7ec0b7c4e765",
+        "a94c928b80c948388ae7e02f50fb3f87",
+        "c746d29f93404b188c94a0836d2c7fdf",
+        "8034039d6dfd42d7a1f60d3da7dbe7ed",
+        "9e7824f9a8de454687b04bf685602102",
+        "4ed5ae78e69a4f9eb7771d8a239077d9",
+        "9f25db00727e4070a7b383f161658473",
+        "65cff41ce504436fbe62f10d4015d875",
+        "9247eef3aa1e4d8db1dbdbfa285e26a9",
+        "06eefe156d9d4b978ba5205038858a89",
+        "3d3380aae9cb4340b759bc9682cd6404",
+        "5135c507c8424019b77a67ef4f66af3c",
+        "6d7ef2f79d5a4a33931744d7ea0c22da",
+        "1b609c98471d429dbdc243565399292b",
+        "49603f3a898549078c02fad5827a5651",
+        "493ea1ca4b3241818ed6879dd1d7e459",
+        "611c8c410859410e9893e4b5a375747f",
+        "47a2d7596ea24737b66ca2c98008186e",
+        "c5086a1f551b42d0abd16f566b97755b",
+        "aedc2d49f7d5480bb06926febb5c6176",
+        "125b6698a17741868640e1c97bc02e66",
+        "a77a8d2e2f594391b68f159bdf683835",
+        "592fe34897ec427dbab592cf7b0bac98",
+        "cba32f6db923449193a7b349332cc09d",
+        "83d3531c1f874ab59e686c899d74e396",
+        "1cd79aa381c64fa2b7a0df3cae638dbc"
+      ],
+      "after_memory_rows": [
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "after_snapshot": "snapshots/000037.json"
+    },
+    {
+      "day": "Thursday",
+      "step_id": "d4_s2",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "crossday_6"
+      ],
+      "after_selected": [
+        "crossday_6"
+      ],
+      "expected": [
+        "clinic_window_d4",
+        "crossday_6"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "57e1911006554a3aa7d0a4db8fe96722",
+        "fdb295b673704c668d5e875b1e722728",
+        "c05c2e0b3e5d46a38ebf9ede8b9d32f5",
+        "b98416bcc5e440ebbb47f3518b8a8ae3",
+        "35a41c239e624ccfbc68e5c360717915",
+        "91cf9fc5d5a44dc2bcd8caf35ad18188",
+        "e33bbe9e0000476a934b2fa3f005dd2d",
+        "7ea3af40c0594aed835a621b52f9b028",
+        "5e4d5f08c2bc4a92a5594a9478956461",
+        "e570b9521355415ca44e4800e04617aa",
+        "0d25636004b94839ab76104210ac2da2",
+        "c014f0f99dfa4688ae5ed4cb47ee9e47",
+        "d344b92783914a76b5218e5fb25b65e1"
+      ],
+      "after_memory_rows": [
+        116,
+        117
+      ],
+      "after_snapshot": "snapshots/000038.json"
+    },
+    {
+      "day": "Thursday",
+      "step_id": "d4_s3",
+      "delta_tp": -1,
+      "delta_fp": 1,
+      "delta_fn": 1,
+      "before_selected": [
+        "asthma_1100"
+      ],
+      "after_selected": [
+        "clinic_window_d4"
+      ],
+      "expected": [
+        "asthma_1100",
+        "crossday_5",
+        "parcel_counter_d4",
+        "shipment_out_for_delivery_d4"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "098841e4ec414d07a81473eb1343a437",
+        "159f0577b5064301a073b393583135b2",
+        "f3194d40529f4400973bbc101ab415ca",
+        "e263069ec3ac45c692d3a4731ff51eff",
+        "aba2487092ba49d8b6616b1d797069bf",
+        "1500ded0a73b4cda8afbb0ac639a30b5",
+        "4b363b5b124f431db2cba02403451f09",
+        "60b02c9159e94fbb884b3090a8eab3d5",
+        "23fb2cc09f58463e8896a3745a839949",
+        "4a4bd5656bd24c27b8147b0ab0373dad",
+        "c933215e816d4192ab3c787d63a110ff",
+        "acd8fc2fa17b484e9f26ffd8cea5dbca",
+        "256e0539296245b2a60278c64a23c404"
+      ],
+      "after_memory_rows": [
+        118,
+        119
+      ],
+      "after_snapshot": "snapshots/000039.json"
+    },
+    {
+      "day": "Thursday",
+      "step_id": "d4_s4",
+      "delta_tp": -1,
+      "delta_fp": 1,
+      "delta_fn": 1,
+      "before_selected": [
+        "front_desk_clipboard_d4"
+      ],
+      "after_selected": [
+        "shipment_out_for_delivery_d4"
+      ],
+      "expected": [
+        "front_desk_clipboard_d4"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "f24f27b586d94da99faacd3a37d2b0e4",
+        "f5c982aed286444180f1d39321465702",
+        "fa953795b51440c6a9476a1cdcb66646",
+        "f34776966d8842dfaf8c991cd757115c",
+        "2b313b503543414cac3939308cff8653",
+        "61b900004e8d43b5aa9ed1d0117663b1",
+        "18cff3390db24f1fa6e429d5031222d9",
+        "e3a4f833f7c947db81fe0cd494d27ba4",
+        "0d84da9bb3794c2085c6984a238704a0",
+        "ce2c730b7adf437da2685189772b14a4",
+        "a447f4b6a0784a37b58e6822a14b5d29",
+        "8818d2b5ebc14cc4a1ceebc75b649527",
+        "d62acdb5a8be461eb44b34fc65751546",
+        "551d715aba32409ca83559acb2590773",
+        "825eb53745864d86896d67b350c070af",
+        "a359c73b658f42da817254c1754fcaef",
+        "c8a3f750d35448cfab317defead717a5",
+        "2166850e085d4aa88db48a48d00ca949",
+        "a35d49a9884f44e2b940613404f8c694",
+        "2baed6637e85477e868b32d0ebc99f3e",
+        "f40025aca2da4c6082d642ff2e26ead2",
+        "1a2b3eb8d80842c09ad4a62fb9f275bc",
+        "2176d2ea0b6244e989df0f9ccd15d403",
+        "4b3564445a3e456cab42017ccd6cfe19",
+        "d5f560497dde452797e0f61b65647694",
+        "d9b9d92287e941b395b9aba2debcc604",
+        "ebba0a23e5a742ce88f18f42cf0e8657",
+        "c799041fb20549ca89ebcbaba98c6e68"
+      ],
+      "after_memory_rows": [
+        120,
+        121,
+        122,
+        123
+      ],
+      "after_snapshot": "snapshots/000040.json"
+    },
+    {
+      "day": "Thursday",
+      "step_id": "d4_s5",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "shipment_out_for_delivery_d4"
+      ],
+      "after_selected": [
+        "asthma_2100"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "d6fd8b9eb8064a6baa7db06741595bcf",
+        "aa05f4b81402414f833cfa0ac34fb1c3",
+        "ba1bd7408dd246008956263c2418c794",
+        "940e3216a9bf4b25b5291db810c54190",
+        "0580cfd03ccb4f62819b6037ea497bab",
+        "7e4e180a0a6a4792aefad0f6ae0d9c87",
+        "291d1f659af14212a79b78e4da6be362",
+        "3adda94e27994a64b139a52cf5786c8e",
+        "fb226ce83e7c477e8ecd8c15395603a0",
+        "8630f8e69ae04379b850e94179ea4885",
+        "f4aa215443bb46d3b262b6fd953164e2",
+        "e136ba42505348e5a7ef36b578a224bc",
+        "0262412de87440e1871484fb0c4dae30",
+        "ffd5801da8d2438fba3e854edefe4cb9",
+        "06607323332e48cb94a0f6318a9410cf",
+        "3202c41c72e541e1a93288743cbcd01d",
+        "1d80b51d351c4d28a67291602fae02cf",
+        "a3b1efbfa8ce4db8a332f5a9d723f535",
+        "69b81c2d7fc34fe993c8035d62b013e4",
+        "eeada0a3e5944174a97634b18aeb287b",
+        "2bf60f119acb409f9971ec7a21bc8bcb",
+        "ef463cf9836d49a783f56c69abb96712",
+        "340c41075375418bb45fcc830acf9040",
+        "7393af55bdca40a3ab2450e40428859f",
+        "41e78e2c02a244eea789242507f770fa",
+        "9369a9c12f8c40e8bdac6da390e5497f"
+      ],
+      "after_memory_rows": [
+        124,
+        125,
+        126,
+        127
+      ],
+      "after_snapshot": "snapshots/000041.json"
+    },
+    {
+      "day": "Thursday",
+      "step_id": "d4_s6",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "pharmacy_counter_d4"
+      ],
+      "after_selected": [
+        "pharmacy_counter_d4"
+      ],
+      "expected": [
+        "pharmacy_counter_d4"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "d64cad3bad4d47079233f688d3a2cebd",
+        "0c1ba512b44d46d3a3ad3799762e282f",
+        "31a19387068b4a46bf146d18e2b30054",
+        "8ef8b21e52894f4697e1dd66a410375a",
+        "506667721a024a26bead232ebf9f28cf",
+        "bc7b0061c2be4e519086310033d04427",
+        "9306adc30efc49869c288bd535f14494",
+        "99904eeae1ff4d03b8ade82fbf2477b5",
+        "8d64d82dbffb45f28908db444c4b6440",
+        "c8acfc579329480d914290965d5cb950",
+        "27149d06eb874d3fae10cdae834a8a6f",
+        "6b6bf1ce78bf49cc979718784c71699c",
+        "bea8f953d89946259fd312a69fe16cd7"
+      ],
+      "after_memory_rows": [
+        128,
+        129
+      ],
+      "after_snapshot": "snapshots/000042.json"
+    },
+    {
+      "day": "Thursday",
+      "step_id": "d4_s7",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "clinic_window_d4"
+      ],
+      "after_selected": [
+        "front_desk_clipboard_d4"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "8fab8cbc2f4f4da2ad0a14134b9942a5",
+        "03ed7f0d235e4b1793ee9ffd4ee5c511",
+        "e739ff325c364da18d6886a2f41d72ef",
+        "49d2baff8f96496b8e12af957a0e006a",
+        "ae1a870891864d5d8001d8154429f075",
+        "aff8dd7ee8ce4e38a3ec75d9c0b3f169",
+        "0859cf1742a1487a9cba4b8426506c8d",
+        "f09c903cab5f4a19a30c84b563232194",
+        "b1527ecff43847cea3702f473a8a4624",
+        "800c0ac345f5421b914c92fa8428b2f8",
+        "abc710e353d84f9d962a1a72fb7ea320",
+        "287c24a9151242daa8766ab4cca999dd",
+        "63086c014c434a66be11bc42b3a43a87",
+        "addf884dd4c84d1bbf6f7b25f7cd653d",
+        "eea2bb315a9e4deb8b7fee0874af8f49",
+        "4acdd9174d8747079eddc6a57cae490e"
+      ],
+      "after_memory_rows": [
+        130,
+        131
+      ],
+      "after_snapshot": "snapshots/000043.json"
+    },
+    {
+      "day": "Thursday",
+      "step_id": "d4_s8",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_2100"
+      ],
+      "after_selected": [
+        "confirm_pickup_window_1_d4"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "72081a9a4ddd4600866693398532f928",
+        "030b707425f842a29249f1eebb83e032",
+        "c59f3a94fa56410aaf6c81b1252856ff",
+        "4bdfa9ee00b64fb9ae66d220c728f9f9",
+        "ff2abebb789345dfa97db8e8a2ab2f53",
+        "5e60ef56d14d465bbae56587d7c5718e",
+        "25b7c6f7e0d04643a2899e771ff82439",
+        "7aeb596882584da19ec8aa4c39f0a2ec",
+        "4d3504a426114f93b9c511368504465b",
+        "5fb788bd2a9e4ff78fbb3dede03c68f2",
+        "53e331629f3e4649b73e5aea695a75c6",
+        "0035ecb3b305462e89a80bff4a17adb2",
+        "29f501d2dc9a4280b0b684a47b1e3213",
+        "4d056e478b104753bf4f542b668fbb09",
+        "c87eb7898e91497d8be61500a301f491",
+        "97f8477406b04ab69e02f9a563e95ce9",
+        "bae39d2b96504d60b2c8ce01168a2998",
+        "d2f2810f874944cc8fc8ad1b3fa6ee19",
+        "48c20d6223d04d85980f2d03f3d762b0",
+        "1a87100e3527403f8ab18d1c864e257a",
+        "c64008b2fd194b78811a84001a6a70d9",
+        "be906b2867394aa7bc2760627115b149",
+        "ed41c00bb8e04656a039a2cfde0b5b35",
+        "51c116d41d524bba9bfa7cb3ddfb5955",
+        "a10d79a57a314b4d9f5ffadc0dadf1e4",
+        "88b5d0fc0cd747899ac19b3484a1a37e",
+        "83f1785150484143bfa411013b5c0996",
+        "6d20c96759b74abf87fe5754f5ac8a6c",
+        "9c3fc0299c4b44d2abd2aeeb2ab39139",
+        "1e6c327b5a1848179bfe07a319415a07",
+        "342b8853276c439c8860d20b21a2aa9b",
+        "13084ca45b1542e19bda2221df50d101"
+      ],
+      "after_memory_rows": [
+        132,
+        133,
+        134,
+        135
+      ],
+      "after_snapshot": "snapshots/000044.json"
+    },
+    {
+      "day": "Thursday",
+      "step_id": "d4_s9",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "confirm_pickup_window_1_d4"
+      ],
+      "after_selected": [
+        "confirm_pickup_window_1_d4"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "0017132de1fc4300ac9a984fc517623e",
+        "dc2757be2c08426cabb0c559f1b5f24d",
+        "000305c75be54b99a0d00e1543a62e9e",
+        "48d65eea3e6d4ef08e77b3a2ecd8499a",
+        "0a20e27b4cbe4142b817573720d9ad23",
+        "c5406c64bdd34d1c945fc9409df76cd8",
+        "f608d92eab8c446eb987a82f743057fe",
+        "2785728a8f30436d833c558fe2884093",
+        "b5e0b462781746a08dc4c6c1a6aed2e5",
+        "784dd8ff0f3c43659da35a027263a702",
+        "db841ecc05ca450eb4c9d04193257c7e",
+        "e3d192d27a0a42d7a86c80dfda3df93f",
+        "833d8da3bfb44e089f06b5729f08acb5",
+        "738e7d0203fa4166803d29dee26d9516",
+        "f8d39dff695f460388eb3a4a8728a8a3",
+        "ccce3dbdc87f4be393fd1f5b779c3a04",
+        "8ab1801eb17447dc96723491c980defd",
+        "f8842d09cbc2463aa71e6bf94b1e2b60",
+        "fee7b37a048f49db9702e150e1c6ff58",
+        "c71076a30a534d55946d8fd75dfb85ad",
+        "46aeafb29bd441a0bcd7b577a9d6103a",
+        "22c1192cc8dc40b3aafdaae96bbaec02",
+        "5996d035bcf3477ca96c89117b9e93b7",
+        "0faa8fc0d4c741cfaf885ceba1043e9a",
+        "fa08e742cfe94147861b4c6df988b6c7",
+        "e55c35838e5a46a1a9c90f180f494b3f",
+        "3a0946b1c2784be7b4e78062cba3f954",
+        "d251f9e8139942139c71b2e72ffba991",
+        "71d0efd3ddfe4dd7a021c2237f72e7e7",
+        "d81d4866ec4044f6aa38c44820787c03",
+        "07f384792f554e33b1ee371630bb0631"
+      ],
+      "after_memory_rows": [
+        136,
+        137,
+        138,
+        139
+      ],
+      "after_snapshot": "snapshots/000045.json"
+    },
+    {
+      "day": "Thursday",
+      "step_id": "d4_s10",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_dinner"
+      ],
+      "after_selected": [
+        "confirm_pickup_window_1_d4"
+      ],
+      "expected": [
+        "antibiotic_dinner",
+        "confirm_pickup_window_1_d4"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "6fbff84c4ad246609735251149601747",
+        "9df217dc2b734e96aa0aca1e7e0cb279",
+        "91f6494a539644a089bffd2b38a3fb96",
+        "87889c580e854df6a6c8d01a2a1f1866",
+        "59d802f709504a0aa61cf396f535380b",
+        "78794bcbf11b4d23a7d81209cfa6bbaf",
+        "5d2c0f8bc9f7468b8aa9c625f7d0dbc9",
+        "8e88dd0aeed14b40ab7c14c4a49bce09",
+        "5517a40080544de8a561085b5fc0eeee",
+        "6aeda0cdd5234ef0a5e5637b86f8ed6e",
+        "69009e7e179345b0abe3fe5d99de7948",
+        "6299051a559a4ed9ac009b6deaaa364f",
+        "81d67944d6944111953e57b43ab98aac",
+        "1a22718217c1432a9fa90e4686e81ee2",
+        "e5cedc0b27a142a79686c4b99391a93b"
+      ],
+      "after_memory_rows": [
+        140,
+        141
+      ],
+      "after_snapshot": "snapshots/000046.json"
+    },
+    {
+      "day": "Thursday",
+      "step_id": "d4_s11",
+      "delta_tp": -1,
+      "delta_fp": 1,
+      "delta_fn": 1,
+      "before_selected": [
+        "asthma_2100"
+      ],
+      "after_selected": [
+        "antibiotic_dinner"
+      ],
+      "expected": [
+        "asthma_2100"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "3d1faa5ab9c6430e8af425a2a76a9d68",
+        "e19307f31ba44c1c87ec5c343df2b342",
+        "74016f2bbd754b72956d53204caf8c90",
+        "85ece5bc36d6451fae583163676d65c1",
+        "9174ad3de48a4adba4e6e14b9c2da793",
+        "b789d0f4c35049a7b3613a30e1cba2b3",
+        "fb1ef28982b6404f99c0af42b8dc39ea",
+        "aa304b7e702246c79dd98a212d3f0be5",
+        "8b370935431f4b62ae4845f05f512499",
+        "84626e6c38cd49a587176bba82d6dc43",
+        "f2c91f0b1cee4baa9587bd9f0cbf489e",
+        "24c152d607d042528040046def492b7e",
+        "d409f2f6ac324e3e8d6f5b58960a9c37",
+        "2fa6fbf253a84221a1c5d10f14243f47",
+        "df8ab41fb3b34b0eaf6fc6c8a692b486"
+      ],
+      "after_memory_rows": [
+        142,
+        143
+      ],
+      "after_snapshot": "snapshots/000047.json"
+    },
+    {
+      "day": "Friday",
+      "step_id": "d5_s1",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_breakfast"
+      ],
+      "after_selected": [
+        "antibiotic_breakfast"
+      ],
+      "expected": [
+        "antibiotic_breakfast",
+        "pay_parking_app_2_d5"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "ed14d4583aea412db6dbb06ef4b02f73",
+        "9364c9b2efc0438294a857b3c051d3a0",
+        "71af3549169947ffb850b8967900811a",
+        "f62ea1e55a994fcb83f035c760625f86",
+        "35b541de789b45d6a3b8f1c0ba2a4cfa",
+        "5f0a542f9f3149a78a9acfc998168dd1",
+        "793c31d2b30746cd8a01990f6387c84b",
+        "e670680f5c2b4fe1b33d8d9a95130c17",
+        "eac243c78c2943718c3e998c2dcdb694",
+        "ac01d1c5087f4bb8b63dd2b3d249de25",
+        "349a0c094e9548bf888a7926dc0c9ecc",
+        "5dc892fd96b94eddaad781523a33ea14",
+        "7b18bf022b574f1098fb9db678f96007",
+        "bcb9eef145b84184b068a725a1e9ce7c",
+        "45b3558951dd49839c5c8d0f8e417658",
+        "e5a4de5c65964c2ea2b89cc32c208091",
+        "382fb7e38f5a44a6b7261f08feedee5b",
+        "02aabe0d2f654a69a5c846d2e589f1b6",
+        "e98924bfa5724f30bb43bbe27a6794c6",
+        "db88cd17cfa7429dac2a9cad5d3fa219",
+        "27ded95931bb43bbbc361d5dd9a11da4",
+        "b41c262c6ce544df9b9da87ad759e1f8",
+        "68cd2fc6356d497ba419c1dba2e944a9",
+        "5fad8ac7554043a396105d0490b000f8",
+        "82f3ef90df3747c7b634728aeed666cc",
+        "d541a9f205104096bd04c3c6a37aa14a",
+        "8fb9db09cb4a4cc2b3ed11ae85ecbd38",
+        "1dc33e34c0fb42e49f2d3613389a4f3d",
+        "1f053f07b75c400cb265815e03126966",
+        "d117ce2c685540a4b0527eadb597a5ef",
+        "715527f758164df8819b67785c8c98ae",
+        "24165684dfd0416989266036e5bfbeee",
+        "9cb6b1bc754e46b88e73095bdc0332cc",
+        "871853208dcf46dc9532e9241c4fcd61",
+        "af13094a788143b88d850549f1ecaf93",
+        "103e8ef8b6d04544aabaf239326ff974"
+      ],
+      "after_memory_rows": [
+        144,
+        145,
+        146
+      ],
+      "after_snapshot": "snapshots/000048.json"
+    },
+    {
+      "day": "Friday",
+      "step_id": "d5_s2",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_1100"
+      ],
+      "after_selected": [
+        "pay_parking_app_2_d5"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "d0fbdf19479f4bfcb4d3933ca65f486a",
+        "b3ccabedfe044be9a995bd5a50b4d939",
+        "f1a67dc834934fd1ba7bb1ce70e7423e",
+        "95285642148b4e269bf1d453c0de753c",
+        "f5ce74edbcfd44d99106d1e9d6141147",
+        "980081e28fe341698f8d2fce02c9ad97",
+        "29d840b2c1a74b1e937f910f326b0c21",
+        "61b30984541d4da582e39c22f06d0c80",
+        "d063252c826b40ad85b5427d67fc9de7",
+        "90559da1ed77443391c48f1350c822e4",
+        "64e42d6462ef423d89485371a692f7c9",
+        "e76c541dc13b4ef4b57c58819d9e332e",
+        "4d66a0e875ba4e67833def40ee9a63a5",
+        "5879fc86b4c04953bfb14c388276944a",
+        "cd2a161d0aa44e299787ed856a06d264"
+      ],
+      "after_memory_rows": [
+        147,
+        148
+      ],
+      "after_snapshot": "snapshots/000049.json"
+    },
+    {
+      "day": "Friday",
+      "step_id": "d5_s3",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "check_transit_times_1_d5"
+      ],
+      "after_selected": [
+        "check_transit_times_1_d5"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "4a58ae1ab6e04253ad80c58be4e05646",
+        "6ca43d3888de43e3869a40a72009f90b",
+        "3b02dfe1102d473fad26517b294e64ef",
+        "082c85003f5047c2a7e2b8f5c9d31881",
+        "5a2ca3e30e6e47998eefbdd1759345e1",
+        "9186f2e00048438f8685251d983117e5",
+        "c9f6fe64fcad43e6abdbfdb99caa5870",
+        "43b842269816468f9542c01de9589bd4",
+        "ae172c7bd1d040828dd0f10ae451caa3",
+        "36ccc11bfb9148848b95e5caae0f5e59",
+        "8771aa7cb75d4ab6993536cbc1bda721",
+        "9c5a1683a57e4f95acc70b80587c12e6",
+        "0a29b80086f445e6adffdb84164fa6b3"
+      ],
+      "after_memory_rows": [
+        149,
+        150
+      ],
+      "after_snapshot": "snapshots/000050.json"
+    },
+    {
+      "day": "Friday",
+      "step_id": "d5_s4",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_1100"
+      ],
+      "after_selected": [
+        "asthma_1100"
+      ],
+      "expected": [
+        "asthma_1100"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "25b5feb0406f44529f587d67e56203d7",
+        "cc7a916bd8b443cfa2cbd6c95b05cad1",
+        "016df50acc7c455090577ecb98f0b884",
+        "dca846f0428e494085ae819b289276b1",
+        "4de4146a3d7b46f2ac0285e53af940b9",
+        "4e656f36a5b448f5b32853d71d5bb93f",
+        "0aa7bb51ebc9415893978d80f9acb9b1",
+        "378a4e309eab4cde92ac7d22a76e9940",
+        "5ec0a4af9bd14fbcabeef493dcc6da2f",
+        "2de3b0d60f68438c91b5123ef48ab2d9",
+        "85dab148abe04d5192436e8a26282aab",
+        "f63cd81bccea414fbb0ebc5a2efc2c5d",
+        "b68c29646096425196152722a226c569",
+        "b73d7e0c3e4244ea88b3087fc7293da0",
+        "629a53f06f504af5a12403a124158e1c"
+      ],
+      "after_memory_rows": [
+        151,
+        152
+      ],
+      "after_snapshot": "snapshots/000051.json"
+    },
+    {
+      "day": "Friday",
+      "step_id": "d5_s5",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "dry_cleaner_rack_d5"
+      ],
+      "after_selected": [
+        "dry_cleaner_rack_d5"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "05571fb61032433b9fd1ff7d92d358e1",
+        "30a4e3912325401ca00243dd3e6437cd",
+        "7d3a7c956f814a6b93be5db297aa6a10",
+        "59e06deb25264b87bfcf5f7f3533b342",
+        "8fdb9db531994a999c5f2171bca0b481",
+        "60c433d350b04a8e97425942f00ed2df",
+        "5e12ca4141974c4c9207ee0fcf13ea12",
+        "7edda034cb87483cb6020f0f86b23a1c",
+        "c59931f7ed8f4cc888558d238e8b0632",
+        "b6c0cef1017e472e8766d4d50b49fbca",
+        "0ae5f81cb99040fe95e294afd77f6236",
+        "f5c8f95f43ce4425bb6fd477bec28924",
+        "2ea6d92a0925411aa0e81cc652d682f6"
+      ],
+      "after_memory_rows": [
+        153,
+        154
+      ],
+      "after_snapshot": "snapshots/000052.json"
+    },
+    {
+      "day": "Friday",
+      "step_id": "d5_s6",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "check_transit_times_1_d5"
+      ],
+      "after_selected": [
+        "check_transit_times_1_d5"
+      ],
+      "expected": [
+        "check_transit_times_1_d5"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "a2bdb8e41cf64fdc9b0ba306ae05dffd",
+        "a2d152b453f84499969b87bdf86fe9fc",
+        "d2bad2ec88b547dfb4b6e3d50bf9bdbc",
+        "3cc461ed00e9416b813286944453f822",
+        "99d78e4bd44d4151b2bbd11d72e79099",
+        "08dec15dbee7436d831eef134ea7e0f4",
+        "f5f3398816f941eb9e589820c0e4a315",
+        "2f3fa83e818345e3af10c96cc7433dca",
+        "36f6ad1408b54a32aa7205dc4c14b67d",
+        "57aaac95297f429095c67386ec2a50fa",
+        "737038fe4db341b99a1276eeed155a8a",
+        "04ff6ed75d63482885b7139d5f4e9967",
+        "11eb334206cb4b10acfea8f5d77da389"
+      ],
+      "after_memory_rows": [
+        155,
+        156
+      ],
+      "after_snapshot": "snapshots/000053.json"
+    },
+    {
+      "day": "Friday",
+      "step_id": "d5_s7",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "laundry_room_cart_d5"
+      ],
+      "after_selected": [
+        "library_hold_ready_d5"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "8e1f27d5ecb8429db94c2422634b6389",
+        "093853964b3b4ff0bcc623c823422270",
+        "302ae300ca784be2bf5e3d84a536d156",
+        "bc9774f1c34c47b7a06ee062ddd3b074",
+        "3698a03cc2cc4b49a7dcef8ecd67f917",
+        "53b0946a4e9848998c23598fbb877e3d",
+        "9db71be6408e47f690c1be6bbe30a32f",
+        "be889642841f4ce2a243b1ad8dc09e8a",
+        "493c8b47611b43d9abb9758b7d2e5884",
+        "db0891f3d3904cfc9c4a21ecc6782f5c",
+        "ad060476133646b893eaa0809c42918f",
+        "2bfae048a6644fa590a80efcdc95aac9",
+        "8232665b4b9449b2911b05745acb3680"
+      ],
+      "after_memory_rows": [
+        157,
+        158
+      ],
+      "after_snapshot": "snapshots/000054.json"
+    },
+    {
+      "day": "Friday",
+      "step_id": "d5_s8",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "pay_parking_app_2_d5"
+      ],
+      "after_selected": [
+        "library_hold_ready_d5"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "651323ee8aee4946900577202e0a3942",
+        "5a8d6f428ae745958265944d0d80274d",
+        "43950f24d10b4cfdac2ea883ffa18d09",
+        "3dc2854a7a354efdb8f7a011dde38b0d",
+        "e2e0901352144aa8b761349039dc3834",
+        "1b3f31382b5143a4a0399622c7af4097",
+        "c427a079f65e4e04bc99ae8353ee8d11",
+        "50437cddbc5440afadd821448e6f7326",
+        "05c374b7aabf407c86135f43c801bca1",
+        "975840033f55423f8048acf6d2a12fd1",
+        "a2d35c08fb154b6686fc5a22cc2df92f",
+        "39390357e176472cb49af4054a3ad373",
+        "7f2673d3e6a043b19abc9d92afd9ed3b"
+      ],
+      "after_memory_rows": [
+        159,
+        160
+      ],
+      "after_snapshot": "snapshots/000055.json"
+    },
+    {
+      "day": "Friday",
+      "step_id": "d5_s9",
+      "delta_tp": 1,
+      "delta_fp": -1,
+      "delta_fn": -1,
+      "before_selected": [
+        "library_hold_ready_d5"
+      ],
+      "after_selected": [
+        "crossday_7"
+      ],
+      "expected": [
+        "crossday_7",
+        "laundry_room_cart_d5"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "4330f6a680f546db8a364be1ef5ebd3f",
+        "97cf8d6631b845898e7291ee720154fa",
+        "0cec4c62c94c4abe9db1f8d79df9e992",
+        "c7aa69a6e087456e8b49f20ca6da2b79",
+        "fd600c19f1dd458b9d004726c0964160",
+        "84fc14941e714b4a9ecff35b97bf2825",
+        "7d67cf5b69e941a38918ff339e6b212c",
+        "28198ad79b174403b44aa06d1278c898",
+        "941d3f45fe6e43c5a6dddfc159edcbd8",
+        "f0d21252603f4fa08f5aa6c1dda0e175",
+        "79d2c5d91556422ba9a92f1ea8e5debb",
+        "bf76be5df8654300a4824f93619a1dbf",
+        "957322de0ab04788a53574c0e5c440e1"
+      ],
+      "after_memory_rows": [
+        161,
+        162
+      ],
+      "after_snapshot": "snapshots/000056.json"
+    },
+    {
+      "day": "Friday",
+      "step_id": "d5_s10",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_dinner"
+      ],
+      "after_selected": [
+        "library_hold_ready_d5"
+      ],
+      "expected": [
+        "email_receipt_note_d5",
+        "storage_cage_d5"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "06df5411ae3f466c9fead4ed1a3e176d",
+        "a5d5613a40ba4100b01c387569455339",
+        "d1f5342130124e83b05f94afa75f655f",
+        "6f866c7d20834005981f8f50977af322",
+        "b84cc2a403d2437ab63b5501af1d49c3",
+        "f680a497e2334c77ae92e0c39a6c7125",
+        "3b7fbf13b8bf40449ff9ab9d1aca422b",
+        "322f80cf27db427492d781e5ae2f3293",
+        "216c6c8458c3491cb10b5098d85149b1",
+        "a7419b8c72fa427998358e123f75829e",
+        "e3b080c5bac743fda86487063141c784",
+        "79bf7a4b6d7f43d89974b31d2127fb09",
+        "dd088f7d3641450484cb5a49ab74a1c1"
+      ],
+      "after_memory_rows": [
+        163,
+        164
+      ],
+      "after_snapshot": "snapshots/000057.json"
+    },
+    {
+      "day": "Friday",
+      "step_id": "d5_s11",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_dinner"
+      ],
+      "after_selected": [
+        "antibiotic_dinner"
+      ],
+      "expected": [
+        "antibiotic_dinner",
+        "dry_cleaner_rack_d5",
+        "library_hold_ready_d5"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "edc006edde63497ab4cc0e721caa1cb6",
+        "b262cb49b9734117b7c08849c21d90b9",
+        "c96bb6c45b2a417a8b4de8eeef6b0553",
+        "c41488b3c41c44e29c7a5f3864e5cf70",
+        "c639a15e0eb24884addfa70d4c999236",
+        "7342130e80a440d691a292d8a69912a7",
+        "894c17a5828a42449b9396bad47729b4",
+        "b5e93b6ebf74436e9806e4bfacb8a171",
+        "4cb3ea12b5614c0390efe3fd15684253",
+        "c1bae8455c9c4213a6bb937b6a80438c",
+        "f6fe156fde8d4a85ab18017042c4ef92",
+        "4f83a37b8b4447a08644fd825ae99274",
+        "d1fcf0d8e30f427f8382a7a3576380f1"
+      ],
+      "after_memory_rows": [
+        165,
+        166
+      ],
+      "after_snapshot": "snapshots/000058.json"
+    },
+    {
+      "day": "Friday",
+      "step_id": "d5_s12",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_2100"
+      ],
+      "after_selected": [
+        "asthma_2100"
+      ],
+      "expected": [
+        "asthma_2100"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "5bce1812844140fa9527e7862c34aab6",
+        "6071efd96aac4406816113b25cc59dce",
+        "26e09bc5e3de4eafbfef9b19c0347f4f",
+        "21c879082dab4552b7924d8e1512e0e6",
+        "b86d4b7dfb1f43c9b77fb00009aa9dca",
+        "c6dc3e41445b4823aef625bf293f4229",
+        "8d00acbf22bf4e179c764038d5e5d120",
+        "78223fe1a143425abaf23ccc2cbc771f",
+        "1ad58df0664f42caa385a6e1da09d502",
+        "31c7c044699b40c1b4427b60c5dc03d4",
+        "f6dcba704c354360bff00b3e685fd6a0",
+        "8d9375aea1f6475f8937c26629215766",
+        "5eac3288ed034346a23520e93cc907ed"
+      ],
+      "after_memory_rows": [
+        167,
+        168
+      ],
+      "after_snapshot": "snapshots/000059.json"
+    },
+    {
+      "day": "Saturday",
+      "step_id": "d6_s1",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_breakfast"
+      ],
+      "after_selected": [
+        "antibiotic_breakfast"
+      ],
+      "expected": [
+        "antibiotic_breakfast"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "a30ade0f02a344f893ea728f3f17e740",
+        "eb2ba19b082e4117991ccba9a4630314",
+        "b3428083d53f405ba5b38ecb9d22f7c1",
+        "cda5cc732b554dbd993c65d75408531b",
+        "8ea365a201004db0a3975a7997ab4cc9",
+        "aeed21bd348f4c86801a928068c6cd35",
+        "5593f5f90d634ef78e6e4da30d830c99",
+        "3918ac8186bf4307896e803491f70c0f",
+        "0c713d6f17e849a5a1a3d92d38c1c045",
+        "8dcdc9d103b847148e59970a4159e11c",
+        "2a11aa0a36ce43b8a70ae1cd12ef265a",
+        "c53c4cae5de44d99a1ff76bcdc962746",
+        "0c3ca428fa174e03bc918af73bdd7a4d",
+        "4b2ef450bf7a4283b615ec6fabab2f65",
+        "d3cc93a15769447baf9de9afda32d150",
+        "38f836d45a4d4a659b1a37a5d4039d8e",
+        "91922ee8ea074e9ebc52c7448d82d8ce",
+        "d920b11805224cdbb2c99c2a018344c5",
+        "2e260a5a79664ccdb98f468a85eaebf9",
+        "ded64a35563e4746a1612055cf421763",
+        "916fa7c314e54da5b8f0033e63566812",
+        "c34b270c2c844da1a0373364691d7284",
+        "2abafc11fd574bbc99a9b9c37c3ecf69",
+        "94e7e5e9e9754931917772dace4429a5",
+        "f7eeeeb681294c2e840e84de70d5ba4b",
+        "da10700db57e4bc8837fc7dc1939af05",
+        "1fce9b1ab9a242cf994556563a1c579d",
+        "a10828b750ae4f6a89b3ec0d2d46e021",
+        "14d9605b44844a5297862da5260cbbc2",
+        "1f5c6c8cde014def83b8a199ab0d42d3",
+        "288c0e47ed644727b5fa756d42bc8908",
+        "8b5589557a4147e18b6cd44366513e4d",
+        "210d5b0dd1284edf938b0212c594ebf9",
+        "16128d7c3f7243e28fca947c10d3924c",
+        "fc218fefa5304b6b8e803ec5d6513d67",
+        "34375d1943b44290a8453d0e5eafc133",
+        "86a2d06d68d9449f92fc5c86ffba0110",
+        "ddd30905b5644623a9da2b950b34265f",
+        "f650d2cffdad4eceb69cd90c2ca51853",
+        "3b81f12682ab4ff1bd3541d246b73c11",
+        "d39d5926bdb34fb191374890da11d7e0",
+        "35e6ac9624a7490cbe70ed0d9a54c01e",
+        "d87d332641d24a3c95c06f9946695502",
+        "e80cd0e2f4cd4a99ace42a503a354218"
+      ],
+      "after_memory_rows": [
+        169,
+        170,
+        171
+      ],
+      "after_snapshot": "snapshots/000060.json"
+    },
+    {
+      "day": "Saturday",
+      "step_id": "d6_s2",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_1100"
+      ],
+      "after_selected": [
+        "submit_timesheet_1_d6"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "e285d689cc964153afb6a8ed0c5f65ae",
+        "18d8099213064e5e8df940e545b8f446",
+        "df7fd4f64b4442cf8930a6477713b65c",
+        "cfdcaa44a5074fcf9a809648ddd7480b",
+        "9e3a7b4c68114ca799cd5c841505c659",
+        "f167318d376c4bc5aa400ea6e0553067",
+        "107749132ea948e9bcb05ea22cabc422",
+        "9c1474c02eef4dc4a5c9b2904084612a",
+        "aaf5e8abbd25432d9f8fa412efe390b3",
+        "85b391035399430599f5489f1fd91f2e",
+        "b6b240c0ca794843ab9964f836c61516",
+        "8e4ae5d574764fdc9d1c1e0e7330887d",
+        "2e482437560c4ff195d21ce74ea184f2",
+        "b28f71f3402b4268ab8efd502a8714b0",
+        "b0bb53aca029448f90583bc2fb1619ef",
+        "b5b8ededd2d24d56a2ed17867b30b7aa",
+        "e962da3b5fc546cd99ae5827e2723938",
+        "8eff2a4aa25b481483bc35f89b724a0b",
+        "c3ba6a8d522646ec9d0fadaf00f07940",
+        "0ae37f03043b4cde8216c280c3e8355f",
+        "98185052a0a44157b8583ad71ff0f79f",
+        "3c08a4c057504adc9f4f4c781ada1cef",
+        "b928b91e0ef3468ea187f99cbeeaa739",
+        "b9166698f89e42f38d7be1e33747d87b",
+        "a7c4ea1e4f4d4434b42f21f2ea51d17b",
+        "aa5061da4aef4cd1a4a3bd778f3e6061",
+        "1db8778f069043e5b79d87f129cdf615",
+        "83315d2094c14874b3c48f4b27fe7274",
+        "75fd313d59d74a069daaaf97be3b043b",
+        "5cbfc89cd6c2471b8eb1f1241719f5a3",
+        "8cc75333f803471ca84187bd1469e8a4",
+        "b6f3619ea4f445fa9f426c08c5c93b22",
+        "8af7a84473fa4dfeb310fc39cadcb84d",
+        "686782742d4049ee9f9870ad595e830c",
+        "b94e473c01724ee092a5ff9446debe54",
+        "db1409e82cb44e3fa4c95fa2eb7b382c",
+        "1b86ee2b3e4040c48921f0c0670b3637",
+        "482356eeb0a14848ae288b9c8c595877",
+        "ed3a2ebc863d4c0d8f4a00f35da2829f",
+        "34ca4ef419f14fdea418bf95f3db4738",
+        "73e9a61d95d94abcae6c4ae128f096b2",
+        "c6381b90593645e0b7f405b777832519",
+        "f3ca2f85eb5e46a5a7c1f04ba7752e3a",
+        "876eb755397d496f83f0e5812e3951d2",
+        "1e0d46af733c45318352d340f51a76bd",
+        "f397073c0dca4567a59a6c7f51dd54c7",
+        "c0ad72b6e0934b0399fb2c996f0d2a51",
+        "557ee023fb844bf3b7b90d90d3b88f0e",
+        "c0b1db65118b4cb59ec5140d1811b3fa",
+        "575c7f27f37342d58943c70207b09f6a",
+        "d0dc53459003409ebd6cbb831993abc1",
+        "4912cdb6cb1d495896827106726c95a2",
+        "05180ff0ac374ed7b3bf39710d300c44"
+      ],
+      "after_memory_rows": [
+        172,
+        173,
+        174,
+        175,
+        176
+      ],
+      "after_snapshot": "snapshots/000061.json"
+    },
+    {
+      "day": "Saturday",
+      "step_id": "d6_s3",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_1100"
+      ],
+      "after_selected": [
+        "asthma_1100"
+      ],
+      "expected": [
+        "asthma_1100",
+        "submit_timesheet_1_d6"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "795242c8e4e84bd29507cc5e511a19fc",
+        "f08e39c761624727bb9a31deeeedb94d",
+        "c2d0b1a645fb4fefb4794a3e586e4172",
+        "8367fa519d3b4f37bc25b60986068371",
+        "2218dbca0dda42eeb1e8f32b0803b6d4",
+        "55747e1f1d7f441fb90ee1b3baf99135",
+        "f919d961ce4544d1b447fff9d31e75a9",
+        "ad8586bfd2b94723bbc91c50720a76de",
+        "b71f7bf7f65841dd9d620f7fae3b4fdc",
+        "34ae41ac813d41d1920b824526b462b8",
+        "2ac9393b4adf452ca9e72820b0e677b1",
+        "e21f74e7d1314d7ab1cc9b4a73f4d059",
+        "db3d4d7532d94f2294ed298a96f9a2f5",
+        "4906849f56ae4253bb1842b542b44ec4",
+        "30a9e112d1db44ef9cbad44d2d4ed166",
+        "c6b33fc5728541bf8e5c117eea48153f",
+        "545d53dad8b2458f9c6728cda78fca72",
+        "361cb371b55449aa9b33bcfb46cadad8",
+        "5ce1a505a24942de9cc42db880858454",
+        "3d8da755a6ae449b9b2847a5008be699",
+        "1e3ed05cd65a4bc2a3b6e1a2ce45e4d3",
+        "af4ce54211114b4580620150d672f58d"
+      ],
+      "after_memory_rows": [
+        177,
+        178
+      ],
+      "after_snapshot": "snapshots/000062.json"
+    },
+    {
+      "day": "Saturday",
+      "step_id": "d6_s4",
+      "delta_tp": -1,
+      "delta_fp": 1,
+      "delta_fn": 1,
+      "before_selected": [
+        "doorbell_camera_flash_d6"
+      ],
+      "after_selected": [
+        "crossday_2"
+      ],
+      "expected": [
+        "crossday_3",
+        "doorbell_camera_flash_d6",
+        "email_vendor_2_d6"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "08b7557207d447b3b7c2ec517c93f751",
+        "92f7cc3b704349c097ac4383b7f94d39",
+        "83194061e75b4ffdaea2655f70932c56",
+        "bbd7170cb2384c568ae6e0ddd4ce5f70",
+        "59001a0380134a94b7e9dec824908c4f",
+        "f0aac0884b6b46528aea31f09a5bb7cc",
+        "61290be5670a4d79b3aee0ba2e22088e",
+        "9d8dd232340447d6aec24b80cc2f6b1b",
+        "d9735d1785a143e591fe9bef9ee1897f",
+        "dc503f773c7b4289972d3be0a2380553",
+        "dbd0720eee6f4a1aae427fa8d264e2a4",
+        "db2947eb145d43db8c4d0d3d084f14db",
+        "3e67ccb323dc4e62909a176f6f81402d",
+        "f79b9b1afc794210afb96428403433af",
+        "e20060b81388406c8ff8bb3669dff9fa",
+        "ee9b11b43974418381c7811e037cdf94",
+        "cf5d2d92c5564ffba26383cbc0cabca4",
+        "ab7d69c0fab54e9bba4b7431d027210b",
+        "34bd768d34f14da18b098d3ed389c6a5"
+      ],
+      "after_memory_rows": [
+        179,
+        180
+      ],
+      "after_snapshot": "snapshots/000063.json"
+    },
+    {
+      "day": "Saturday",
+      "step_id": "d6_s5",
+      "delta_tp": 1,
+      "delta_fp": -1,
+      "delta_fn": -1,
+      "before_selected": [
+        "submit_timesheet_1_d6"
+      ],
+      "after_selected": [
+        "loading_dock_sign_d6"
+      ],
+      "expected": [
+        "calendar_new_block_d6",
+        "loading_dock_sign_d6"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "aef553548a9a40c1adb3488b7d687b0f",
+        "26197a7b754c4596ab8546b0f48f7c44",
+        "acee56b0c6af4c66be639b8a853542cc",
+        "fb8d2b22d4fe453a9b980c66bd6b37b7",
+        "6a698872b5ac47ecbc50a87ddb1c2436",
+        "d01298afc91f431299c98a1c85d56ca3",
+        "471a7cc8fdff43e79659f91f7af1a297",
+        "5f9d1b356221411e80df01f12c9f9984",
+        "35b0c8e0293f4f9fa862b2b0326051ad",
+        "ec0e6990e3c94961ac797d53e41d8a1a",
+        "e20e5b17702d4a45b026a553df7f1ab5",
+        "11d8fe41fb1840d8b47162fb3a2f807d",
+        "6d497d5db61a4c6d91cadccc78515acb",
+        "2a2023cb7b0d4e17a932fee5ed7a9904",
+        "9252872c04744f46a6975f39bd14ace7",
+        "1af7e23893e841e281c73a1b103c7b6e",
+        "4c41cf434139446ca45679d578cd67e8",
+        "22fa12b3a92446d8af9e0d4b8a31a3de",
+        "63708622efc94abeb0704547e7084134"
+      ],
+      "after_memory_rows": [
+        181,
+        182
+      ],
+      "after_snapshot": "snapshots/000064.json"
+    },
+    {
+      "day": "Saturday",
+      "step_id": "d6_s6",
+      "delta_tp": 1,
+      "delta_fp": -1,
+      "delta_fn": -1,
+      "before_selected": [
+        "calendar_new_block_d6"
+      ],
+      "after_selected": [
+        "mailroom_shelf_d6"
+      ],
+      "expected": [
+        "appointment_slot_open_d6",
+        "mailroom_shelf_d6"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "a11c380857024f04be15245faf54f5cc",
+        "93d228ae7dba4617af6b32a172e74c5e",
+        "d9657d436eb349b798b5051e4c775b1b",
+        "0e6e35dbcad34b7a9053928c2de6f857",
+        "939928bf874447a6bd9b030438cb6af5",
+        "474d1279d9524ed397ed15625e2f9bc2",
+        "3abd9a1c3efa46a49151856709823211",
+        "92e89ccc6d354087aeb0986e568fc709",
+        "da7518d82a0a4501917f92794814946f",
+        "f64eba83f77d40baa6a986dd3090eac5",
+        "adef6ccb72a74d78a11706d44a4d8bbe",
+        "edd5054771d342fb90d72df634ef202b",
+        "97ca84be7ef4401291233a880b390984",
+        "240a85a9c2704d20b3ee09a25caffafb",
+        "579ba6bc12c34a2aaea7a56d4a36ef0a",
+        "183503a25dac49b4839b198c66fd3807",
+        "6310dd73a7e840bb8e37145243f5f949",
+        "4783c832f7964156b4488e8f39f6df73",
+        "f7ee95e307de4af1a6edf4825a91b6f9"
+      ],
+      "after_memory_rows": [
+        183,
+        184
+      ],
+      "after_snapshot": "snapshots/000065.json"
+    },
+    {
+      "day": "Saturday",
+      "step_id": "d6_s7",
+      "delta_tp": -1,
+      "delta_fp": 0,
+      "delta_fn": 1,
+      "before_selected": [
+        "crossday_2",
+        "package_locker_light_d6"
+      ],
+      "after_selected": [
+        "package_locker_light_d6"
+      ],
+      "expected": [
+        "crossday_2",
+        "package_locker_light_d6"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "490cd5f3fb134395a9f22535d2e0525a",
+        "b0fb537f492741be8677a180a57a42df",
+        "0fe9b015e9784735899d6df0b1bcd211",
+        "8b6a6eff67f74110a8da829e603f3c8c",
+        "5f291edddc374d15a36797c8ca1ee483",
+        "e553150d767e4b839ea09a034eb2ce11",
+        "313e6f41d0654e8a81f070802a64bdc7",
+        "41080ffdcbf8412fbfdd6a338d17223f",
+        "aec38610188241f7b5fae18536c81cc0",
+        "0d64ef1334314fba99338da018447a3a",
+        "7714a6d267ba40f790bb8028d1b8784c",
+        "2e9acd3300044bb9a79f105ed1b48f49",
+        "36a7dd95f9834da9bce2b70f6b605eaa",
+        "1ab778768e7345199db26c9906f4e8fc",
+        "70acbd5ab274496ca7f5a58fdd3943a9",
+        "f12bd93aa6c44af0ad3832d87816322f",
+        "6bdbebd44287406289d2a61983bb69d6",
+        "d21ef9c7aaa148509ab86a57a3851ba5",
+        "9cc3994baab84cd5af8158a282978b86"
+      ],
+      "after_memory_rows": [
+        185,
+        186
+      ],
+      "after_snapshot": "snapshots/000066.json"
+    },
+    {
+      "day": "Saturday",
+      "step_id": "d6_s8",
+      "delta_tp": -1,
+      "delta_fp": 1,
+      "delta_fn": 1,
+      "before_selected": [
+        "antibiotic_dinner"
+      ],
+      "after_selected": [
+        "asthma_2100"
+      ],
+      "expected": [
+        "antibiotic_dinner"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "e9847cccdeea420e8c5fd3ea2aa3cfd5",
+        "ead3197a69f04cd6a5a32d060b54c200",
+        "fb62e7ac449a4f52b87a57d6bc859cac",
+        "9313b287afd649cc92c717ec532777da",
+        "5c14809872344d3fb69a4847ae669f0e",
+        "385ee7644d6a4483b4f8cae9660dbd85",
+        "3a547a9cbd00485ba9da52a7f8da2327",
+        "73cc6c40bca347c69da9d5f23009d11f",
+        "41c5e6cc76f54899ac6c36bec2dd9463",
+        "9ffdc3f9f4ce4b9cb1d32d95d8320181",
+        "771a7c51d31445d0ad9e5bc42a98dbd8",
+        "ed03eaddc89b496bb496ae1d51a7b241",
+        "5a6cc7bb86794f0583497ce08d440840",
+        "1f46dfecbf6f422daf84bee437d57f2a",
+        "65cdbfd651be4bb3a59ef35f9b16fdaa",
+        "f6bdee08927d4aa696e2c3f1b16e90eb",
+        "2e92b583c4bd4492931888bffe44d0cd",
+        "89dd7bbb6eff4e36a54436ce6b84a3d4",
+        "3f8e131de4f84fd4a1ac06abf26bf0ad"
+      ],
+      "after_memory_rows": [
+        187,
+        188
+      ],
+      "after_snapshot": "snapshots/000067.json"
+    },
+    {
+      "day": "Saturday",
+      "step_id": "d6_s9",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_2100"
+      ],
+      "after_selected": [
+        "asthma_2100"
+      ],
+      "expected": [
+        "asthma_2100"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "118531e59c5044b3bccff9636e3a6d6f",
+        "fa20862a48994bf1ae34f7e17c1740a8",
+        "59ca6b253dde4ba193fd614313fa81d4",
+        "53d3b2a316b442e991d6255bf55855e1",
+        "5de2f5a828954be49b28ff649ac1db2d",
+        "2e5dbe4cd9444f7fac5809d6ccbdb98c",
+        "d2294fa0c8244520805d9c5bb5b90d0e",
+        "8f07ed465ac64d45ac549025fb66302d",
+        "af343c1d93fe4a55ba4333eaadad666b",
+        "edca14fddb584a96826ece905aef6f7f",
+        "fdd62d19c3a94231a667e7deb5eac32c",
+        "a67b1f7ec9374f4897dc7f10725aa556",
+        "2b426117fdf6447f9293e8db92735503",
+        "b13c2225c78d4cc2b4684c2c2a2f7284",
+        "a40527787e624e8fb01dfcb8f4a4eb17",
+        "dcea9eea843e49a0a416d198e339a6a7",
+        "a19e131ca22746f2a92f3c484baf557c",
+        "a5840a77ef6b4c199024a3355a0c2cfa",
+        "6c631d6707434f21a1e91f0236fc2858"
+      ],
+      "after_memory_rows": [
+        189,
+        190
+      ],
+      "after_snapshot": "snapshots/000068.json"
+    },
+    {
+      "day": "Saturday",
+      "step_id": "d6_s10",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "crossday_3"
+      ],
+      "after_selected": [
+        "antibiotic_dinner"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "0ff9926ebd974b7a99ddf302913544a8",
+        "339245ee32bd409dad8c9a8e36956ad9",
+        "5b968ee4de664903aa82ae6cae63c6eb",
+        "8540154c1540451f8acb66e0c2c16d4d",
+        "f95832bfa61a478e9a7734bae4987114",
+        "819efa5b757541ef864c0c7f43ba6292",
+        "4b5a5c00a19a4beeb07846f07f8e7b08",
+        "76da3717267e4c6cbea6fdd71826a03e",
+        "94e3a8116de340c1b768c660de6ff4e7",
+        "7d2cd35ac0594cd9aad38e765efc6d43",
+        "f3c6102767494fc684356cc7c30330ae",
+        "b7129a61e60f4c5b951d6023bce877e8",
+        "5a08e349ddbc495e85e86022321a24fd",
+        "3dd4b55f3b9d409d9d2a6fd66c718029",
+        "4e22d909f36148a9bd82d3d702c7e552",
+        "ec043fd15eb34d3b835f5fd023982e7a",
+        "8fac19058f7f4800bb5730c355290e35",
+        "d40be608a09c4424992905343f66e596",
+        "8453d024cd5b472aaf769ebb71083fdb"
+      ],
+      "after_memory_rows": [
+        191,
+        192
+      ],
+      "after_snapshot": "snapshots/000069.json"
+    },
+    {
+      "day": "Sunday",
+      "step_id": "d7_s1",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_breakfast"
+      ],
+      "after_selected": [
+        "antibiotic_breakfast"
+      ],
+      "expected": [
+        "antibiotic_breakfast"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "ab23ff3073864c4b978008abb9a65cc7",
+        "b05447910f8c4d0faa529afe3ca6390b",
+        "f766352d23ba458886079f3f7c706b47",
+        "2843d858bb8f4c358c43a3a06a7777b3",
+        "90d9143e05be4003974b71e0bd8a4810",
+        "4afcce1bfac04ca0a1c51b92c676edb7",
+        "bde233ef7d8c47e09aa98963709942c0",
+        "3f8186bca40f4f97aa362808767a241c",
+        "7b986527b3304f33ad93f48c3b063a95",
+        "c28c06edd35b48958cb40c97bbdf54ca",
+        "77d0d062f5824db686eca3b7f9799c12",
+        "a4e3d3febff44a3ab770cb4c97d66a26",
+        "0f97e51328294634a9ca09e830ecc460",
+        "705f75fcb755458fbbb8a5cb59b9a8d7",
+        "3a27989e4269437ea4223ae85f4279e2",
+        "e8a5fb7e7d174528b7bd0f838b851bcf",
+        "63e4c961900648e7b5679bd5c28b8840",
+        "f8958c70d84248eca31431b6da200c72",
+        "1db8962a1a864e389c4dd0a3aa50d491",
+        "c6e20dc92b84439fadab0e65d3a41af5",
+        "c05d589dba454ff28ec3643ae4f54c1d",
+        "87af7e72f5e346a5bc8886be901a1783",
+        "faba3bffac0743c9a9743979964a95f7",
+        "ad2293f8632847ff9e7faa67e57f0328",
+        "af2890948570403ba288469ad4f3dc34",
+        "7770349a4d284c3d8017812a63f6a2ed",
+        "a8aff1bd7e2845a1a02db9a8ada9194d",
+        "3dca9957a14547f6a40a3d81e297e518",
+        "0eed9671c5ec4a60a4c73876190b303d",
+        "ab93444beceb4d55a7be7b7b190267c0",
+        "085a33230dba472b8bcf14d4b4aec51f",
+        "78cf963ec53649c2b56658ad9f490354",
+        "9eb09ee97c1a4e5485838e42f25a203f",
+        "535a87ed4c8448d68c2ec66d11bb6a30",
+        "f736e0b38a4e475684a119e7f4d57bbf",
+        "fda03cf374c046fe9f07fe446a5d73d3",
+        "d1af0484108b412d8dbf229248bc4248",
+        "9ab627a54c3f422b99e32405ed44c9f9",
+        "cd58cf95e49e46fcb6277af664e8a91e",
+        "2a313b51e03640619ec6d71f0ff0d88d",
+        "9e8515c5d41c4f4ea14970bb5176c7e8",
+        "da27c995f9ec40509a7542851f0f60ab",
+        "1363f83790224e21b34d6b754d083429",
+        "2de6bfa85a7d44fc8e1fba20b92fbb80",
+        "2535a73c8104492987c2f8a07baaa071",
+        "8b97e1140b3144d2b90ec1466fb01ff2",
+        "7e5239c431914899b57865b64c6a8edf",
+        "c11bb93e59e84f44acb41ac3e15428d4",
+        "dd683b73e2c34b9394c8bdb533a4c2aa"
+      ],
+      "after_memory_rows": [
+        193,
+        194,
+        195,
+        196,
+        197
+      ],
+      "after_snapshot": "snapshots/000070.json"
+    },
+    {
+      "day": "Sunday",
+      "step_id": "d7_s2",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "stretch_break"
+      ],
+      "after_selected": [
+        "stretch_break"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "23ca424ac471444c88703cdf4939a234",
+        "c6d64b4eb70b434fb54aca3e7a403645",
+        "21f3e1bb9b884816b4ef304d8406acd6",
+        "eae620bd3d384ca4bee3937b2fe414bf",
+        "267e816acf3943ed96d68429625a4a35",
+        "90a167c9fdcf42f8b1c6d944e530d24f",
+        "e19793ea5c69414399ef86556ca63ebf",
+        "101090fa50354a7aa973e4dbc9ae8080",
+        "c05356acb9dc4154a31203880fc6cdb6",
+        "8bd6887e475446899da88dbed0097c24",
+        "4e77be23e58e46b3824270a294cdce3e",
+        "c9d3759016044a2c984ab6918344786b",
+        "710e62493bb54a35856e95df9afa1981",
+        "832d4f06689f49bf945404ecdc1f2b0c",
+        "4ee356576ed34ab1b5cb075ad7f6ae3b",
+        "26b84efeb7af42b9ac5c9b770ddf20bb",
+        "811bcf6e4e004df882aabcaf2bc9699b",
+        "834a81f032a341408dd298c24be0ffd2",
+        "37593116fb984448bdcde6c11040b93c",
+        "16ebd86b411a415aaee022a1b6f7a998",
+        "fcecf15d19b442818d8309de269e7098",
+        "400d0ad9f82a41eda129ad9b93411cda",
+        "0d68821930b344f2a2325cb0c4eb456e",
+        "07e9137d91474de6a4db7f55c212afeb",
+        "13a29aa5ab134050b3eeb40faafaa4e7",
+        "c48c56d0b4264303b502a3d126fa1d4d",
+        "7fc751874d304530be9327cb5fb0b67d",
+        "e2c1aed81c2d45d4a2e83795157e16a4",
+        "0e8bbfc9ac5f475a9fa597283f13d5c6",
+        "bce618e697ad46dfa8b90794f14adde2",
+        "353feff88c4d49ab94467964ef60f2e3",
+        "148b0072e18c42368596940eda6f72f2",
+        "81a13f4a36bc494eac8497618febe5e1",
+        "b9b83d07735740d5a131f69f87c2c665",
+        "bf2a2738d5b14446afd331e0e194f338",
+        "063483fe0f4b4b03ad928ade7979046a"
+      ],
+      "after_memory_rows": [
+        198,
+        199,
+        200,
+        201
+      ],
+      "after_snapshot": "snapshots/000071.json"
+    },
+    {
+      "day": "Sunday",
+      "step_id": "d7_s3",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_1100"
+      ],
+      "after_selected": [
+        "asthma_1100"
+      ],
+      "expected": [
+        "asthma_1100"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "36ac9c8db3614de0a72fae5595cc54e9",
+        "1b08997f4bbf4e1f82908726ca43ca73",
+        "dc914d85e2054093a9122289c904feab",
+        "96dc53c8954f4aba86577f4a7470cf47",
+        "00597f838860446b82ab897df96a97d9",
+        "ae2c6f78812c496fa0e9c08ffce1fa7a",
+        "af3474db09764034b8bfd14aa908e994",
+        "f76330758a084d3980ee9a83cec454e8",
+        "79782b8876f24240af18feb89418a76a",
+        "b916ba69cfa44e43bf8e22eed74bb42b",
+        "c90b7d49d4224903815521353418da55",
+        "46223b41c47249ebb9a29ce0347dc680",
+        "580d6d9adba3443686f3fa71df60acac",
+        "deaccece18884986aa88e15487f33921",
+        "939c2c1da294478e81129ea368c437f9",
+        "2a5ba0f7def049aea9f99b3ab78c0410",
+        "dd7d5e3155c548689161ad2ed0266dbe",
+        "70edd3bee2b74d7c9403004c79034e09",
+        "2db32b02a14b4ba9bcc9530bacb60d69",
+        "cb37f75d531f4f6094418cd5bc149752",
+        "5a40b0a2b2fe46bb98781ebafbbd100d",
+        "049987df28844452a850b591aa7eca07",
+        "468c1711df2e4473813ca07627dd8d30",
+        "a0bdb4597d864f838a4ce2b4cdce8341",
+        "66efcfcc1ad740779fe5252573582147",
+        "a64563bcdc474c93ac6afa7533cf0ef8",
+        "9e26b42adc4e4961aff98c1eaf58e48a",
+        "e115cf18c0f7491f8cfc0ddb7b5fa714",
+        "aa0ec510c10743458a999721a4bc792b",
+        "c695f2301e2d434083e5b06b577d3420",
+        "e8fc625ed195496394eff2a42ae65860",
+        "93ac022f80cd4c46a3052ea057f18d73",
+        "83b82faed4f640cc8fa5e3cd9a65086e",
+        "c5ca6c2abf7e42efb238cd6f08b01d0c"
+      ],
+      "after_memory_rows": [
+        202,
+        203,
+        204,
+        205
+      ],
+      "after_snapshot": "snapshots/000072.json"
+    },
+    {
+      "day": "Sunday",
+      "step_id": "d7_s4",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "review_lab_notes_1_d7"
+      ],
+      "after_selected": [
+        "check_lab_portal_2_d7"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "4bfe70c826ce4fc6b33164e8ed868b06",
+        "0fb2d21fc5f64b02ad9d8343e786322d",
+        "cf443a1920ac40e1978686d35191c29c",
+        "f11297fbb53f46dfa61c69674c6a6df3",
+        "3eaf9ac2021949da98fa9ae8ae9ea359",
+        "7f81253bec204df2bfcb71840ceb33f3",
+        "cf2d14f146fb47ccbf9293d0ea01c349",
+        "4488c6139dbf46a8b5c32ae76ca693c3",
+        "2ca34f9ab6be412cbbfc83a6d4c55b66",
+        "3c46ab53b7b14cf3b341fc776cf951a9",
+        "ad671ecd23d64befb00a5edc966045fd",
+        "5a52aef8315d4096b57b3593ce3b1a3f",
+        "aeee7da712a2461e94220bb7ae6a855e",
+        "bbc1b0e6560b4b5c9facec6da479b542",
+        "fda0e12541004ccf90b708785601d18f",
+        "b0e464c0d61e437e87e33d9180e19014",
+        "9e4308c8ae004d25ba10f608d6a4300d"
+      ],
+      "after_memory_rows": [
+        206,
+        207
+      ],
+      "after_snapshot": "snapshots/000073.json"
+    },
+    {
+      "day": "Sunday",
+      "step_id": "d7_s5",
+      "delta_tp": -1,
+      "delta_fp": 1,
+      "delta_fn": 1,
+      "before_selected": [
+        "check_lab_portal_2_d7"
+      ],
+      "after_selected": [
+        "review_lab_notes_1_d7"
+      ],
+      "expected": [
+        "check_lab_portal_2_d7",
+        "seminar_sign_d7"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "7b401c92a0b545a5a4ffd86f512ab166",
+        "4354231693f441c9a5e2568e779843d3",
+        "e7b7c27260674329aa7975aab9df6b98",
+        "8d37143d16c74c6ab7294804b3710b3c",
+        "9e8f0b4275e94053b11252ccf4a3a364",
+        "59db998e2d4840a2955ec55c9193e722",
+        "1d9035f2a7904f11b08cc6f8b453679b",
+        "4e1826cafaf54bc7b978ac7b8c583446",
+        "583c315840f248fd843973aa240a8495",
+        "27d14e3950544506a7e5c899fb1dad66",
+        "c5ae212a35794db09b61d967bebee0f9",
+        "94b762e5f2b64530b5a90d98bb2b1238",
+        "e3a91f764f77499bb365f461f1dbc62c",
+        "806663dd6f7e484d8ba8c2c312f01251",
+        "172dbf8478e047d0894f674e2f2aff6c",
+        "eab5f0152ccd4fb1b40fa0ae31da4d40",
+        "6a3dd934e8b947debd93c4e3b53943b4"
+      ],
+      "after_memory_rows": [
+        208,
+        209
+      ],
+      "after_snapshot": "snapshots/000074.json"
+    },
+    {
+      "day": "Sunday",
+      "step_id": "d7_s6",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "lecture_side_door_d7"
+      ],
+      "after_selected": [
+        "lecture_side_door_d7"
+      ],
+      "expected": [
+        "lecture_side_door_d7"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "7de3e5cc11a9498f999da5247f23b5d7",
+        "25a33cf80ccd432089013f075ed36f0b",
+        "a692051cab634a69ad2495fd5cb53846",
+        "519ff90c38e342a99282fdba9db14a6b",
+        "7c92cd49c2eb4d40968e50ba87b649b9",
+        "63862a5d102a4964b9e795268f0c92db",
+        "16ed63f1e6ad4407b845ed65f157eaae",
+        "7d3683c9f3f94519ae1d2b85567cfcff",
+        "9309d4b9e86d4c2293c99ab8a70c1645",
+        "d9ed78ccb3af4cea8a6e9e4683e7e3d1",
+        "abbff3256ee64450bd1c9b1ca16beb36",
+        "1eea46e36ee64b1eabad56b79e639eed",
+        "35385ae2efce471091450206f90ab7dd",
+        "b304a2d79b134c12ab7149e8c9b16733",
+        "d9c8a365cbb64c49aafe3747a5256be9",
+        "ea434d2066674a2eaaa8319abb4be156",
+        "cbb204d0cebd4963ae6a7359e264fd65"
+      ],
+      "after_memory_rows": [
+        210,
+        211
+      ],
+      "after_snapshot": "snapshots/000075.json"
+    },
+    {
+      "day": "Sunday",
+      "step_id": "d7_s7",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "review_lab_notes_1_d7"
+      ],
+      "after_selected": [
+        "review_lab_notes_1_d7"
+      ],
+      "expected": [
+        "balance_low_95_d7"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "d2f181af27c9436bbf60481ca5682058",
+        "fb7d826fb58645259687b0352284916d",
+        "c8231e3414184198bb3b8a94440bfeef",
+        "7b3f952828464081953adc0450e54086",
+        "94b7f874da524e079c3344c4e5ee37e9",
+        "b66e19ab5aed473394ee90625ddd26fa",
+        "e7c700b6f8974f1d82ae8c6885375cc8",
+        "b98382eeec764cf49511ca10c4589961",
+        "79a0d9aacc404d508336d48c899b0c32",
+        "3b06c07c71c24c4f8c1b9efe5afc2e13",
+        "ac67a8a151b94a75b290d248955a9c49",
+        "8b1cf8653aac4c48ab1efdfc82c70c04",
+        "144cd2d94f8c4923aa7ce89e31d6ff86",
+        "58dbf79326344d18ba670f937c9668cc",
+        "e31e6b504dcc4457b7403d551e8c177e",
+        "f9aa72cb566b4501b3631e498768a965",
+        "ccfeb53d6b7d443d918544076541095c"
+      ],
+      "after_memory_rows": [
+        212,
+        213
+      ],
+      "after_snapshot": "snapshots/000076.json"
+    },
+    {
+      "day": "Sunday",
+      "step_id": "d7_s8",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "review_lab_notes_1_d7"
+      ],
+      "after_selected": [
+        "review_lab_notes_1_d7"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "d8b367070d5c4cd1816b446b563438af",
+        "877bd44439114ee39f98c383c174dcba",
+        "c1a1f00f9f9a43829f94ef8b7cab897a",
+        "7d01d6ed9f5b45edb5266156feaa69e2",
+        "1b3228c01f204e55863eb3d079de4f2c",
+        "c27a120eb3c24d938107c03f2017c68a",
+        "5d929de4c05543438603a90fe9119ebc",
+        "9f6801fbb5d54a23ae877f24460be7b0",
+        "108a97811cc343b9aba7696af5c4b600",
+        "3615757e5d47469cad1259040fe03562",
+        "6c1116b67bee45bca63c42ec59a2bc52",
+        "26fe4597d1ae4fde9713a00d7590c565",
+        "2f662f2346bd4925842872f3f760b6cc",
+        "88bb1455cc2d44ffb1f3f90e24ac1aab",
+        "7a010b73b64148c986219e2cf5b279ca",
+        "79ce174f7a9549b9bb31193d8f130e49",
+        "353225fc6b8c421b9d28893ecaa992eb",
+        "01cc7992b01f4be8803c644a0ebba54d",
+        "80de8ca7665746139c9c87c62cf75a2c",
+        "072d79ee70354eccb36b08c543c694d5"
+      ],
+      "after_memory_rows": [
+        214,
+        215
+      ],
+      "after_snapshot": "snapshots/000077.json"
+    },
+    {
+      "day": "Sunday",
+      "step_id": "d7_s9",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "antibiotic_dinner"
+      ],
+      "after_selected": [
+        "asthma_2100"
+      ],
+      "expected": [],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "a88e91523e644596a2c74d323a8f11bc",
+        "e325cc90dd964c118424da000b0fa1e5",
+        "5acd6bd4dc4a425ba0b28bf7ac6eb6f2",
+        "60fabbe891d34fff96e868d647f74231",
+        "e3b57c8c25d2444c85bcabf760b908ff",
+        "5e46d61f7a6947d887db7f7a655a2887",
+        "b30a8ce161264118b9e7720dbc7fd3e2",
+        "22486e82110b41b9997dc49f79f264f6",
+        "57476e22fcd0447c82aac6fddc9e151e",
+        "1a05874da2c6415aa9c1fa8df5f9d95f",
+        "fee17e9f77dd4b6b91d62c8613bceaea",
+        "edc25524052e452a8c5c1adf36e19228",
+        "c8d8fdd7970741a880ae8a51c80da4e7",
+        "470a913f95c245d4961f5810d9a9dd39",
+        "139f0f49804e4bc5a64aa5449657e5e8",
+        "a6b9cf393b674160b5b69c6ad137545a",
+        "7cb87fe81f094d208af0a72a517540d3"
+      ],
+      "after_memory_rows": [
+        216,
+        217
+      ],
+      "after_snapshot": "snapshots/000078.json"
+    },
+    {
+      "day": "Sunday",
+      "step_id": "d7_s10",
+      "delta_tp": -1,
+      "delta_fp": 1,
+      "delta_fn": 1,
+      "before_selected": [
+        "antibiotic_dinner"
+      ],
+      "after_selected": [
+        "asthma_2100"
+      ],
+      "expected": [
+        "antibiotic_dinner"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "ae9d898f33004e46a4a55e12616f18c6",
+        "ebd484b5bc444bae98ada29a69dec7f6",
+        "27a9b21287034e27a2e0111561d0ee4a",
+        "c2e683796f4e411f815f3a64b5df76b2",
+        "29fcf9c81e3c4847a74da469a10e3a92",
+        "c1e786d348ca46a5ad610ed5202cf5fc",
+        "5a518fc2fb194199af710ebee046ded8",
+        "91f7c1c1d4fa44bebd45c81168f9e587",
+        "4947658de3e2427ea164c6dc6a456a96",
+        "33bb7312a2fc4e8d9299a54685d38343",
+        "eebc4681d1b64361a763938dde418fdd",
+        "f3bc9a7a06b649a6ac6aaaafda845117",
+        "5e3a0f2202334734bcf31a94bf0e3a80",
+        "1984b3d59d1146cfacc7915dc9da63d0",
+        "427d8a541049440bb638fafd1cf05965",
+        "551354a1ad5e460dab1fd4ff84b0474e",
+        "2f9cda83adab4ef486ec0728c9c4c1ec"
+      ],
+      "after_memory_rows": [
+        218,
+        219
+      ],
+      "after_snapshot": "snapshots/000079.json"
+    },
+    {
+      "day": "Sunday",
+      "step_id": "d7_s11",
+      "delta_tp": 0,
+      "delta_fp": 0,
+      "delta_fn": 0,
+      "before_selected": [
+        "asthma_2100"
+      ],
+      "after_selected": [
+        "asthma_2100"
+      ],
+      "expected": [
+        "asthma_2100",
+        "review_lab_notes_1_d7"
+      ],
+      "before_invalid": "False",
+      "after_invalid": "False",
+      "after_invalid_reason": "",
+      "after_call_ids": [
+        "8575e99a57b7422f9f72d02a37d47f70",
+        "5fa01c966fd340d2956ee13b810a6ebc",
+        "7e407a897bf448f886ed6a366d1c12eb",
+        "063ccd7b7e7e4891aeb9f4f02b7e4c66",
+        "338b113161424b50bcf7151e756dd743",
+        "a637fc4b198a4c0fb633842861d838e7",
+        "35bfec85b94f428ab43826067f4378e7",
+        "aacc8059308f4dc4a537dc456318087a",
+        "405cd15d13fb4e87add6ba445dd6d33b",
+        "79a43e7e13c647348229c1fa346b10ee",
+        "cf32f82e82154dc3ae866c60116a607d",
+        "10abbc88018f450ab93405c4954ebea2",
+        "6c771f98c4034c638081a848851dea91",
+        "9e906e2aeafd4082b4629c92adb613aa",
+        "757ae6807a06464a9eb7b98c3dca4e56",
+        "1470f864cca7430ea3beae859e0869c5",
+        "508fccc0298b46c7a2a3450652c70eca"
+      ],
+      "after_memory_rows": [
+        220,
+        221
+      ],
+      "after_snapshot": "snapshots/000080.json"
+    }
+  ],
+  "note": "Paired development results on an inspected scenario; no held-out or causal claim."
+}

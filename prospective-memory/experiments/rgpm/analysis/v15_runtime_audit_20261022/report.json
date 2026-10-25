@@ -1,0 +1,663 @@
+{
+  "created_at": "2026-10-23T02:44:36.225316+00:00",
+  "runs": [
+    {
+      "job_id": "1538265",
+      "actor": "Qwen/Qwen3-0.6B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-0-6b-helper-qwen3-1-7b/sbpm/qwen3-0-6b-actor-helper-qwen3-1-7b-1538265",
+      "issues": [
+        "Actor context-capacity rejections affect benchmark interpretation"
+      ],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.1346153846153846,
+      "call_counts": {
+        "helper": 15960,
+        "actor": 564
+      },
+      "failed_calls": {
+        "helper": 2,
+        "actor": 44
+      },
+      "error_types": {
+        "JSONDecodeError": 2,
+        "BadRequestError": 44
+      },
+      "finish_reasons": {
+        "stop": 16480,
+        "null": 44
+      },
+      "assessment_calls": 14522,
+      "invalid_actor_steps": 57,
+      "actor_context_rejections": 2,
+      "actor_steps_with_context_rejections": 1,
+      "semantic_error_count": 1039
+    },
+    {
+      "job_id": "1538266",
+      "actor": "Qwen/Qwen3-0.6B",
+      "helper": "Qwen/Qwen3-4B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-0-6b-helper-qwen3-4b/sbpm/qwen3-0-6b-actor-helper-qwen3-4b-1538266",
+      "issues": [
+        "Actor context-capacity rejections affect benchmark interpretation"
+      ],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.21374045801526717,
+      "call_counts": {
+        "helper": 18087,
+        "actor": 477
+      },
+      "failed_calls": {
+        "actor": 8
+      },
+      "error_types": {
+        "BadRequestError": 8
+      },
+      "finish_reasons": {
+        "stop": 18556,
+        "null": 8
+      },
+      "assessment_calls": 17290,
+      "invalid_actor_steps": 28,
+      "actor_context_rejections": 8,
+      "actor_steps_with_context_rejections": 4,
+      "semantic_error_count": 49
+    },
+    {
+      "job_id": "1538267",
+      "actor": "Qwen/Qwen3-0.6B",
+      "helper": "Qwen/Qwen3-8B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-0-6b-helper-qwen3-8b/sbpm/qwen3-0-6b-actor-helper-qwen3-8b-1538267",
+      "issues": [],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.2608695652173913,
+      "call_counts": {
+        "helper": 12402,
+        "actor": 396
+      },
+      "failed_calls": {},
+      "error_types": {},
+      "finish_reasons": {
+        "stop": 12798
+      },
+      "assessment_calls": 11719,
+      "invalid_actor_steps": 15,
+      "actor_context_rejections": 0,
+      "actor_steps_with_context_rejections": 0,
+      "semantic_error_count": 36
+    },
+    {
+      "job_id": "1537334",
+      "actor": "Qwen/Qwen3-0.6B",
+      "helper": "Qwen/Qwen3-32B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_20261020/qwen3-0-6b-helper-qwen3-32b/sbpm/qwen3-0-6b-actor-helper-qwen3-32b-1537334",
+      "issues": [
+        "Actor context-capacity rejections affect benchmark interpretation"
+      ],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.24806201550387597,
+      "call_counts": {
+        "helper": 15143,
+        "actor": 468
+      },
+      "failed_calls": {
+        "actor": 6
+      },
+      "error_types": {
+        "BadRequestError": 6
+      },
+      "finish_reasons": {
+        "stop": 15605,
+        "null": 6
+      },
+      "assessment_calls": 14395,
+      "invalid_actor_steps": 27,
+      "actor_context_rejections": 6,
+      "actor_steps_with_context_rejections": 3,
+      "semantic_error_count": 11
+    },
+    {
+      "job_id": "1538268",
+      "actor": "Qwen/Qwen3-1.7B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-1-7b/sbpm/qwen3-1-7b-1538268",
+      "issues": [],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.15,
+      "call_counts": {
+        "helper": 8539,
+        "actor": 270
+      },
+      "failed_calls": {
+        "helper": 3
+      },
+      "error_types": {
+        "JSONDecodeError": 3
+      },
+      "finish_reasons": {
+        "stop": 8809
+      },
+      "assessment_calls": 7705,
+      "invalid_actor_steps": 1,
+      "actor_context_rejections": 0,
+      "actor_steps_with_context_rejections": 0,
+      "semantic_error_count": 435
+    },
+    {
+      "job_id": "1538269",
+      "actor": "Qwen/Qwen3-1.7B",
+      "helper": "Qwen/Qwen3-4B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-1-7b-helper-qwen3-4b/sbpm/qwen3-1-7b-actor-helper-qwen3-4b-1538269",
+      "issues": [],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.34782608695652173,
+      "call_counts": {
+        "helper": 7527,
+        "actor": 242
+      },
+      "failed_calls": {},
+      "error_types": {},
+      "finish_reasons": {
+        "stop": 7769
+      },
+      "assessment_calls": 6962,
+      "invalid_actor_steps": 0,
+      "actor_context_rejections": 0,
+      "actor_steps_with_context_rejections": 0,
+      "semantic_error_count": 21
+    },
+    {
+      "job_id": "1538270",
+      "actor": "Qwen/Qwen3-1.7B",
+      "helper": "Qwen/Qwen3-8B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-1-7b-helper-qwen3-8b/sbpm/qwen3-1-7b-actor-helper-qwen3-8b-1538270",
+      "issues": [],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.39751552795031053,
+      "call_counts": {
+        "helper": 6444,
+        "actor": 240
+      },
+      "failed_calls": {},
+      "error_types": {},
+      "finish_reasons": {
+        "stop": 6684
+      },
+      "assessment_calls": 5892,
+      "invalid_actor_steps": 0,
+      "actor_context_rejections": 0,
+      "actor_steps_with_context_rejections": 0,
+      "semantic_error_count": 24
+    },
+    {
+      "job_id": "1537338",
+      "actor": "Qwen/Qwen3-1.7B",
+      "helper": "Qwen/Qwen3-32B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_20261020/qwen3-1-7b-helper-qwen3-32b/sbpm/qwen3-1-7b-actor-helper-qwen3-32b-1537338",
+      "issues": [],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.38509316770186336,
+      "call_counts": {
+        "helper": 6751,
+        "actor": 241
+      },
+      "failed_calls": {},
+      "error_types": {},
+      "finish_reasons": {
+        "stop": 6992
+      },
+      "assessment_calls": 6178,
+      "invalid_actor_steps": 0,
+      "actor_context_rejections": 0,
+      "actor_steps_with_context_rejections": 0,
+      "semantic_error_count": 1
+    },
+    {
+      "job_id": "1538271",
+      "actor": "Qwen/Qwen3-4B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-4b-helper-qwen3-1-7b/sbpm/qwen3-4b-actor-helper-qwen3-1-7b-1538271",
+      "issues": [],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.42487046632124353,
+      "call_counts": {
+        "helper": 6778,
+        "actor": 232
+      },
+      "failed_calls": {
+        "helper": 2
+      },
+      "error_types": {
+        "JSONDecodeError": 2
+      },
+      "finish_reasons": {
+        "stop": 7010
+      },
+      "assessment_calls": 6023,
+      "invalid_actor_steps": 0,
+      "actor_context_rejections": 0,
+      "actor_steps_with_context_rejections": 0,
+      "semantic_error_count": 344
+    },
+    {
+      "job_id": "1538272",
+      "actor": "Qwen/Qwen3-4B",
+      "helper": "Qwen/Qwen3-4B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-4b/sbpm/qwen3-4b-1538272",
+      "issues": [],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.47368421052631576,
+      "call_counts": {
+        "helper": 7361,
+        "actor": 240
+      },
+      "failed_calls": {},
+      "error_types": {},
+      "finish_reasons": {
+        "stop": 7601
+      },
+      "assessment_calls": 6803,
+      "invalid_actor_steps": 0,
+      "actor_context_rejections": 0,
+      "actor_steps_with_context_rejections": 0,
+      "semantic_error_count": 25
+    },
+    {
+      "job_id": "1538273",
+      "actor": "Qwen/Qwen3-4B",
+      "helper": "Qwen/Qwen3-8B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-4b-helper-qwen3-8b/sbpm/qwen3-4b-actor-helper-qwen3-8b-1538273",
+      "issues": [],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.5591397849462365,
+      "call_counts": {
+        "helper": 6438,
+        "actor": 239
+      },
+      "failed_calls": {},
+      "error_types": {},
+      "finish_reasons": {
+        "stop": 6677
+      },
+      "assessment_calls": 5895,
+      "invalid_actor_steps": 0,
+      "actor_context_rejections": 0,
+      "actor_steps_with_context_rejections": 0,
+      "semantic_error_count": 19
+    },
+    {
+      "job_id": "1538274",
+      "actor": "Qwen/Qwen3-4B",
+      "helper": "Qwen/Qwen3-32B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-4b-helper-qwen3-32b/sbpm/qwen3-4b-actor-helper-qwen3-32b-1538274",
+      "issues": [],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.6594594594594595,
+      "call_counts": {
+        "helper": 6710,
+        "actor": 240
+      },
+      "failed_calls": {},
+      "error_types": {},
+      "finish_reasons": {
+        "stop": 6950
+      },
+      "assessment_calls": 6138,
+      "invalid_actor_steps": 0,
+      "actor_context_rejections": 0,
+      "actor_steps_with_context_rejections": 0,
+      "semantic_error_count": 1
+    },
+    {
+      "job_id": "1538275",
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b-helper-qwen3-1-7b/sbpm/qwen3-8b-actor-helper-qwen3-1-7b-1538275",
+      "issues": [],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.4153846153846154,
+      "call_counts": {
+        "helper": 6846,
+        "actor": 233
+      },
+      "failed_calls": {
+        "helper": 2
+      },
+      "error_types": {
+        "JSONDecodeError": 2
+      },
+      "finish_reasons": {
+        "stop": 7079
+      },
+      "assessment_calls": 6087,
+      "invalid_actor_steps": 0,
+      "actor_context_rejections": 0,
+      "actor_steps_with_context_rejections": 0,
+      "semantic_error_count": 357
+    },
+    {
+      "job_id": "1538276",
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-4B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b-helper-qwen3-4b/sbpm/qwen3-8b-actor-helper-qwen3-4b-1538276",
+      "issues": [],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.44274809160305345,
+      "call_counts": {
+        "helper": 7433,
+        "actor": 240
+      },
+      "failed_calls": {},
+      "error_types": {},
+      "finish_reasons": {
+        "stop": 7673
+      },
+      "assessment_calls": 6870,
+      "invalid_actor_steps": 0,
+      "actor_context_rejections": 0,
+      "actor_steps_with_context_rejections": 0,
+      "semantic_error_count": 21
+    },
+    {
+      "job_id": "1538277",
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-8B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b/sbpm/qwen3-8b-1538277",
+      "issues": [],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.3418803418803419,
+      "call_counts": {
+        "helper": 6444,
+        "actor": 240
+      },
+      "failed_calls": {},
+      "error_types": {},
+      "finish_reasons": {
+        "stop": 6684
+      },
+      "assessment_calls": 5892,
+      "invalid_actor_steps": 0,
+      "actor_context_rejections": 0,
+      "actor_steps_with_context_rejections": 0,
+      "semantic_error_count": 24
+    },
+    {
+      "job_id": "1538278",
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-32B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b-helper-qwen3-32b/sbpm/qwen3-8b-actor-helper-qwen3-32b-1538278",
+      "issues": [],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.6236559139784946,
+      "call_counts": {
+        "helper": 6710,
+        "actor": 240
+      },
+      "failed_calls": {},
+      "error_types": {},
+      "finish_reasons": {
+        "stop": 6950
+      },
+      "assessment_calls": 6138,
+      "invalid_actor_steps": 0,
+      "actor_context_rejections": 0,
+      "actor_steps_with_context_rejections": 0,
+      "semantic_error_count": 1
+    },
+    {
+      "job_id": "1538279",
+      "actor": "Qwen/Qwen3-32B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-32b-helper-qwen3-1-7b/sbpm/qwen3-32b-actor-helper-qwen3-1-7b-1538279",
+      "issues": [
+        "Actor context-capacity rejections affect benchmark interpretation"
+      ],
+      "warnings": [
+        "Model output/semantic failures present; retain as measured quality outcomes"
+      ],
+      "status": "complete",
+      "committed_steps": 80,
+      "method_source_drift_vs_gpt": [],
+      "f1": 0.38666666666666666,
+      "call_counts": {
+        "helper": 4549,
+        "actor": 215
+      },
+      "failed_calls": {
+        "helper": 2,
+        "actor": 74
+      },
+      "error_types": {
+        "JSONDecodeError": 2,
+        "BadRequestError": 74
+      },
+      "finish_reasons": {
+        "stop": 4690,
+        "null": 74
+      },
+      "assessment_calls": 3926,
+      "invalid_actor_steps": 37,
+      "actor_context_rejections": 74,
+      "actor_steps_with_context_rejections": 37,
+      "semantic_error_count": 260
+    },
+    {
+      "job_id": "1538280",
+      "actor": "Qwen/Qwen3-32B",
+      "helper": "Qwen/Qwen3-4B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-32b-helper-qwen3-4b/sbpm/qwen3-32b-actor-helper-qwen3-4b-1538280",
+      "issues": [],
+      "warnings": [],
+      "status": "running",
+      "committed_steps": 17,
+      "method_source_drift_vs_gpt": []
+    },
+    {
+      "job_id": "1538281",
+      "actor": "Qwen/Qwen3-32B",
+      "helper": "Qwen/Qwen3-8B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-32b-helper-qwen3-8b/sbpm/qwen3-32b-actor-helper-qwen3-8b-1538281",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    },
+    {
+      "job_id": "1538282",
+      "actor": "Qwen/Qwen3-32B",
+      "helper": "Qwen/Qwen3-32B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-32b/sbpm/qwen3-32b-1538282",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    },
+    {
+      "job_id": "1538283",
+      "actor": "google/gemma-4-E2B-it",
+      "helper": "Qwen/Qwen3-1.7B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/gemma-4-e2b-it-helper-qwen3-1-7b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-1-7b-1538283",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    },
+    {
+      "job_id": "1538284",
+      "actor": "google/gemma-4-E2B-it",
+      "helper": "Qwen/Qwen3-4B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/gemma-4-e2b-it-helper-qwen3-4b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-4b-1538284",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    },
+    {
+      "job_id": "1538285",
+      "actor": "google/gemma-4-E2B-it",
+      "helper": "Qwen/Qwen3-8B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/gemma-4-e2b-it-helper-qwen3-8b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-8b-1538285",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    },
+    {
+      "job_id": "1538286",
+      "actor": "google/gemma-4-E2B-it",
+      "helper": "Qwen/Qwen3-32B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/gemma-4-e2b-it-helper-qwen3-32b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-32b-1538286",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    },
+    {
+      "job_id": "1538287",
+      "actor": "mistralai/Ministral-3-3B-Instruct-2512",
+      "helper": "Qwen/Qwen3-1.7B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-3b-instruct-2512-helper-qwen3-1-7b/sbpm/ministral-3-3b-instruct-2512-actor-helper-qwen3-1-7b-1538287",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    },
+    {
+      "job_id": "1538288",
+      "actor": "mistralai/Ministral-3-3B-Instruct-2512",
+      "helper": "Qwen/Qwen3-4B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-3b-instruct-2512-helper-qwen3-4b/sbpm/ministral-3-3b-instruct-2512-actor-helper-qwen3-4b-1538288",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    },
+    {
+      "job_id": "1538289",
+      "actor": "mistralai/Ministral-3-3B-Instruct-2512",
+      "helper": "Qwen/Qwen3-8B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-3b-instruct-2512-helper-qwen3-8b/sbpm/ministral-3-3b-instruct-2512-actor-helper-qwen3-8b-1538289",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    },
+    {
+      "job_id": "1538290",
+      "actor": "mistralai/Ministral-3-3B-Instruct-2512",
+      "helper": "Qwen/Qwen3-32B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-3b-instruct-2512-helper-qwen3-32b/sbpm/ministral-3-3b-instruct-2512-actor-helper-qwen3-32b-1538290",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    },
+    {
+      "job_id": "1538291",
+      "actor": "mistralai/Ministral-3-8B-Instruct-2512",
+      "helper": "Qwen/Qwen3-1.7B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-8b-instruct-2512-helper-qwen3-1-7b/sbpm/ministral-3-8b-instruct-2512-actor-helper-qwen3-1-7b-1538291",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    },
+    {
+      "job_id": "1538292",
+      "actor": "mistralai/Ministral-3-8B-Instruct-2512",
+      "helper": "Qwen/Qwen3-4B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-8b-instruct-2512-helper-qwen3-4b/sbpm/ministral-3-8b-instruct-2512-actor-helper-qwen3-4b-1538292",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    },
+    {
+      "job_id": "1538293",
+      "actor": "mistralai/Ministral-3-8B-Instruct-2512",
+      "helper": "Qwen/Qwen3-8B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-8b-instruct-2512-helper-qwen3-8b/sbpm/ministral-3-8b-instruct-2512-actor-helper-qwen3-8b-1538293",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    },
+    {
+      "job_id": "1538294",
+      "actor": "mistralai/Ministral-3-8B-Instruct-2512",
+      "helper": "Qwen/Qwen3-32B",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-8b-instruct-2512-helper-qwen3-32b/sbpm/ministral-3-8b-instruct-2512-actor-helper-qwen3-32b-1538294",
+      "issues": [],
+      "warnings": [],
+      "status": "not_started"
+    }
+  ],
+  "scope": "Read-only metadata/source checks; completed-run rescore and streamed call audit; hashes of key artifacts. Full memory/event streams are not rehashed."
+}

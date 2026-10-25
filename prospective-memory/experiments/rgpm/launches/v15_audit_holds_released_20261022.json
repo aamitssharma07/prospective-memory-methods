@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "experiment": 3,
+  "authorization": "User requested: let it run, once everything is done then try improvements",
+  "operation": "scontrol release on 14 audit-held jobs",
+  "released_job_ids": [1538281,1538282,1538283,1538284,1538285,1538286,1538287,1538288,1538289,1538290,1538291,1538292,1538293,1538294],
+  "verified_running_job": "1538281",
+  "dependencies_unchanged": true,
+  "inference_settings_unchanged": true,
+  "checkpoint_selection_unchanged": true,
+  "no_new_jobs_submitted": true,
+  "no_gpt_inference_started": true,
+  "deferred_work": ["Context-capacity corrections", "Explicit history-budget policy", "Ministral BF16 checkpoint correction", "Behavioral and efficiency improvements"],
+  "reporting": "Preserve all outputs and disclose context failures and actual checkpoint quantization. Prior audit findings remain valid; only their blocking status changed."
+}

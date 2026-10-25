@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "consistency_followup": {
+    "status": "submitted",
+    "record": "experiments/rgpm/launches/v15_consistency_reruns_20261023.json",
+    "job_ids": ["1553054", "1553055", "1553056", "1553057", "1553058", "1553059", "1553060", "1553061", "1553062", "1553063", "1553064"],
+    "starts_after_gpt_job": "1553053",
+    "note": "Eleven selective checkpoint/serving consistency reruns. Original 32-pair mapping remains intact; do not select replacement outcomes by F1. Updated inference methodology unchanged."
+  },
+  "experiment": 3,
+  "methodology": "focused_resolved_partition_v15",
+  "scenario": "benchmark/data/synthetic_week_v9.json",
+  "scenario_sha256": "94a45937da1363be19ccfdc2c188d132f23093041e30abd3ec22d64d70da8f24",
+  "full_dataset_steps": 80,
+  "max_tokens": 768,
+  "local_target_count": 32,
+  "completion_requires": "status=complete, committed_steps=80, valid artifacts, and full-dataset metrics for every pair",
+  "local_targets": [
+    {
+      "original_pair_index": 0,
+      "actor": "Qwen/Qwen3-0.6B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "selected_job_id": "1538265",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-0-6b-helper-qwen3-1-7b/sbpm/qwen3-0-6b-actor-helper-qwen3-1-7b-1538265",
+      "superseded_job_id": "1537331"
+    },
+    {
+      "original_pair_index": 1,
+      "actor": "Qwen/Qwen3-0.6B",
+      "helper": "Qwen/Qwen3-4B",
+      "selected_job_id": "1538266",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-0-6b-helper-qwen3-4b/sbpm/qwen3-0-6b-actor-helper-qwen3-4b-1538266",
+      "superseded_job_id": "1537332"
+    },
+    {
+      "original_pair_index": 2,
+      "actor": "Qwen/Qwen3-0.6B",
+      "helper": "Qwen/Qwen3-8B",
+      "selected_job_id": "1538267",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-0-6b-helper-qwen3-8b/sbpm/qwen3-0-6b-actor-helper-qwen3-8b-1538267",
+      "superseded_job_id": "1537333"
+    },
+    {
+      "original_pair_index": 3,
+      "actor": "Qwen/Qwen3-0.6B",
+      "helper": "Qwen/Qwen3-32B",
+      "selected_job_id": "1537334",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_20261020/qwen3-0-6b-helper-qwen3-32b/sbpm/qwen3-0-6b-actor-helper-qwen3-32b-1537334",
+      "superseded_job_id": null
+    },
+    {
+      "original_pair_index": 4,
+      "actor": "Qwen/Qwen3-1.7B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "selected_job_id": "1538268",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-1-7b/sbpm/qwen3-1-7b-1538268",
+      "superseded_job_id": "1537335"
+    },
+    {
+      "original_pair_index": 5,
+      "actor": "Qwen/Qwen3-1.7B",
+      "helper": "Qwen/Qwen3-4B",
+      "selected_job_id": "1538269",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-1-7b-helper-qwen3-4b/sbpm/qwen3-1-7b-actor-helper-qwen3-4b-1538269",
+      "superseded_job_id": "1537336"
+    },
+    {
+      "original_pair_index": 6,
+      "actor": "Qwen/Qwen3-1.7B",
+      "helper": "Qwen/Qwen3-8B",
+      "selected_job_id": "1538270",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-1-7b-helper-qwen3-8b/sbpm/qwen3-1-7b-actor-helper-qwen3-8b-1538270",
+      "superseded_job_id": "1537337"
+    },
+    {
+      "original_pair_index": 7,
+      "actor": "Qwen/Qwen3-1.7B",
+      "helper": "Qwen/Qwen3-32B",
+      "selected_job_id": "1537338",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_20261020/qwen3-1-7b-helper-qwen3-32b/sbpm/qwen3-1-7b-actor-helper-qwen3-32b-1537338",
+      "superseded_job_id": null
+    },
+    {
+      "original_pair_index": 8,
+      "actor": "Qwen/Qwen3-4B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "selected_job_id": "1538271",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-4b-helper-qwen3-1-7b/sbpm/qwen3-4b-actor-helper-qwen3-1-7b-1538271",
+      "superseded_job_id": "1537339"
+    },
+    {
+      "original_pair_index": 9,
+      "actor": "Qwen/Qwen3-4B",
+      "helper": "Qwen/Qwen3-4B",
+      "selected_job_id": "1538272",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-4b/sbpm/qwen3-4b-1538272",
+      "superseded_job_id": "1537340"
+    },
+    {
+      "original_pair_index": 10,
+      "actor": "Qwen/Qwen3-4B",
+      "helper": "Qwen/Qwen3-8B",
+      "selected_job_id": "1538273",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-4b-helper-qwen3-8b/sbpm/qwen3-4b-actor-helper-qwen3-8b-1538273",
+      "superseded_job_id": "1537341"
+    },
+    {
+      "original_pair_index": 11,
+      "actor": "Qwen/Qwen3-4B",
+      "helper": "Qwen/Qwen3-32B",
+      "selected_job_id": "1538274",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-4b-helper-qwen3-32b/sbpm/qwen3-4b-actor-helper-qwen3-32b-1538274",
+      "superseded_job_id": "1537342"
+    },
+    {
+      "original_pair_index": 12,
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "selected_job_id": "1538275",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b-helper-qwen3-1-7b/sbpm/qwen3-8b-actor-helper-qwen3-1-7b-1538275",
+      "superseded_job_id": "1537343"
+    },
+    {
+      "original_pair_index": 13,
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-4B",
+      "selected_job_id": "1538276",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b-helper-qwen3-4b/sbpm/qwen3-8b-actor-helper-qwen3-4b-1538276",
+      "superseded_job_id": "1537344"
+    },
+    {
+      "original_pair_index": 14,
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-8B",
+      "selected_job_id": "1538277",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b/sbpm/qwen3-8b-1538277",
+      "superseded_job_id": "1537345"
+    },
+    {
+      "original_pair_index": 15,
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-32B",
+      "selected_job_id": "1538278",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b-helper-qwen3-32b/sbpm/qwen3-8b-actor-helper-qwen3-32b-1538278",
+      "superseded_job_id": "1537346"
+    },
+    {
+      "original_pair_index": 16,
+      "actor": "Qwen/Qwen3-32B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "selected_job_id": "1538279",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-32b-helper-qwen3-1-7b/sbpm/qwen3-32b-actor-helper-qwen3-1-7b-1538279",
+      "superseded_job_id": "1537347"
+    },
+    {
+      "original_pair_index": 17,
+      "actor": "Qwen/Qwen3-32B",
+      "helper": "Qwen/Qwen3-4B",
+      "selected_job_id": "1538280",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-32b-helper-qwen3-4b/sbpm/qwen3-32b-actor-helper-qwen3-4b-1538280",
+      "superseded_job_id": "1537348"
+    },
+    {
+      "original_pair_index": 18,
+      "actor": "Qwen/Qwen3-32B",
+      "helper": "Qwen/Qwen3-8B",
+      "selected_job_id": "1538281",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-32b-helper-qwen3-8b/sbpm/qwen3-32b-actor-helper-qwen3-8b-1538281",
+      "superseded_job_id": "1537349"
+    },
+    {
+      "original_pair_index": 19,
+      "actor": "Qwen/Qwen3-32B",
+      "helper": "Qwen/Qwen3-32B",
+      "selected_job_id": "1538282",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-32b/sbpm/qwen3-32b-1538282",
+      "superseded_job_id": "1537350"
+    },
+    {
+      "original_pair_index": 20,
+      "actor": "google/gemma-4-E2B-it",
+      "helper": "Qwen/Qwen3-1.7B",
+      "selected_job_id": "1538283",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/gemma-4-e2b-it-helper-qwen3-1-7b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-1-7b-1538283",
+      "superseded_job_id": "1537351"
+    },
+    {
+      "original_pair_index": 21,
+      "actor": "google/gemma-4-E2B-it",
+      "helper": "Qwen/Qwen3-4B",
+      "selected_job_id": "1538284",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/gemma-4-e2b-it-helper-qwen3-4b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-4b-1538284",
+      "superseded_job_id": "1537352"
+    },
+    {
+      "original_pair_index": 22,
+      "actor": "google/gemma-4-E2B-it",
+      "helper": "Qwen/Qwen3-8B",
+      "selected_job_id": "1538285",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/gemma-4-e2b-it-helper-qwen3-8b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-8b-1538285",
+      "superseded_job_id": "1537353"
+    },
+    {
+      "original_pair_index": 23,
+      "actor": "google/gemma-4-E2B-it",
+      "helper": "Qwen/Qwen3-32B",
+      "selected_job_id": "1538286",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/gemma-4-e2b-it-helper-qwen3-32b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-32b-1538286",
+      "superseded_job_id": "1537354"
+    },
+    {
+      "original_pair_index": 24,
+      "actor": "mistralai/Ministral-3-3B-Instruct-2512",
+      "helper": "Qwen/Qwen3-1.7B",
+      "selected_job_id": "1538287",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-3b-instruct-2512-helper-qwen3-1-7b/sbpm/ministral-3-3b-instruct-2512-actor-helper-qwen3-1-7b-1538287",
+      "superseded_job_id": "1537355"
+    },
+    {
+      "original_pair_index": 25,
+      "actor": "mistralai/Ministral-3-3B-Instruct-2512",
+      "helper": "Qwen/Qwen3-4B",
+      "selected_job_id": "1538288",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-3b-instruct-2512-helper-qwen3-4b/sbpm/ministral-3-3b-instruct-2512-actor-helper-qwen3-4b-1538288",
+      "superseded_job_id": "1537356"
+    },
+    {
+      "original_pair_index": 26,
+      "actor": "mistralai/Ministral-3-3B-Instruct-2512",
+      "helper": "Qwen/Qwen3-8B",
+      "selected_job_id": "1538289",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-3b-instruct-2512-helper-qwen3-8b/sbpm/ministral-3-3b-instruct-2512-actor-helper-qwen3-8b-1538289",
+      "superseded_job_id": "1537357"
+    },
+    {
+      "original_pair_index": 27,
+      "actor": "mistralai/Ministral-3-3B-Instruct-2512",
+      "helper": "Qwen/Qwen3-32B",
+      "selected_job_id": "1538290",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-3b-instruct-2512-helper-qwen3-32b/sbpm/ministral-3-3b-instruct-2512-actor-helper-qwen3-32b-1538290",
+      "superseded_job_id": "1537358"
+    },
+    {
+      "original_pair_index": 28,
+      "actor": "mistralai/Ministral-3-8B-Instruct-2512",
+      "helper": "Qwen/Qwen3-1.7B",
+      "selected_job_id": "1538291",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-8b-instruct-2512-helper-qwen3-1-7b/sbpm/ministral-3-8b-instruct-2512-actor-helper-qwen3-1-7b-1538291",
+      "superseded_job_id": "1537359"
+    },
+    {
+      "original_pair_index": 29,
+      "actor": "mistralai/Ministral-3-8B-Instruct-2512",
+      "helper": "Qwen/Qwen3-4B",
+      "selected_job_id": "1538292",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-8b-instruct-2512-helper-qwen3-4b/sbpm/ministral-3-8b-instruct-2512-actor-helper-qwen3-4b-1538292",
+      "superseded_job_id": "1537360"
+    },
+    {
+      "original_pair_index": 30,
+      "actor": "mistralai/Ministral-3-8B-Instruct-2512",
+      "helper": "Qwen/Qwen3-8B",
+      "selected_job_id": "1538293",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-8b-instruct-2512-helper-qwen3-8b/sbpm/ministral-3-8b-instruct-2512-actor-helper-qwen3-8b-1538293",
+      "superseded_job_id": "1537361"
+    },
+    {
+      "original_pair_index": 31,
+      "actor": "mistralai/Ministral-3-8B-Instruct-2512",
+      "helper": "Qwen/Qwen3-32B",
+      "selected_job_id": "1538294",
+      "result_directory": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-8b-instruct-2512-helper-qwen3-32b/sbpm/ministral-3-8b-instruct-2512-actor-helper-qwen3-32b-1538294",
+      "superseded_job_id": "1537362"
+    }
+  ],
+  "gpt_followup": {
+    "task_id": "EXP3-GPT-V15-REMAINING-HELPERS",
+    "status": "submitted",
+    "submission_record": "experiments/rgpm/launches/gpt_v15_remaining_helpers_submitted_20261023.json",
+    "job_ids": ["1553051", "1553052", "1553053"],
+    "prepared_plan": "experiments/rgpm/launches/gpt_v15_remaining_helpers_prepared_20261023.json",
+    "actor": "gpt-5.4",
+    "backend": "openai_chat",
+    "helpers": [
+      "Qwen/Qwen3-1.7B",
+      "Qwen/Qwen3-4B",
+      "Qwen/Qwen3-8B"
+    ],
+    "exclude_helper": "Qwen/Qwen3-32B",
+    "reason": "32B helper already has completed updated-method job 1537307",
+    "launch_requires": "Review local sweep first; confirm paid-run timing and explicit actor budgets. This task record does not launch GPT inference.",
+    "admission_policy": "Record smoke quality outcomes without excluding poor performers; retain execution and artifact checks."
+  },
+  "existing_gpt_result": {
+    "actor": "gpt-5.4",
+    "helper": "Qwen/Qwen3-32B",
+    "job_id": "1537307",
+    "result_directory": "experiments/rgpm/runs/registration_v15_openai_full/gpt-5-4-helper-qwen3-32b/sbpm/gpt-5-4-actor-helper-qwen3-32b-1537307"
+  },
+  "reporting": "Count only complete full-dataset runs toward coverage. Retain and disclose failures, invalid answers, smoke diagnostics, TOK/DUR, and retry history. Never assign fabricated F1 to incomplete runs. Do not omit low-F1 completed pairs."
+}

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "description": "Additional development challenges frozen before indexed-model evaluation. Not independently held out. Tests sentence segmentation, continuation links, and source-context limits.",
+  "cases": [
+    {"id": "abbreviation_and_decimal", "instructions": [
+      {"id": "r1", "text": "When Dr. Vale confirms the coolant is below 2.5 C, send Lin the measurement."}
+    ], "expected": [
+      {"instruction_id": "r1", "op": "register", "action": ["send Lin the measurement"], "conditions": ["Dr. Vale confirms", "coolant is below 2.5 C"], "forbidden": []}
+    ]},
+    {"id": "cross_line_condition", "instructions": [
+      {"id": "r1", "text": "If the invoice is approved,\nand the payment has cleared,\nemail Jo the release code.\nDo not email it if the account is suspended."}
+    ], "expected": [
+      {"instruction_id": "r1", "op": "register", "action": ["email Jo the release code"], "conditions": ["invoice is approved", "payment has cleared", "Do not email it if the account is suspended"], "forbidden": []}
+    ]},
+    {"id": "two_triggers_one_sentence", "instructions": [
+      {"id": "r1", "text": "When the courier arrives, unlock the side door; when the kiln cools below 35 C, remove the bowl."}
+    ], "expected": [
+      {"instruction_id": "r1", "op": "register", "action": ["unlock the side door"], "conditions": ["courier arrives"], "forbidden": ["remove the bowl"]},
+      {"instruction_id": "r1", "op": "register", "action": ["remove the bowl"], "conditions": ["kiln cools below 35 C"], "forbidden": ["unlock the side door"]}
+    ]},
+    {"id": "discontiguous_exception", "instructions": [
+      {"id": "r1", "text": "At 15:00, send the finance summary to Avi. When the room is vacant, switch off its lights. Send the finance summary only if both reviewers have approved it."}
+    ], "expected": [
+      {"instruction_id": "r1", "op": "register", "action": ["send the finance summary to Avi"], "conditions": ["At 15:00", "only if both reviewers have approved it"], "forbidden": ["switch off its lights"]},
+      {"instruction_id": "r1", "op": "register", "action": ["switch off its lights"], "conditions": ["room is vacant"], "forbidden": ["finance summary"]}
+    ]}
+  ]
+}

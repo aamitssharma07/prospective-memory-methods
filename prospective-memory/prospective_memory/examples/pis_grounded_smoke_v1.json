@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "name": "Grounded PIS generic smoke v1",
+  "protocol": "Frozen before live inference. Expected records and decisions are scorer-only. The deterministic host follows CHECK using the listed replies. ACT is not executed. Exact checks test software behavior; lexical record checks are limited diagnostics, not semantic proof.",
+  "cases": [
+    {
+      "id": "visible_breakfast",
+      "sources": ["events", "clock"], "queryable_sources": ["clock"],
+      "instructions": [{"id": "meal", "text": "When I sit down for breakfast, remind me to take my vitamin."}],
+      "expected_initial_records": [{"origin_id": "meal", "required_sources": ["events"], "clock_op": "none", "action_contains_any": ["vitamin"]}],
+      "ticks": [{"id": "breakfast_now", "observations": [{"id": "meal_now", "text": "You sit down at the table and begin breakfast."}],
+        "expected_records": [{"origin_id": "meal", "clock_op": "none"}],
+        "expected_rounds": [[{"origin_id": "meal", "kind": "ACT"}]]}]
+    },
+    {
+      "id": "future_and_negative_event",
+      "sources": ["events"], "queryable_sources": [],
+      "instructions": [{"id": "locker", "text": "Bring the pickup code when the locker light turns green."}],
+      "expected_initial_records": [{"origin_id": "locker", "required_sources": ["events"], "clock_op": "none", "action_contains_any": ["code"]}],
+      "ticks": [
+        {"id": "future_mention", "instructions": [{"id": "future_narration", "text": "The locker light will turn green tomorrow; it has not changed yet."}],
+         "observations": [{"id": "future_light", "text": "The locker light will turn green tomorrow; it has not changed yet."}],
+         "expected_records": [{"origin_id": "locker", "unchanged_from_initial": true}], "expected_rounds": [[{"origin_id": "locker", "kind": "WAIT"}]]},
+        {"id": "red_light", "observations": [{"id": "red_now", "text": "The locker light is red, not green."}],
+         "expected_records": [{"origin_id": "locker"}], "expected_rounds": [[{"origin_id": "locker", "kind": "WAIT"}]]}
+      ]
+    },
+    {
+      "id": "literal_clock",
+      "sources": ["events", "clock", "calendar"], "queryable_sources": ["clock", "calendar"],
+      "instructions": [{"id": "library", "text": "Email the library at 11:50."}],
+      "expected_initial_records": [{"origin_id": "library", "required_sources": ["clock"], "clock_op": "at", "clock_time": "11:50", "action_contains_any": ["library"]}],
+      "ticks": [{"id": "due_clock", "observations": [{"id": "clock_due", "text": "Current time: 11:50.", "source": "clock"}],
+        "expected_records": [{"origin_id": "library", "clock_time": "11:50"}],
+        "expected_rounds": [[{"origin_id": "library", "kind": "ACT"}]]}]
+    },
+    {
+      "id": "hidden_source_check_then_act",
+      "sources": ["events", "appointment_portal"], "queryable_sources": ["appointment_portal"],
+      "instructions": [{"id": "form", "text": "Submit the intake form when the appointment portal posts that the form is available."}],
+      "expected_initial_records": [{"origin_id": "form", "required_sources": ["appointment_portal"], "action_contains_any": ["form"]}],
+      "ticks": [{"id": "portal_roundtrip", "observations": [{"id": "desk", "text": "You are working at your desk."}],
+        "pull_responses": {"appointment_portal": [{"id": "portal_reply", "text": "The intake form is now available for submission.", "source": "appointment_portal"}]},
+        "expected_records": [{"origin_id": "form"}],
+        "expected_rounds": [[{"origin_id": "form", "kind": "CHECK", "source": "appointment_portal"}], [{"origin_id": "form", "kind": "ACT"}]]}]
+    },
+    {
+      "id": "multi_source_conjunction",
+      "sources": ["events", "clock", "email"], "queryable_sources": ["clock", "email"],
+      "instructions": [{"id": "report", "text": "At 09:15, send the report only if the editor has approved it by email."}],
+      "expected_initial_records": [{"origin_id": "report", "required_sources": ["clock", "email"], "clock_op": "at", "clock_time": "09:15", "condition_contains_any": ["approv"]}],
+      "ticks": [
+        {"id": "approval_absent", "observations": [{"id": "conjunction_clock1", "text": "Current time: 09:15.", "source": "clock"}, {"id": "not_approved", "text": "The editor says the report is not approved and needs changes.", "source": "email"}],
+         "expected_records": [{"origin_id": "report"}], "expected_rounds": [[{"origin_id": "report", "kind": "WAIT"}]]},
+        {"id": "get_approval", "observations": [{"id": "conjunction_clock2", "text": "Current time: 09:15.", "source": "clock"}],
+         "pull_responses": {"email": [{"id": "approval_reply", "text": "The editor has approved the report for sending.", "source": "email"}]},
+         "expected_records": [{"origin_id": "report"}],
+         "expected_rounds": [[{"origin_id": "report", "kind": "CHECK", "source": "email"}], [{"origin_id": "report", "kind": "ACT"}]]}
+      ]
+    },
+    {
+      "id": "unrelated_addition_preserves_prior",
+      "sources": ["events"], "queryable_sources": [],
+      "instructions": [{"id": "sign", "text": "Collect the badge when the reception sign says OPEN."}],
+      "expected_initial_records": [{"origin_id": "sign", "required_sources": ["events"], "action_contains_any": ["badge"]}],
+      "ticks": [{"id": "new_request", "instructions": [{"id": "parcel", "text": "Also, bring the parcel when the shipping desk opens."}],
+        "observations": [{"id": "reception_open", "text": "The reception sign says OPEN. The shipping desk remains closed."}],
+        "expected_records": [{"origin_id": "sign", "unchanged_from_initial": true}, {"origin_id": "parcel", "required_sources": ["events"], "action_contains_any": ["parcel"]}],
+        "expected_rounds": [[{"origin_id": "sign", "kind": "ACT"}, {"origin_id": "parcel", "kind": "WAIT"}]]}]
+    },
+    {
+      "id": "revision_preserves_constraint",
+      "sources": ["events", "clock", "email"], "queryable_sources": ["clock", "email"],
+      "instructions": [{"id": "draft", "text": "Send the draft no earlier than 09:15, and only after the editor approves it by email."}],
+      "expected_initial_records": [{"origin_id": "draft", "required_sources": ["clock", "email"], "clock_op": "not_before", "clock_time": "09:15", "condition_contains_any": ["approv"]}],
+      "ticks": [
+        {"id": "revise_time", "instructions": [{"id": "new_time", "text": "Change the draft's earliest sending time to 09:45 instead."}],
+         "observations": [{"id": "revised_clock1", "text": "Current time: 09:45.", "source": "clock"}, {"id": "draft_not_approved", "text": "The editor has not approved the draft; do not send it yet.", "source": "email"}],
+         "expected_records": [{"origin_id": "draft", "instruction_ids": ["draft", "new_time"], "preserve_identity": true, "required_sources": ["clock", "email"], "clock_op": "not_before", "clock_time": "09:45", "condition_contains_any": ["approv"]}],
+         "expected_rounds": [[{"origin_id": "draft", "kind": "WAIT"}]]},
+        {"id": "revised_all_conditions", "observations": [{"id": "revised_clock2", "text": "Current time: 09:45.", "source": "clock"}, {"id": "draft_approved", "text": "The editor has approved the draft for sending.", "source": "email"}],
+         "expected_records": [{"origin_id": "draft", "instruction_ids": ["draft", "new_time"], "preserve_identity": true, "required_sources": ["clock", "email"], "clock_time": "09:45"}],
+         "expected_rounds": [[{"origin_id": "draft", "kind": "ACT"}]]}
+      ]
+    },
+    {
+      "id": "explicit_cancellation",
+      "sources": ["events"], "queryable_sources": [],
+      "instructions": [{"id": "bell", "text": "Bring the folder when the desk bell rings."}],
+      "expected_initial_records": [{"origin_id": "bell", "required_sources": ["events"], "action_contains_any": ["folder"]}],
+      "ticks": [{"id": "cancel_before_cue", "instructions": [{"id": "cancel", "text": "Cancel my request to bring the folder when the desk bell rings."}],
+        "observations": [{"id": "bell_now", "text": "The desk bell rings."}],
+        "expected_records": [{"origin_id": "bell", "instruction_ids": ["bell", "cancel"], "status": "cancelled", "preserve_identity": true}],
+        "expected_rounds": [[]]}]
+    },
+    {
+      "id": "paraphrased_visible_cue",
+      "sources": ["events"], "queryable_sources": [],
+      "instructions": [{"id": "badge", "text": "Once the front desk starts serving visitors, remind me to collect my badge."}],
+      "expected_initial_records": [{"origin_id": "badge", "required_sources": ["events"], "action_contains_any": ["badge"]}],
+      "ticks": [{"id": "reception_ready", "observations": [{"id": "visitors", "text": "The receptionist has opened the desk and is now welcoming visitors."}],
+        "expected_records": [{"origin_id": "badge"}],
+        "expected_rounds": [[{"origin_id": "badge", "kind": "ACT"}]]}]
+    },
+    {
+      "id": "unavailable_query_tool",
+      "sources": ["events", "leak_sensor"], "queryable_sources": [],
+      "instructions": [{"id": "leak", "text": "Close the valve when the leak sensor reports a water leak."}],
+      "expected_initial_records": [{"origin_id": "leak", "required_sources": ["leak_sensor"], "action_contains_any": ["valve"]}],
+      "ticks": [{"id": "no_sensor_observation", "observations": [{"id": "room", "text": "You are reviewing paperwork in the office. No sensor report is visible."}],
+        "expected_records": [{"origin_id": "leak", "required_sources": ["leak_sensor"]}],
+        "expected_rounds": [[{"origin_id": "leak", "kind": "WAIT"}]]}]
+    }
+  ]
+}

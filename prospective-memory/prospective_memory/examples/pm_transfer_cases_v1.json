@@ -1,0 +1,325 @@
+{
+  "version": 1,
+  "name": "Independent authored prospective-memory transfer diagnostic v1",
+  "protocol": "Authored and frozen before any live run of these cases. Public inputs and tool replies are separate from scorer-only expected records and decisions. This is an independent authored development transfer diagnostic, not an external held-out benchmark. A deterministic host follows supported CHECK proposals; ACT is never executed or acknowledged. Expected record text fragments are limited lexical diagnostics, not complete semantic validation.",
+  "cases": [
+    {
+      "id": "greenhouse_strict_numeric_threshold",
+      "sources": ["events", "greenhouse_sensor"],
+      "queryable_sources": [],
+      "instructions": [
+        {"id": "greenhouse_cover", "text": "Remind me to cover the seedlings when the greenhouse sensor reports a temperature below 12 degrees Celsius."}
+      ],
+      "expected_initial_records": [
+        {"origin_id": "greenhouse_cover", "required_sources": ["greenhouse_sensor"], "clock_op": "none", "action_contains_any": ["seedling"]}
+      ],
+      "ticks": [
+        {
+          "id": "exact_boundary_is_not_below",
+          "observations": [{"id": "temperature_12", "source": "greenhouse_sensor", "text": "Current greenhouse temperature: 12 degrees Celsius."}],
+          "expected_records": [{"origin_id": "greenhouse_cover", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "greenhouse_cover", "kind": "WAIT"}]]
+        },
+        {
+          "id": "below_boundary",
+          "observations": [{"id": "temperature_11", "source": "greenhouse_sensor", "text": "Current greenhouse temperature: 11 degrees Celsius."}],
+          "expected_records": [{"origin_id": "greenhouse_cover", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "greenhouse_cover", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "render_job_hidden_status_roundtrips",
+      "sources": ["events", "render_queue"],
+      "queryable_sources": ["render_queue"],
+      "instructions": [
+        {"id": "render_preview", "text": "Send the animation preview to the team when render_queue reports that job R42 has completed successfully."}
+      ],
+      "expected_initial_records": [
+        {"origin_id": "render_preview", "required_sources": ["render_queue"], "clock_op": "none", "action_contains_any": ["preview"]}
+      ],
+      "ticks": [
+        {
+          "id": "first_query_still_rendering",
+          "observations": [{"id": "editing_scene", "text": "You are editing a scene. No render-job status is visible."}],
+          "pull_responses": {"render_queue": [{"id": "render_running", "source": "render_queue", "text": "Job R42 is still rendering and has not completed."}]},
+          "expected_records": [{"origin_id": "render_preview", "unchanged_from_initial": true}],
+          "expected_rounds": [
+            [{"origin_id": "render_preview", "kind": "CHECK", "source": "render_queue"}],
+            [{"origin_id": "render_preview", "kind": "WAIT"}]
+          ]
+        },
+        {
+          "id": "later_query_finished",
+          "observations": [{"id": "layout_scene", "text": "You are adjusting the layout. No current render-job status is visible."}],
+          "pull_responses": {"render_queue": [{"id": "render_finished", "source": "render_queue", "text": "Job R42 has completed successfully. Its animation preview is ready."}]},
+          "expected_records": [{"origin_id": "render_preview", "unchanged_from_initial": true}],
+          "expected_rounds": [
+            [{"origin_id": "render_preview", "kind": "CHECK", "source": "render_queue"}],
+            [{"origin_id": "render_preview", "kind": "ACT"}]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "instrument_two_observable_conditions",
+      "sources": ["events", "calibration_status", "sample_tray"],
+      "queryable_sources": [],
+      "instructions": [
+        {"id": "spectrum_scan", "text": "Begin the spectrum scan only when calibration_status reports that calibration has passed and sample_tray reports that sample S8 is loaded."}
+      ],
+      "expected_initial_records": [
+        {"origin_id": "spectrum_scan", "required_sources": ["calibration_status", "sample_tray"], "clock_op": "none", "action_contains_any": ["spectrum", "scan"]}
+      ],
+      "ticks": [
+        {
+          "id": "wrong_sample",
+          "observations": [
+            {"id": "calibration_pass1", "source": "calibration_status", "text": "Calibration has passed."},
+            {"id": "sample_wrong", "source": "sample_tray", "text": "Sample S3 is loaded. Sample S8 is not loaded."}
+          ],
+          "expected_records": [{"origin_id": "spectrum_scan", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "spectrum_scan", "kind": "WAIT"}]]
+        },
+        {
+          "id": "correct_sample_and_calibration",
+          "observations": [
+            {"id": "calibration_pass2", "source": "calibration_status", "text": "Calibration has passed."},
+            {"id": "sample_correct", "source": "sample_tray", "text": "Sample S8 is now loaded."}
+          ],
+          "expected_records": [{"origin_id": "spectrum_scan", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "spectrum_scan", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "relative_elapsed_time_no_invented_clock",
+      "sources": ["events", "clock", "elapsed_timer"],
+      "queryable_sources": ["clock", "elapsed_timer"],
+      "instructions": [
+        {"id": "masking_tape", "text": "Remind me to remove the masking tape twenty minutes after the glaze application starts; elapsed_timer reports the time since that start."}
+      ],
+      "expected_initial_records": [
+        {"origin_id": "masking_tape", "required_sources": ["elapsed_timer"], "clock_op": "none", "clock_time": "", "action_contains_any": ["tape"]}
+      ],
+      "ticks": [
+        {
+          "id": "nineteen_minutes",
+          "observations": [{"id": "elapsed_19", "source": "elapsed_timer", "text": "Time elapsed since the glaze application started: 19 minutes."}],
+          "expected_records": [{"origin_id": "masking_tape", "clock_op": "none", "clock_time": "", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "masking_tape", "kind": "WAIT"}]]
+        },
+        {
+          "id": "twenty_minutes",
+          "observations": [{"id": "elapsed_20", "source": "elapsed_timer", "text": "Time elapsed since the glaze application started: 20 minutes."}],
+          "expected_records": [{"origin_id": "masking_tape", "clock_op": "none", "clock_time": "", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "masking_tape", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "simulation_revision_retains_validation",
+      "sources": ["events", "clock", "quality_panel"],
+      "queryable_sources": ["clock", "quality_panel"],
+      "instructions": [
+        {"id": "simulation_publish", "text": "Publish the simulation output no earlier than 14:20, and only if quality_panel reports that validation has passed."}
+      ],
+      "expected_initial_records": [
+        {"origin_id": "simulation_publish", "required_sources": ["clock", "quality_panel"], "clock_op": "not_before", "clock_time": "14:20", "action_contains_any": ["simulation"], "condition_contains_any": ["validation"]}
+      ],
+      "ticks": [
+        {
+          "id": "revised_time_not_reached",
+          "instructions": [{"id": "simulation_later", "text": "Change the earliest publishing time for the simulation output to 15:10 instead; keep its validation requirement."}],
+          "observations": [
+            {"id": "release_clock_1450", "source": "clock", "text": "Current time: 14:50."},
+            {"id": "release_valid_early", "source": "quality_panel", "text": "Validation has passed for the simulation output."}
+          ],
+          "expected_records": [{"origin_id": "simulation_publish", "instruction_ids": ["simulation_publish", "simulation_later"], "preserve_identity": true, "required_sources": ["clock", "quality_panel"], "clock_op": "not_before", "clock_time": "15:10", "condition_contains_any": ["validation"]}],
+          "expected_rounds": [[{"origin_id": "simulation_publish", "kind": "WAIT"}]]
+        },
+        {
+          "id": "revised_time_but_validation_failed",
+          "observations": [
+            {"id": "release_clock_1510a", "source": "clock", "text": "Current time: 15:10."},
+            {"id": "release_invalid", "source": "quality_panel", "text": "Validation has failed for the simulation output. It has not passed."}
+          ],
+          "expected_records": [{"origin_id": "simulation_publish", "instruction_ids": ["simulation_publish", "simulation_later"], "preserve_identity": true, "required_sources": ["clock", "quality_panel"], "clock_op": "not_before", "clock_time": "15:10", "condition_contains_any": ["validation"]}],
+          "expected_rounds": [[{"origin_id": "simulation_publish", "kind": "WAIT"}]]
+        },
+        {
+          "id": "revised_all_conditions_hold",
+          "observations": [
+            {"id": "release_clock_1510b", "source": "clock", "text": "Current time: 15:10."},
+            {"id": "release_valid_now", "source": "quality_panel", "text": "Validation has passed for the simulation output."}
+          ],
+          "expected_records": [{"origin_id": "simulation_publish", "instruction_ids": ["simulation_publish", "simulation_later"], "preserve_identity": true, "required_sources": ["clock", "quality_panel"], "clock_op": "not_before", "clock_time": "15:10"}],
+          "expected_rounds": [[{"origin_id": "simulation_publish", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "astronomy_cancellation_before_trigger",
+      "sources": ["events", "sky_camera"],
+      "queryable_sources": ["sky_camera"],
+      "instructions": [
+        {"id": "meteor_video", "text": "Start recording the meteor video when sky_camera reports cloud cover below 20 percent."}
+      ],
+      "expected_initial_records": [
+        {"origin_id": "meteor_video", "required_sources": ["sky_camera"], "clock_op": "none", "action_contains_any": ["meteor", "video"]}
+      ],
+      "ticks": [
+        {
+          "id": "cancelled_despite_clear_sky",
+          "instructions": [{"id": "cancel_meteor", "text": "Cancel my request to record the meteor video when the sky clears."}],
+          "observations": [{"id": "cloud_cover_10", "source": "sky_camera", "text": "Current cloud cover: 10 percent."}],
+          "expected_records": [{"origin_id": "meteor_video", "instruction_ids": ["meteor_video", "cancel_meteor"], "preserve_identity": true, "status": "cancelled"}],
+          "expected_rounds": [[]]
+        }
+      ]
+    },
+    {
+      "id": "three_unrelated_obligations_preserve_identity",
+      "sources": ["events", "barcode_reader"],
+      "queryable_sources": [],
+      "instructions": [
+        {"id": "camera_lens", "text": "Mount the camera lens when the tripod is locked securely."}
+      ],
+      "expected_initial_records": [
+        {"origin_id": "camera_lens", "required_sources": ["events"], "clock_op": "none", "action_contains_any": ["lens"]}
+      ],
+      "ticks": [
+        {
+          "id": "add_two_independent_requests",
+          "instructions": [
+            {"id": "specimen_log", "text": "Also, copy the specimen identifier into the lab notebook when barcode_reader reports a successful specimen scan."},
+            {"id": "crate_label", "text": "Also, attach the destination label when the transport crate's latch clicks shut."}
+          ],
+          "observations": [
+            {"id": "tripod_locked", "text": "The tripod is locked securely. The transport crate's latch is still open."},
+            {"id": "barcode_no_scan", "source": "barcode_reader", "text": "No successful specimen scan has occurred."}
+          ],
+          "expected_records": [
+            {"origin_id": "camera_lens", "unchanged_from_initial": true},
+            {"origin_id": "specimen_log", "instruction_ids": ["specimen_log"], "required_sources": ["barcode_reader"], "action_contains_any": ["identifier", "notebook"]},
+            {"origin_id": "crate_label", "instruction_ids": ["crate_label"], "required_sources": ["events"], "action_contains_any": ["label"]}
+          ],
+          "expected_rounds": [[
+            {"origin_id": "camera_lens", "kind": "ACT"},
+            {"origin_id": "specimen_log", "kind": "WAIT"},
+            {"origin_id": "crate_label", "kind": "WAIT"}
+          ]]
+        },
+        {
+          "id": "other_two_conditions_occur",
+          "observations": [
+            {"id": "crate_shut", "text": "The tripod has been unlocked. The transport crate's latch clicks shut."},
+            {"id": "barcode_success", "source": "barcode_reader", "text": "Successful specimen scan. Specimen identifier: ZX-47."}
+          ],
+          "expected_records": [
+            {"origin_id": "camera_lens", "unchanged_from_initial": true},
+            {"origin_id": "specimen_log", "instruction_ids": ["specimen_log"], "required_sources": ["barcode_reader"]},
+            {"origin_id": "crate_label", "instruction_ids": ["crate_label"], "required_sources": ["events"]}
+          ],
+          "expected_rounds": [[
+            {"origin_id": "camera_lens", "kind": "WAIT"},
+            {"origin_id": "specimen_log", "kind": "ACT"},
+            {"origin_id": "crate_label", "kind": "ACT"}
+          ]]
+        }
+      ]
+    },
+    {
+      "id": "push_only_beacon_requires_current_evidence",
+      "sources": ["events", "dome_beacon"],
+      "queryable_sources": [],
+      "instructions": [
+        {"id": "capture_star_field", "text": "Capture the star-field image when dome_beacon reports that the dome is fully open."}
+      ],
+      "expected_initial_records": [
+        {"origin_id": "capture_star_field", "required_sources": ["dome_beacon"], "clock_op": "none", "action_contains_any": ["image", "star-field"]}
+      ],
+      "ticks": [
+        {
+          "id": "push_signal_not_arrived",
+          "observations": [{"id": "observatory_idle", "text": "You are at the observatory console. No dome status signal is visible."}],
+          "expected_records": [{"origin_id": "capture_star_field", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "capture_star_field", "kind": "WAIT"}]]
+        },
+        {
+          "id": "historical_signal_not_current",
+          "observations": [
+            {"id": "old_dome_signal", "source": "dome_beacon", "text": "The dome is fully open.", "current": false},
+            {"id": "historical_notice", "text": "Only an archived status message from a previous observation session is available; there is no current dome status."}
+          ],
+          "expected_records": [{"origin_id": "capture_star_field", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "capture_star_field", "kind": "WAIT"}]]
+        },
+        {
+          "id": "fresh_push_signal",
+          "observations": [{"id": "new_dome_signal", "source": "dome_beacon", "text": "The dome is now fully open."}],
+          "expected_records": [{"origin_id": "capture_star_field", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "capture_star_field", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "rehearsal_announcement_is_not_occurrence",
+      "sources": ["events", "clock"],
+      "queryable_sources": ["clock"],
+      "instructions": [
+        {"id": "rehearsal_recording", "text": "Start the rehearsal audio recording when the conductor raises the baton to begin."}
+      ],
+      "expected_initial_records": [
+        {"origin_id": "rehearsal_recording", "required_sources": ["events"], "clock_op": "none", "action_contains_any": ["recording", "audio"]}
+      ],
+      "ticks": [
+        {
+          "id": "announced_for_later",
+          "instructions": [{"id": "rehearsal_announcement", "text": "The conductor is expected to raise the baton later this afternoon, but has not done so yet."}],
+          "observations": [{"id": "baton_future", "text": "The conductor is expected to raise the baton later this afternoon, but has not done so yet."}],
+          "expected_records": [{"origin_id": "rehearsal_recording", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "rehearsal_recording", "kind": "WAIT"}]]
+        },
+        {
+          "id": "paraphrased_actual_start",
+          "observations": [{"id": "baton_lifted", "text": "Facing the musicians, the conductor lifts the baton into the air to signal the start of the rehearsal."}],
+          "expected_records": [{"origin_id": "rehearsal_recording", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "rehearsal_recording", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "storage_threshold_and_backup_confirmation",
+      "sources": ["events", "storage_monitor", "backup_status"],
+      "queryable_sources": ["storage_monitor", "backup_status"],
+      "instructions": [
+        {"id": "archive_build_logs", "text": "Archive the build logs when storage_monitor reports usage of at least 80 percent, but only if backup_status confirms that the current build's backup has completed."}
+      ],
+      "expected_initial_records": [
+        {"origin_id": "archive_build_logs", "required_sources": ["storage_monitor", "backup_status"], "clock_op": "none", "action_contains_any": ["logs"]}
+      ],
+      "ticks": [
+        {
+          "id": "backup_done_but_usage_low",
+          "observations": [
+            {"id": "storage_79", "source": "storage_monitor", "text": "Current storage usage: 79 percent."},
+            {"id": "backup_done_early", "source": "backup_status", "text": "The current build's backup has completed."}
+          ],
+          "expected_records": [{"origin_id": "archive_build_logs", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "archive_build_logs", "kind": "WAIT"}]]
+        },
+        {
+          "id": "threshold_met_check_backup",
+          "observations": [{"id": "storage_80", "source": "storage_monitor", "text": "Current storage usage: 80 percent."}],
+          "pull_responses": {"backup_status": [{"id": "backup_done_now", "source": "backup_status", "text": "The current build's backup has completed."}]},
+          "expected_records": [{"origin_id": "archive_build_logs", "unchanged_from_initial": true}],
+          "expected_rounds": [
+            [{"origin_id": "archive_build_logs", "kind": "CHECK", "source": "backup_status"}],
+            [{"origin_id": "archive_build_logs", "kind": "ACT"}]
+          ]
+        }
+      ]
+    }
+  ]
+}

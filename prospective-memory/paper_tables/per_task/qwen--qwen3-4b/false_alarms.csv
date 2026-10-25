@@ -1,0 +1,14 @@
+step_id,task_id,kind,modality,cue_channel
+d2_s1,calendar_room_shift_d2,real_task_wrong_step,event,calendar
+d2_s7,send_budget_note_2_d2,real_task_wrong_step,time,
+d2_s9,refill_bottle,lure,,
+d3_s1,crossday_4,cross_day_wrong_step,event,
+d3_s9,wipe_counter,lure,,
+d4_s1,crossday_6,cross_day_wrong_step,event,
+d5_s1,scan_calendar,lure,,
+d5_s7,email_receipt_note_d5,real_task_wrong_step,event,email
+d6_s1,calendar_new_block_d6,real_task_wrong_step,event,calendar
+d6_s3,email_vendor_2_d6,real_task_wrong_step,time,
+d6_s6,package_locker_light_d6,already_credited,event,
+d7_s4,check_lab_portal_2_d7,real_task_wrong_step,time,
+d7_s8,review_lab_notes_1_d7,real_task_wrong_step,time,

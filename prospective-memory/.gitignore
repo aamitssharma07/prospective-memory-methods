@@ -1,0 +1,30 @@
+.venv*/
+__pycache__/
+*.pyc
+*.log
+.cache/
+.runtime/
+
+# Secrets: ignoring does not untrack the existing root .env or erase history.
+.env
+.env.*
+!.env.example
+
+# Local run/lock files are not the small public docs/experiments/results snapshot.
+PMBench/runs/
+PMBench/smoke_artifacts/
+experiments/rgpm/launches/*.lock
+
+# Run outputs. One Experiment 3 run is ~535 MB, dominated by raw traces
+# (memory.jsonl alone is ~326 MB). Each run directory already carries its own
+# manifest.json plus a source/ copy of every file hashed at launch, so a run is
+# reproducible from the directory itself and does not need git history.
+# Keep these on disk and backed up outside the repository, not in git.
+experiments/rgpm/runs/
+experiments/rgpm/runs_archived_*/
+experiments/rgpm/jobs/
+experiments/rgpm/jobs_archived_*/
+experiments/rgpm/smoke_artifacts/
+experiments/rgpm/smoke_artifacts_archived_*/
+experiments/rgpm/preflight_*/
+experiments/rgpm/legacy_outputs_archived_20261001/

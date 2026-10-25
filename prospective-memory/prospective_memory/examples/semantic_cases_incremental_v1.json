@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "description": "Generic incremental-registration regressions authored September 21 after discovering interference from an unrelated existing intention. Development tests, not held-out evaluation.",
+  "cases": [
+    {
+      "id": "incremental_unrelated_requests", "sources": ["events"], "queryable_sources": [],
+      "instructions": [
+        {"id": "fern", "text": "When the fern's soil becomes dry, remind me to water the fern."},
+        {"id": "violin", "text": "When the violin repair is complete, remind me to notify Sana."}
+      ],
+      "ticks": [
+        {"id": "quiet", "observations": [{"id": "e1", "text": "The fern's soil is moist. The violin is still being repaired.", "source": "events"}], "expected_act_instruction_ids": []},
+        {"id": "repair", "observations": [{"id": "e2", "text": "The repair technician confirms that the violin repair is complete. The soil is still moist.", "source": "events"}], "expected_act_instruction_ids": ["violin"]},
+        {"id": "soil", "observations": [{"id": "e3", "text": "The fern's soil has now become dry.", "source": "events"}], "expected_act_instruction_ids": ["fern"]}
+      ]
+    },
+    {
+      "id": "imperative_list_with_existing_bank", "sources": ["events"], "queryable_sources": [],
+      "instructions": [
+        {"id": "old", "text": "When the translation is approved, send the translator a thank-you message."},
+        {"id": "list", "text": "Additional plans:\n- Collect the kiln samples when the cooling cycle finishes.\n- Send the archive link when the librarian confirms that the catalog is published."}
+      ],
+      "ticks": [
+        {"id": "quiet", "observations": [{"id": "e1", "text": "The cooling cycle is running. The catalog is not published and the translation is still being reviewed.", "source": "events"}], "expected_act_instruction_ids": []},
+        {"id": "two", "observations": [{"id": "e2", "text": "The kiln cooling cycle has finished. The librarian confirms that the catalog is published.", "source": "events"}], "expected_act_instruction_ids": ["list", "list"]},
+        {"id": "old", "observations": [{"id": "e3", "text": "The translation has now been approved.", "source": "events"}], "expected_act_instruction_ids": ["old"]}
+      ]
+    }
+  ]
+}

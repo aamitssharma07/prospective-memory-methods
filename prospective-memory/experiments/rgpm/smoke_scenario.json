@@ -1,0 +1,36 @@
+{
+  "scenario_name": "rgpm_diagnostic_v1",
+  "state_visibility": {"clock": false, "email": false},
+  "state_channels": {"clock": {"mode": "snapshot"}, "email": {"mode": "delta"}},
+  "days": [
+    {
+      "name": "Monday",
+      "start_instructions": [
+        "- Send the report to Morgan when the approval email arrives.",
+        "- Archive the draft when the receipt appears on the desk.",
+        "- On Tuesday at 09:00, send the meeting reminder."
+      ],
+      "tasks": [
+        {"id": "report", "label": "Send the report to Morgan", "action_text": "Send the report to Morgan.", "type": "event", "cue_id": "approval", "cue_channel": "email", "regular": false, "encoding": "start"},
+        {"id": "draft", "label": "Archive the draft", "action_text": "Archive the draft.", "type": "event", "cue_id": "receipt", "regular": false, "encoding": "start"}
+      ],
+      "steps": [
+        {"id": "m1", "time": "08:50", "text": "The desk is quiet. No receipt has arrived.", "options": ["A) Open a notebook", "B) Read a page", "C) Take a break"]},
+        {"id": "m2", "time": "08:55", "text": "Updated instructions:\n- Send the report to Lee instead of Morgan when the approval email arrives.\n- Cancel the request to archive the draft.", "options": ["A) Open a notebook", "B) Read a page", "C) Take a break"], "updates": [{"task_id": "report", "action": "override", "new_action_text": "Send the report to Lee."}, {"task_id": "draft", "action": "cancel"}]},
+        {"id": "m3", "time": "09:00", "text": "A receipt appears on the desk. You have a new email notification.", "options": ["A) Open a notebook", "B) Read a page", "C) Take a break"], "cues": ["receipt"], "state_events": {"email": [{"id": "approval", "text": "The report is approved. Please send it now."}]}},
+        {"id": "m4", "time": "09:05", "text": "You finish reviewing your notes.", "options": ["A) Close the notebook", "B) Read another page", "C) Take a break"]}
+      ]
+    },
+    {
+      "name": "Tuesday",
+      "start_instructions": ["It is a new work day."],
+      "tasks": [
+        {"id": "reminder", "label": "Send the meeting reminder", "action_text": "Send the meeting reminder.", "type": "time", "target_time": "09:00", "regular": false, "encoding": "start", "cross_day": true}
+      ],
+      "steps": [
+        {"id": "t1", "time": "08:55", "text": "You sit down at your desk.", "options": ["A) Open a notebook", "B) Read a page", "C) Take a break"]},
+        {"id": "t2", "time": "09:00", "text": "The morning work session begins.", "options": ["A) Open a notebook", "B) Read a page", "C) Take a break"]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "name": "pmbench-core-four",
+  "scenario": "data/synthetic_week_v9.json",
+  "scenario_sha256": "94a45937da1363be19ccfdc2c188d132f23093041e30abd3ec22d64d70da8f24",
+  "models_file": "models.json",
+  "output_directory": "runs/core-four",
+  "score": true,
+  "max_tokens": 768,
+  "max_invalid_retries": 2,
+  "temperature": 0.0,
+  "setups": [
+    {
+      "name": "single_baseline",
+      "runner_setup": "single_baseline"
+    },
+    {
+      "name": "optional_heartbeat",
+      "runner_setup": "single_heartbeat",
+      "heartbeat_mode": "optional"
+    },
+    {
+      "name": "todo_ledger",
+      "runner_setup": "todo_ledger"
+    },
+    {
+      "name": "auto_heartbeat_30m",
+      "runner_setup": "single_heartbeat",
+      "heartbeat_mode": "auto30"
+    }
+  ]
+}
+

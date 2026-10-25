@@ -1,0 +1,30 @@
+{
+  "step_key": [
+    "Monday",
+    "m3"
+  ],
+  "cycle": 7,
+  "original_call_id": "d5da00ebfb424cda839a7bb521087db3",
+  "plan": {
+    "status": "unresolved_prerequisite",
+    "intention_id": "pm_000003",
+    "revision": 2,
+    "requested_action": "Send the report to Morgan\nAccepted update (overrides only changed terms):\n- Send the report to Lee instead of Morgan when the approval email arrives.",
+    "condition": "when the approval email arrives\nAccepted update (overrides only changed terms):\n- Send the report to Lee instead of Morgan when the approval email arrives.",
+    "reason": "The trigger condition 'when the approval email arrives' is not satisfied as there is no evidence of the approval email having arrived. The current observations do not mention the approval email.",
+    "current_observed_sources": [
+      "clock",
+      "events"
+    ],
+    "actual_query_attempts_this_step": [
+      "clock"
+    ],
+    "remaining_queries_this_step": 1,
+    "next_action": {
+      "action": "query_state",
+      "choice": "NONE",
+      "task_ids": [],
+      "channel": "email"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "all_attempts": {
+    "actor": {
+      "calls": 2,
+      "failed_calls": 0,
+      "usage_known_calls": 2,
+      "usage_unknown_calls": 0,
+      "summed_call_seconds": 5.1689333114773035,
+      "median_call_seconds": 2.5844666557386518,
+      "token_usage_known_calls": {
+        "prompt_tokens": 2,
+        "completion_tokens": 2,
+        "total_tokens": 2
+      },
+      "token_totals_are_partial": false,
+      "tokens": {
+        "prompt_tokens": 3028,
+        "completion_tokens": 51,
+        "total_tokens": 3079
+      }
+    },
+    "helper": {
+      "calls": 0,
+      "failed_calls": 0,
+      "usage_known_calls": 0,
+      "usage_unknown_calls": 0,
+      "summed_call_seconds": 0,
+      "median_call_seconds": null,
+      "token_usage_known_calls": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "token_totals_are_partial": false,
+      "tokens": {
+        "prompt_tokens": null,
+        "completion_tokens": null,
+        "total_tokens": null
+      }
+    }
+  },
+  "provider_reported_cost_usd": 0.00825165,
+  "calls_with_reported_cost": 2,
+  "cost_total_is_partial": false
+}

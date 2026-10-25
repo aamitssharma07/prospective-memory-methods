@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiment": 3,
+  "scheduler_jobs_checked": 32,
+  "partition_qos_gpu_request_mismatches": [],
+  "dependency_mismatches": [],
+  "two_gpu_jobs_on_gpu_res_01": 28,
+  "single_gpu_jobs_on_gpu": 4,
+  "queued_script_checked": "1537332",
+  "queued_script_matches_local": true,
+  "queued_script_comparison_note": "scontrol write batch_script /dev/stdout adds a confirmation line; actual script body matches local run_one_model.sbatch.",
+  "runtime_manifest_checked": "experiments/rgpm/smoke_artifacts/qwen3-0-6b-helper-qwen3-1-7b/sbpm/qwen3-0-6b-actor-helper-qwen3-1-7b-1537331/manifest.json",
+  "reference_gpt_job": "1537307",
+  "method_setting_differences": {},
+  "settings_compared": ["max_tokens", "query_handoff", "actor_guidance", "report_gates", "verify_actions", "source_routing", "scope_grounding", "bounded_priority", "registration_grounding", "query_budget"],
+  "changed_common_source_files_vs_gpt": ["experiments/rgpm/run_one_model.sbatch"],
+  "first_pair": {
+    "job_id": "1537331",
+    "actor": "Qwen/Qwen3-0.6B",
+    "helper": "Qwen/Qwen3-1.7B",
+    "smoke_completed_steps": 6,
+    "smoke_gate_passed": false,
+    "failed_check": "no_semantic_errors",
+    "all_calls_schema_valid": true,
+    "failure_examples": ["Provider action quote is not verbatim", "Provider comparison needs a grounded pending action", "Update identity not supported", "resolved_reply_action is an unresolved placeholder"],
+    "full_dataset_started": false,
+    "artifacts_retained": true
+  },
+  "status_at_verification": {"failed_smoke": 1, "running": 1, "pending_dependency": 30},
+  "running_job_at_verification": "1537332",
+  "note": "Configuration correctness is not model quality. Smoke failures remain failures; gates were not bypassed. GPT synthetic probes and zero-FP/FN accuracy limits are not applied to this sweep; per-pair execution/trace/semantic smoke gates remain enforced. No full benchmark results yet."
+}

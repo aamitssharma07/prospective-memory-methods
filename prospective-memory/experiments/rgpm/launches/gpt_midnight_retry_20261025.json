@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "experiment": 3,
+  "status": "submitted",
+  "authorization": "User requested retry after midnight Chicago time if credits unavailable",
+  "created_at": "2026-10-25T03:29:15.328390+00:00",
+  "not_before_utc": "2026-10-25T05:05:00+00:00",
+  "not_before_chicago": "2026-10-25T00:05:00-05:00",
+  "attempts_root": "experiments/rgpm/jobs/gpt_midnight_recovery_20261025",
+  "pairs": [
+    {
+      "helper": "Qwen/Qwen3-4B",
+      "original_job_id": "1553052",
+      "manifest": "experiments/rgpm/runs/registration_v15_gpt_remaining_helpers/gpt-5-4-helper-qwen3-4b/sbpm/gpt-5-4-actor-helper-qwen3-4b-1553052/manifest.json",
+      "full_output": "experiments/rgpm/runs/registration_v15_gpt_remaining_helpers/gpt-5-4-helper-qwen3-4b/sbpm/gpt-5-4-actor-helper-qwen3-4b-1553052",
+      "resume_smoke": false,
+      "expected_credit_rejection_reservations": [
+        {
+          "call_id": "1c68aa424b5c4b41b24f81314f2c7861",
+          "observed_usage": null,
+          "accounting": "conservative_request_reservation_not_measured_usage",
+          "reserved_tokens": 120962,
+          "request_sha256": "64e00ec6285b5c88a154edf9a6ca7654bff8fd17648e41c3eb28f2f3f4b5e150",
+          "provider_error_code": "credit_balance_exhausted"
+        }
+      ]
+    },
+    {
+      "helper": "Qwen/Qwen3-8B",
+      "original_job_id": "1553053",
+      "manifest": "experiments/rgpm/smoke_artifacts/gpt-5-4-helper-qwen3-8b/sbpm/gpt-5-4-actor-helper-qwen3-8b-1553053/manifest.json",
+      "full_output": "experiments/rgpm/runs/registration_v15_gpt_remaining_helpers/gpt-5-4-helper-qwen3-8b/sbpm/gpt-5-4-actor-helper-qwen3-8b-1553053",
+      "resume_smoke": true,
+      "expected_credit_rejection_reservations": [
+        {
+          "call_id": "36590ac2d42347659f31042a5e511600",
+          "observed_usage": null,
+          "accounting": "conservative_request_reservation_not_measured_usage",
+          "reserved_tokens": 7051,
+          "request_sha256": "13f7329f58343b51cb6438e497affb2e6ca6c4b8f3c18e2a6cce9cc19a21e40d",
+          "provider_error_code": "credit_balance_exhausted"
+        }
+      ]
+    }
+  ],
+  "max_tokens": 768,
+  "credit_probe_max_calls": 1,
+  "credit_failure_policy": "stop_without_experiment_calls_no_automatic_retry",
+  "operational_sha256": {
+    "experiments/rgpm/operations/gpt_midnight_retry.py": "d9ebb1ff80e17f3b6b3211317126fac126c2b88bce05cb20d4c5b4034b5367d2",
+    "experiments/rgpm/operations/retry_gpt_after_midnight.sbatch": "528f6497c601f72deadb5a23f01850346de085e43cf035fa2b3ff01943bfb381",
+    "harness/memory_intervention.py": "36275c41c018edfc91817db4708114f65b0bf306022f72b0a666c0f4ac817a49",
+    "harness/structured_memory.py": "d1086eade5603f1a1bf8a7df6d124e1f09f04c8800aeb3df27794f142a9a8ff0",
+    "benchmark/data/synthetic_week_v9.json": "94a45937da1363be19ccfdc2c188d132f23093041e30abd3ec22d64d70da8f24",
+    "experiments/rgpm/runs/registration_v15_gpt_remaining_helpers/gpt-5-4-helper-qwen3-4b/sbpm/gpt-5-4-actor-helper-qwen3-4b-1553052/manifest.json": "35cef5a7bacdb3a2401f39225b2537962c3b9fe62e087d749482da9b1467312f",
+    "experiments/rgpm/runs/registration_v15_gpt_remaining_helpers/gpt-5-4-helper-qwen3-4b/sbpm/gpt-5-4-actor-helper-qwen3-4b-1553052/scenario.json": "94a45937da1363be19ccfdc2c188d132f23093041e30abd3ec22d64d70da8f24",
+    "experiments/rgpm/smoke_artifacts/gpt-5-4-helper-qwen3-8b/sbpm/gpt-5-4-actor-helper-qwen3-8b-1553053/manifest.json": "2b76b8de7c06ef302bbe8616eaa1368fcdf0e5c1a3c5d48249785973ec5ffb4a",
+    "experiments/rgpm/smoke_artifacts/gpt-5-4-helper-qwen3-8b/sbpm/gpt-5-4-actor-helper-qwen3-8b-1553053/scenario.json": "afed54d1e7b70361f287f3f187604e5c02761d42ecb26229c7a1df9072562460"
+  },
+  "completed_1_7b_and_32b_results": "not_rerun",
+  "local_jobs": "not_changed",
+  "submission_argv": [
+    "sbatch",
+    "--parsable",
+    "--begin=2026-10-25T05:05:00",
+    "--nodelist=crest-g002",
+    "experiments/rgpm/operations/retry_gpt_after_midnight.sbatch",
+    "experiments/rgpm/launches/gpt_midnight_retry_20261025.json"
+  ],
+  "job_id": "1553091",
+  "scheduler_verification": "JobId=1553091 JobName=exp3-gpt-midnight-retry UserId=akumar3(1004) GroupId=akumar3(1135) MCS_label=N/A Priority=4294536575 Nice=0 Account=cosc QOS=gpu JobState=PENDING Reason=BeginTime Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-10-25T03:29:15 EligibleTime=2026-10-25T05:05:00 AccrueTime=Unknown StartTime=2026-10-25T05:05:00 EndTime=2026-10-25T11:05:00 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-25T03:29:15 Scheduler=Main Partition=gpu AllocNode:Sid=crest-l001:905703 ReqNodeList=crest-g002 ExcNodeList=(null) NodeList= NumNodes=1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=16,mem=128G,node=1,billing=16,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home/akumar3/ResearchProjects/prospective-memory/prospective-memory/experiments/rgpm/operations/retry_gpt_after_midnight.sbatch WorkDir=/home/akumar3/ResearchProjects/prospective-memory/prospective-memory StdErr=/home/akumar3/ResearchProjects/prospective-memory/prospective-memory/experiments/rgpm/jobs/exp3-gpt-midnight-retry-1553091.log StdIn=/dev/null StdOut=/home/akumar3/ResearchProjects/prospective-memory/prospective-memory/experiments/rgpm/jobs/exp3-gpt-midnight-retry-1553091.log Power= TresPerNode=gres:gpu:h100:1"
+}

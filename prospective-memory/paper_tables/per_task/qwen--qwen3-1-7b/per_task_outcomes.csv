@@ -1,0 +1,84 @@
+task_id,label,day,modality,regular,cross_day,cue_channel,channel_triggered,target_time,update_action,update_at,updated,scored,outcome,completed_at
+antibiotic_breakfast,Take antibiotic at breakfast,Friday,event,True,False,,False,,,,False,True,miss,
+antibiotic_dinner,Take antibiotic at dinner,Friday,event,True,False,,False,,,,False,True,hit,d5_s11
+asthma_1100,Take asthma medication at 11:00,Friday,time,True,False,,False,11:00,,,False,True,miss,
+asthma_2100,Take asthma medication at 21:00,Friday,time,True,False,,False,21:00,,,False,True,miss,
+check_transit_times_1_d5,Check the transit times at 11:50,Friday,time,False,False,,False,11:50,,,False,True,miss,
+crossday_7,Carry the laundry soap when you notice the laundry room cart,Friday,event,False,True,,False,,,,False,True,miss,
+dry_cleaner_rack_d5,Collect the dry cleaning when it reaches the front rack,Friday,event,False,False,,False,,override,d5_s2,True,True,miss,
+email_receipt_note_d5,Save the receipt when the confirmation email arrives,Friday,event,False,False,email,True,,,,False,True,miss,
+laundry_room_cart_d5,Bring down the blankets when the laundry room cart is free,Friday,event,False,False,,False,,,,False,True,miss,
+library_hold_ready_d5,Pick up the hold when the library notice says it is ready,Friday,event,False,False,library_hold,True,,,,False,True,miss,
+pay_parking_app_2_d5,Pay the parking app balance at 08:05,Friday,time,False,False,,False,08:05,,,False,True,hit,d5_s1
+storage_cage_d5,Bring upstairs the folded chair when the storage cage is open,Friday,event,False,False,,False,,,,False,True,hit,d5_s10
+antibiotic_breakfast,Take antibiotic at breakfast,Monday,event,True,False,,False,,,,False,True,hit,d1_s1
+antibiotic_dinner,Take antibiotic at dinner,Monday,event,True,False,,False,,,,False,True,hit,d1_s11
+appointment_form_ready_d1,Finish the intake form when the portal posts it,Monday,event,False,False,appointment_portal,True,,,,False,True,miss,
+appointment_reschedule_open_d1,Move the appointment when a better slot opens,Monday,event,False,False,appointment_portal,True,,,,False,True,miss,
+asthma_1100,Take asthma medication at 11:00,Monday,time,True,False,,False,11:00,,,False,True,miss,
+asthma_2100,Take asthma medication at 21:00,Monday,time,True,False,,False,21:00,,,False,True,miss,
+grocery_pickup_shelf_d1,Grab the grocery bag when it appears on the pickup shelf,Monday,event,False,False,,False,,,,False,True,hit,d1_s9
+hardware_counter_d1,Pick up the replacement filter when the hardware counter clears,Monday,event,False,False,,False,,override,d1_s2,True,True,miss,
+library_hold_ready_d1,Pick up the hold when the library notice says it is ready,Monday,event,False,False,library_hold,True,,,,False,True,miss,
+library_return_slot_d1,Return the library book when the return slot is open,Monday,event,False,False,,False,,override,d1_s8,True,True,miss,
+parking_receipt_kiosk_d1,Print the parking receipt when the kiosk starts blinking,Monday,event,False,False,,False,,,,False,True,hit,d1_s7
+send_library_email_1_d1,Send the library email at 11:50,Monday,time,False,False,,False,11:50,,,False,True,miss,
+antibiotic_breakfast,Take antibiotic at breakfast,Saturday,event,True,False,,False,,,,False,True,hit,d6_s1
+antibiotic_dinner,Take antibiotic at dinner,Saturday,event,True,False,,False,,,,False,True,hit,d6_s8
+appointment_slot_open_d6,Book the appointment when a slot opens in the portal,Saturday,event,False,False,appointment_portal,True,,,,False,True,miss,
+asthma_1100,Take asthma medication at 11:00,Saturday,time,True,False,,False,11:00,,,False,True,miss,
+asthma_2100,Take asthma medication at 21:00,Saturday,time,True,False,,False,21:00,,,False,True,late,d6_s10
+calendar_new_block_d6,Add the new block when it appears on your calendar,Saturday,event,False,False,calendar,True,,,,False,True,hit,d6_s5
+crossday_2,Bring the pickup code when you notice the package locker light,Saturday,event,False,True,,False,,,,False,True,miss,
+crossday_3,Carry the return label when you notice the doorbell camera flash,Saturday,event,False,True,,False,,,,False,True,miss,
+doorbell_camera_flash_d6,Buzz in the courier when the doorbell camera flashes,Saturday,event,False,False,,False,,,,False,True,hit,d6_s4
+email_vendor_2_d6,Email the vendor at 16:30,Saturday,time,False,False,,False,16:30,reschedule,d6_s3,True,True,miss,
+loading_dock_sign_d6,Ask about the boxed lamp when the loading dock sign points to pickup,Saturday,event,False,False,,False,,,,False,True,miss,
+mailroom_shelf_d6,Pick up the poster tube when it reaches the mailroom shelf,Saturday,event,False,False,,False,,,,False,True,miss,
+package_locker_light_d6,Collect the package when the locker light turns green,Saturday,event,False,False,,False,,,,False,True,hit,d6_s7
+submit_timesheet_1_d6,Submit the timesheet at 14:10,Saturday,time,False,False,,False,14:10,reschedule,d6_s2,True,True,miss,
+antibiotic_breakfast,Take antibiotic at breakfast,Sunday,event,True,False,,False,,,,False,True,hit,d7_s1
+antibiotic_dinner,Take antibiotic at dinner,Sunday,event,True,False,,False,,,,False,True,hit,d7_s10
+asthma_1100,Take asthma medication at 11:00,Sunday,time,True,False,,False,11:00,,,False,True,miss,
+asthma_2100,Take asthma medication at 21:00,Sunday,time,True,False,,False,21:00,,,False,True,miss,
+balance_low_95_d7,Move money when the balance drops below $95,Sunday,event,False,False,bank_balance,True,,,,False,True,miss,
+check_lab_portal_2_d7,Check the lab portal at 13:00,Sunday,time,False,False,,False,13:00,,,False,True,miss,
+lecture_side_door_d7,Tape up the notice when the lecture hall side door is propped open,Sunday,event,False,False,,False,,,,False,True,hit,d7_s6
+review_lab_notes_1_d7,Review the lab notes at 18:15,Sunday,time,False,False,,False,18:15,reschedule,d7_s8,True,True,miss,
+seminar_sign_d7,Confirm the room number when the seminar sign is updated,Sunday,event,False,False,,False,,,,False,True,hit,d7_s5
+antibiotic_breakfast,Take antibiotic at breakfast,Thursday,event,True,False,,False,,,,False,True,miss,
+antibiotic_dinner,Take antibiotic at dinner,Thursday,event,True,False,,False,,,,False,True,late,d4_s11
+asthma_1100,Take asthma medication at 11:00,Thursday,time,True,False,,False,11:00,,,False,True,miss,
+asthma_2100,Take asthma medication at 21:00,Thursday,time,True,False,,False,21:00,,,False,True,miss,
+clinic_window_d4,Ask about the referral when the clinic check-in window is open,Thursday,event,False,False,,False,,,,False,True,hit,d4_s2
+confirm_pickup_window_1_d4,Confirm the pickup window at 19:10,Thursday,time,False,False,,False,19:10,reschedule,d4_s5,True,True,miss,
+crossday_5,Carry the spare tote bag when you notice the parcel counter,Thursday,event,False,True,,False,,,,False,True,miss,
+crossday_6,Bring the referral slip when you notice the clinic check-in window,Thursday,event,False,True,,False,,,,False,True,miss,
+front_desk_clipboard_d4,Sign the intake form when the front desk clipboard is out,Thursday,event,False,False,,False,,,,False,True,hit,d4_s4
+parcel_counter_d4,Collect the parcel when you reach the counter,Thursday,event,False,False,,False,,,,False,True,hit,d4_s3
+pharmacy_counter_d4,Pick up the prescription when you reach the pharmacy counter,Thursday,event,False,False,,False,,,,False,True,hit,d4_s6
+shipment_out_for_delivery_d4,Be home when the delivery is out for delivery,Thursday,event,False,False,shipment_status,True,,,,False,True,miss,
+antibiotic_breakfast,Take antibiotic at breakfast,Tuesday,event,True,False,,False,,,,False,True,miss,
+antibiotic_dinner,Take antibiotic at dinner,Tuesday,event,True,False,,False,,,,False,True,hit,d2_s11
+asthma_1100,Take asthma medication at 11:00,Tuesday,time,True,False,,False,11:00,,,False,True,miss,
+asthma_2100,Take asthma medication at 21:00,Tuesday,time,True,False,,False,21:00,,,False,True,miss,
+calendar_call_move_d2,Move the check-in when the calendar update moves the call,Tuesday,event,False,False,calendar,True,,,,False,True,hit,d2_s8
+calendar_room_shift_d2,Adjust the prep plan when the calendar room shift appears,Tuesday,event,False,False,calendar,True,,,,False,True,miss,
+check_in_manager_1_d2,Check in with your manager at 15:20,Tuesday,time,False,False,,False,15:20,reschedule,d2_s6,True,True,late,d2_s9
+conference_screen_d2,Pick up the room key when the conference room screen flashes your room assignment,Tuesday,event,False,False,,False,,,,False,True,miss,
+email_vendor_reply_d2,Forward the vendor reply when the email lands,Tuesday,event,False,False,email,True,,,,False,True,miss,
+manager_door_d2,Give the quick update when your manager stops at the doorway,Tuesday,event,False,False,,False,,,,False,True,miss,
+send_budget_note_2_d2,Send the budget note at 16:15,Tuesday,time,False,False,,False,16:15,reschedule,d2_s7,True,True,miss,
+antibiotic_breakfast,Take antibiotic at breakfast,Wednesday,event,True,False,,False,,,,False,True,hit,d3_s1
+antibiotic_dinner,Take antibiotic at dinner,Wednesday,event,True,False,,False,,,,False,True,hit,d3_s9
+asthma_1100,Take asthma medication at 11:00,Wednesday,time,True,False,,False,11:00,,,False,True,miss,
+asthma_2100,Take asthma medication at 21:00,Wednesday,time,True,False,,False,21:00,,,False,True,miss,
+balance_low_95_d3,Move money when the balance drops below $95,Wednesday,event,False,False,bank_balance,True,,,,False,True,miss,
+call_insurance_1_d3,Call the insurance desk at 12:45,Wednesday,time,False,False,,False,12:45,cancel,d3_s4,False,False,canceled,
+course_grade_released_d3,Check the grade when it is released,Wednesday,event,False,False,course_portal,True,,,,False,True,miss,
+crossday_1,Carry the prescription receipt when you notice the lab drop box,Wednesday,event,False,True,,False,,,,False,True,miss,
+crossday_4,Email the room change note when you notice the lab cubby,Wednesday,event,False,True,,False,,,,False,True,miss,
+lab_cubby_d3,Pick up the handout packet when it shows up in the lab cubby,Wednesday,event,False,False,,False,,,,False,True,hit,d3_s6
+lab_dropbox_d3,Drop off the sample slip when the lab drop box is unlocked,Wednesday,event,False,False,,False,,,,False,True,miss,
+library_hold_second_ready_d3,Collect the reserve reading when the library hold is ready,Wednesday,event,False,False,library_hold,True,,,,False,True,miss,
+pay_coop_dues_2_d3,Pay the co-op dues at 11:50,Wednesday,time,False,False,,False,11:50,cancel,d3_s2,False,False,canceled,

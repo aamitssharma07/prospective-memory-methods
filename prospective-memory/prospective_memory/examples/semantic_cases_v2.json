@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "description": "September 21 fresh hand-authored regression cases, frozen before live evaluation. Developed around general failure categories observed previously; not an independently held-out benchmark. Labels are scorer-only. Repeated instruction IDs in expected outputs denote multiple distinct actions from a single multi-part instruction.",
+  "cases": [
+    {
+      "id": "multiline_unrelated_requests", "sources": ["events"], "queryable_sources": [],
+      "instructions": [{"id": "plan", "text": "Please keep these separate requests for this week:\n- When Imani approves the exhibit design, remind me to order the display panels.\n- When the lens repair is complete, remind me to collect the camera.\n- When the atlas is published, remind me to send the editor a thank-you note."}],
+      "ticks": [
+        {"id": "quiet", "observations": [{"id": "e1", "text": "Imani is still reviewing the exhibit design. The lens is still being repaired and the atlas is not published.", "source": "events"}], "expected_act_instruction_ids": []},
+        {"id": "design", "observations": [{"id": "e2", "text": "Imani says: I approve the exhibit design.", "source": "events"}], "expected_act_instruction_ids": ["plan"]},
+        {"id": "other_two", "observations": [{"id": "e3", "text": "The repair desk confirms the lens repair is complete. The publisher announces the atlas has now been published.", "source": "events"}], "expected_act_instruction_ids": ["plan", "plan"]}
+      ]
+    },
+    {
+      "id": "reschedule_is_not_due", "sources": ["events", "clock"], "queryable_sources": [],
+      "instructions": [{"id": "dispatch", "text": "Today, remind me to submit the design packet at 14:00."}],
+      "ticks": [
+        {"id": "update", "instructions": [{"id": "move", "text": "Change the design-packet submission reminder to 18:30 today instead of 14:00."}], "observations": [{"id": "e1", "text": "The design-packet submission reminder has been moved to 18:30 today.", "source": "events"}, {"id": "c1", "text": "Current local time today: 12:00.", "source": "clock"}], "expected_act_instruction_ids": []},
+        {"id": "old_time", "observations": [{"id": "c2", "text": "Current local time today: 14:00.", "source": "clock"}], "expected_act_instruction_ids": []},
+        {"id": "new_time", "observations": [{"id": "c3", "text": "Current local time today: 18:30.", "source": "clock"}], "expected_act_instruction_ids": ["dispatch"]}
+      ]
+    },
+    {
+      "id": "cancellation_in_mixed_message", "sources": ["events"], "queryable_sources": [],
+      "instructions": [{"id": "permit", "text": "When the city issues the permit, remind me to book the surveyor."}],
+      "ticks": [
+        {"id": "cancel", "instructions": [{"id": "cancel_note", "text": "The project is paused. Cancel my reminder to book the surveyor. The city might still issue the permit."}], "observations": [{"id": "e1", "text": "The surveyor reminder is cancelled. Permit processing continues.", "source": "events"}], "expected_act_instruction_ids": []},
+        {"id": "issued", "observations": [{"id": "e2", "text": "The city has issued the permit.", "source": "events"}], "expected_act_instruction_ids": []}
+      ]
+    },
+    {
+      "id": "related_status_not_target_property", "sources": ["events", "facility_status"], "queryable_sources": [],
+      "instructions": [{"id": "bay", "text": "When the loading-bay gate is unlocked, remind me to wheel the equipment cases inside."}],
+      "ticks": [
+        {"id": "idle", "observations": [{"id": "e1", "text": "Facility status: the generator is idle. The loading-bay gate lock has not been checked.", "source": "facility_status"}], "expected_act_instruction_ids": []},
+        {"id": "locked", "observations": [{"id": "e2", "text": "The loading-bay gate is locked even though the generator is off.", "source": "facility_status"}], "expected_act_instruction_ids": []},
+        {"id": "unlocked", "observations": [{"id": "e3", "text": "The caretaker confirms that the loading-bay gate has just been unlocked.", "source": "events"}], "expected_act_instruction_ids": ["bay"]}
+      ]
+    },
+    {
+      "id": "instruction_mention_not_occurrence", "sources": ["events"], "queryable_sources": [],
+      "instructions": [{"id": "grant", "text": "When the foundation confirms our grant award, remind me to arrange the kickoff workshop."}],
+      "ticks": [
+        {"id": "mention", "instructions": [{"id": "mention_note", "text": "Remember, arrange the kickoff workshop when the foundation confirms the award. There has been no award decision yet."}], "observations": [{"id": "e1", "text": "Remember, arrange the kickoff workshop when the foundation confirms the award. There has been no award decision yet.", "source": "events"}], "expected_act_instruction_ids": []},
+        {"id": "hypothetical", "observations": [{"id": "e2", "text": "A colleague says we may receive the grant award next month; this is speculation.", "source": "events"}], "expected_act_instruction_ids": []},
+        {"id": "award", "observations": [{"id": "e3", "text": "The foundation has confirmed that our grant has been awarded.", "source": "events"}], "expected_act_instruction_ids": ["grant"]}
+      ]
+    },
+    {
+      "id": "negative_voltage_threshold", "sources": ["events"], "queryable_sources": [],
+      "instructions": [{"id": "voltage", "text": "When the sensor voltage rises above minus 3 volts, remind me to record a calibration sample."}],
+      "ticks": [
+        {"id": "low", "observations": [{"id": "e1", "text": "The sensor currently reads minus 8 volts.", "source": "events"}], "expected_act_instruction_ids": []},
+        {"id": "equal", "observations": [{"id": "e2", "text": "The sensor currently reads exactly minus 3 volts.", "source": "events"}], "expected_act_instruction_ids": []},
+        {"id": "above", "observations": [{"id": "e3", "text": "The sensor currently reads minus 1 volt.", "source": "events"}], "expected_act_instruction_ids": ["voltage"]}
+      ]
+    },
+    {
+      "id": "pull_evidence_and_duplicate_delivery", "sources": ["events", "render_status"], "queryable_sources": ["render_status"],
+      "instructions": [{"id": "render", "text": "When the overnight render has completed successfully, remind me to send the preview to Mira."}],
+      "ticks": [
+        {"id": "running", "observations": [], "pull_responses": {"render_status": [{"id": "r1", "text": "Overnight render is still running.", "source": "render_status"}]}, "expected_act_instruction_ids": []},
+        {"id": "complete", "observations": [], "pull_responses": {"render_status": [{"id": "r2", "text": "Overnight render completed successfully.", "source": "render_status"}]}, "expected_act_instruction_ids": ["render"]},
+        {"id": "same_event", "observations": [{"id": "r2", "text": "Overnight render completed successfully.", "source": "render_status"}], "expected_act_instruction_ids": []}
+      ]
+    }
+  ]
+}

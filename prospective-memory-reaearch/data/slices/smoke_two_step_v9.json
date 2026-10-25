@@ -1,0 +1,307 @@
+{
+  "scenario_name": "synthetic_week_v9 (two-step smoke)",
+  "time_visible_by_default": false,
+  "state_visibility": {
+    "clock": false,
+    "email": false,
+    "calendar": false,
+    "course_portal": false,
+    "price_tracker": false,
+    "bank_balance": false,
+    "shipment_status": false,
+    "laundry_status": false,
+    "library_hold": false,
+    "reservation_waitlist": false,
+    "appointment_portal": false
+  },
+  "state_channels": {
+    "clock": {
+      "mode": "snapshot"
+    },
+    "email": {
+      "mode": "delta"
+    },
+    "calendar": {
+      "mode": "delta"
+    },
+    "course_portal": {
+      "mode": "delta"
+    },
+    "price_tracker": {
+      "mode": "snapshot",
+      "default_item": {
+        "id": "price_status",
+        "text": "Price check: item is $99.",
+        "value": 99,
+        "meta": {
+          "currency": "USD"
+        }
+      }
+    },
+    "bank_balance": {
+      "mode": "snapshot",
+      "default_item": {
+        "id": "balance_status",
+        "text": "Balance check: $220.",
+        "value": 220,
+        "meta": {
+          "currency": "USD"
+        }
+      }
+    },
+    "shipment_status": {
+      "mode": "snapshot",
+      "default_item": {
+        "id": "shipment_status",
+        "text": "Delivery status: no active shipment.",
+        "value": null,
+        "meta": {
+          "phase": "idle"
+        }
+      }
+    },
+    "laundry_status": {
+      "mode": "snapshot",
+      "default_item": {
+        "id": "laundry_status",
+        "text": "Laundry status: idle.",
+        "value": null,
+        "meta": {
+          "phase": "idle"
+        }
+      }
+    },
+    "library_hold": {
+      "mode": "delta"
+    },
+    "reservation_waitlist": {
+      "mode": "delta"
+    },
+    "appointment_portal": {
+      "mode": "delta"
+    }
+  },
+  "days": [
+    {
+      "name": "Monday",
+      "start_instructions": [
+        "Today's loose plan:",
+        "- Finish the intake form when the portal posts it.",
+        "- Grab the grocery bag when it appears on the pickup shelf.",
+        "- Move the appointment when a better slot opens.",
+        "- Pick up the hold when the library notice says it is ready.",
+        "- Pick up the replacement filter when the hardware counter clears.",
+        "- Print the parking receipt when the kiosk starts blinking.",
+        "- Return the library book when the return slot is open.",
+        "- Send the library email at 11:50."
+      ],
+      "tasks": [
+        {
+          "id": "antibiotic_breakfast",
+          "label": "Take antibiotic at breakfast",
+          "type": "event",
+          "cue_id": "breakfast",
+          "regular": true,
+          "encoding": "start",
+          "action_text": "Take antibiotic at breakfast."
+        },
+        {
+          "id": "antibiotic_dinner",
+          "label": "Take antibiotic at dinner",
+          "type": "event",
+          "cue_id": "dinner",
+          "regular": true,
+          "encoding": "start",
+          "action_text": "Take antibiotic at dinner."
+        },
+        {
+          "id": "asthma_1100",
+          "label": "Take asthma medication at 11:00",
+          "type": "time",
+          "target_time": "11:00",
+          "regular": true,
+          "encoding": "start",
+          "action_text": "Take asthma medication at 11:00."
+        },
+        {
+          "id": "asthma_2100",
+          "label": "Take asthma medication at 21:00",
+          "type": "time",
+          "target_time": "21:00",
+          "regular": true,
+          "encoding": "start",
+          "action_text": "Take asthma medication at 21:00."
+        },
+        {
+          "id": "library_return_slot_d1",
+          "label": "Return the library book when the return slot is open",
+          "type": "event",
+          "cue_id": "library_return_slot_d1",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Return the library book."
+        },
+        {
+          "id": "hardware_counter_d1",
+          "label": "Pick up the replacement filter when the hardware counter clears",
+          "type": "event",
+          "cue_id": "hardware_counter_d1",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Pick up the replacement filter."
+        },
+        {
+          "id": "grocery_pickup_shelf_d1",
+          "label": "Grab the grocery bag when it appears on the pickup shelf",
+          "type": "event",
+          "cue_id": "grocery_pickup_shelf_d1",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Grab the grocery bag."
+        },
+        {
+          "id": "parking_receipt_kiosk_d1",
+          "label": "Print the parking receipt when the kiosk starts blinking",
+          "type": "event",
+          "cue_id": "parking_receipt_kiosk_d1",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Print the parking receipt."
+        },
+        {
+          "id": "send_library_email_1_d1",
+          "label": "Send the library email at 11:50",
+          "type": "time",
+          "target_time": "11:50",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Send the library email."
+        },
+        {
+          "id": "appointment_form_ready_d1",
+          "label": "Finish the intake form when the portal posts it",
+          "type": "event",
+          "cue_id": "appointment_form_ready_d1",
+          "cue_channel": "appointment_portal",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Finish the intake form."
+        },
+        {
+          "id": "library_hold_ready_d1",
+          "label": "Pick up the hold when the library notice says it is ready",
+          "type": "event",
+          "cue_id": "library_hold_ready_d1",
+          "cue_channel": "library_hold",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Pick up the hold."
+        },
+        {
+          "id": "appointment_reschedule_open_d1",
+          "label": "Move the appointment when a better slot opens",
+          "type": "event",
+          "cue_id": "appointment_reschedule_open_d1",
+          "cue_channel": "appointment_portal",
+          "regular": false,
+          "encoding": "start",
+          "action_text": "Move the appointment."
+        }
+      ],
+      "lures": [
+        {
+          "id": "look_up_recipe",
+          "action_text": "Look up a recipe."
+        },
+        {
+          "id": "read_blurb",
+          "action_text": "Read a book blurb."
+        },
+        {
+          "id": "text_friend",
+          "action_text": "Send a quick text to a friend."
+        },
+        {
+          "id": "brew_tea",
+          "action_text": "Make a cup of tea."
+        },
+        {
+          "id": "straighten_couch",
+          "action_text": "Straighten the couch pillows."
+        },
+        {
+          "id": "clean_mug",
+          "action_text": "Clean the mug in the sink."
+        },
+        {
+          "id": "queue_playlist",
+          "action_text": "Queue up a playlist."
+        },
+        {
+          "id": "browse_menu",
+          "action_text": "Browse a dinner menu."
+        },
+        {
+          "id": "check_weather",
+          "action_text": "Check the weather."
+        },
+        {
+          "id": "organize_bag",
+          "action_text": "Organize your bag."
+        }
+      ],
+      "steps": [
+        {
+          "id": "d1_s1",
+          "time": "07:20",
+          "text": "Breakfast comes together while you're already thinking two steps ahead.",
+          "options": [
+            "A) Pour coffee",
+            "B) Open a note",
+            "C) Check the window"
+          ],
+          "cues": [
+            "breakfast"
+          ],
+          "updates": [],
+          "groundtruth": {
+            "status": "due",
+            "actions": [
+              {
+                "id": "antibiotic_breakfast",
+                "task_handle": "task_22"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1_s2",
+          "time": "09:10",
+          "text": "You get a follow-up with corrected instructions for pick up the replacement filter. You have a feeling the appointment portal may open a better slot later. Instead of the earlier cue, watch for the follow-up text before you pick up the replacement filter.",
+          "options": [
+            "A) Reply quickly",
+            "B) Keep walking",
+            "C) Put the phone away"
+          ],
+          "cues": [
+            "override_notice_hardware_counter_d1_d0"
+          ],
+          "updates": [
+            {
+              "task_id": "hardware_counter_d1",
+              "action": "override",
+              "new_cue_id": "override_hardware_counter_d1_d0",
+              "new_label": "Pick up the replacement filter when the follow-up text comes in",
+              "new_action_text": "Pick up the replacement filter.",
+              "cue_id": "override_notice_hardware_counter_d1_d0"
+            }
+          ],
+          "groundtruth": {
+            "status": "none",
+            "actions": []
+          }
+        }
+      ]
+    }
+  ]
+}

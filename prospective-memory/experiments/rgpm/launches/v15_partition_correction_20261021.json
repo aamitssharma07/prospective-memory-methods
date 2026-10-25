@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "experiment": 3,
+  "original_launch_record": "v15_qwen_four_helpers_20261020.json",
+  "reason": "Original two-GPU jobs used gpu QoS, whose MaxTRESPU allows only one GPU. Historical two-GPU jobs used gpu-res-01 partition and QoS.",
+  "operation": "scontrol update on existing pending jobs; no cancellation or resubmission",
+  "moved_two_gpu_job_ids": [1537331,1537332,1537333,1537334,1537336,1537337,1537338,1537339,1537341,1537342,1537343,1537344,1537346,1537347,1537348,1537349,1537351,1537352,1537353,1537354,1537355,1537356,1537357,1537358,1537359,1537360,1537361,1537362],
+  "new_partition": "gpu-res-01",
+  "new_qos": "gpu-res-01",
+  "single_gpu_jobs_unchanged": [1537335,1537340,1537345,1537350],
+  "dependencies_unchanged": true,
+  "methodology_unchanged": true,
+  "verification": "1537331 RUNNING on crest-g001; remaining jobs pending dependency",
+  "hardware_note": "Reserved-partition GPUs may differ in memory capacity from gpu partition. Actual GPU and checkpoint provenance are saved per run."
+}

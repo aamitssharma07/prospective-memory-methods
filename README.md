@@ -1,46 +1,29 @@
-# prospective-memory-methods
+# Prospective Memory Methods
 
-Research code for developing and evaluating general prospective-memory methods
-for language-model agents.
+Three experiments: PMBench controls, author-release memory methods, and our RGPM method.
 
-The project focuses on agents that must remember an intention and act when a
-future condition becomes true, even when the condition may arrive much later,
-through another channel, or during unrelated work.
+Start with [Team Context](prospective-memory/TEAM_CONTEXT.md) and [the result tables](prospective-memory/docs/experiments/results/RESULTS.md).
 
-## What is here
+- `prospective-memory/`: main project, Experiment 1, RGPM, tests and documentation.
+- `prospective-memory-reaearch/`: Experiment 2 implementation and configuration.
+- `results/`: complete inventory, packaging state and raw-result access instructions.
 
-- `prospective_memory/`: portable prospective-memory core, model policy, event
-  stream evaluator, PM-Bench adapter, examples, and documentation.
-- `pmbench_fallback_audit/`: corrected PM-Bench fallback analysis, runners,
-  memory-intervention experiments, and compact result summaries.
-- `PMBench/`: local copy of the benchmark code and synthetic scenario used by the
-  experiments.
-- `tests/`: benchmark-independent tests for the portable memory module and live
-  diagnostic harness.
+The pre-existing top-level `PMBench/`, `pmbench_fallback_audit/`,
+`prospective_memory/` and `tests/` are retained as the repository's initial
+historical snapshot. Use the current code inside `prospective-memory/` and
+the sibling `prospective-memory-reaearch/` for the three experiments. The
+previous entry-point README is preserved in `legacy_initial_snapshot/`.
 
-## Quick start
+Current source was exported without `.env`, caches, model weights or old Git history. Nested source checkouts are vendored at their current working-tree contents; see `SOURCE_PROVENANCE.json` for upstream commits and file hashes.
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r PMBench/requirements.txt
-pip install -r pmbench_fallback_audit/requirements.txt
-```
+**Raw results are not yet uploaded.** Their full inventory is preserved under `results/`; split GitHub Release archives still require payload scanning, compression and upload. Do not rerun completed experiments to recover missing raw data.
 
-Run the lightweight test suite:
+The raw-result packaging job is CPU-only and includes all 84,259 inventoried
+files (approximately 259 GiB), including failed and archived attempts. Each
+payload is credential-scanned, hashed, compressed and verified after
+decompression before it can be published. See [raw-result status](results/README.md).
 
-```bash
-python3 -m unittest discover -s tests -p 'test*.py' -v
-python3 -m unittest discover -s pmbench_fallback_audit -p 'test*.py' -v
-```
-
-Read `prospective_memory/README.md` and `pmbench_fallback_audit/MEMORY_EXPERIMENT.md`
-before starting a new experiment. They record the current method, runnable
-commands, and limitations.
-
-## Current caution
-
-The portable memory method has passed scripted software tests and one small
-independent Qwen3-8B diagnostic, but it has not yet shown an improvement on
-PM-Bench. The next experiment should run one fixed model, preferably Qwen3-8B, on
-PM-Bench with `--memory-version portable` and compare against the clean baseline.
+Statements inside older context files about tracked `.env` or missing
+submodules refer to the original research checkout, not this clean export.
+No original research Git history, private environment file or nested `.git`
+directory was copied here. Existing GitHub history is preserved without force pushes.

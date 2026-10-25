@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "experiment": 3,
+  "job_id": "1537307",
+  "status": "submitted",
+  "authorization": "User approved direct OpenAI setup and gated full dataset submission: go haead",
+  "actor_backend": "openai_chat",
+  "actor_model": "gpt-5.4",
+  "helper_model": "Qwen/Qwen3-32B",
+  "max_output_tokens_per_call": 768,
+  "registration_policy": "focused_resolved_partition_v15",
+  "scenario": "benchmark/data/synthetic_week_v9.json",
+  "scenario_sha256": "94a45937da1363be19ccfdc2c188d132f23093041e30abd3ec22d64d70da8f24",
+  "steps": 80,
+  "configuration": {
+    "ACTOR_GUIDANCE": "query_first",
+    "QUERY_HANDOFF": "legacy",
+    "QUERY_BUDGET": 1,
+    "SOURCE_ROUTING": 1,
+    "SCOPE_GROUNDING": 1,
+    "BOUNDED_PRIORITY": 1,
+    "REGISTRATION_GROUNDING": 1,
+    "REPORT_GATES": 0,
+    "VERIFY_ACTIONS": 0,
+    "RUN_FULL": 1,
+    "LOCAL_ONLY": 0
+  },
+  "budget": {
+    "smoke_max_actor_calls": 24,
+    "smoke_max_actor_tokens": 500000,
+    "full_max_actor_calls": 300,
+    "full_max_actor_tokens": 4000000
+  },
+  "gates": {
+    "local_probes_and_replay": true,
+    "smoke_max_false_positives": 0,
+    "smoke_max_false_negatives": 0,
+    "full_only_after_smoke_passes": true
+  },
+  "offline_tests": {"passed": 79, "failed": 0},
+  "launcher": "experiments/rgpm/run_gpt_actor.sbatch",
+  "replay_input": "experiments/rgpm/runs/query_first_v1/gpt-5-4-helper-qwen3-8b/sbpm/gpt-5-4-actor-helper-qwen3-8b-1535138",
+  "log": "experiments/rgpm/jobs/exp3-gpt-v15-openai-full-h32-1537307.log",
+  "result_directory": "experiments/rgpm/runs/registration_v15_openai_full/gpt-5-4-helper-qwen3-32b/sbpm/gpt-5-4-actor-helper-qwen3-32b-1537307",
+  "note": "Separate provider run. Full metrics are not yet available; runtime manifests preserve source hashes and requests. No secrets recorded."
+}

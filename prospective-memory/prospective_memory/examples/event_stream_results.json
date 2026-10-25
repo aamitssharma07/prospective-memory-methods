@@ -1,0 +1,93 @@
+{
+  "evaluation": "scripted interface and lifecycle validation",
+  "semantic_model_performance_evaluated": false,
+  "benchmark_data_used": false,
+  "note": "The compiler and matcher are deterministic fixtures. These checks establish interface behavior, lifecycle transitions, and evidence controls; they do not establish improved prospective-memory accuracy or semantic trigger recognition.",
+  "passed": 10,
+  "total": 10,
+  "scenarios": [
+    {
+      "scenario": "delayed_event_and_unrelated_activity",
+      "passed": true,
+      "details": {
+        "quiet_ticks": 3,
+        "reminders": 1
+      }
+    },
+    {
+      "scenario": "simultaneous_independent_intentions",
+      "passed": true,
+      "details": {
+        "pending_intentions": 2,
+        "reminders": 2
+      }
+    },
+    {
+      "scenario": "cancellation",
+      "passed": true,
+      "details": {
+        "reminders_after_cancellation": 0
+      }
+    },
+    {
+      "scenario": "revision",
+      "passed": true,
+      "details": {
+        "stable_identity": true,
+        "obsolete_trigger_reminders": 0,
+        "revised_trigger_reminders": 1
+      }
+    },
+    {
+      "scenario": "never_triggered",
+      "passed": true,
+      "details": {
+        "observed_ticks": 5,
+        "reminders": 0
+      }
+    },
+    {
+      "scenario": "stale_and_repeated_evidence",
+      "passed": true,
+      "details": {
+        "fresh_reminders": 1,
+        "historical_or_duplicate_reminders": 0
+      }
+    },
+    {
+      "scenario": "invented_evidence",
+      "passed": true,
+      "details": {
+        "unsupported_reminders": 0,
+        "validation_errors": 1
+      }
+    },
+    {
+      "scenario": "push_and_pull_with_query_budget",
+      "passed": true,
+      "details": {
+        "query_budget_per_tick": 1,
+        "executed_queries": 1,
+        "push_reminders": 1,
+        "pull_reminders": 2
+      }
+    },
+    {
+      "scenario": "persistence_restore",
+      "passed": true,
+      "details": {
+        "json_round_trip": true,
+        "restored_reminders": 1,
+        "replay_reminders_after_restore": 0
+      }
+    },
+    {
+      "scenario": "recurring_intention_acknowledgement",
+      "passed": true,
+      "details": {
+        "distinct_occurrence_reminders": 2,
+        "duplicate_reminders": 0
+      }
+    }
+  ]
+}

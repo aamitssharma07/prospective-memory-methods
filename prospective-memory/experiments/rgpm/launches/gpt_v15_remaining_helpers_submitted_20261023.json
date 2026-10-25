@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "experiment": 3,
+  "task_id": "EXP3-GPT-V15-REMAINING-HELPERS",
+  "authorization": "User: run the gpt one; approved prepared three-pair follow-up and saved caps",
+  "prepared_plan": "experiments/rgpm/launches/gpt_v15_remaining_helpers_prepared_20261023.json",
+  "submitted_at": "2026-10-24T03:45:48.558173+00:00",
+  "status": "submitted",
+  "budget_caps": {
+    "actor_calls": 972,
+    "actor_tokens": 13500000
+  },
+  "max_tokens": 768,
+  "admission_policy": "report_only",
+  "existing_gpt_32b_job_reused": "1537307",
+  "local_sweep_dependency": "1538294",
+  "jobs": [
+    {
+      "actor": "gpt-5.4",
+      "helper": "Qwen/Qwen3-1.7B",
+      "submission_argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=exp3-gpt-v15-h1-7b",
+        "--partition=gpu",
+        "--qos=gpu",
+        "--gres=gpu:h100:1",
+        "--export=ALL,LOCAL_ONLY=0,RUN_FULL=1,ACTOR_BACKEND=openai_chat,ACTOR_MODEL=gpt-5.4,HELPER_MODEL=Qwen/Qwen3-1.7B,ACTOR_GUIDANCE=query_first,QUERY_HANDOFF=legacy,QUERY_BUDGET=1,SOURCE_ROUTING=1,SCOPE_GROUNDING=1,BOUNDED_PRIORITY=1,REGISTRATION_GROUNDING=1,REPORT_GATES=0,VERIFY_ACTIONS=0,RUN_HELPER_PROBES=0,SMOKE_ADMISSION_POLICY=report_only,SMOKE_MAX_ACTOR_CALLS=24,SMOKE_MAX_ACTOR_TOKENS=500000,MAX_ACTOR_CALLS=300,MAX_ACTOR_TOKENS=4000000,RUNS_ROOT=experiments/rgpm/runs/registration_v15_gpt_remaining_helpers",
+        "--dependency=afterany:1538294",
+        "experiments/rgpm/run_gpt_actor.sbatch"
+      ],
+      "status": "submitted",
+      "job_id": "1553051",
+      "result_directory": "experiments/rgpm/runs/registration_v15_gpt_remaining_helpers/gpt-5-4-helper-qwen3-1-7b/sbpm/gpt-5-4-actor-helper-qwen3-1-7b-1553051"
+    },
+    {
+      "actor": "gpt-5.4",
+      "helper": "Qwen/Qwen3-4B",
+      "submission_argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=exp3-gpt-v15-h4b",
+        "--partition=gpu",
+        "--qos=gpu",
+        "--gres=gpu:h100:1",
+        "--export=ALL,LOCAL_ONLY=0,RUN_FULL=1,ACTOR_BACKEND=openai_chat,ACTOR_MODEL=gpt-5.4,HELPER_MODEL=Qwen/Qwen3-4B,ACTOR_GUIDANCE=query_first,QUERY_HANDOFF=legacy,QUERY_BUDGET=1,SOURCE_ROUTING=1,SCOPE_GROUNDING=1,BOUNDED_PRIORITY=1,REGISTRATION_GROUNDING=1,REPORT_GATES=0,VERIFY_ACTIONS=0,RUN_HELPER_PROBES=0,SMOKE_ADMISSION_POLICY=report_only,SMOKE_MAX_ACTOR_CALLS=24,SMOKE_MAX_ACTOR_TOKENS=500000,MAX_ACTOR_CALLS=300,MAX_ACTOR_TOKENS=4000000,RUNS_ROOT=experiments/rgpm/runs/registration_v15_gpt_remaining_helpers",
+        "--dependency=afterany:1553051",
+        "experiments/rgpm/run_gpt_actor.sbatch"
+      ],
+      "status": "submitted",
+      "job_id": "1553052",
+      "result_directory": "experiments/rgpm/runs/registration_v15_gpt_remaining_helpers/gpt-5-4-helper-qwen3-4b/sbpm/gpt-5-4-actor-helper-qwen3-4b-1553052"
+    },
+    {
+      "actor": "gpt-5.4",
+      "helper": "Qwen/Qwen3-8B",
+      "submission_argv": [
+        "sbatch",
+        "--parsable",
+        "--job-name=exp3-gpt-v15-h8b",
+        "--partition=gpu",
+        "--qos=gpu",
+        "--gres=gpu:h100:1",
+        "--export=ALL,LOCAL_ONLY=0,RUN_FULL=1,ACTOR_BACKEND=openai_chat,ACTOR_MODEL=gpt-5.4,HELPER_MODEL=Qwen/Qwen3-8B,ACTOR_GUIDANCE=query_first,QUERY_HANDOFF=legacy,QUERY_BUDGET=1,SOURCE_ROUTING=1,SCOPE_GROUNDING=1,BOUNDED_PRIORITY=1,REGISTRATION_GROUNDING=1,REPORT_GATES=0,VERIFY_ACTIONS=0,RUN_HELPER_PROBES=0,SMOKE_ADMISSION_POLICY=report_only,SMOKE_MAX_ACTOR_CALLS=24,SMOKE_MAX_ACTOR_TOKENS=500000,MAX_ACTOR_CALLS=300,MAX_ACTOR_TOKENS=4000000,RUNS_ROOT=experiments/rgpm/runs/registration_v15_gpt_remaining_helpers",
+        "--dependency=afterany:1553052",
+        "experiments/rgpm/run_gpt_actor.sbatch"
+      ],
+      "status": "submitted",
+      "job_id": "1553053",
+      "result_directory": "experiments/rgpm/runs/registration_v15_gpt_remaining_helpers/gpt-5-4-helper-qwen3-8b/sbpm/gpt-5-4-actor-helper-qwen3-8b-1553053"
+    }
+  ]
+}

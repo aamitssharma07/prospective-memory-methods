@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "name": "Trigger-role development diagnostic v1",
+  "protocol": "Independently authored from known failure classes and frozen before live runs of these cases. Development diagnostic, not external held-out validation. Expected records and decisions are scorer-only. All cues are directly observable; no queries, action execution, acknowledgments, or automatic completion. Lexical record checks are limited diagnostics, not semantic-equivalence proof.",
+  "cases": [
+    {
+      "id": "imperative_action_after_visible_cue",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [{"id": "role_paddles_request", "text": "When the paddle-rack gate opens, move the orange paddles from the floor onto the rack."}],
+      "expected_initial_records": [{"origin_id": "role_paddles_request", "instruction_ids": ["role_paddles_request"], "required_sources": ["events"], "clock_op": "none", "clock_time": "", "action_contains_any": ["orange paddles"], "condition_contains_any": ["gate opens"]}],
+      "ticks": [
+        {
+          "id": "role_paddles_tick_1",
+          "observations": [{"id": "role_paddles_obs_1", "source": "events", "current": true, "text": "The paddle-rack gate is closed. The orange paddles are on the floor."}],
+          "expected_records": [{"origin_id": "role_paddles_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_paddles_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "role_paddles_tick_2",
+          "observations": [{"id": "role_paddles_obs_2", "source": "events", "current": true, "text": "The paddle-rack gate swings open now. The orange paddles remain on the floor; nobody has moved them onto the rack."}],
+          "expected_records": [{"origin_id": "role_paddles_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_paddles_request", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "prepositional_cue_not_action_completion",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [{"id": "role_tea_request", "text": "On hearing the tea timer ring, pour the steeped tea into the glass jug."}],
+      "expected_initial_records": [{"origin_id": "role_tea_request", "instruction_ids": ["role_tea_request"], "required_sources": ["events"], "clock_op": "none", "clock_time": "", "action_contains_any": ["glass jug"], "condition_contains_any": ["timer ring"]}],
+      "ticks": [
+        {
+          "id": "role_tea_tick_1",
+          "observations": [{"id": "role_tea_obs_1", "source": "events", "current": true, "text": "The tea is steeping in the pot. The tea timer is silent and has not rung."}],
+          "expected_records": [{"origin_id": "role_tea_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_tea_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "role_tea_tick_2",
+          "observations": [{"id": "role_tea_obs_2", "source": "events", "current": true, "text": "The tea timer rings audibly now. The tea is still in the pot and the glass jug is empty."}],
+          "expected_records": [{"origin_id": "role_tea_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_tea_request", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "unfinished_action_and_unrelated_old_action",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [{"id": "role_train_request", "text": "Sketch the red toy train in the notebook when it reaches the tunnel exit."}],
+      "expected_initial_records": [{"origin_id": "role_train_request", "instruction_ids": ["role_train_request"], "required_sources": ["events"], "clock_op": "none", "clock_time": "", "action_contains_any": ["red toy train"], "condition_contains_any": ["tunnel exit"]}],
+      "ticks": [
+        {
+          "id": "role_train_tick_1",
+          "observations": [{"id": "role_train_obs_1", "source": "events", "current": true, "text": "The notebook contains a sketch made yesterday. The red toy train is currently inside the tunnel and has not reached the exit."}],
+          "expected_records": [{"origin_id": "role_train_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_train_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "role_train_tick_2",
+          "observations": [{"id": "role_train_obs_2", "source": "events", "current": true, "text": "The red toy train reaches the tunnel exit now. Today's notebook page is still blank; the train has not yet been sketched on it."}],
+          "expected_records": [{"origin_id": "role_train_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_train_request", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "different_earlier_action_is_required",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [{"id": "role_table_request", "text": "After your roommate wipes the kitchen counter, wipe the dining table."}],
+      "expected_initial_records": [{"origin_id": "role_table_request", "instruction_ids": ["role_table_request"], "required_sources": ["events"], "clock_op": "none", "clock_time": "", "action_contains_any": ["dining table"], "condition_contains_any": ["kitchen counter"]}],
+      "ticks": [
+        {
+          "id": "role_table_tick_1",
+          "observations": [{"id": "role_table_obs_1", "source": "events", "current": true, "text": "Your roommate has picked up a cloth but has not wiped the kitchen counter. The dining table still needs wiping."}],
+          "expected_records": [{"origin_id": "role_table_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_table_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "role_table_tick_2",
+          "observations": [{"id": "role_table_obs_2", "source": "events", "current": true, "text": "Your roommate has just finished wiping the kitchen counter. The dining table has not been wiped."}],
+          "expected_records": [{"origin_id": "role_table_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_table_request", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "two_requested_occasions_are_not_conjoined",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [{"id": "role_handbell_request", "text": "Ring the small handbell once after the first puppet act ends and again after the second puppet act ends."}],
+      "expected_initial_records": [{"origin_id": "role_handbell_request", "instruction_ids": ["role_handbell_request"], "required_sources": ["events"], "clock_op": "none", "clock_time": "", "action_contains_any": ["small handbell"], "condition_contains_any": ["first puppet act"]}],
+      "ticks": [
+        {
+          "id": "role_handbell_tick_1",
+          "observations": [{"id": "role_handbell_obs_1", "source": "events", "current": true, "text": "The first puppet act is still being performed. Neither the first nor the second act has ended."}],
+          "expected_records": [{"origin_id": "role_handbell_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_handbell_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "role_handbell_tick_2",
+          "observations": [{"id": "role_handbell_obs_2", "source": "events", "current": true, "text": "The first puppet act ends now. The second act has not started. The small handbell has not yet been rung."}],
+          "expected_records": [{"origin_id": "role_handbell_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_handbell_request", "kind": "ACT"}]]
+        },
+        {
+          "id": "role_handbell_tick_3",
+          "observations": [{"id": "role_handbell_obs_3", "source": "events", "current": true, "text": "The second puppet act is in progress. No act has ended during this update."}],
+          "expected_records": [{"origin_id": "role_handbell_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_handbell_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "role_handbell_tick_4",
+          "observations": [{"id": "role_handbell_obs_4", "source": "events", "current": true, "text": "The second puppet act ends now. The small handbell is silent and still needs to be rung for this ending."}],
+          "expected_records": [{"origin_id": "role_handbell_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_handbell_request", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "either_visible_cue_is_sufficient",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [{"id": "role_bicycle_request", "text": "Put the cotton cover over the bicycle when either drizzle starts or the bright porch lamp switches off."}],
+      "expected_initial_records": [{"origin_id": "role_bicycle_request", "instruction_ids": ["role_bicycle_request"], "required_sources": ["events"], "clock_op": "none", "clock_time": "", "action_contains_any": ["cotton cover"], "condition_contains_any": ["either drizzle"]}],
+      "ticks": [
+        {
+          "id": "role_bicycle_tick_1",
+          "observations": [{"id": "role_bicycle_obs_1", "source": "events", "current": true, "text": "The air is dry and no drizzle has started. The bright porch lamp remains on. The bicycle is uncovered."}],
+          "expected_records": [{"origin_id": "role_bicycle_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_bicycle_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "role_bicycle_tick_2",
+          "observations": [{"id": "role_bicycle_obs_2", "source": "events", "current": true, "text": "Drizzle starts now. The bright porch lamp is still on. The cotton cover has not yet been put over the bicycle."}],
+          "expected_records": [{"origin_id": "role_bicycle_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_bicycle_request", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "all_visible_prerequisites_are_required",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [{"id": "role_towel_request", "text": "Clip the drying towel to the rail only when the rail is dry and the bag of clips is open."}],
+      "expected_initial_records": [{"origin_id": "role_towel_request", "instruction_ids": ["role_towel_request"], "required_sources": ["events"], "clock_op": "none", "clock_time": "", "action_contains_any": ["drying towel"], "condition_contains_any": ["rail is dry and"]}],
+      "ticks": [
+        {
+          "id": "role_towel_tick_1",
+          "observations": [{"id": "role_towel_obs_1", "source": "events", "current": true, "text": "The rail is dry, but the bag of clips is closed. The drying towel lies loose beside it."}],
+          "expected_records": [{"origin_id": "role_towel_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_towel_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "role_towel_tick_2",
+          "observations": [{"id": "role_towel_obs_2", "source": "events", "current": true, "text": "The bag of clips is open, but the rail is wet. The drying towel remains loose."}],
+          "expected_records": [{"origin_id": "role_towel_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_towel_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "role_towel_tick_3",
+          "observations": [{"id": "role_towel_obs_3", "source": "events", "current": true, "text": "The rail is now dry and the bag of clips is open. The drying towel has not yet been clipped to the rail."}],
+          "expected_records": [{"origin_id": "role_towel_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_towel_request", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "announcement_is_not_the_observable_occurrence",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [{"id": "role_dough_request", "text": "Cover the mixing bowl with the linen cloth when the bread dough rises above the blue mark."}],
+      "expected_initial_records": [{"origin_id": "role_dough_request", "instruction_ids": ["role_dough_request"], "required_sources": ["events"], "clock_op": "none", "clock_time": "", "action_contains_any": ["linen cloth"], "condition_contains_any": ["above the blue mark"]}],
+      "ticks": [
+        {
+          "id": "role_dough_tick_1",
+          "observations": [{"id": "role_dough_obs_1", "source": "events", "current": true, "text": "The baker says the bread dough will rise above the blue mark shortly. Right now the dough remains below the mark and the bowl is uncovered."}],
+          "expected_records": [{"origin_id": "role_dough_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_dough_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "role_dough_tick_2",
+          "observations": [{"id": "role_dough_obs_2", "source": "events", "current": true, "text": "The bread dough is visibly above the blue mark now. The linen cloth is still beside the uncovered mixing bowl."}],
+          "expected_records": [{"origin_id": "role_dough_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "role_dough_request", "kind": "ACT"}]]
+        }
+      ]
+    }
+  ]
+}

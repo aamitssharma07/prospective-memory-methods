@@ -1,0 +1,14 @@
+# PM-Bench experiment environment (Python 3.10+).
+# SGLang is the official local-serving runtime for baseline reproduction.
+# Shared FFmpeg libraries: bash scripts/install_ffmpeg_runtime.sh (not a pip package).
+openai==2.6.1
+sglang==0.5.20
+ninja>=1.13.0,<2
+tqdm==4.70.1
+
+# Explicit model/tokenizer and checkpoint I/O dependencies.
+huggingface-hub>=0.33.0,<2
+safetensors>=0.5.0,<1
+sentencepiece>=0.2.0,<1
+
+# Intentionally omitted: bitsandbytes and other runtime quantization packages.

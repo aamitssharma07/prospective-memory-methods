@@ -1,0 +1,618 @@
+{
+  "schema_version": 1,
+  "pairs": [
+    {
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-4B",
+      "before": {
+        "path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-8b-helper-qwen3-4b/sbpm/qwen3-8b-actor-helper-qwen3-4b-1511455",
+        "metrics": {
+          "set_precision": 0.5679012345679012,
+          "set_recall": 0.5679012345679012,
+          "set_f1": 0.5679012345679012,
+          "set_tp": 46,
+          "set_fp": 35,
+          "set_fn": 35,
+          "hit": 46,
+          "late": 2,
+          "miss": 33,
+          "false_alarm": 33,
+          "check_time_calls": 95,
+          "state_query_calls": 109
+        },
+        "selected_count_distribution": {
+          "1": 79,
+          "2": 1
+        },
+        "total_selected": 81,
+        "steps_selecting_eight_handles": 0,
+        "false_positive_categories": {
+          "before_later_due_occurrence": 23,
+          "after_prior_due_occurrence": 9,
+          "distractor_not_in_day_task_population": 3
+        },
+        "actor_handoff_counts": {
+          "choose_calls": 80,
+          "ACT_proposals": 90,
+          "selected_more_handles_than_ACT_proposals": 17,
+          "steps_without_current_ACT_proposal": 17,
+          "false_positives_without_current_ACT_proposal": 9
+        },
+        "actor_task_ids_max_items_distribution": {
+          "8": 76,
+          "7": 4
+        },
+        "examples": [
+          {
+            "step": [
+              "Monday",
+              "d1_s1"
+            ],
+            "call_id": "59f807836617499b817ff6089416ced1",
+            "cycle": 1,
+            "expected": [
+              "antibiotic_breakfast"
+            ],
+            "selected": [
+              "antibiotic_breakfast"
+            ],
+            "ACT": [
+              {
+                "decision": "ACT",
+                "action": "- Take antibiotic at breakfast and dinner.",
+                "condition": "breakfast [Typed gates: weekdays=Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]",
+                "evidence": [
+                  {
+                    "source": "events",
+                    "text": "Breakfast comes together while you're already thinking two steps ahead."
+                  }
+                ],
+                "reason": "The current observation indicates breakfast is happening, and the day is a weekday (Monday). The trigger requires the action to be taken at breakfast and dinner, which is satisfied by the current breakfast time on a weekday."
+              }
+            ],
+            "CHECK": [
+              {
+                "decision": "CHECK",
+                "source": "clock",
+                "action": "- Take asthma medication at 11:00 and 21:00.",
+                "condition": "at 11:00 [Typed gates: weekdays=Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday; at=11:00]",
+                "reason": "Need current clock"
+              }
+            ],
+            "current_handoff": "Prospective-memory observations and proposals:\n[{\"decision\": \"ACT\", \"action\": \"- Take antibiotic at breakfast and dinner.\", \"condition\": \"breakfast [Typed gates: weekdays=Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]\", \"evidence\": [{\"source\": \"events\", \"text\": \"Breakfast comes together while you're already thinking two steps ahead.\"}], \"reason\": \"The current observation indicates breakfast is happening, and the day is a weekday (Monday). The trigger requires the action to be taken at breakfast and dinner, which is satisfied by the current breakfast time on a weekday.\"}, {\"decision\": \"CHECK\", \"source\": \"clock\", \"action\": \"- Take asthma medication at 11:00 and 21:00.\", \"condition\": \"at 11:00 [Typed gates: weekdays=Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday; at=11:00]\", \"reason\": \"Need current clock\"}]\nFor CHECK, use the ordinary query_state action with the exact source as channel. A proposed check does not establish that the task is due. For ACT, verify the evidence and resolve the action description against the current menu; use only the current task handle. You retain the final action choice.",
+            "recent_public_state_replies": []
+          },
+          {
+            "step": [
+              "Monday",
+              "d1_s2"
+            ],
+            "call_id": "cb33b04bc927454b91011222149099a5",
+            "cycle": 3,
+            "expected": [],
+            "selected": [
+              "appointment_reschedule_open_d1"
+            ],
+            "ACT": [
+              {
+                "decision": "ACT",
+                "action": "- Take antibiotic at breakfast and dinner.",
+                "condition": "breakfast [Typed gates: weekdays=Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]",
+                "evidence": [
+                  {
+                    "source": "clock",
+                    "text": "Time 09:10 | Stopwatch: 110 min"
+                  }
+                ],
+                "reason": "The current time is 09:10, which is breakfast time on a weekday (Monday). The trigger condition for taking the antibiotic at breakfast is satisfied."
+              },
+              {
+                "decision": "ACT",
+                "action": "You get a follow-up with corrected instructions for pick up the replacement filter.",
+                "condition": "You have a feeling the appointment portal may open a better slot later. Instead of the earlier cue, watch for the follow-up text before you pick up the replacement filter. [Typed gates: weekdays=Monday]",
+                "evidence": [
+                  {
+                    "source": "events",
+                    "text": "You get a follow-up with corrected instructions for pick up the replacement filter. You have a feeling the appointment portal may open a better slot later. Instead of the earlier cue, watch for the follow-up text before you pick up the replacement filter."
+                  }
+                ],
+                "reason": "The follow-up text has been received as per the observation, and the trigger condition is satisfied as the text is available before the replacement filter is picked up."
+              }
+            ],
+            "CHECK": [
+              {
+                "decision": "CHECK",
+                "source": "appointment_portal",
+                "action": "Today's loose plan:",
+                "condition": "Today's loose plan: [Typed gates: weekdays=Monday]",
+                "reason": "The readiness question 'Has the portal posted the intake form?' is not directly addressed by any current observation. The observations provided do not mention the portal posting the intake form."
+              }
+            ],
+            "current_handoff": "Prospective-memory observations and proposals:\n[{\"decision\": \"ACT\", \"action\": \"- Take antibiotic at breakfast and dinner.\", \"condition\": \"breakfast [Typed gates: weekdays=Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]\", \"evidence\": [{\"source\": \"clock\", \"text\": \"Time 09:10 | Stopwatch: 110 min\"}], \"reason\": \"The current time is 09:10, which is breakfast time on a weekday (Monday). The trigger condition for taking the antibiotic at breakfast is satisfied.\"}, {\"decision\": \"CHECK\", \"source\": \"appointment_portal\", \"action\": \"Today's loose plan:\", \"condition\": \"Today's loose plan: [Typed gates: weekdays=Monday]\", \"reason\": \"The readiness question 'Has the portal posted the intake form?' is not directly addressed by any current observation. The observations provided do not mention the portal posting the intake form.\"}, {\"decision\": \"ACT\", \"action\": \"You get a follow-up with corrected instructions for pick up the replacement filter.\", \"condition\": \"You have a feeling the appointment portal may open a better slot later. Instead of the earlier cue, watch for the follow-up text before you pick up the replacement filter. [Typed gates: weekdays=Monday]\", \"evidence\": [{\"source\": \"events\", \"text\": \"You get a follow-up with corrected instructions for pick up the replacement filter. You have a feeling the appointment portal may open a better slot later. Instead of the earlier cue, watch for the follow-up text before you pick up the replacement filter.\"}], \"reason\": \"The follow-up text has been received as per the observation, and the trigger condition is satisfied as the text is available before the replacement filter is picked up.\"}]\nFor CHECK, use the ordinary query_state action with the exact source as channel. A proposed check does not establish that the task is due. For ACT, verify the evidence and resolve the action description against the current menu; use only the current task handle. You retain the final action choice.",
+            "recent_public_state_replies": [
+              "State [clock]: Time 09:10 | Stopwatch: 110 min"
+            ]
+          },
+          {
+            "step": [
+              "Monday",
+              "d1_s3"
+            ],
+            "call_id": "625238a5a28141d5a268add3a025dbba",
+            "cycle": 6,
+            "expected": [],
+            "selected": [
+              "appointment_reschedule_open_d1"
+            ],
+            "ACT": [
+              {
+                "decision": "ACT",
+                "action": "- Take antibiotic at breakfast and dinner.",
+                "condition": "breakfast [Typed gates: weekdays=Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]",
+                "evidence": [
+                  {
+                    "source": "events",
+                    "text": "For a moment, you have a feeling the appointment portal may open a better slot later. You add a reminder to yourself: On Thursday, Bring the referral slip when you notice the clinic check-in window."
+                  }
+                ],
+                "reason": "The current scope is Monday, which is a weekday. The trigger does not specify a clock time, so it is evaluated based on the day of the week. Since Monday is a weekday and no clock time is specified, the trigger is satisfied."
+              }
+            ],
+            "CHECK": [],
+            "current_handoff": "Prospective-memory observations and proposals:\n[{\"decision\": \"ACT\", \"action\": \"- Take antibiotic at breakfast and dinner.\", \"condition\": \"breakfast [Typed gates: weekdays=Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]\", \"evidence\": [{\"source\": \"events\", \"text\": \"For a moment, you have a feeling the appointment portal may open a better slot later. You add a reminder to yourself: On Thursday, Bring the referral slip when you notice the clinic check-in window.\"}], \"reason\": \"The current scope is Monday, which is a weekday. The trigger does not specify a clock time, so it is evaluated based on the day of the week. Since Monday is a weekday and no clock time is specified, the trigger is satisfied.\"}]\nFor CHECK, use the ordinary query_state action with the exact source as channel. A proposed check does not establish that the task is due. For ACT, verify the evidence and resolve the action description against the current menu; use only the current task handle. You retain the final action choice.\nMemory query budget exhausted for this decision. Do not issue more state queries for these memory proposals now. Use already available evidence to choose; leave unsupported prospective tasks unselected. Multiple supported tasks are allowed.",
+            "recent_public_state_replies": [
+              "State [clock]: Time 10:20 | Stopwatch: 180 min",
+              "State [library_hold]: (no updates)"
+            ]
+          }
+        ]
+      },
+      "after": {
+        "path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b-helper-qwen3-4b/sbpm/qwen3-8b-actor-helper-qwen3-4b-1538276",
+        "metrics": {
+          "set_precision": 0.32044198895027626,
+          "set_recall": 0.7160493827160493,
+          "set_f1": 0.44274809160305345,
+          "set_tp": 58,
+          "set_fp": 123,
+          "set_fn": 23,
+          "hit": 58,
+          "late": 4,
+          "miss": 19,
+          "false_alarm": 119,
+          "check_time_calls": 80,
+          "state_query_calls": 160
+        },
+        "selected_count_distribution": {
+          "8": 3,
+          "1": 34,
+          "2": 16,
+          "3": 20,
+          "4": 4,
+          "5": 3
+        },
+        "total_selected": 181,
+        "steps_selecting_eight_handles": 3,
+        "false_positive_categories": {
+          "before_later_due_occurrence": 96,
+          "distractor_not_in_day_task_population": 9,
+          "after_prior_due_occurrence": 11,
+          "no_due_occurrence_in_day": 7
+        },
+        "actor_handoff_counts": {
+          "choose_calls": 80,
+          "ACT_proposals": 151,
+          "selected_more_handles_than_ACT_proposals": 31,
+          "steps_without_current_ACT_proposal": 11,
+          "false_positives_without_current_ACT_proposal": 31
+        },
+        "actor_task_ids_max_items_distribution": {
+          "8": 62,
+          "7": 12,
+          "6": 6
+        },
+        "examples": [
+          {
+            "step": [
+              "Monday",
+              "d1_s1"
+            ],
+            "call_id": "14006b76a0f04ea0b1d7932438cf4a80",
+            "cycle": 3,
+            "expected": [
+              "antibiotic_breakfast"
+            ],
+            "selected": [
+              "antibiotic_breakfast",
+              "appointment_form_ready_d1",
+              "asthma_1100",
+              "clean_mug",
+              "grocery_pickup_shelf_d1",
+              "organize_bag",
+              "parking_receipt_kiosk_d1",
+              "read_blurb"
+            ],
+            "ACT": [
+              {
+                "decision": "ACT",
+                "action": "Breakfast comes together while you're already thinking two steps ahead.",
+                "condition": "Breakfast comes together while you're already thinking two steps ahead.",
+                "evidence": [
+                  {
+                    "source": "events",
+                    "text": "Breakfast comes together while you're already thinking two steps ahead."
+                  }
+                ],
+                "reason": "The trigger condition 'Breakfast comes together while you're already thinking two steps ahead.' is directly matched by the current observation 'Breakfast comes together while you're already thinking two steps ahead.'"
+              }
+            ],
+            "CHECK": [],
+            "current_handoff": "Prospective-memory observations and proposals:\n[{\"decision\": \"ACT\", \"action\": \"Breakfast comes together while you're already thinking two steps ahead.\", \"condition\": \"Breakfast comes together while you're already thinking two steps ahead.\", \"evidence\": [{\"source\": \"events\", \"text\": \"Breakfast comes together while you're already thinking two steps ahead.\"}], \"reason\": \"The trigger condition 'Breakfast comes together while you're already thinking two steps ahead.' is directly matched by the current observation 'Breakfast comes together while you're already thinking two steps ahead.'\"}]\nFor CHECK, use the ordinary query_state action with the exact source as channel. A proposed check does not establish that the task is due. For ACT, verify the evidence and resolve the action description against the current menu; use only the current task handle. You retain the final action choice.\nMemory query budget exhausted for this decision. Do not issue more state queries for these memory proposals now. Use already available evidence to choose; leave unsupported prospective tasks unselected. Multiple supported tasks are allowed.",
+            "recent_public_state_replies": [
+              "State [clock]: Time 07:20 | Stopwatch: 0 min",
+              "State [appointment_portal]: (no updates)"
+            ]
+          },
+          {
+            "step": [
+              "Monday",
+              "d1_s2"
+            ],
+            "call_id": "b44ce05815944208841f82596b928c57",
+            "cycle": 6,
+            "expected": [],
+            "selected": [
+              "appointment_form_ready_d1",
+              "asthma_1100",
+              "asthma_2100",
+              "grocery_pickup_shelf_d1",
+              "library_hold_ready_d1",
+              "library_return_slot_d1",
+              "parking_receipt_kiosk_d1",
+              "send_library_email_1_d1"
+            ],
+            "ACT": [
+              {
+                "decision": "ACT",
+                "action": "Move the appointment",
+                "condition": "when a better slot opens.",
+                "evidence": [
+                  {
+                    "source": "events",
+                    "text": "You get a follow-up with corrected instructions for pick up the replacement filter. You have a feeling the appointment portal may open a better slot later. Instead of the earlier cue, watch for the follow-up text before you pick up the replacement filter."
+                  }
+                ],
+                "reason": "The observation indicates that the appointment portal may open a better slot later, which satisfies the trigger condition 'when a better slot opens.'"
+              }
+            ],
+            "CHECK": [],
+            "current_handoff": "Prospective-memory observations and proposals:\n[{\"decision\": \"ACT\", \"action\": \"Move the appointment\", \"condition\": \"when a better slot opens.\", \"evidence\": [{\"source\": \"events\", \"text\": \"You get a follow-up with corrected instructions for pick up the replacement filter. You have a feeling the appointment portal may open a better slot later. Instead of the earlier cue, watch for the follow-up text before you pick up the replacement filter.\"}], \"reason\": \"The observation indicates that the appointment portal may open a better slot later, which satisfies the trigger condition 'when a better slot opens.'\"}]\nFor CHECK, use the ordinary query_state action with the exact source as channel. A proposed check does not establish that the task is due. For ACT, verify the evidence and resolve the action description against the current menu; use only the current task handle. You retain the final action choice.\nMemory query budget exhausted for this decision. Do not issue more state queries for these memory proposals now. Use already available evidence to choose; leave unsupported prospective tasks unselected. Multiple supported tasks are allowed.",
+            "recent_public_state_replies": [
+              "State [clock]: Time 09:10 | Stopwatch: 110 min",
+              "State [library_hold]: (no updates)"
+            ]
+          },
+          {
+            "step": [
+              "Monday",
+              "d1_s3"
+            ],
+            "call_id": "5cb206504e7c4fcb84dbb2db986d1406",
+            "cycle": 9,
+            "expected": [],
+            "selected": [
+              "appointment_form_ready_d1",
+              "asthma_1100",
+              "asthma_2100",
+              "grocery_pickup_shelf_d1",
+              "library_hold_ready_d1",
+              "library_return_slot_d1",
+              "parking_receipt_kiosk_d1",
+              "send_library_email_1_d1"
+            ],
+            "ACT": [],
+            "CHECK": [],
+            "current_handoff": "Memory query budget exhausted for this decision. Do not issue more state queries for these memory proposals now. Use already available evidence to choose; leave unsupported prospective tasks unselected. Multiple supported tasks are allowed.",
+            "recent_public_state_replies": [
+              "State [clock]: Time 10:20 | Stopwatch: 180 min",
+              "State [appointment_portal]: (no updates)"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-8B",
+      "before": {
+        "path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-8b/sbpm/qwen3-8b-1511456",
+        "metrics": {
+          "set_precision": 0.5116279069767442,
+          "set_recall": 0.5432098765432098,
+          "set_f1": 0.5269461077844311,
+          "set_tp": 44,
+          "set_fp": 42,
+          "set_fn": 37,
+          "hit": 44,
+          "late": 2,
+          "miss": 35,
+          "false_alarm": 40,
+          "check_time_calls": 84,
+          "state_query_calls": 104
+        },
+        "selected_count_distribution": {
+          "1": 74,
+          "2": 6
+        },
+        "total_selected": 86,
+        "steps_selecting_eight_handles": 0,
+        "false_positive_categories": {
+          "before_later_due_occurrence": 29,
+          "after_prior_due_occurrence": 11,
+          "no_due_occurrence_in_day": 1,
+          "distractor_not_in_day_task_population": 1
+        },
+        "actor_handoff_counts": {
+          "choose_calls": 80,
+          "ACT_proposals": 93,
+          "selected_more_handles_than_ACT_proposals": 13,
+          "steps_without_current_ACT_proposal": 12,
+          "false_positives_without_current_ACT_proposal": 12
+        },
+        "actor_task_ids_max_items_distribution": {
+          "8": 74,
+          "7": 5,
+          "6": 1
+        },
+        "examples": [
+          {
+            "step": [
+              "Monday",
+              "d1_s1"
+            ],
+            "call_id": "8dbf6c817e3445d0acf5c02b7394371a",
+            "cycle": 2,
+            "expected": [
+              "antibiotic_breakfast"
+            ],
+            "selected": [
+              "antibiotic_breakfast"
+            ],
+            "ACT": [
+              {
+                "decision": "ACT",
+                "action": "- Take antibiotic at breakfast and dinner.",
+                "condition": "at breakfast and dinner [Typed gates: weekdays=Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]",
+                "evidence": [
+                  {
+                    "source": "clock",
+                    "text": "Time 07:20 | Stopwatch: 0 min"
+                  }
+                ],
+                "reason": "The trigger requires 'Is it breakfast or dinner time' and 'is it a weekday or weekend'. The current observation 'Time 07:20 | Stopwatch: 0 min' indicates it is breakfast time, and the current scope is 'Monday', which is a weekday. Both conditions are satisfied."
+              }
+            ],
+            "CHECK": [
+              {
+                "decision": "CHECK",
+                "source": "appointment_portal",
+                "action": "Finish the intake form",
+                "condition": "when the portal posts it [Typed gates: weekdays=Monday]",
+                "reason": "The trigger requires two conditions: the portal posting the intake form on a weekday and it being Monday. The current scope is Monday, so the second condition is satisfied. However, there is no observation indicating that the portal has posted the intake form. Therefore, the trigger is not ready now."
+              }
+            ],
+            "current_handoff": "Prospective-memory observations and proposals:\n[{\"decision\": \"ACT\", \"action\": \"- Take antibiotic at breakfast and dinner.\", \"condition\": \"at breakfast and dinner [Typed gates: weekdays=Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]\", \"evidence\": [{\"source\": \"clock\", \"text\": \"Time 07:20 | Stopwatch: 0 min\"}], \"reason\": \"The trigger requires 'Is it breakfast or dinner time' and 'is it a weekday or weekend'. The current observation 'Time 07:20 | Stopwatch: 0 min' indicates it is breakfast time, and the current scope is 'Monday', which is a weekday. Both conditions are satisfied.\"}, {\"decision\": \"CHECK\", \"source\": \"appointment_portal\", \"action\": \"Finish the intake form\", \"condition\": \"when the portal posts it [Typed gates: weekdays=Monday]\", \"reason\": \"The trigger requires two conditions: the portal posting the intake form on a weekday and it being Monday. The current scope is Monday, so the second condition is satisfied. However, there is no observation indicating that the portal has posted the intake form. Therefore, the trigger is not ready now.\"}]\nFor CHECK, use the ordinary query_state action with the exact source as channel. A proposed check does not establish that the task is due. For ACT, verify the evidence and resolve the action description against the current menu; use only the current task handle. You retain the final action choice.",
+            "recent_public_state_replies": [
+              "State [clock]: Time 07:20 | Stopwatch: 0 min"
+            ]
+          },
+          {
+            "step": [
+              "Monday",
+              "d1_s2"
+            ],
+            "call_id": "cf7dae5beee74eb19cad2a1cd279b708",
+            "cycle": 4,
+            "expected": [],
+            "selected": [
+              "asthma_1100"
+            ],
+            "ACT": [
+              {
+                "decision": "ACT",
+                "action": "- Take antibiotic at breakfast and dinner.",
+                "condition": "at breakfast and dinner [Typed gates: weekdays=Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]",
+                "evidence": [
+                  {
+                    "source": "clock",
+                    "text": "Time 09:10 | Stopwatch: 110 min"
+                  }
+                ],
+                "reason": "The readiness question requires evaluating whether it is breakfast or dinner time and whether it is a weekday or weekend. The current time is 09:10, which is breakfast time. The current day is Monday, which is a weekday. Both conditions are satisfied."
+              }
+            ],
+            "CHECK": [
+              {
+                "decision": "CHECK",
+                "source": "library_hold",
+                "action": "Pick up the hold",
+                "condition": "the library notice says it is ready [Typed gates: weekdays=Monday]",
+                "reason": "The trigger requires two conditions: the library notice says it is ready AND today is a weekday (Monday). The current_scope is Monday, satisfying the weekday condition. However, there is no observation indicating that the library notice says it is ready. The watched source 'library_hold' has not provided any relevant证据"
+              }
+            ],
+            "current_handoff": "Prospective-memory observations and proposals:\n[{\"decision\": \"ACT\", \"action\": \"- Take antibiotic at breakfast and dinner.\", \"condition\": \"at breakfast and dinner [Typed gates: weekdays=Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday]\", \"evidence\": [{\"source\": \"clock\", \"text\": \"Time 09:10 | Stopwatch: 110 min\"}], \"reason\": \"The readiness question requires evaluating whether it is breakfast or dinner time and whether it is a weekday or weekend. The current time is 09:10, which is breakfast time. The current day is Monday, which is a weekday. Both conditions are satisfied.\"}, {\"decision\": \"CHECK\", \"source\": \"library_hold\", \"action\": \"Pick up the hold\", \"condition\": \"the library notice says it is ready [Typed gates: weekdays=Monday]\", \"reason\": \"The trigger requires two conditions: the library notice says it is ready AND today is a weekday (Monday). The current_scope is Monday, satisfying the weekday condition. However, there is no observation indicating that the library notice says it is ready. The watched source 'library_hold' has not provided any relevant证据\"}]\nFor CHECK, use the ordinary query_state action with the exact source as channel. A proposed check does not establish that the task is due. For ACT, verify the evidence and resolve the action description against the current menu; use only the current task handle. You retain the final action choice.",
+            "recent_public_state_replies": [
+              "State [clock]: Time 07:20 | Stopwatch: 0 min",
+              "State [clock]: Time 09:10 | Stopwatch: 110 min"
+            ]
+          },
+          {
+            "step": [
+              "Monday",
+              "d1_s3"
+            ],
+            "call_id": "2d20ff7bf44b4117a34effc6569c50dd",
+            "cycle": 7,
+            "expected": [],
+            "selected": [
+              "appointment_reschedule_open_d1",
+              "asthma_1100"
+            ],
+            "ACT": [],
+            "CHECK": [],
+            "current_handoff": "Memory query budget exhausted for this decision. Do not issue more state queries for these memory proposals now. Use already available evidence to choose; leave unsupported prospective tasks unselected. Multiple supported tasks are allowed.",
+            "recent_public_state_replies": [
+              "State [clock]: Time 10:20 | Stopwatch: 180 min",
+              "State [appointment_portal]: (no updates)"
+            ]
+          }
+        ]
+      },
+      "after": {
+        "path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b/sbpm/qwen3-8b-1538277",
+        "metrics": {
+          "set_precision": 0.2222222222222222,
+          "set_recall": 0.7407407407407407,
+          "set_f1": 0.34188034188034183,
+          "set_tp": 60,
+          "set_fp": 210,
+          "set_fn": 21,
+          "hit": 60,
+          "late": 5,
+          "miss": 16,
+          "false_alarm": 205,
+          "check_time_calls": 80,
+          "state_query_calls": 160
+        },
+        "selected_count_distribution": {
+          "8": 11,
+          "2": 20,
+          "5": 5,
+          "1": 24,
+          "7": 5,
+          "3": 8,
+          "6": 3,
+          "4": 4
+        },
+        "total_selected": 270,
+        "steps_selecting_eight_handles": 11,
+        "false_positive_categories": {
+          "before_later_due_occurrence": 172,
+          "distractor_not_in_day_task_population": 20,
+          "after_prior_due_occurrence": 11,
+          "no_due_occurrence_in_day": 7
+        },
+        "actor_handoff_counts": {
+          "choose_calls": 80,
+          "ACT_proposals": 77,
+          "selected_more_handles_than_ACT_proposals": 47,
+          "steps_without_current_ACT_proposal": 33,
+          "false_positives_without_current_ACT_proposal": 139
+        },
+        "actor_task_ids_max_items_distribution": {
+          "8": 62,
+          "7": 11,
+          "6": 3,
+          "5": 2,
+          "4": 2
+        },
+        "examples": [
+          {
+            "step": [
+              "Monday",
+              "d1_s1"
+            ],
+            "call_id": "bc8d7dda8ac248beb6f8383b5778c2ca",
+            "cycle": 3,
+            "expected": [
+              "antibiotic_breakfast"
+            ],
+            "selected": [
+              "antibiotic_breakfast",
+              "appointment_form_ready_d1",
+              "asthma_1100",
+              "clean_mug",
+              "grocery_pickup_shelf_d1",
+              "organize_bag",
+              "parking_receipt_kiosk_d1",
+              "read_blurb"
+            ],
+            "ACT": [
+              {
+                "decision": "ACT",
+                "action": "Take antibiotic at breakfast and dinner.",
+                "condition": "Take antibiotic at breakfast and dinner.",
+                "evidence": [
+                  {
+                    "source": "events",
+                    "text": "Breakfast comes together while you're already thinking two steps ahead."
+                  }
+                ],
+                "reason": "The readiness question asks if it is breakfast or dinner time. The observation 'Breakfast comes together while you're already thinking two steps ahead' indicates that breakfast is happening now, which satisfies the trigger for taking the antibiotic at breakfast. No evidence for dinner time is provided."
+              }
+            ],
+            "CHECK": [],
+            "current_handoff": "Prospective-memory observations and proposals:\n[{\"decision\": \"ACT\", \"action\": \"Take antibiotic at breakfast and dinner.\", \"condition\": \"Take antibiotic at breakfast and dinner.\", \"evidence\": [{\"source\": \"events\", \"text\": \"Breakfast comes together while you're already thinking two steps ahead.\"}], \"reason\": \"The readiness question asks if it is breakfast or dinner time. The observation 'Breakfast comes together while you're already thinking two steps ahead' indicates that breakfast is happening now, which satisfies the trigger for taking the antibiotic at breakfast. No evidence for dinner time is provided.\"}]\nFor CHECK, use the ordinary query_state action with the exact source as channel. A proposed check does not establish that the task is due. For ACT, verify the evidence and resolve the action description against the current menu; use only the current task handle. You retain the final action choice.\nMemory query budget exhausted for this decision. Do not issue more state queries for these memory proposals now. Use already available evidence to choose; leave unsupported prospective tasks unselected. Multiple supported tasks are allowed.",
+            "recent_public_state_replies": [
+              "State [clock]: Time 07:20 | Stopwatch: 0 min",
+              "State [appointment_portal]: (no updates)"
+            ]
+          },
+          {
+            "step": [
+              "Monday",
+              "d1_s2"
+            ],
+            "call_id": "3d5b4c9ea6344b838476a1dc7991a276",
+            "cycle": 6,
+            "expected": [],
+            "selected": [
+              "appointment_form_ready_d1",
+              "appointment_reschedule_open_d1",
+              "asthma_1100",
+              "asthma_2100",
+              "browse_menu",
+              "grocery_pickup_shelf_d1",
+              "parking_receipt_kiosk_d1",
+              "send_library_email_1_d1"
+            ],
+            "ACT": [],
+            "CHECK": [],
+            "current_handoff": "Memory query budget exhausted for this decision. Do not issue more state queries for these memory proposals now. Use already available evidence to choose; leave unsupported prospective tasks unselected. Multiple supported tasks are allowed.",
+            "recent_public_state_replies": [
+              "State [clock]: Time 09:10 | Stopwatch: 110 min",
+              "State [library_hold]: (no updates)"
+            ]
+          },
+          {
+            "step": [
+              "Monday",
+              "d1_s3"
+            ],
+            "call_id": "4c24a0d2035d4c4ab00979f214078c0f",
+            "cycle": 9,
+            "expected": [],
+            "selected": [
+              "appointment_form_ready_d1",
+              "appointment_reschedule_open_d1",
+              "asthma_1100",
+              "asthma_2100",
+              "grocery_pickup_shelf_d1",
+              "organize_bag",
+              "parking_receipt_kiosk_d1",
+              "send_library_email_1_d1"
+            ],
+            "ACT": [],
+            "CHECK": [],
+            "current_handoff": "Memory query budget exhausted for this decision. Do not issue more state queries for these memory proposals now. Use already available evidence to choose; leave unsupported prospective tasks unselected. Multiple supported tasks are allowed.",
+            "recent_public_state_replies": [
+              "State [clock]: Time 10:20 | Stopwatch: 180 min",
+              "State [appointment_portal]: (no updates)"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "interpretation": "Observed associations and public trace examples, not a causal ablation. ACT counts are not an authoritative task whitelist. Scoring labels are used only offline, never as model input."
+}

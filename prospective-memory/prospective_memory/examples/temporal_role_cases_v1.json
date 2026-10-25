@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "name": "Temporal and channel role development diagnostic v1",
+  "protocol": "Four independently authored development cases informed by a known failure class, not external held-out evaluation. Original instructions and expected decisions are frozen before model use. Expected records and rounds are scorer-only. Current observations are explicitly supplied; no query responses are fabricated, no actions execute, and no completion is acknowledged.",
+  "cases": [
+    {
+      "id": "scheduled_action_does_not_retime_earlier_approval",
+      "sources": ["events", "clock"],
+      "queryable_sources": ["clock"],
+      "instructions": [{"id": "temporal_glass_request", "text": "At 16:35, illuminate the stained-glass display if the conservator has approved the panel."}],
+      "expected_initial_records": [{"origin_id": "temporal_glass_request", "instruction_ids": ["temporal_glass_request"], "required_sources": ["events", "clock"], "clock_op": "at", "clock_time": "16:35", "action_contains_any": ["illuminate the stained-glass display"], "condition_contains_any": ["conservator has approved"]}],
+      "ticks": [
+        {
+          "id": "temporal_glass_tick_1",
+          "observations": [
+            {"id": "temporal_glass_clock_1", "source": "clock", "current": true, "text": "The current time is 16:34."},
+            {"id": "temporal_glass_event_1", "source": "events", "current": true, "text": "The conservator approved the stained-glass panel at 14:10 today. That approval remains valid. The display lights are off."}
+          ],
+          "expected_records": [{"origin_id": "temporal_glass_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "temporal_glass_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "temporal_glass_tick_2",
+          "observations": [
+            {"id": "temporal_glass_clock_2", "source": "clock", "current": true, "text": "The current time is 16:35."},
+            {"id": "temporal_glass_event_2", "source": "events", "current": true, "text": "The conservator's approval from 14:10 today remains valid. No new inspection or approval is taking place now. The stained-glass display has not yet been illuminated."}
+          ],
+          "expected_records": [{"origin_id": "temporal_glass_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "temporal_glass_request", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "earlier_prerequisite_deadline_must_be_retained",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [{"id": "temporal_pottery_request", "text": "For each pottery batch, print a cooling label when its firing ends, but only if its glaze inspection finished before 05:25 on that batch's firing day."}],
+      "expected_initial_records": [{"origin_id": "temporal_pottery_request", "instruction_ids": ["temporal_pottery_request"], "required_sources": ["events"], "clock_op": "none", "clock_time": "", "action_contains_any": ["print a cooling label"], "condition_contains_any": ["before 05:25"]}],
+      "ticks": [
+        {
+          "id": "temporal_pottery_tick_1",
+          "observations": [{"id": "temporal_pottery_event_1", "source": "events", "current": true, "text": "The firing of pottery batch Cedar ends now at 06:40. Cedar's glaze inspection finished at 05:28 today, three minutes after the cutoff. Cedar has no cooling label yet."}],
+          "expected_records": [{"origin_id": "temporal_pottery_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "temporal_pottery_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "temporal_pottery_tick_2",
+          "observations": [{"id": "temporal_pottery_event_2", "source": "events", "current": true, "text": "The firing of a different pottery batch, Maple, ends now at 08:10. Maple's glaze inspection finished at 05:10 today, before the cutoff. Maple has no cooling label yet. Cedar's firing is not ending again."}],
+          "expected_records": [{"origin_id": "temporal_pottery_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "temporal_pottery_request", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "explicit_event_order_must_be_retained",
+      "sources": ["events"],
+      "queryable_sources": [],
+      "instructions": [{"id": "temporal_indicator_request", "text": "Stamp the calibration card when the amber indicator flashes after the release valve has closed; a flash before closure does not qualify."}],
+      "expected_initial_records": [{"origin_id": "temporal_indicator_request", "instruction_ids": ["temporal_indicator_request"], "required_sources": ["events"], "clock_op": "none", "clock_time": "", "action_contains_any": ["Stamp the calibration card"], "condition_contains_any": ["flashes after the release valve has closed"]}],
+      "ticks": [
+        {
+          "id": "temporal_indicator_tick_1",
+          "observations": [{"id": "temporal_indicator_event_1", "source": "events", "current": true, "text": "The amber indicator flashed at 17:04 while the release valve was still open. The valve closed at 17:05, after that flash. No flash has occurred since closure. The calibration card is unstamped."}],
+          "expected_records": [{"origin_id": "temporal_indicator_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "temporal_indicator_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "temporal_indicator_tick_2",
+          "observations": [{"id": "temporal_indicator_event_2", "source": "events", "current": true, "text": "At 17:06 the amber indicator flashes again now. The release valve has remained closed since 17:05, so this new flash occurs after closure. The calibration card is still unstamped."}],
+          "expected_records": [{"origin_id": "temporal_indicator_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "temporal_indicator_request", "kind": "ACT"}]]
+        }
+      ]
+    },
+    {
+      "id": "evidence_provider_is_not_action_delivery_channel",
+      "sources": ["events", "hatch_sensor", "crew_chat"],
+      "queryable_sources": ["hatch_sensor", "crew_chat"],
+      "instructions": [{"id": "temporal_hatch_request", "text": "Notify Tavi through crew_chat when hatch_sensor reports that the observatory hatch is latched."}],
+      "expected_initial_records": [{"origin_id": "temporal_hatch_request", "instruction_ids": ["temporal_hatch_request"], "required_sources": ["hatch_sensor"], "clock_op": "none", "clock_time": "", "action_contains_any": ["Notify Tavi through crew_chat"], "condition_contains_any": ["hatch_sensor reports"]}],
+      "ticks": [
+        {
+          "id": "temporal_hatch_tick_1",
+          "observations": [
+            {"id": "temporal_hatch_sensor_1", "source": "hatch_sensor", "current": true, "text": "The observatory hatch is unlatched."},
+            {"id": "temporal_hatch_chat_1", "source": "crew_chat", "current": true, "text": "Tavi is available in crew_chat. No hatch-readiness notification has been sent to Tavi."}
+          ],
+          "expected_records": [{"origin_id": "temporal_hatch_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "temporal_hatch_request", "kind": "WAIT"}]]
+        },
+        {
+          "id": "temporal_hatch_tick_2",
+          "observations": [
+            {"id": "temporal_hatch_sensor_2", "source": "hatch_sensor", "current": true, "text": "The observatory hatch is latched now."},
+            {"id": "temporal_hatch_chat_2", "source": "crew_chat", "current": true, "text": "Tavi remains available in crew_chat. No hatch-readiness notification has been sent to Tavi."}
+          ],
+          "expected_records": [{"origin_id": "temporal_hatch_request", "status": "pending", "unchanged_from_initial": true}],
+          "expected_rounds": [[{"origin_id": "temporal_hatch_request", "kind": "ACT"}]]
+        }
+      ]
+    }
+  ]
+}

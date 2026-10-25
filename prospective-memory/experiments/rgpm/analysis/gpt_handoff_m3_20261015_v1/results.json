@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "step_key": [
+    "Monday",
+    "m3"
+  ],
+  "source_call_id": "d5da00ebfb424cda839a7bb521087db3",
+  "variants": {
+    "original": {
+      "action": {
+        "action": "choose",
+        "choice": "B",
+        "task_ids": [],
+        "channel": "NONE"
+      },
+      "followed": false
+    },
+    "query_first": {
+      "action": {
+        "action": "query_state",
+        "choice": "NONE",
+        "task_ids": [],
+        "channel": "email"
+      },
+      "followed": true
+    }
+  },
+  "note": "A single next-action pair cannot establish F1 improvement or reproducibility."
+}

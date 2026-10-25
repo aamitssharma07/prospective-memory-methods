@@ -1,0 +1,296 @@
+{
+  "fixture_schema": "prospective_memory.recurrence_lifecycle.v1",
+  "status": "unrun_development_validation",
+  "name": "Recurring requests survive host completion; one-shot requests close",
+  "protocol": "Independently authored development diagnostic informed by a known recurrence blind spot, not a held-out benchmark. This is a lifecycle fixture contract, NOT input for evaluate_pis_grounded. No model or engine run has been performed. Public inputs, host completion receipts and scorer-only gold are separated. Use the real acknowledge API after the first ACT proposal, not automatic completion inferred from ACT. Never repair repeat metadata or re-register the request between occurrences.",
+  "scenarios": [
+    {
+      "id": "each_portrait_sitting",
+      "public": {
+        "sources": ["studio_feed"],
+        "queryable_sources": [],
+        "instructions": [
+          {
+            "id": "portrait_request",
+            "text": "For each portrait sitting, place a blank name card on the chair when the photographer says that sitting's backdrop is ready."
+          }
+        ]
+      },
+      "gold_initial": {
+        "origin_id": "portrait_request",
+        "record_count": 1,
+        "instruction_ids": ["portrait_request"],
+        "repeat": true,
+        "status": "pending",
+        "required_sources": ["studio_feed"],
+        "recurrence_quote": "For each portrait sitting"
+      },
+      "timeline": [
+        {
+          "id": "portrait_first",
+          "kind": "observe",
+          "public": {
+            "observations": [
+              {
+                "id": "portrait_backdrop_ready_1",
+                "source": "studio_feed",
+                "current": true,
+                "text": "The photographer now says: Sitting Amber's backdrop is ready. Sitting Amber's chair has no name card on it."
+              }
+            ]
+          },
+          "gold": {
+            "decisions": [{"origin_id": "portrait_request", "kind": "ACT", "source": ""}],
+            "record": {"status": "pending", "repeat": true, "same_identity": true, "same_revision": true}
+          }
+        },
+        {
+          "id": "portrait_completed",
+          "kind": "host_acknowledge",
+          "host": {
+            "origin_id": "portrait_request",
+            "outcome": "completed",
+            "completion_receipt": "The host confirms that a blank name card was placed on Sitting Amber's chair."
+          },
+          "gold": {
+            "record": {"status": "pending", "repeat": true, "same_identity": true, "same_revision": true}
+          }
+        },
+        {
+          "id": "portrait_later",
+          "kind": "observe",
+          "public": {
+            "observations": [
+              {
+                "id": "portrait_backdrop_ready_2",
+                "source": "studio_feed",
+                "current": true,
+                "text": "A different portrait sitting, Cobalt, is beginning. The photographer now says: Sitting Cobalt's backdrop is ready. Its chair has no name card on it."
+              }
+            ]
+          },
+          "gold": {
+            "decisions": [{"origin_id": "portrait_request", "kind": "ACT", "source": ""}],
+            "record": {"status": "pending", "repeat": true, "same_identity": true, "same_revision": true}
+          }
+        }
+      ]
+    },
+    {
+      "id": "per_guided_cave_tour",
+      "public": {
+        "sources": ["guide_feed"],
+        "queryable_sources": [],
+        "instructions": [
+          {
+            "id": "cave_request",
+            "text": "Once per guided cave tour, hand the guide a clean tally card when that tour's guide raises the orange pennant."
+          }
+        ]
+      },
+      "gold_initial": {
+        "origin_id": "cave_request",
+        "record_count": 1,
+        "instruction_ids": ["cave_request"],
+        "repeat": true,
+        "status": "pending",
+        "required_sources": ["guide_feed"],
+        "recurrence_quote": "Once per guided cave tour"
+      },
+      "timeline": [
+        {
+          "id": "cave_first",
+          "kind": "observe",
+          "public": {
+            "observations": [
+              {
+                "id": "cave_pennant_1",
+                "source": "guide_feed",
+                "current": true,
+                "text": "Tour Birch's guide raises the orange pennant now. No tally card has been handed to the guide for Tour Birch."
+              }
+            ]
+          },
+          "gold": {
+            "decisions": [{"origin_id": "cave_request", "kind": "ACT", "source": ""}],
+            "record": {"status": "pending", "repeat": true, "same_identity": true, "same_revision": true}
+          }
+        },
+        {
+          "id": "cave_completed",
+          "kind": "host_acknowledge",
+          "host": {
+            "origin_id": "cave_request",
+            "outcome": "completed",
+            "completion_receipt": "The host confirms that the guide received a clean tally card for Tour Birch."
+          },
+          "gold": {
+            "record": {"status": "pending", "repeat": true, "same_identity": true, "same_revision": true}
+          }
+        },
+        {
+          "id": "cave_later",
+          "kind": "observe",
+          "public": {
+            "observations": [
+              {
+                "id": "cave_pennant_2",
+                "source": "guide_feed",
+                "current": true,
+                "text": "A different guided tour, Tour Fern, is starting. Its guide raises the orange pennant now. No tally card has been handed to the guide for Tour Fern."
+              }
+            ]
+          },
+          "gold": {
+            "decisions": [{"origin_id": "cave_request", "kind": "ACT", "source": ""}],
+            "record": {"status": "pending", "repeat": true, "same_identity": true, "same_revision": true}
+          }
+        }
+      ]
+    },
+    {
+      "id": "every_origami_class",
+      "public": {
+        "sources": ["class_feed"],
+        "queryable_sources": [],
+        "instructions": [
+          {
+            "id": "origami_request",
+            "text": "Every time a new origami class starts, set an empty offcut tray on that class's worktable."
+          }
+        ]
+      },
+      "gold_initial": {
+        "origin_id": "origami_request",
+        "record_count": 1,
+        "instruction_ids": ["origami_request"],
+        "repeat": true,
+        "status": "pending",
+        "required_sources": ["class_feed"],
+        "recurrence_quote": "Every time a new origami class starts"
+      },
+      "timeline": [
+        {
+          "id": "origami_first",
+          "kind": "observe",
+          "public": {
+            "observations": [
+              {
+                "id": "origami_start_1",
+                "source": "class_feed",
+                "current": true,
+                "text": "Origami Class Crane starts now. Its worktable has no offcut tray on it."
+              }
+            ]
+          },
+          "gold": {
+            "decisions": [{"origin_id": "origami_request", "kind": "ACT", "source": ""}],
+            "record": {"status": "pending", "repeat": true, "same_identity": true, "same_revision": true}
+          }
+        },
+        {
+          "id": "origami_completed",
+          "kind": "host_acknowledge",
+          "host": {
+            "origin_id": "origami_request",
+            "outcome": "completed",
+            "completion_receipt": "The host confirms that an empty offcut tray was set on Class Crane's worktable."
+          },
+          "gold": {
+            "record": {"status": "pending", "repeat": true, "same_identity": true, "same_revision": true}
+          }
+        },
+        {
+          "id": "origami_later",
+          "kind": "observe",
+          "public": {
+            "observations": [
+              {
+                "id": "origami_start_2",
+                "source": "class_feed",
+                "current": true,
+                "text": "A different origami class, Class Lotus, starts now at its own worktable. Class Lotus's worktable has no offcut tray on it."
+              }
+            ]
+          },
+          "gold": {
+            "decisions": [{"origin_id": "origami_request", "kind": "ACT", "source": ""}],
+            "record": {"status": "pending", "repeat": true, "same_identity": true, "same_revision": true}
+          }
+        }
+      ]
+    },
+    {
+      "id": "one_shot_board_game_round",
+      "public": {
+        "sources": ["club_feed"],
+        "queryable_sources": [],
+        "instructions": [
+          {
+            "id": "board_game_request",
+            "text": "When the next board-game club round starts, put the spare score pad on the host table once. This is a one-time request; do not repeat it for later rounds."
+          }
+        ]
+      },
+      "gold_initial": {
+        "origin_id": "board_game_request",
+        "record_count": 1,
+        "instruction_ids": ["board_game_request"],
+        "repeat": false,
+        "status": "pending",
+        "required_sources": ["club_feed"],
+        "recurrence_quote": "This is a one-time request; do not repeat it for later rounds."
+      },
+      "timeline": [
+        {
+          "id": "board_game_first",
+          "kind": "observe",
+          "public": {
+            "observations": [
+              {
+                "id": "board_game_start_1",
+                "source": "club_feed",
+                "current": true,
+                "text": "The next board-game club round, Round Ruby, starts now. The spare score pad is in the supply drawer, not on the host table."
+              }
+            ]
+          },
+          "gold": {
+            "decisions": [{"origin_id": "board_game_request", "kind": "ACT", "source": ""}],
+            "record": {"status": "pending", "repeat": false, "same_identity": true, "same_revision": true}
+          }
+        },
+        {
+          "id": "board_game_completed",
+          "kind": "host_acknowledge",
+          "host": {
+            "origin_id": "board_game_request",
+            "outcome": "completed",
+            "completion_receipt": "The host confirms that the spare score pad was placed on the host table for Round Ruby."
+          },
+          "gold": {
+            "record": {"status": "completed", "repeat": false, "same_identity": true, "same_revision": true}
+          }
+        },
+        {
+          "id": "board_game_later",
+          "kind": "observe",
+          "public": {
+            "observations": [
+              {
+                "id": "board_game_start_2",
+                "source": "club_feed",
+                "current": true,
+                "text": "A later board-game club round, Round Opal, starts now. During the break the spare score pad was returned to the supply drawer, so it is not on the host table. No new request has been given."
+              }
+            ]
+          },
+          "gold": {
+            "decisions": [],
+            "record": {"status": "completed", "repeat": false, "same_identity": true, "same_revision": true}
+          }
+        }
+      ]
+    }
+  ]
+}

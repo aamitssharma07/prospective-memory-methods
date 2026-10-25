@@ -1,0 +1,13 @@
+step_id,task_id,kind,modality,cue_channel
+d1_s6,hardware_counter_d1,real_task_wrong_step,event,
+d1_s10,library_return_slot_d1,real_task_wrong_step,event,
+d2_s3,asthma_1100,already_credited,time,
+d2_s10,send_budget_note_2_d2,real_task_wrong_step,time,
+d3_s2,asthma_1100,already_credited,time,
+d4_s9,confirm_pickup_window_1_d4,real_task_wrong_step,time,
+d5_s3,asthma_1100,already_credited,time,
+d5_s4,check_transit_times_1_d5,real_task_wrong_step,time,
+d5_s5,dry_cleaner_rack_d5,real_task_wrong_step,event,
+d6_s2,asthma_1100,already_credited,time,
+d6_s6,package_locker_light_d6,real_task_wrong_step,event,
+d7_s9,review_lab_notes_1_d7,real_task_wrong_step,time,

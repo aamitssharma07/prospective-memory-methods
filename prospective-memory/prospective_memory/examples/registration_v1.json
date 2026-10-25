@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "description": "Development-only verbatim registration gate. Labels are scorer-only. Separate requests require separate complete quotes. Updates must be staged, not automatically applied.",
+  "cases": [
+    {"id": "conjunction_exception", "instructions": [
+      {"id": "r1", "text": "When both editors approve the draft, send Nila the final PDF. Do not send it if either editor requests changes.", "scope": "session-A"}
+    ], "expected": [
+      {"instruction_id": "r1", "op": "register", "action": ["send Nila the final PDF"], "conditions": ["both editors approve the draft", "Do not send it if either editor requests changes"], "forbidden": []}
+    ]},
+    {"id": "incremental_unrelated", "instructions": [
+      {"id": "r1", "text": "When the orchid's soil is dry, water the orchid."},
+      {"id": "r2", "text": "When the repair shop confirms the cello is ready, tell Ivo to collect it."}
+    ], "expected": [
+      {"instruction_id": "r1", "op": "register", "action": ["water the orchid"], "conditions": ["orchid's soil is dry"], "forbidden": []},
+      {"instruction_id": "r2", "op": "register", "action": ["tell Ivo to collect it"], "conditions": ["repair shop confirms the cello is ready"], "forbidden": []}
+    ]},
+    {"id": "independent_same_line", "instructions": [
+      {"id": "r1", "text": "When the parcel arrives, email Uma the receipt. When the oven cools below 40 C, clean its tray."}
+    ], "expected": [
+      {"instruction_id": "r1", "op": "register", "action": ["email Uma the receipt"], "conditions": ["parcel arrives"], "forbidden": ["clean its tray"]},
+      {"instruction_id": "r1", "op": "register", "action": ["clean its tray"], "conditions": ["oven cools below 40 C"], "forbidden": ["email Uma the receipt"]}
+    ]},
+    {"id": "list_and_global_context", "instructions": [
+      {"id": "r1", "text": "Only during this week:\n- If the server backup succeeds, archive the local logs.\n- At 16:20, call Tessa about the lease.", "scope": "session-B"}
+    ], "expected": [
+      {"instruction_id": "r1", "op": "register", "action": ["archive the local logs"], "conditions": ["server backup succeeds"], "context": ["Only during this week"], "forbidden": ["call Tessa"]},
+      {"instruction_id": "r1", "op": "register", "action": ["call Tessa about the lease"], "conditions": ["At 16:20"], "context": ["Only during this week"], "forbidden": ["archive the local logs"]}
+    ]},
+    {"id": "reschedule_preserves_original", "instructions": [
+      {"id": "r1", "text": "At 14:10, send Oren the signed form, but only after legal approves it."},
+      {"id": "r2", "text": "Change the signed-form reminder from 14:10 to 18:40. Keep the legal-approval requirement."}
+    ], "expected": [
+      {"instruction_id": "r1", "op": "register", "action": ["send Oren the signed form"], "conditions": ["At 14:10", "only after legal approves it"], "forbidden": []},
+      {"instruction_id": "r2", "op": "revise", "action": ["signed-form reminder"], "conditions": ["from 14:10 to 18:40", "Keep the legal-approval requirement"], "forbidden": []}
+    ]},
+    {"id": "cancel_and_new_request", "instructions": [
+      {"id": "r1", "text": "At 09:30, renew the journal subscription."},
+      {"id": "r2", "text": "Cancel the journal-subscription reminder. When my passport arrives, book the visa appointment."}
+    ], "expected": [
+      {"instruction_id": "r1", "op": "register", "action": ["renew the journal subscription"], "conditions": ["At 09:30"], "forbidden": []},
+      {"instruction_id": "r2", "op": "cancel", "action": ["Cancel the journal-subscription reminder"], "conditions": [], "forbidden": ["book the visa appointment"]},
+      {"instruction_id": "r2", "op": "register", "action": ["book the visa appointment"], "conditions": ["passport arrives"], "forbidden": ["Cancel the journal-subscription"]}
+    ]},
+    {"id": "ambiguous_update", "instructions": [
+      {"id": "r1", "text": "At 11:00, call Daro. At 12:00, call Juno."},
+      {"id": "r2", "text": "Move that call to 13:00."}
+    ], "expected": [
+      {"instruction_id": "r1", "op": "register", "action": ["call Daro"], "conditions": ["At 11:00"], "forbidden": ["call Juno"]},
+      {"instruction_id": "r1", "op": "register", "action": ["call Juno"], "conditions": ["At 12:00"], "forbidden": ["call Daro"]},
+      {"instruction_id": "r2", "op": "revise", "action": ["that call"], "conditions": ["to 13:00"], "forbidden": []}
+    ]},
+    {"id": "negative_number_recurrence", "instructions": [
+      {"id": "r1", "text": "Every time the chamber temperature rises above -8 C, notify Eda with the reading, unless maintenance mode is active."}
+    ], "expected": [
+      {"instruction_id": "r1", "op": "register", "action": ["notify Eda with the reading"], "conditions": ["Every time", "temperature rises above -8 C", "unless maintenance mode is active"], "forbidden": []}
+    ]},
+    {"id": "facts_not_intentions", "instructions": [
+      {"id": "r1", "text": "The loading bay is idle. Yesterday I called Juno. The meeting may be moved later."}
+    ], "expected": []}
+  ]
+}

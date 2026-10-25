@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "name": "Frozen generic batch-registration diagnostic v1",
+  "protocol": "Independently authored before this suite's first live output. Registration-only development diagnostic, not an external held-out benchmark. Expected records are scorer-only; multiple obligations may share one original instruction ID. One stored record cannot satisfy two rubric obligations. No trigger assessments, action execution, or success acknowledgements occur.",
+  "cases": [
+    {
+      "id": "eight_unrelated_bullet_requests",
+      "sources": ["events", "clock", "kiln_screen", "humidity_panel", "print_queue"],
+      "queryable_sources": ["clock", "kiln_screen", "humidity_panel", "print_queue"],
+      "stages": [{
+        "id": "register_eight",
+        "instructions": [{"id": "eight_plan", "text": "Please remember all eight requests:\n- At 06:40, photograph the mural.\n- When kiln_screen reports that firing is complete, record the glaze batch serial number.\n- When the conveyor bell sounds, stamp the inventory card.\n- If humidity_panel reports humidity below 35 percent, move the watercolour sheets into the cabinet.\n- When the projector displays TEST PATTERN, align the left projection frame.\n- When print_queue reports poster job P6 finished, collect the proof sheet.\n- At 16:25, export the animation storyboard.\n- When the courier cart arrives, attach the ribbon to the blue box."}],
+        "expected_records": [
+          {"key": "mural", "origin_id": "eight_plan", "action_fragments": ["photograph the mural"], "condition_fragments": ["06:40"], "forbidden_action_fragments": ["record the glaze", "stamp the inventory", "move the watercolour", "align the left", "collect the proof", "export the animation", "attach the ribbon"], "sources": ["clock"], "days": [], "clock_op": "at", "clock_time": "06:40", "repeat": false},
+          {"key": "glaze_serial", "origin_id": "eight_plan", "action_fragments": ["record the glaze batch serial number"], "condition_fragments": ["firing is complete"], "forbidden_action_fragments": ["photograph the mural", "stamp the inventory", "move the watercolour", "align the left", "collect the proof", "export the animation", "attach the ribbon"], "sources": ["kiln_screen"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false},
+          {"key": "inventory_card", "origin_id": "eight_plan", "action_fragments": ["stamp the inventory card"], "condition_fragments": ["conveyor bell sounds"], "forbidden_action_fragments": ["photograph the mural", "record the glaze", "move the watercolour", "align the left", "collect the proof", "export the animation", "attach the ribbon"], "sources": ["events"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false},
+          {"key": "watercolour", "origin_id": "eight_plan", "action_fragments": ["move the watercolour sheets into the cabinet"], "condition_fragments": ["below 35 percent"], "forbidden_action_fragments": ["photograph the mural", "record the glaze", "stamp the inventory", "align the left", "collect the proof", "export the animation", "attach the ribbon"], "sources": ["humidity_panel"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false},
+          {"key": "projection", "origin_id": "eight_plan", "action_fragments": ["align the left projection frame"], "condition_fragments": ["projector displays TEST PATTERN"], "forbidden_action_fragments": ["photograph the mural", "record the glaze", "stamp the inventory", "move the watercolour", "collect the proof", "export the animation", "attach the ribbon"], "sources": ["events"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false},
+          {"key": "poster_proof", "origin_id": "eight_plan", "action_fragments": ["collect the proof sheet"], "condition_fragments": ["poster job P6 finished"], "forbidden_action_fragments": ["photograph the mural", "record the glaze", "stamp the inventory", "move the watercolour", "align the left", "export the animation", "attach the ribbon"], "sources": ["print_queue"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false},
+          {"key": "storyboard", "origin_id": "eight_plan", "action_fragments": ["export the animation storyboard"], "condition_fragments": ["16:25"], "forbidden_action_fragments": ["photograph the mural", "record the glaze", "stamp the inventory", "move the watercolour", "align the left", "collect the proof", "attach the ribbon"], "sources": ["clock"], "days": [], "clock_op": "at", "clock_time": "16:25", "repeat": false},
+          {"key": "ribbon", "origin_id": "eight_plan", "action_fragments": ["attach the ribbon to the blue box"], "condition_fragments": ["courier cart arrives"], "forbidden_action_fragments": ["photograph the mural", "record the glaze", "stamp the inventory", "move the watercolour", "align the left", "collect the proof", "export the animation"], "sources": ["events"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false}
+        ]
+      }]
+    },
+    {
+      "id": "shared_weekday_header",
+      "sources": ["events", "clock", "print_station"],
+      "queryable_sources": ["clock", "print_station"],
+      "stages": [{
+        "id": "register_wednesday_plan",
+        "instructions": [{"id": "studio_plan", "scope": "Monday", "text": "Wednesday studio plan:\n- At 10:35, calibrate the colour chart.\n- When the assistant unrolls the canvas, clamp its corners.\n- After print_station reports the proof accepted, archive the proof card.\n- At 15:05, rewind the recording reel."}],
+        "expected_records": [
+          {"key": "colour_chart", "origin_id": "studio_plan", "action_fragments": ["calibrate the colour chart"], "condition_fragments": ["10:35"], "context_fragments": ["Wednesday studio plan"], "forbidden_action_fragments": ["clamp its corners", "archive the proof card", "rewind the recording reel"], "sources": ["clock"], "days": ["Wednesday"], "clock_op": "at", "clock_time": "10:35", "repeat": false},
+          {"key": "canvas_corners", "origin_id": "studio_plan", "action_fragments": ["clamp its corners"], "condition_fragments": ["assistant unrolls the canvas"], "context_fragments": ["Wednesday studio plan"], "forbidden_action_fragments": ["calibrate the colour chart", "archive the proof card", "rewind the recording reel"], "sources": ["events"], "days": ["Wednesday"], "clock_op": "none", "clock_time": "", "repeat": false},
+          {"key": "proof_card", "origin_id": "studio_plan", "action_fragments": ["archive the proof card"], "condition_fragments": ["proof accepted"], "context_fragments": ["Wednesday studio plan"], "forbidden_action_fragments": ["calibrate the colour chart", "clamp its corners", "rewind the recording reel"], "sources": ["print_station"], "days": ["Wednesday"], "clock_op": "none", "clock_time": "", "repeat": false},
+          {"key": "recording_reel", "origin_id": "studio_plan", "action_fragments": ["rewind the recording reel"], "condition_fragments": ["15:05"], "context_fragments": ["Wednesday studio plan"], "forbidden_action_fragments": ["calibrate the colour chart", "clamp its corners", "archive the proof card"], "sources": ["clock"], "days": ["Wednesday"], "clock_op": "at", "clock_time": "15:05", "repeat": false}
+        ]
+      }]
+    },
+    {
+      "id": "same_action_two_occasions_and_alternative",
+      "sources": ["events", "clock"],
+      "queryable_sources": ["clock"],
+      "stages": [{
+        "id": "register_occasions",
+        "instructions": [{"id": "occasions", "text": "- Every day, label the ceramic tray after the morning mixing session and again after the afternoon mixing session.\n- Place the spare cable in the pouch when either the amplifier stops buzzing or the technician gives a thumbs-up."}],
+        "expected_records": [
+          {"key": "ceramic_tray", "origin_id": "occasions", "action_fragments": ["label the ceramic tray"], "condition_fragments": ["morning mixing session", "again after the afternoon mixing session"], "forbidden_action_fragments": ["Place the spare cable"], "sources": ["events"], "days": [], "clock_op": "none", "clock_time": "", "repeat": true},
+          {"key": "spare_cable", "origin_id": "occasions", "action_fragments": ["Place the spare cable in the pouch"], "condition_fragments": ["either the amplifier stops buzzing or the technician gives a thumbs-up"], "forbidden_action_fragments": ["label the ceramic tray"], "sources": ["events"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false}
+        ]
+      }]
+    },
+    {
+      "id": "continuations_restatements_and_speculation",
+      "sources": ["events", "engraving_board"],
+      "queryable_sources": ["engraving_board"],
+      "stages": [
+        {
+          "id": "register_wrapped_requests",
+          "instructions": [{"id": "exhibition", "text": "Exhibition preparation requests:\n- Wrap the carved frame when the packing crew arrives.\n  Use recycled paper, and keep the engraved corner exposed.\n- When engraving_board reports that the panel is ready,\n  carry the panel to the display table.\n  Keep its protective film in place."}],
+          "expected_records": [
+            {"key": "carved_frame", "origin_id": "exhibition", "action_fragments": ["Wrap the carved frame", "Use recycled paper", "keep the engraved corner exposed"], "condition_fragments": ["packing crew arrives"], "forbidden_action_fragments": ["carry the panel"], "sources": ["events"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false},
+            {"key": "engraved_panel", "origin_id": "exhibition", "action_fragments": ["carry the panel to the display table", "Keep its protective film in place"], "condition_fragments": ["panel is ready"], "forbidden_action_fragments": ["Wrap the carved frame"], "sources": ["engraving_board"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false}
+          ]
+        },
+        {
+          "id": "facts_not_new_requests",
+          "instructions": [
+            {"id": "crew_status", "text": "The packing crew may arrive on Saturday. Your earlier request to wrap the carved frame remains unchanged; this is a status note, not another request."},
+            {"id": "stand_speculation", "text": "Perhaps we could polish the brass stand someday, but do not add that as a task."}
+          ],
+          "expected_records": [
+            {"key": "carved_frame", "origin_id": "exhibition", "action_fragments": ["Wrap the carved frame", "Use recycled paper", "keep the engraved corner exposed"], "condition_fragments": ["packing crew arrives"], "forbidden_action_fragments": ["carry the panel", "polish the brass stand"], "sources": ["events"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false, "preserve_identity": true, "unchanged_from_previous": true},
+            {"key": "engraved_panel", "origin_id": "exhibition", "action_fragments": ["carry the panel to the display table", "Keep its protective film in place"], "condition_fragments": ["panel is ready"], "forbidden_action_fragments": ["Wrap the carved frame", "polish the brass stand"], "sources": ["engraving_board"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false, "preserve_identity": true, "unchanged_from_previous": true}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "same_topic_revision_and_cancellation_identity",
+      "sources": ["events", "clock", "mix_console"],
+      "queryable_sources": ["clock", "mix_console"],
+      "stages": [
+        {
+          "id": "register_audio_requests",
+          "instructions": [{"id": "audio_plan", "text": "- Archive the audio mix when mix_console reports mastering complete.\n- Export the audio mix at 18:30.\n- Print the audio mix cue sheet when the producer knocks."}],
+          "expected_records": [
+            {"key": "audio_archive", "origin_id": "audio_plan", "action_fragments": ["Archive the audio mix"], "condition_fragments": ["mastering complete"], "forbidden_action_fragments": ["Export the audio mix", "Print the audio mix cue sheet"], "sources": ["mix_console"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false},
+            {"key": "audio_export", "origin_id": "audio_plan", "action_fragments": ["Export the audio mix"], "condition_fragments": ["18:30"], "forbidden_action_fragments": ["Archive the audio mix", "Print the audio mix cue sheet"], "sources": ["clock"], "days": [], "clock_op": "at", "clock_time": "18:30", "repeat": false},
+            {"key": "audio_cue_sheet", "origin_id": "audio_plan", "action_fragments": ["Print the audio mix cue sheet"], "condition_fragments": ["producer knocks"], "forbidden_action_fragments": ["Archive the audio mix", "Export the audio mix"], "sources": ["events"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false}
+          ]
+        },
+        {
+          "id": "revise_export_only",
+          "instructions": [{"id": "audio_export_later", "text": "Change the audio mix export time to 19:10 instead; do not change the archive or cue-sheet requests."}],
+          "expected_records": [
+            {"key": "audio_archive", "origin_id": "audio_plan", "action_fragments": ["Archive the audio mix"], "condition_fragments": ["mastering complete"], "forbidden_action_fragments": ["Export the audio mix", "Print the audio mix cue sheet"], "sources": ["mix_console"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false, "preserve_identity": true, "unchanged_from_previous": true},
+            {"key": "audio_export", "origin_id": "audio_plan", "instruction_ids": ["audio_plan", "audio_export_later"], "action_fragments": ["Export the audio mix", "19:10"], "condition_fragments": ["19:10"], "forbidden_action_fragments": ["Archive the audio mix", "Print the audio mix cue sheet"], "sources": ["clock"], "days": [], "clock_op": "at", "clock_time": "19:10", "repeat": false, "preserve_identity": true},
+            {"key": "audio_cue_sheet", "origin_id": "audio_plan", "action_fragments": ["Print the audio mix cue sheet"], "condition_fragments": ["producer knocks"], "forbidden_action_fragments": ["Archive the audio mix", "Export the audio mix"], "sources": ["events"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false, "preserve_identity": true, "unchanged_from_previous": true}
+          ]
+        },
+        {
+          "id": "cancel_cue_sheet_only",
+          "instructions": [{"id": "audio_cancel_cue", "text": "Cancel only the request to print the audio mix cue sheet when the producer knocks."}],
+          "expected_records": [
+            {"key": "audio_archive", "origin_id": "audio_plan", "action_fragments": ["Archive the audio mix"], "condition_fragments": ["mastering complete"], "forbidden_action_fragments": ["Export the audio mix", "Print the audio mix cue sheet"], "sources": ["mix_console"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false, "preserve_identity": true, "unchanged_from_previous": true},
+            {"key": "audio_export", "origin_id": "audio_plan", "instruction_ids": ["audio_plan", "audio_export_later"], "action_fragments": ["Export the audio mix", "19:10"], "condition_fragments": ["19:10"], "forbidden_action_fragments": ["Archive the audio mix", "Print the audio mix cue sheet"], "sources": ["clock"], "days": [], "clock_op": "at", "clock_time": "19:10", "repeat": false, "preserve_identity": true, "unchanged_from_previous": true},
+            {"key": "audio_cue_sheet", "origin_id": "audio_plan", "instruction_ids": ["audio_plan", "audio_cancel_cue"], "action_fragments": ["Print the audio mix cue sheet"], "condition_fragments": ["producer knocks"], "forbidden_action_fragments": ["Archive the audio mix", "Export the audio mix"], "sources": ["events"], "days": [], "clock_op": "none", "clock_time": "", "repeat": false, "status": "cancelled", "preserve_identity": true}
+          ]
+        }
+      ]
+    }
+  ]
+}

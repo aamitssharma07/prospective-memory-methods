@@ -1,0 +1,304 @@
+{
+  "updated_at": "2026-08-18T22:22:58.124661+00:00",
+  "passed": 11,
+  "failed": 4,
+  "results": [
+    {
+      "model": "Qwen/Qwen3-0.6B",
+      "status": "passed",
+      "started_at": "2026-08-18T04:56:11.793562+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv/bin/python -m vllm.entrypoints.openai.api_server --model Qwen/Qwen3-0.6B --served-model-name Qwen/Qwen3-0.6B --port 30002 --tensor-parallel-size 1 --dtype bfloat16 --generation-config vllm --disable-log-requests",
+      "log": "pmbench_fallback_audit/model_smoke/qwen--qwen3-0-6b/server.log",
+      "free_gb_before": 244.52,
+      "response": {
+        "content": "{\n  \"action\": \"none\",\n  \"key\": \"no_memory_operation\"\n}",
+        "parsed": {
+          "action": "none",
+          "key": "no_memory_operation"
+        },
+        "usage": {
+          "prompt_tokens": 42,
+          "total_tokens": 62,
+          "completion_tokens": 20,
+          "prompt_tokens_details": null
+        }
+      },
+      "duration_seconds": 49.23,
+      "free_gb_after": 244.52
+    },
+    {
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "passed",
+      "started_at": "2026-08-18T04:57:01.022675+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv/bin/python -m vllm.entrypoints.openai.api_server --model Qwen/Qwen3-1.7B --served-model-name Qwen/Qwen3-1.7B --port 30002 --tensor-parallel-size 1 --dtype bfloat16 --generation-config vllm --disable-log-requests",
+      "log": "pmbench_fallback_audit/model_smoke/qwen--qwen3-1-7b/server.log",
+      "free_gb_before": 244.52,
+      "response": {
+        "content": "{\"action\": \"none\", \"key\": \"no_memory_operation\"}",
+        "parsed": {
+          "action": "none",
+          "key": "no_memory_operation"
+        },
+        "usage": {
+          "prompt_tokens": 42,
+          "total_tokens": 58,
+          "completion_tokens": 16,
+          "prompt_tokens_details": null
+        }
+      },
+      "duration_seconds": 51.29,
+      "free_gb_after": 244.52
+    },
+    {
+      "model": "Qwen/Qwen3-4B",
+      "status": "passed",
+      "started_at": "2026-08-18T04:57:52.312713+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv/bin/python -m vllm.entrypoints.openai.api_server --model Qwen/Qwen3-4B --served-model-name Qwen/Qwen3-4B --port 30002 --tensor-parallel-size 1 --dtype bfloat16 --generation-config vllm --disable-log-requests",
+      "log": "pmbench_fallback_audit/model_smoke/qwen--qwen3-4b/server.log",
+      "free_gb_before": 244.52,
+      "response": {
+        "content": "{\"action\": \"none\", \"key\": \"none\"}",
+        "parsed": {
+          "action": "none",
+          "key": "none"
+        },
+        "usage": {
+          "prompt_tokens": 42,
+          "total_tokens": 56,
+          "completion_tokens": 14,
+          "prompt_tokens_details": null
+        }
+      },
+      "duration_seconds": 55.46,
+      "free_gb_after": 244.52
+    },
+    {
+      "model": "Qwen/Qwen3-8B",
+      "status": "passed",
+      "started_at": "2026-08-18T04:58:47.775320+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv/bin/python -m vllm.entrypoints.openai.api_server --model Qwen/Qwen3-8B --served-model-name Qwen/Qwen3-8B --port 30002 --tensor-parallel-size 1 --dtype bfloat16 --generation-config vllm --disable-log-requests",
+      "log": "pmbench_fallback_audit/model_smoke/qwen--qwen3-8b/server.log",
+      "free_gb_before": 244.52,
+      "response": {
+        "content": "{\n  \"action\": \"none\"\n  , \"key\": \"\"\n  }",
+        "parsed": {
+          "action": "none",
+          "key": ""
+        },
+        "usage": {
+          "prompt_tokens": 42,
+          "total_tokens": 61,
+          "completion_tokens": 19,
+          "prompt_tokens_details": null
+        }
+      },
+      "duration_seconds": 114.11,
+      "free_gb_after": 244.51
+    },
+    {
+      "model": "Qwen/Qwen3-14B",
+      "status": "passed",
+      "started_at": "2026-08-18T05:00:41.882873+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv/bin/python -m vllm.entrypoints.openai.api_server --model Qwen/Qwen3-14B --served-model-name Qwen/Qwen3-14B --port 30002 --tensor-parallel-size 1 --dtype bfloat16 --generation-config vllm --disable-log-requests",
+      "log": "pmbench_fallback_audit/model_smoke/qwen--qwen3-14b/server.log",
+      "free_gb_before": 244.51,
+      "response": {
+        "content": "{\"action\": \"none\", \"key\": \"none\"}",
+        "parsed": {
+          "action": "none",
+          "key": "none"
+        },
+        "usage": {
+          "prompt_tokens": 42,
+          "total_tokens": 55,
+          "completion_tokens": 13,
+          "prompt_tokens_details": null
+        }
+      },
+      "duration_seconds": 178.44,
+      "free_gb_after": 216.98
+    },
+    {
+      "model": "Qwen/Qwen3-32B",
+      "status": "passed",
+      "started_at": "2026-08-18T05:03:40.321715+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv/bin/python -m vllm.entrypoints.openai.api_server --model Qwen/Qwen3-32B --served-model-name Qwen/Qwen3-32B --port 30002 --tensor-parallel-size 2 --dtype bfloat16 --generation-config vllm --disable-log-requests",
+      "log": "pmbench_fallback_audit/model_smoke/qwen--qwen3-32b/server.log",
+      "free_gb_before": 216.98,
+      "response": {
+        "content": "{\"action\": \"none\", \"key\": \"string\"}",
+        "parsed": {
+          "action": "none",
+          "key": "string"
+        },
+        "usage": {
+          "prompt_tokens": 42,
+          "total_tokens": 55,
+          "completion_tokens": 13,
+          "prompt_tokens_details": null
+        }
+      },
+      "duration_seconds": 296.77,
+      "free_gb_after": 155.92
+    },
+    {
+      "model": "meta-llama/Llama-3.2-1B-Instruct",
+      "status": "failed",
+      "started_at": "2026-08-18T05:25:30.726189+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv/bin/python -m vllm.entrypoints.openai.api_server --model meta-llama/Llama-3.2-1B-Instruct --served-model-name meta-llama/Llama-3.2-1B-Instruct --port 30002 --tensor-parallel-size 1 --dtype bfloat16 --generation-config vllm --disable-log-requests",
+      "log": "pmbench_fallback_audit/model_smoke/meta-llama--llama-3-2-1b-instruct/server.log",
+      "free_gb_before": 148.72,
+      "error": "RuntimeError: Inference server exited before becoming ready (exit 1). Inspect server.log in the model result directory.",
+      "duration_seconds": 6.01,
+      "free_gb_after": 148.72
+    },
+    {
+      "model": "meta-llama/Llama-3.2-3B-Instruct",
+      "status": "failed",
+      "started_at": "2026-08-18T05:25:36.736500+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv/bin/python -m vllm.entrypoints.openai.api_server --model meta-llama/Llama-3.2-3B-Instruct --served-model-name meta-llama/Llama-3.2-3B-Instruct --port 30002 --tensor-parallel-size 1 --dtype bfloat16 --generation-config vllm --disable-log-requests",
+      "log": "pmbench_fallback_audit/model_smoke/meta-llama--llama-3-2-3b-instruct/server.log",
+      "free_gb_before": 148.72,
+      "error": "RuntimeError: Inference server exited before becoming ready (exit 1). Inspect server.log in the model result directory.",
+      "duration_seconds": 6.01,
+      "free_gb_after": 148.72
+    },
+    {
+      "model": "meta-llama/Llama-3.3-70B-Instruct",
+      "status": "passed",
+      "started_at": "2026-08-18T05:19:27.461502+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv/bin/python -m vllm.entrypoints.openai.api_server --model meta-llama/Llama-3.3-70B-Instruct --served-model-name meta-llama/Llama-3.3-70B-Instruct --port 30002 --tensor-parallel-size 2 --dtype bfloat16 --generation-config vllm --disable-log-requests --load-format bitsandbytes --quantization bitsandbytes --max-model-len 32768 --gpu-memory-utilization 0.8 --enforce-eager",
+      "log": "pmbench_fallback_audit/model_smoke/meta-llama--llama-3-3-70b-instruct/server.log",
+      "free_gb_before": 148.72,
+      "response": {
+        "content": "{\"action\": \"none\", \"key\": \"none\"}",
+        "parsed": {
+          "action": "none",
+          "key": "none"
+        },
+        "usage": {
+          "prompt_tokens": 60,
+          "total_tokens": 73,
+          "completion_tokens": 13,
+          "prompt_tokens_details": null
+        }
+      },
+      "duration_seconds": 54.4,
+      "free_gb_after": 148.72
+    },
+    {
+      "model": "mistralai/Ministral-3-3B-Instruct-2512",
+      "status": "passed",
+      "started_at": "2026-08-18T22:04:18.801578+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv-modern/bin/python -m vllm.entrypoints.openai.api_server --model mistralai/Ministral-3-3B-Instruct-2512 --served-model-name mistralai/Ministral-3-3B-Instruct-2512 --port 30002 --tensor-parallel-size 1 --dtype bfloat16 --generation-config vllm --no-enable-log-requests",
+      "log": "pmbench_fallback_audit/model_smoke/mistralai--ministral-3-3b-instruct-2512/server.log",
+      "free_gb_before": 132.87,
+      "response": {
+        "content": "{\n  \"action\": \"none\",\n  \"key\": \"null\"\n}",
+        "parsed": {
+          "action": "none",
+          "key": "null"
+        },
+        "usage": {
+          "prompt_tokens": 31,
+          "total_tokens": 50,
+          "completion_tokens": 19,
+          "prompt_tokens_details": null
+        }
+      },
+      "duration_seconds": 26.77,
+      "free_gb_after": 132.87
+    },
+    {
+      "model": "mistralai/Ministral-3-8B-Instruct-2512",
+      "status": "passed",
+      "started_at": "2026-08-18T22:07:15.096232+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv-modern/bin/python -m vllm.entrypoints.openai.api_server --model mistralai/Ministral-3-8B-Instruct-2512 --served-model-name mistralai/Ministral-3-8B-Instruct-2512 --port 30002 --tensor-parallel-size 1 --dtype bfloat16 --generation-config vllm --no-enable-log-requests --max-model-len 32768",
+      "log": "pmbench_fallback_audit/model_smoke/mistralai--ministral-3-8b-instruct-2512/server.log",
+      "free_gb_before": 119.05,
+      "response": {
+        "content": "{\n  \"action\": \"none\",\n  \"key\": \"no_operation_required\"\n}",
+        "parsed": {
+          "action": "none",
+          "key": "no_operation_required"
+        },
+        "usage": {
+          "prompt_tokens": 31,
+          "total_tokens": 51,
+          "completion_tokens": 20,
+          "prompt_tokens_details": null
+        }
+      },
+      "duration_seconds": 54.91,
+      "free_gb_after": 119.01
+    },
+    {
+      "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "status": "passed",
+      "started_at": "2026-08-18T22:08:26.149225+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv-modern/bin/python -m vllm.entrypoints.openai.api_server --model mistralai/Mistral-Small-3.2-24B-Instruct-2506 --served-model-name mistralai/Mistral-Small-3.2-24B-Instruct-2506 --port 30002 --tensor-parallel-size 2 --dtype bfloat16 --generation-config vllm --no-enable-log-requests --max-model-len 32768",
+      "log": "pmbench_fallback_audit/model_smoke/mistralai--mistral-small-3-2-24b-instruct-2506/server.log",
+      "free_gb_before": 119.01,
+      "response": {
+        "content": "{\n  \"action\": \"none\"\n  , \"key\": \"\"\n  }",
+        "parsed": {
+          "action": "none",
+          "key": ""
+        },
+        "usage": {
+          "prompt_tokens": 31,
+          "total_tokens": 50,
+          "completion_tokens": 19,
+          "prompt_tokens_details": null
+        }
+      },
+      "duration_seconds": 165.26,
+      "free_gb_after": 74.22
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "status": "passed",
+      "started_at": "2026-08-18T05:11:53.336369+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv/bin/python -m vllm.entrypoints.openai.api_server --model microsoft/Phi-4-mini-instruct --served-model-name microsoft/Phi-4-mini-instruct --port 30002 --tensor-parallel-size 1 --dtype bfloat16 --generation-config vllm --disable-log-requests --trust-remote-code",
+      "log": "pmbench_fallback_audit/model_smoke/microsoft--phi-4-mini-instruct/server.log",
+      "free_gb_before": 155.91,
+      "response": {
+        "content": "{\n  \"action\": \"none\",\n  \"key\": \"no_memory_operation\"\n}",
+        "parsed": {
+          "action": "none",
+          "key": "no_memory_operation"
+        },
+        "usage": {
+          "prompt_tokens": 30,
+          "total_tokens": 49,
+          "completion_tokens": 19,
+          "prompt_tokens_details": null
+        }
+      },
+      "duration_seconds": 100.47,
+      "free_gb_after": 148.74
+    },
+    {
+      "model": "google/gemma-4-E2B-it",
+      "status": "failed",
+      "started_at": "2026-08-18T22:19:57.062007+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv-modern/bin/python -m vllm.entrypoints.openai.api_server --model google/gemma-4-E2B-it --served-model-name google/gemma-4-E2B-it --port 30002 --tensor-parallel-size 1 --dtype bfloat16 --generation-config vllm --no-enable-log-requests --max-model-len 32768 --limit-mm-per-prompt '{\"audio\": 0, \"image\": 0}'",
+      "log": "pmbench_fallback_audit/model_smoke/google--gemma-4-e2b-it/server.log",
+      "free_gb_before": 64.65,
+      "error": "RuntimeError: Inference server exited before becoming ready (exit 1). Inspect server.log in the model result directory.",
+      "duration_seconds": 62.08,
+      "free_gb_after": 64.65
+    },
+    {
+      "model": "google/gemma-4-E4B-it",
+      "status": "failed",
+      "started_at": "2026-08-18T22:21:16.000228+00:00",
+      "command": "/home/akumar3/ResearchProjects/ProspectusMemory/.venv-modern/bin/python -m vllm.entrypoints.openai.api_server --model google/gemma-4-E4B-it --served-model-name google/gemma-4-E4B-it --port 30002 --tensor-parallel-size 1 --dtype bfloat16 --generation-config vllm --no-enable-log-requests --max-model-len 32768 --limit-mm-per-prompt '{\"audio\": 0, \"image\": 0}'",
+      "log": "pmbench_fallback_audit/model_smoke/google--gemma-4-e4b-it/server.log",
+      "free_gb_before": 64.65,
+      "error": "RuntimeError: Inference server exited before becoming ready (exit 1). Inspect server.log in the model result directory.",
+      "duration_seconds": 102.12,
+      "free_gb_after": 49.72
+    }
+  ]
+}

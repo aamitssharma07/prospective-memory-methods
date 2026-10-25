@@ -1,0 +1,433 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "completed_count": 27,
+  "selection_rule": "Best retained earlier complete 80-step Experiment 3 run per main/helper pair and scenario, searched under runs/synthetic_week_v9. Multiple previous development versions are included; not a single fixed prior version.",
+  "exact_checkpoint_matches": 17,
+  "exact_match_improvements": 12,
+  "exact_match_regressions": 5,
+  "checkpoint_variant_comparisons": 2,
+  "without_historical_result": 8,
+  "context_note": "Known flags from the saved runtime audit, supplemented by direct Qwen3-32B call-log inspection. Not a fresh exhaustive audit of every newly completed pair. Unknown counts remain null.",
+  "rows": [
+    {
+      "actor": "Qwen/Qwen3-0.6B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "job_id": "1538265",
+      "updated_f1": 0.1346153846153846,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-0-6b-helper-qwen3-1-7b/sbpm/qwen3-0-6b-actor-helper-qwen3-1-7b-1538265/metrics.json",
+      "older": null,
+      "old_runs_considered": 0,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 2,
+      "delta_pp": null
+    },
+    {
+      "actor": "Qwen/Qwen3-0.6B",
+      "helper": "Qwen/Qwen3-4B",
+      "job_id": "1538266",
+      "updated_f1": 0.21374045801526717,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-0-6b-helper-qwen3-4b/sbpm/qwen3-0-6b-actor-helper-qwen3-4b-1538266/metrics.json",
+      "older": null,
+      "old_runs_considered": 0,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 8,
+      "delta_pp": null
+    },
+    {
+      "actor": "Qwen/Qwen3-0.6B",
+      "helper": "Qwen/Qwen3-8B",
+      "job_id": "1538267",
+      "updated_f1": 0.2608695652173913,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-0-6b-helper-qwen3-8b/sbpm/qwen3-0-6b-actor-helper-qwen3-8b-1538267/metrics.json",
+      "older": {
+        "f1": 0.14814814814814814,
+        "actor": "Qwen/Qwen3-0.6B",
+        "helper": "Qwen/Qwen3-8B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-0-6b-helper-qwen3-8b/sbpm/qwen3-0-6b-actor-helper-qwen3-8b-1532949/metrics.json"
+      },
+      "old_runs_considered": 2,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": 11.272141706924316
+    },
+    {
+      "actor": "Qwen/Qwen3-0.6B",
+      "helper": "Qwen/Qwen3-32B",
+      "job_id": "1537334",
+      "updated_f1": 0.24806201550387597,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_20261020/qwen3-0-6b-helper-qwen3-32b/sbpm/qwen3-0-6b-actor-helper-qwen3-32b-1537334/metrics.json",
+      "older": {
+        "f1": 0.14864864864864866,
+        "actor": "Qwen/Qwen3-0.6B",
+        "helper": "Qwen/Qwen3-32B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-0-6b-helper-qwen3-32b/sbpm/qwen3-0-6b-actor-helper-qwen3-32b-1513513/metrics.json"
+      },
+      "old_runs_considered": 2,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 6,
+      "delta_pp": 9.941336685522732
+    },
+    {
+      "actor": "Qwen/Qwen3-1.7B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "job_id": "1538268",
+      "updated_f1": 0.15,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-1-7b/sbpm/qwen3-1-7b-1538268/metrics.json",
+      "older": null,
+      "old_runs_considered": 0,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": null
+    },
+    {
+      "actor": "Qwen/Qwen3-1.7B",
+      "helper": "Qwen/Qwen3-4B",
+      "job_id": "1538269",
+      "updated_f1": 0.34782608695652173,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-1-7b-helper-qwen3-4b/sbpm/qwen3-1-7b-actor-helper-qwen3-4b-1538269/metrics.json",
+      "older": {
+        "f1": 0.3105590062111801,
+        "actor": "Qwen/Qwen3-1.7B",
+        "helper": "Qwen/Qwen3-4B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-1-7b-helper-qwen3-4b/sbpm/qwen3-1-7b-actor-helper-qwen3-4b-1511439/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": 3.726708074534163
+    },
+    {
+      "actor": "Qwen/Qwen3-1.7B",
+      "helper": "Qwen/Qwen3-8B",
+      "job_id": "1538270",
+      "updated_f1": 0.39751552795031053,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-1-7b-helper-qwen3-8b/sbpm/qwen3-1-7b-actor-helper-qwen3-8b-1538270/metrics.json",
+      "older": {
+        "f1": 0.3253012048192771,
+        "actor": "Qwen/Qwen3-1.7B",
+        "helper": "Qwen/Qwen3-8B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-1-7b-helper-qwen3-8b/sbpm/qwen3-1-7b-actor-helper-qwen3-8b-1511440/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": 7.221432313103343
+    },
+    {
+      "actor": "Qwen/Qwen3-1.7B",
+      "helper": "Qwen/Qwen3-32B",
+      "job_id": "1537338",
+      "updated_f1": 0.38509316770186336,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_20261020/qwen3-1-7b-helper-qwen3-32b/sbpm/qwen3-1-7b-actor-helper-qwen3-32b-1537338/metrics.json",
+      "older": {
+        "f1": 0.3105590062111801,
+        "actor": "Qwen/Qwen3-1.7B",
+        "helper": "Qwen/Qwen3-32B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-1-7b-helper-qwen3-32b/sbpm/qwen3-1-7b-actor-helper-qwen3-32b-1532959/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": 7.453416149068326
+    },
+    {
+      "actor": "Qwen/Qwen3-4B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "job_id": "1538271",
+      "updated_f1": 0.4248704663212435,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-4b-helper-qwen3-1-7b/sbpm/qwen3-4b-actor-helper-qwen3-1-7b-1538271/metrics.json",
+      "older": null,
+      "old_runs_considered": 0,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": null
+    },
+    {
+      "actor": "Qwen/Qwen3-4B",
+      "helper": "Qwen/Qwen3-4B",
+      "job_id": "1538272",
+      "updated_f1": 0.4736842105263158,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-4b/sbpm/qwen3-4b-1538272/metrics.json",
+      "older": {
+        "f1": 0.45454545454545453,
+        "actor": "Qwen/Qwen3-4B",
+        "helper": "Qwen/Qwen3-4B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-4b/sbpm/qwen3-4b-1532968/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": 1.9138755980861288
+    },
+    {
+      "actor": "Qwen/Qwen3-4B",
+      "helper": "Qwen/Qwen3-8B",
+      "job_id": "1538273",
+      "updated_f1": 0.5591397849462365,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-4b-helper-qwen3-8b/sbpm/qwen3-4b-actor-helper-qwen3-8b-1538273/metrics.json",
+      "older": {
+        "f1": 0.5238095238095238,
+        "actor": "Qwen/Qwen3-4B",
+        "helper": "Qwen/Qwen3-8B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-4b-helper-qwen3-8b/sbpm/qwen3-4b-actor-helper-qwen3-8b-1511448/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": 3.533026113671267
+    },
+    {
+      "actor": "Qwen/Qwen3-4B",
+      "helper": "Qwen/Qwen3-32B",
+      "job_id": "1538274",
+      "updated_f1": 0.6594594594594596,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-4b-helper-qwen3-32b/sbpm/qwen3-4b-actor-helper-qwen3-32b-1538274/metrics.json",
+      "older": {
+        "f1": 0.5172413793103449,
+        "actor": "Qwen/Qwen3-4B",
+        "helper": "Qwen/Qwen3-32B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-4b-helper-qwen3-32b/sbpm/qwen3-4b-actor-helper-qwen3-32b-1513517/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": 14.221808014911474
+    },
+    {
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "job_id": "1538275",
+      "updated_f1": 0.4153846153846154,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b-helper-qwen3-1-7b/sbpm/qwen3-8b-actor-helper-qwen3-1-7b-1538275/metrics.json",
+      "older": null,
+      "old_runs_considered": 0,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": null
+    },
+    {
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-4B",
+      "job_id": "1538276",
+      "updated_f1": 0.44274809160305345,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b-helper-qwen3-4b/sbpm/qwen3-8b-actor-helper-qwen3-4b-1538276/metrics.json",
+      "older": {
+        "f1": 0.5679012345679012,
+        "actor": "Qwen/Qwen3-8B",
+        "helper": "Qwen/Qwen3-4B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-8b-helper-qwen3-4b/sbpm/qwen3-8b-actor-helper-qwen3-4b-1511455/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": -12.515314296484775
+    },
+    {
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-8B",
+      "job_id": "1538277",
+      "updated_f1": 0.34188034188034183,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b/sbpm/qwen3-8b-1538277/metrics.json",
+      "older": {
+        "f1": 0.5269461077844311,
+        "actor": "Qwen/Qwen3-8B",
+        "helper": "Qwen/Qwen3-8B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-8b/sbpm/qwen3-8b-1511456/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": -18.506576590408923
+    },
+    {
+      "actor": "Qwen/Qwen3-8B",
+      "helper": "Qwen/Qwen3-32B",
+      "job_id": "1538278",
+      "updated_f1": 0.6236559139784947,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-8b-helper-qwen3-32b/sbpm/qwen3-8b-actor-helper-qwen3-32b-1538278/metrics.json",
+      "older": {
+        "f1": 0.5421686746987951,
+        "actor": "Qwen/Qwen3-8B",
+        "helper": "Qwen/Qwen3-32B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-8b-helper-qwen3-32b/sbpm/qwen3-8b-actor-helper-qwen3-32b-1513518/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": 8.148723927969959
+    },
+    {
+      "actor": "Qwen/Qwen3-32B",
+      "helper": "Qwen/Qwen3-1.7B",
+      "job_id": "1538279",
+      "updated_f1": 0.38666666666666666,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-32b-helper-qwen3-1-7b/sbpm/qwen3-32b-actor-helper-qwen3-1-7b-1538279/metrics.json",
+      "older": null,
+      "old_runs_considered": 0,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 74,
+      "delta_pp": null
+    },
+    {
+      "actor": "Qwen/Qwen3-32B",
+      "helper": "Qwen/Qwen3-4B",
+      "job_id": "1538280",
+      "updated_f1": 0.43661971830985913,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-32b-helper-qwen3-4b/sbpm/qwen3-32b-actor-helper-qwen3-4b-1538280/metrics.json",
+      "older": {
+        "f1": 0.5540540540540541,
+        "actor": "Qwen/Qwen3-32B",
+        "helper": "Qwen/Qwen3-4B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-32b-helper-qwen3-4b/sbpm/qwen3-32b-actor-helper-qwen3-4b-1533464/metrics.json"
+      },
+      "old_runs_considered": 5,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 70,
+      "delta_pp": -11.743433574419493
+    },
+    {
+      "actor": "Qwen/Qwen3-32B",
+      "helper": "Qwen/Qwen3-8B",
+      "job_id": "1538281",
+      "updated_f1": 0.5035971223021583,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-32b-helper-qwen3-8b/sbpm/qwen3-32b-actor-helper-qwen3-8b-1538281/metrics.json",
+      "older": {
+        "f1": 0.5695364238410596,
+        "actor": "Qwen/Qwen3-32B",
+        "helper": "Qwen/Qwen3-8B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-32b-helper-qwen3-8b/sbpm/qwen3-32b-actor-helper-qwen3-8b-1533465/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 66,
+      "delta_pp": -6.593930153890137
+    },
+    {
+      "actor": "Qwen/Qwen3-32B",
+      "helper": "Qwen/Qwen3-32B",
+      "job_id": "1538282",
+      "updated_f1": 0.6666666666666667,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/qwen3-32b/sbpm/qwen3-32b-1538282/metrics.json",
+      "older": {
+        "f1": 0.5594405594405595,
+        "actor": "Qwen/Qwen3-32B",
+        "helper": "Qwen/Qwen3-32B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/qwen3-32b/sbpm/qwen3-32b-1532984/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": 0,
+      "delta_pp": 10.722610722610726
+    },
+    {
+      "actor": "google/gemma-4-E2B-it",
+      "helper": "Qwen/Qwen3-1.7B",
+      "job_id": "1538283",
+      "updated_f1": 0.17391304347826086,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/gemma-4-e2b-it-helper-qwen3-1-7b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-1-7b-1538283/metrics.json",
+      "older": null,
+      "old_runs_considered": 0,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": null,
+      "delta_pp": null
+    },
+    {
+      "actor": "google/gemma-4-E2B-it",
+      "helper": "Qwen/Qwen3-4B",
+      "job_id": "1538284",
+      "updated_f1": 0.34782608695652173,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/gemma-4-e2b-it-helper-qwen3-4b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-4b-1538284/metrics.json",
+      "older": {
+        "f1": 0.4472049689440994,
+        "actor": "google/gemma-4-E2B-it",
+        "helper": "Qwen/Qwen3-4B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/gemma-4-e2b-it-helper-qwen3-4b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-4b-1511463/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": null,
+      "delta_pp": -9.937888198757767
+    },
+    {
+      "actor": "google/gemma-4-E2B-it",
+      "helper": "Qwen/Qwen3-8B",
+      "job_id": "1538285",
+      "updated_f1": 0.40993788819875776,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/gemma-4-e2b-it-helper-qwen3-8b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-8b-1538285/metrics.json",
+      "older": {
+        "f1": 0.34782608695652173,
+        "actor": "google/gemma-4-E2B-it",
+        "helper": "Qwen/Qwen3-8B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/gemma-4-e2b-it-helper-qwen3-8b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-8b-1511464/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": null,
+      "delta_pp": 6.211180124223603
+    },
+    {
+      "actor": "google/gemma-4-E2B-it",
+      "helper": "Qwen/Qwen3-32B",
+      "job_id": "1538286",
+      "updated_f1": 0.38509316770186336,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/gemma-4-e2b-it-helper-qwen3-32b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-32b-1538286/metrics.json",
+      "older": {
+        "f1": 0.3602484472049689,
+        "actor": "google/gemma-4-E2B-it",
+        "helper": "Qwen/Qwen3-32B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/gemma-4-e2b-it-helper-qwen3-32b/sbpm/gemma-4-e2b-it-actor-helper-qwen3-32b-1513520/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": null,
+      "delta_pp": 2.4844720496894457
+    },
+    {
+      "actor": "mistralai/Ministral-3-3B-Instruct-2512",
+      "helper": "Qwen/Qwen3-1.7B",
+      "job_id": "1538287",
+      "updated_f1": 0.41025641025641024,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-3b-instruct-2512-helper-qwen3-1-7b/sbpm/ministral-3-3b-instruct-2512-actor-helper-qwen3-1-7b-1538287/metrics.json",
+      "older": null,
+      "old_runs_considered": 0,
+      "checkpoint_mismatch": false,
+      "known_context_rejections": null,
+      "delta_pp": null
+    },
+    {
+      "actor": "mistralai/Ministral-3-3B-Instruct-2512",
+      "helper": "Qwen/Qwen3-4B",
+      "job_id": "1538288",
+      "updated_f1": 0.535031847133758,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-3b-instruct-2512-helper-qwen3-4b/sbpm/ministral-3-3b-instruct-2512-actor-helper-qwen3-4b-1538288/metrics.json",
+      "older": {
+        "f1": 0.47297297297297297,
+        "actor": "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+        "helper": "Qwen/Qwen3-4B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/ministral-3-3b-instruct-2512-bf16-helper-qwen3-4b/sbpm/ministral-3-3b-instruct-2512-bf16-actor-helper-qwen3-4b-1511471/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": true,
+      "known_context_rejections": null,
+      "delta_pp": 6.2058874160784985
+    },
+    {
+      "actor": "mistralai/Ministral-3-3B-Instruct-2512",
+      "helper": "Qwen/Qwen3-8B",
+      "job_id": "1538289",
+      "updated_f1": 0.546583850931677,
+      "updated_metrics_path": "experiments/rgpm/runs/registration_v15_qwen_four_helpers_report_only_20261021/ministral-3-3b-instruct-2512-helper-qwen3-8b/sbpm/ministral-3-3b-instruct-2512-actor-helper-qwen3-8b-1538289/metrics.json",
+      "older": {
+        "f1": 0.567741935483871,
+        "actor": "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+        "helper": "Qwen/Qwen3-8B",
+        "metrics_path": "experiments/rgpm/runs/synthetic_week_v9/ministral-3-3b-instruct-2512-bf16-helper-qwen3-8b/sbpm/ministral-3-3b-instruct-2512-bf16-actor-helper-qwen3-8b-1511472/metrics.json"
+      },
+      "old_runs_considered": 3,
+      "checkpoint_mismatch": true,
+      "known_context_rejections": null,
+      "delta_pp": -2.1158084552193923
+    }
+  ]
+}
